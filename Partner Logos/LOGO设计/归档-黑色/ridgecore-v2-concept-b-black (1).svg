@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 200" width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bgB" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#141416"/>
+            <stop offset="100%" stop-color="#0c0c0e"/>
+          </linearGradient>
+          <linearGradient id="faceB1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#808890"/>
+            <stop offset="100%" stop-color="#505560"/>
+          </linearGradient>
+          <linearGradient id="faceB2" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#606870"/>
+            <stop offset="100%" stop-color="#383c42"/>
+          </linearGradient>
+          <linearGradient id="faceB3" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#a0a8b0"/>
+            <stop offset="100%" stop-color="#707880"/>
+          </linearGradient>
+          <linearGradient id="faceB4" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#404448"/>
+            <stop offset="100%" stop-color="#585e65"/>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="196" height="196" rx="42" fill="#000000"/>
+
+        <!-- 3D 立方体/多面体 - 类似参考图2 -->
+        <!-- 顶面 -->
+        <polygon points="100,50 140,70 100,90 60,70" fill="url(#faceB3)" opacity="0.95"/>
+        <!-- 左面 -->
+        <polygon points="60,70 100,90 100,140 60,120" fill="url(#faceB2)" opacity="0.9"/>
+        <!-- 右面 -->
+        <polygon points="140,70 100,90 100,140 140,120" fill="url(#faceB1)" opacity="0.9"/>
+
+        <!-- 切割面 - 底部切角 -->
+        <polygon points="60,120 100,140 80,155" fill="url(#faceB2)" opacity="0.7"/>
+        <polygon points="140,120 100,140 120,155" fill="url(#faceB4)" opacity="0.75"/>
+        <polygon points="80,155 100,140 120,155 100,162" fill="#303438" opacity="0.8"/>
+
+        <!-- 顶面三角切割线 (facets) -->
+        <line x1="100" y1="50" x2="100" y2="90" stroke="#b8c0c8" stroke-width="0.5" opacity="0.25"/>
+        <polygon points="100,50 120,60 100,70" fill="#b8c0c8" opacity="0.08"/>
+
+        <!-- 前棱高光 -->
+        <line x1="100" y1="90" x2="100" y2="140" stroke="#c0c8d0" stroke-width="0.7" opacity="0.3"/>
+        <!-- 顶边高光 -->
+        <line x1="100" y1="50" x2="140" y2="70" stroke="#c8d0d8" stroke-width="0.5" opacity="0.2"/>
+
+        <!-- 木：竖纹 - 岩石表面的生长痕迹 -->
+        <g opacity="0.08" stroke="#d0d8e0" fill="none" stroke-width="0.6">
+          <path d="M100,55 L100,85"/>
+          <path d="M95,58 Q95,72 95,82"/>
+          <path d="M105,58 Q105,72 105,82"/>
+        </g>
+
+        <!-- 环境光晕 -->
+        <circle cx="90" cy="65" r="20" fill="#ffffff" opacity="0.03"/>
+      </svg>

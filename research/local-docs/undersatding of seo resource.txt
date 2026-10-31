@@ -1,0 +1,193 @@
+NEXUS: Business Understanding Document
+Prepared by Nazia Ishaq · 27 October 2026 
+Short fact base for the NEXUS website, SEO, AEO and GEO work.
+1. About the business
+NEXUS Creative HQ Ltd is a UK company, founded in 2019, that bridges the UK and global innovation ecosystems, with China as its flagship corridor.
+Item
+Detail
+Source and status
+Legal name
+NEXUS Creative HQ Ltd
+Prototype footer. Client document.
+Company number
+12667243
+Prototype footer. 
+Founded
+2019
+Brand guidelines ("Est. 2019").
+Domain
+nexuscreativehq.com
+Brand guidelines, case studies, live site.
+Email
+members@cellardoornexus.co.uk
+Facebook About Us
+CEO
+Mark Sarfo-Kantanka
+Live site ("CEO and Co-Founder" in prototype).
+Mission
+"To be the most trusted operational bridge between the UK and the world's most dynamic innovation ecosystems, turning global connections into real business outcomes."
+Brand guidelines.
+Taglines
+"We Build Businesses". 
+"The launchpad for innovative businesses." 
+"Bold founders deserve bold backing."
+Brand guidelines, live site.
+Positioning statements
+"Not a generic accelerator." "More than a founder membership club." "Boots on the ground." One point of accountability.
+Live site (Purpose), prototype.
+What it sells
+Cross-border ecosystem bridge; market entry and representation; UK scale-up advisory and partner network. Project-based, with fractional specialists.
+Live site (Purpose).
+Credentials
+Consortium partner of UK Endorsing Services (UKES) for the Innovator Founder visa route. UK Government Supplier.
+Live site and prototype word the UKES role differently. "Supplier" status needs a citable reference.
+Key numbers
+100+ businesses supported. 
+16 partnerships. 
+1,400+ business plans assessed.
+Prototype.
+Locations
+UK 
+- London: SBREC, 80 Basinghall Street, EC2V 5AG. 
+CHINA
+ - Shanghai: Swiss Bluefaer Innovation Centre, Oriental Blue Ocean Plaza, No. 1800 Huangxing Road. 
+GHANA
+ - Accra: Impact Hub Accra, F 393/4 Otswe, Osu Ako-Adjei.
+Live site. Accra is missing from the prototype. 
+China partners
+RidgeCore Ventures (reciprocal). Two Tianjin MOUs. S-Tron Shanghai (two years exhibiting).
+Prototype.
+Next key event
+Global Innovator Awards, 16 November 2026, The Dorchester, London.
+Prototype. 
+Live events calendar shows 17 Oct: conflict.
+Site launch
+Live by Thursday 12 November 2026.
+Research document.
+Organic traffic
+2 users, from the UK
+Ahrefs
+Organic keywords
+2: nexus company, nexus creative hub
+Ahrefs
+Domain Rating (DR)
+34
+Ahrefs
+PR
+4.5
+Ahrefs
+Referring domains
+884
+Ahrefs
+Facebook
+171 followers, 138 following
+Facebook
+Instagram
+2,466 followers, 788 following
+Instagram
+LinkedIn
+1,308 followers
+LinkedIn
+X (Twitter)
+227 followers, 470 following
+X
+Note: 
+The site has strong authority (DR 34, 884 referring domains) but almost no search visibility (2 organic visits, 2 brand-name keywords). Social figures and Ahrefs data are as supplied on 27 October 2026; capture dates are to be confirmed.
+2. Target audiences
+NEXUS serves four paying audiences, and one more (overseas founders) is still undecided.
+Audience
+Who they are
+What they need
+What NEXUS offers
+Entry point
+Innovation institutions
+Science parks, innovation zones, hubs, funds, incubators, universities, government-linked bodies, in the UK and overseas
+A UK or China presence that is operational, "not consultancy reports"
+UK representation, showcase events, deal-flow pipeline, landing programmes, delegations (2027)
+Book a partnership call
+International technology companies
+Companies with a product in market, funding or revenue, and a decision-maker committed to UK growth
+Market knowledge, the right people and a correct set-up, without losing months
+Market-Entry Diagnostic (paid, credited against further work), UK Soft Landing (retainer), Market Intelligence Report (fixed fee), vetted legal, banking and 
+accountancy partners
+Book a paid diagnostic
+UK scale-ups
+Trading UK companies in AI, deep tech, life sciences, advanced manufacturing and consumer tech, with a defined brief
+Expert-led delivery with clear outputs
+Growth diagnostic, then partner-delivered projects: AI strategy, R&D tax credits, Seed and Series A fundraising, roundtables, mentor introductions
+Book a growth diagnostic
+Firms and sponsors
+Professional firms (legal, finance, IP) and event sponsors
+Access to NEXUS's audience and events
+Awards and session sponsorship, referral partnerships
+Request the sponsor pack
+Overseas founders (decision needed)
+Founders moving to the UK. Four of seven case studies and the Global Innovator Awards centre on them
+Visa endorsement route and UK networks
+Business plan assessment through UKES (consortium partner). Prototype tells visa-only enquirers they are not a fit
+Not decided
+Note: 
+Sources: prototype, live site and case studies. Fees are not yet confirmed for any offer.
+3. Proof assets
+Seven case studies give NEXUS its strongest proof, but all are marked "Private & Confidential" and only Sentian has a page in the prototype.
+Company
+Sector
+Headline outcome
+Founder quote
+Sentian Aerospace
+Aerospace, unmanned aircraft
+Acquired by Volatus Aerospace (publicly listed) in under two years from UK incorporation. Founders retained.
+Edmund Moyo, Dalumuzi Dube
+GI Healthcare
+Deep tech, autonomous kitchens
+No customers to a customer-funded proof of concept. Heading to TRL 7 pilots. Scotland finalists, Great British Entrepreneur Awards 2025.
+Ash Ganesan Indra, Adip Ranjan Das
+Auto Impartial
+AI compute, semiconductors
+Architecture independently validated. UK and Asia consortium forming with Innovate UK.
+Dr Xiusun Huang
+DarkhorseOne
+AI-native enterprise software
+UK patent application filed. Commercial collaboration secured through NEXUS.
+Jian Ma
+Eco2Life (EcoDo)
+CreaTech
+Consultancy to live AI platform with early revenue. UK patent in progress.
+Qingwen (Joy) Li
+Smart Patent
+Legal tech
+Live platform. Finalist in a national AI programme in China. UK and China raise in preparation.
+Jack Zhu
+Readii
+EdTech
+Revenue-generating within two years. Partner value stated as 
+about double its own revenue (needs evidence).
+Xiaoyu Su
+Note:
+ Before publishing: get written consent for each case study and quote, and word "in progress" outcomes precisely.
+4. Brand and design rules
+The brand guidelines set a bold black and yellow look, but the prototype departs from them in two places.
+Element
+Guideline
+What the prototype does
+Colours
+Pitch Black #000000 (dominant), Electric Yellow #DFFF13 (accent), Studio Grey #D1D1D1, Pure White #FFFFFF
+Follows the palette
+Yellow usage
+"An accent colour, not a background"
+Uses full yellow bands (announcement bar, awards card, footer strip). Decision needed
+Headline font
+Neutral Face Bold, headlines only
+Uses Archivo (Google Font)
+Body font
+General Sans (Light to Bold)
+Uses Manrope (Google Font)
+Logo
+White on black or metallic on white (primary). Black on yellow (accent). Never on grey or busy backgrounds. No shadows or distortion
+White on black in the navigation and footer
+Voice
+Direct, uncompromising, confident. Headlines lead with provocation, body copy gives substance
+Matches, with strong provocative headlines
+Accessibility
+Contrast "must always be maintained"
+Small grey text on black needs a contrast test

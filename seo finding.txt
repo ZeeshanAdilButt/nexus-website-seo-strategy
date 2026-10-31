@@ -1,0 +1,43 @@
+11 web pages and 77 images are returning 404 errors. These errors can negatively affect user experience and make it harder for search engines and AI crawlers to access the intended content and resources.
+Whenever a page or image is removed or its URL is changed, we need to handle it carefully. Relevant pages should be redirected where appropriate, and broken image URLs should be corrected or restored to ensure the website remains accessible and properly crawlable.
+
+https://nexuscreativehq.com/become-partner
+https://nexuscreativehq.com/booking
+https://nexuscreativehq.com/booking?location=Accra
+https://nexuscreativehq.com/booking?location=London
+https://nexuscreativehq.com/booking?location=Shanghai
+https://nexuscreativehq.com/esg
+https://nexuscreativehq.com/investment
+https://nexuscreativehq.com/memberships
+https://nexuscreativehq.com/scale-up-journey
+https://nexuscreativehq.com/visa-routes
+https://nexuscreativehq.com/admin/page/podcast/@tomych
+
+
+When planning the site revamp for design and content, we need to check with the client whether they are mapping the exact pages or have a plan to add or remove any page.
+
+Currently, this business has the following pages:
+
+- https://nexuscreativehq.com/
+- https://nexuscreativehq.com/purpose
+- https://nexuscreativehq.com/contact
+- https://nexuscreativehq.com/locations
+- https://nexuscreativehq.com/events
+- https://nexuscreativehq.com/videos
+- https://nexuscreativehq.com/insights
+- https://nexuscreativehq.com/podcasts
+
+The blog page is on another domain:
+- https://www.nexusstartupdiaries.com/
+
+Pages related to policy terms and cookies:
+- https://nexuscreativehq.spaces.nexudus.com/legal/privacy?&v=4.0.700
+- https://nexuscreativehq.spaces.nexudus.com/legal/terms
+- https://nexuscreativehq.spaces.nexudus.com/legal/cookies
+
+Form pages:
+- https://nexuscreativehq.spaces.nexudus.com/login?&v=4.0.700
+- https://forms.zohopublic.eu/gracenexuscr1/form/NEXUSWebsiteEnquiryForm/formperma/8Ikc6HP6xDqPm1Cc4U4viXauqPRm9dl-n6TNOSzzP1I
+
+I have already tried some keywords that I have in mind, but I am not sure if these are the exact terms the client wants to rank for, or if they matter for him, especially understanding and targeting what our audience searches for, or what competitors are ranking for and generating business from, rather than just our own assumptions.
+

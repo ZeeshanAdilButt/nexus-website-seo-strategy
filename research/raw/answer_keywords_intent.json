@@ -1,0 +1,24 @@
+{
+  "id": "answer_ppnj5xcgox",
+  "object": "answer",
+  "created": 1793461948,
+  "task": "What are the most common Google search queries and questions that Chinese technology founders, Chinese companies and Asian scale-ups use when researching how to expand into the UK? Include keywords about setting up a company in the UK from China, UK market entry for tech companies, UK soft landing, UK expansion consultancy, doing business in the UK, and questions people ask ChatGPT or Perplexity. Group them by search intent (informational, commercial, transactional).",
+  "result": {
+    "json_content": "{\"result\":\"The passages do not provide Google search-volume data or verified “most common” queries, and they do not show what people ask Perplexity. The following are illustrative query ideas based on topics the passages cover, not a ranked or observed list.\\n\\nInformational\\n- “UK company registration from China” / “How to register a UK Ltd company from China?”\\n- “UK business expansion from Asian countries”\\n- “UK market entry for tech companies”\\n- “What does UK soft-landing support include?”\\n- “Doing business in the UK” / “Guide to establishing and running a business in the UK”\\n- ChatGPT-style prompt: “What should a Chinese technology company consider when expanding into the UK?” — illustrative, not a recorded query.\\n\\nCommercial\\n- “UK market-entry and soft-landing support for overseas businesses”\\n- “UK expansion advisory for Chinese companies”\\n- “UK cross-border tax, audit and company-structuring advice”\\n- “UK soft landing workspace, market-entry support and investor introductions”\\n\\nTransactional\\n- “Register a UK private limited company”\\n- “Apply for UK soft-landing support”\\n- “Contact a UK expansion adviser”\\n- “Get help setting up a UK company from China”\\n\\nThe passages do not substantiate the relative popularity of these searches, specific UK expansion consultancy search terms, or actual ChatGPT/Perplexity prompts.\"}",
+    "json_hosted_url": "https://olostep-storage.s3.us-east-1.amazonaws.com/answer_ppnj5xcgox.json",
+    "sources": [
+      "https://tradeandinvest.wales/doing-business-wales/finding-right-location/soft-landing",
+      "https://www.google.com/goto?url=CAESoAEB6zswFQzr5JBZZJk7flEb2mCXOjl0B9RndV4MaX3r4Nb_8SpCgnAXlmJPkGWXYt6xAWP7KEaTDm9ld2Lq_XysxJANzk2v2hXNosq7gAznC7p6qCWzdqmS9PtP_TbCN9m4muR-PKmasFBW_ipb5tbDlMFLYhIEGQX6BO09UNmUX50XHT6Jbn3taxvD09cBzgmMR5SZeIrOef-KaowXrz6b&gsessionid=MtLfMJ6SADNGrDR_9fG20jWeUWRLj1j6JJwg7jzpUc5GsvDQ6a7tzQ",
+      "https://www.google.com/goto?url=CAEStgEB6zswFX_ojT9R-JL1Gn0Trx5NB5vrN7MnLPQS3B86nEYNPK3KBXVxN6_zPX3Pvli83VhKk_nsW5fTDRto6PzGAtk2-KqIjkCbqgE0BzVXUynhNE7HBdkFddWZOmX8gRW58fdVe1qUERAiJL9lJjo17vnN4ogdqPKpWdP4Ry0lPDgzUGwq1H98P8YPvztyrwVceW8RjMevsXK-vgmK8jbswpg4VTwro6NHZ1AkMGOY1zUR4JPblw",
+      "https://www.google.com/goto?url=CAEStgEB6zswFdF7Jt6ZFGIPmjpDbU-yx4--iTTsxFv95aamC4E2ABfQilUFhBp6k7zJtvuV-1cXFICzqxFaVfYxQOdONIUbxV63PlWoqgQ_6KVTdkhDs7pvSy6BsAxvT48DSdhQYvSyVH421jME-PxEOUArGjGZYDIlfkJQtQ4ckdDjLdrDvUOTJ6nAyBwzMWC4zozsBGDwANOfGHMEcjtPTIUmqQLmAHavhdDLGZr4vGNN3IYddr6Kaw&gsessionid=MtLfMJ6SADNGrDR_9fG20jWeUWRLj1j6JJwg7jzpUc5GsvDQ6a7tzQ",
+      "https://www.blickrothenberg.com/insights/detail/the-uks-evolving-role-in-chinese-global-expansion/",
+      "https://www.google.com/goto?url=CAESfQHrOzAVBT2mqHdkzcGJT9_EcVOhKrhGazaOgdbVvXR-rQJvaNindN9L0pj6y9AyQw5saYORv-dOmrJKIhEA9U95kJhm8bpvjh9ojOQvMkFUfzoh0YaZKAen-YoTx2P4LIMP7vnfkLPJyEOMKjUqelQvzcVFGXouE-tKK4sP",
+      "https://www.facebook.com/www.ltdllc.co.uk/posts/how-to-register-a-uk-ltd-company-from-china-uk-limited-company-from-china-identi/1382191444086062/",
+      "https://iasservices.org.uk/international-immigration-lawyers-for-chinese-businesses-and-individuals/uk-company-registration-from-china/"
+    ]
+  },
+  "metadata": {},
+  "storage": {
+    "expires_in": "7d"
+  }
+}

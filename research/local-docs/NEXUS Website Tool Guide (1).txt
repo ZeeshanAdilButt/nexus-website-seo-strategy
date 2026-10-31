@@ -1,0 +1,499 @@
+
+PAGE 1
+NEXUS Website Tool Guide
+​Oct 31, 2026  · ​@Zee
+This guide explains the ten tools we recommend for the new NEXUS website: what each
+one does, why NEXUS needs it, how we will use it, and what it costs. All ten are free for
+what NEXUS needs. It accompanies the NEXUS Website Study.
+The ten tools at a glance
+Each account will be registered to a NEXUS-owned email address, with our team added as
+users, so NEXUS keeps full ownership of its data.
+#
+Focus area
+Tool
+When it comes
+in
+Cost
+1
+Protecting the old site's
+link value
+Ahrefs
+Webmaster Tools
+Now, before
+launch
+Free
+2
+Technical SEO checks
+and redirect testing
+Screaming Frog
+SEO Spider
+Staging and
+launch
+Free up to 500
+URLs
+3
+Visibility in Google
+search
+Google Search
+Console
+Now, then
+ongoing
+Free
+4
+Visibility in Bing and AI
+answers
+Bing Webmaster
+Tools
+Now, then
+ongoing
+Free
+5
+Keyword and competitor
+research
+Semrush
+Before copy is
+finalised
+Free, 10 reports
+a day
+6
+Audience research
+SparkToro
+Before launch
+Free, 3 previews
+a month
+7
+Message clarity
+Lyssna
+Before copy is
+finalised
+Free, 15
+responses
+8
+Visitor behaviour
+Microsoft Clarity
+From launch
+Free
+9
+Enquiry and conversion
+tracking
+Google Analytics
+4
+From launch
+Free
+10
+Speed and accessibility
+PageSpeed
+Insights
+Staging and
+launch
+Free
+NEXUS Website Tool Guide
+Page 1 of 11
+
+
+PAGE 2
+1. Ahrefs Webmaster Tools
+Focus area: protecting the old site's link value during the move · Cost: free for verified
+sites · ahrefs.com/webmaster-tools
+What it is. Ahrefs' free toolset for site owners, recently renamed "Ahrefs Free". It uses the
+same data as the paid Ahrefs product, limited to websites you prove you own.
+Why NEXUS needs it. 884 other websites link to nexuscreativehq.com. Those links are
+the main reason the domain is trusted, and they point at old addresses. If an old address
+simply disappears, the value of its links is lost. This tool shows exactly which old pages
+hold links, including the ones already returning errors.
+What it includes
+Site Explorer: every site linking to NEXUS, the pages they link to, and broken links.
+Site Audit: checks for more than 170 technical and on-page SEO issues, with advice on
+fixing each one.
+Web Analytics: a cookie-free traffic counter.
+How we will use it
+1. Verify nexuscreativehq.com, quickest by connecting Google Search Console.
+2. Export the "best by links" list, including pages that now return errors, and add every
+address on it to the redirect map.
+3. Check the quality of the linking sites, so we know which links matter most.
+4. After launch, run a monthly Site Audit on the new site and check that no linked address
+returns an error.
+Limits. It works only on websites you own: looking at competitors needs a paid plan. Site
+Audit has 5,000 crawl credits a month, plenty for this site, and Site Explorer shows up to
+1,000 backlinks or keywords at once.
+Paid upgrade. Ahrefs Lite, $129/month, adds competitor research, rank tracking and AI
+prompt checks, and connects directly to Claude.
+2. Screaming Frog SEO Spider
+Focus area: technical SEO checks and redirect testing · Cost: free up to 500 URLs ·
+screamingfrog.co.uk/seo-spider
+What it is. A desktop program for Windows, macOS and Linux that crawls a website the
+way a search engine does, then lists every page with its status, title, headings, canonical
+tag, redirects and broken links.
+NEXUS Website Tool Guide
+Page 2 of 11
+
+
+PAGE 3
+Why NEXUS needs it. Your brief's sign-off checks include unique titles and descriptions,
+one H1 per page, correct canonical tags, no broken links, and a single 301 redirect from
+every old address. This tool checks all of them in one crawl and produces reports we can
+hand over as evidence.
+How we will use it
+1. Crawl the staging site to find missing or duplicate titles and descriptions, pages
+without exactly one H1, wrong canonical tags, broken links and images without alt text.
+2. Test the redirect map: load the full list of old addresses and confirm each returns one
+301 to the right new page, with no chains or loops.
+3. Repeat on launch day against the live domain, then again a week after launch.
+4. Keep the exports as acceptance evidence.
+Limits. The free version crawls up to 500 URLs at a time, which covers this site, but it can't
+save crawls or render JavaScript, and some configuration options are locked.
+Paid upgrade. A licence costs £199 a year per user. It removes the limit and unlocks saved
+crawls, JavaScript rendering and Google integrations. NEXUS is unlikely to need it at this
+size.
+3. Google Search Console
+Focus area: visibility in Google search · Cost: free · search.google.com/search-console
+What it is. Google's own service for website owners. It is the only source of real data on
+which searches show NEXUS in Google, how often, and how many people click.
+Why NEXUS needs it. Your brief requires it, owned by a NEXUS account. Today NEXUS
+ranks for two searches, both for its own name. Search Console is where we will see
+whether the audience pages start appearing for searches from buyers who don't know
+NEXUS yet, the main SEO goal.
+Reports we will use
+Performance: searches, clicks, impressions, click-through rate and average position,
+for each page and each search term.
+Page indexing: which pages Google has indexed, and any errors such as old addresses
+returning 404.
+Sitemaps: submitting the new sitemap and checking Google reads it.
+URL Inspection: asking Google to crawl a key page as soon as it goes live.
+Core Web Vitals: real-visitor speed data, once traffic is high enough.
+How we will use it
+NEXUS Website Tool Guide
+Page 3 of 11
+
+
+PAGE 4
+1. Verify the domain through a DNS record now, so we have a baseline before the
+switchover.
+2. Submit the sitemap and inspect the key pages on launch day.
+3. Check daily for errors through awards week, then weekly.
+4. Track searches that don't include the NEXUS name for each audience page, and report
+them monthly.
+5. Link it to Google Analytics 4, Bing Webmaster Tools and Ahrefs, which can all import
+from it.
+Limits. Data covers the last 16 months, and only searches on Google.
+4. Bing Webmaster Tools
+Focus area: visibility in Bing and AI answers · Cost: free · bing.com/webmasters
+What it is. Microsoft's equivalent of Search Console, covering Bing search and, through its
+AI Performance report, Microsoft's AI answers.
+Why NEXUS needs it. Your brief requires it, and asks that AI assistants describe NEXUS
+accurately and send the right people to the right page. Bing Webmaster Tools is currently
+the only free source showing when an AI assistant cites your pages. Bing is also available
+in mainland China, where Google is not.
+The AI Performance report
+Covers citations in Microsoft Copilot, AI-generated summaries in Bing, and some
+partner AI services.
+Pages: which NEXUS pages are cited in AI answers, and how often.
+Grounding queries: the phrases the AI searched for when it picked your content, with
+your share of the citations for each.
+Exports to a spreadsheet for monthly reporting.
+How we will use it
+1. Add the site by importing it from Google Search Console. Data appears within about a
+day.
+2. Submit the new sitemap at launch, and turn on IndexNow so Bing hears about new and
+changed pages straight away.
+3. Check the AI Performance report monthly: which pages AI cites, and whether it
+describes NEXUS with the approved one-line description.
+4. Use the grounding queries to plan Insights articles and FAQ answers.
+NEXUS Website Tool Guide
+Page 4 of 11
+
+
+PAGE 5
+Limits. The AI report shows citations, not clicks or visits, and it can't be filtered by AI
+service. It covers Microsoft's AI services only, not ChatGPT or Google's AI answers.
+Sources: Practical Ecommerce, Search Engine Land.
+5. Semrush
+Focus area: keyword and competitor research · Cost: free, 10 reports a day · semrush.com
+What it is. One of the two leading SEO research platforms, alongside Ahrefs. It estimates
+how many people search for a term, how hard it is to rank for, and which websites rank for
+it now.
+Why NEXUS needs it. Each audience page should match what its buyers actually type.
+For example, would an international company search "UK market entry", "expand to the
+UK" or "soft landing UK"? Semrush answers that with UK search volumes, and shows
+which consultancies, agencies and programmes already rank, so we know who NEXUS is
+competing with in search.
+How we will use it
+1. Run Keyword Overview on the candidate terms for each audience page, using the UK
+database: monthly searches, difficulty and search intent.
+2. Pick one main term and two or three supporting terms per page, and pass them into
+the page titles, headings and copy.
+3. Run Domain Overview on the three to five sites ranking highest for those terms, to see
+what they rank for and how strong they are.
+4. After launch, recheck the main terms monthly.
+Limits. The free account allows 10 reports a day across all tools and one project, with
+results capped per report. That is enough for focused checks, so we will plan each day's 10
+reports in advance.
+Paid upgrade. The SEO plan costs $139/month ($117.33/month billed yearly) and removes
+the daily cap. A version with AI search tracking costs $199/month. Semrush connects
+directly to Claude.
+6. SparkToro
+Focus area: audience research · Cost: free, 3 preview reports a month · sparktoro.com
+What it is. An audience research tool. You describe an audience, for example people who
+talk about "UK market entry" or follow a particular account. It shows which websites,
+podcasts, YouTube channels and social accounts that audience pays attention to, and the
+words they use.
+NEXUS Website Tool Guide
+Page 5 of 11
+
+
+PAGE 6
+Why NEXUS needs it. Institutions and sponsors rarely arrive through Google. They come
+through events, partners, LinkedIn and the media they already follow. SparkToro shows
+where those audiences spend their time, so content, partnerships and awards promotion
+can go where they will be seen.
+How we will use it
+1. Spend the three free previews on the three audiences hardest to reach through
+search: international technology companies, innovation institutions and professional
+firms.
+2. List the publications, podcasts and accounts each audience follows, as targets for
+Insights distribution, PR and partnerships.
+3. Note the phrases each audience uses, and check them against the Semrush keyword
+research.
+Limits. The free plan shows preview data only. SparkToro's data comes mostly from the
+English-language web and social networks, so it says little about audiences on Chinese
+platforms such as WeChat. For China-based institutions, NEXUS's own partner knowledge
+will be the better guide.
+Paid upgrade. Business, $150/month, gives 25 full reports a month. Worth it only for a
+dedicated audience research project.
+7. Lyssna
+Focus area: message clarity · Cost: free, 15 responses from people you recruit ·
+lyssna.com
+What it is. A user research tool. Its five-second test shows a person a screen for five
+seconds, then asks them questions about what they remember and understood.
+Why NEXUS needs it. The brief's first goal for the home page is to "explain NEXUS in five
+seconds". A five-second test measures that directly, before launch, using the prototype. It
+is quicker and cheaper to fix a headline now than after launch.
+How we will use it
+1. Upload screenshots of the home page hero and the three audience page heroes from
+the prototype.
+2. Ask three questions: What does this company do? Who is it for? What would you click
+first?
+3. Send the link to 5 to 10 people from NEXUS's network, ideally one or two from each
+audience. Lyssna recommends 5 to 10 participants for this kind of test.
+NEXUS Website Tool Guide
+Page 6 of 11
+
+
+PAGE 7
+4. Read the answers as a group, and adjust the headlines or intro copy wherever people
+misread the offer.
+Limits. The free plan includes 3 seats and 15 responses from people you recruit yourself,
+so it suits one round of testing with the home page as the priority. Recruiting from
+Lyssna's paid participant panel costs extra.
+Paid upgrade. Growth, $166/month, removes the response limit for your own participants.
+Not needed for one round of testing.
+8. Microsoft Clarity
+Focus area: visitor behaviour · Cost: free, with no traffic limit · clarity.microsoft.com
+What it is. Microsoft's free behaviour analytics tool. It records anonymised sessions and
+builds heatmaps showing where visitors click, how far they scroll, and where they get
+stuck. Built-in AI summarises patterns across sessions and answers questions about the
+data.
+Why NEXUS needs it. Google Analytics shows that a visitor left a page. Clarity shows
+why: the headline they skipped, the logo they tried to click, the form field where they gave
+up. The approved home page has 15 sections, so we also need to know how far down
+visitors actually get.
+What it shows
+Heatmaps: click and scroll maps for each page, with AI summaries.
+Session recordings: individual visits played back, with key moments highlighted.
+Frustration signals: repeated clicks on the same spot, clicks that do nothing, and quick
+returns to the previous page.
+AI visibility: how AI services cite NEXUS content and how AI crawlers visit the site.
+How we will use it
+1. Install it behind the cookie banner. Since 31 October 2025, Clarity requires a valid
+consent signal for visitors from the UK, the EEA and Switzerland. Without consent it
+sets no cookies and collects only limited data.
+2. Keep form fields and personal data masked in recordings.
+3. Each week after launch, review the home and audience page heatmaps, and watch
+recordings of visits that started a form but didn't finish it.
+4. Report the top three usability fixes each month.
+Limits. Data comes only from visitors who accept cookies, and with low early traffic,
+patterns take a few weeks to emerge. Clarity offers its own connection for AI assistants,
+so its data can also be analysed with Claude. Source: Microsoft Learn, consent
+NEXUS Website Tool Guide
+Page 7 of 11
+
+
+PAGE 8
+management.
+9. Google Analytics 4
+Focus area: enquiry and conversion tracking · Cost: free · analytics.google.com
+What it is. Google's standard web analytics: who visits, where they came from, which
+pages they view, and which actions they take.
+Why NEXUS needs it. Your brief measures success by qualified enquiries, not traffic, and
+names the analytics events to track. Google Analytics 4 turns those events into
+conversion rates for each audience page and each traffic source.
+What we will measure
+How we will use it
+1. Set up all events from the brief through Google Tag Manager, loading only after cookie
+consent.
+2. Check each event fires once per action using DebugView before launch.
+Measure
+What it means
+Primary conversions
+Partnership calls, diagnostic requests and sponsor
+pack requests, marked as key events
+Other conversions
+Delegation interest, event interest, general
+enquiries, report requests
+Conversion rate per audience page
+Enquiries divided by visits to that page
+Form start to submit
+How many people who begin a form finish it. We
+recommend adding a form_start  event, which the
+brief doesn't list
+Engagement rate
+Share of visits lasting over 10 seconds, viewing 2 or
+more pages, or leading to a conversion
+Bounce rate
+The share of visits that are not engaged (100%
+minus the engagement rate)
+Home page route-through
+Share of home page visits that click through to an
+audience page: the "five seconds" goal in practice
+Traffic sources
+Search, AI assistants, LinkedIn, referrals,
+campaigns tagged with UTM codes
+NEXUS Website Tool Guide
+Page 8 of 11
+
+
+PAGE 9
+3. Build a funnel for each audience: landing page, audience page, form start, form
+submitted.
+4. Link it to Search Console, and set data retention to the 14-month maximum.
+5. Report monthly through a free Looker Studio dashboard.
+Limits. Google Analytics doesn't work reliably in mainland China, and it only counts
+visitors who accept cookies. Many institutions visit from China, so the source details
+saved with every form submission will be the most complete record of where enquiries
+come from.
+10. PageSpeed Insights (Lighthouse)
+Focus area: speed and accessibility · Cost: free · pagespeed.web.dev
+What it is. Google's page testing tool. It runs Lighthouse, which scores a page out of 100
+for performance, accessibility, best practice and SEO, and lists what to fix. Where a site
+has enough visitors, it also shows real-world speed data from Chrome users.
+Why NEXUS needs it. Your brief's sign-off checks are written in Lighthouse terms, so this
+is how we will prove the site passes:
+How we will use it
+1. Test every page template on mobile during the build, using Lighthouse in Chrome while
+staging is password-protected.
+2. Fix every issue that pulls a template below target.
+3. Re-test the live pages on launch day, and save the reports as acceptance evidence.
+4. Re-test monthly, and after any major content change.
+Check
+Target
+Mobile performance score, Home and audience
+pages
+85 or more
+Accessibility score, every page template
+95 or more
+Largest Contentful Paint (main content loaded)
+Under 2.5 seconds
+Interaction to Next Paint (response to a tap or
+click)
+Under 200 milliseconds
+Cumulative Layout Shift (page jumping while
+loading)
+Under 0.1
+NEXUS Website Tool Guide
+Page 9 of 11
+
+
+PAGE 10
+Alongside it. The free axe DevTools browser extension finds accessibility errors
+Lighthouse can miss. A mainland China speed test confirms that Home and the Asia
+corridor page load in under 5 seconds from China, as your brief requires.
+Limits. A new site won't have enough visitors for real-world speed data at first, so early
+results are lab tests.
+Supporting tools, paid options and connections
+Supporting free tools
+Optional paid tools
+None of these is needed for launch. Prices were checked on 31 October 2026, in US dollars
+unless stated, excluding VAT.
+Tool
+What we use it for
+Google Tag Manager
+Setting up the analytics events and linking them
+to cookie consent
+Looker Studio
+The monthly dashboard: conversions by type,
+conversion rate per audience page, top pages
+and channels, search terms
+Rich Results Test and Schema.org
+validator
+Checking the structured data that describes
+NEXUS, its services, events and articles to
+search engines
+axe DevTools (browser extension)
+Accessibility checks beyond Lighthouse
+A mainland China speed test
+Load times from inside China before launch
+Tool
+What it adds
+Price
+Ahrefs Lite
+Competitor research, rank
+tracking, AI prompt checks
+$129/month
+Semrush SEO
+Keyword and competitor
+research without the daily cap
+$139/month, or $117.33/month
+billed yearly
+Ubersuggest
+Lower-cost keyword research
+and site audits
+$29 to $99/month
+Similarweb
+Competitor traffic estimates
+Price on request
+NEXUS Website Tool Guide
+Page 10 of 11
+
+
+PAGE 11
+If you add one paid tool, we suggest Ahrefs Lite for the first three months after launch,
+about $387 in total.
+Working with Claude
+We use Claude to analyse the data from these tools and turn it into recommendations.
+Ahrefs, Semrush, Ubersuggest and Similarweb connect to Claude directly, though they
+need an account and, for Ahrefs and Similarweb, a paid plan. Clarity also offers a direct
+connection. For Search Console, Google Analytics, Bing Webmaster Tools and PageSpeed
+Insights, we export reports and analyse them with Claude.
+Sources
+Ahrefs pricing · Ahrefs Webmaster Tools · Semrush pricing · Screaming Frog SEO Spider ·
+Screaming Frog licence · SparkToro pricing · Lyssna pricing · Lyssna five-second testing ·
+Microsoft Clarity · Clarity consent management · Bing AI Performance report (Practical
+Ecommerce) · Ubersuggest pricing · Similarweb pricing · Matomo pricing ·
+AnswerThePublic pricing
+Tool
+What it adds
+Price
+Matomo
+Privacy-first analytics that can
+measure visitors in mainland
+China
+Self-hosted edition free; Cloud
+from 29/month excluding tax
+AnswerThePublic
+Questions people search for, for
+FAQs and Insights
+From $20/month
+Screaming Frog
+licence
+Crawls above 500 URLs, saved
+crawls
+£199/year
+SparkToro Business
+25 full audience reports a month
+$150/month
+Lyssna Growth
+Unlimited self-recruited
+responses
+$166/month
+NEXUS Website Tool Guide
+Page 11 of 11

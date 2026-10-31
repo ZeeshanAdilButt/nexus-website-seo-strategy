@@ -1,0 +1,22 @@
+{
+  "id": "answer_g7efj2ibb4",
+  "object": "answer",
+  "created": 1793462261,
+  "task": "Global Innovator Awards 2026 at The Dorchester London on 16 November 2026: who organises it, partners, press coverage, and what does it say about NEXUS Creative HQ? Also list any press coverage of NEXUS Creative HQ, S-Tron Shanghai participation, City of London Corporation partnership, RidgeCore Ventures and Tianjin MOU.",
+  "result": {
+    "json_content": "{\"result\":\"The Global Innovator Awards 2026 are scheduled for 16 November 2026 at The Dorchester in London. NEXUS created the programme; it is also described as powered by NEXUS. The Global Entrepreneur Programme (GEP) endorses it, and FounderX identifies itself as a Community Partner. Coverage and announcements in the passages include NEXUS’s own awards announcement, Michelle Hua’s awards post, and FounderX’s awards page. They describe NEXUS as a UK innovation hub connecting frontier-technology companies and ecosystems, helping founders establish, grow and scale in the UK, and as the creator of awards recognising international founders’ contributions here. For S-Tron Shanghai, the passages include a NEXUS announcement about a partnership and a 2025 item saying NEXUS would represent the UK at S-Tron Shanghai. They do not establish NEXUS’s participation in the 2026 event. The passages provide no supported press-coverage details about a City of London Corporation partnership, RidgeCore Ventures, or a Tianjin MOU.\"}",
+    "json_hosted_url": "https://olostep-storage.s3.us-east-1.amazonaws.com/answer_g7efj2ibb4.json",
+    "sources": [
+      "https://www.google.com/goto?url=CAESXgHrOzAV9MtE10b-oG9x3nwPC5crfMYbXIRqY8PqeDRq56UAg_itJ4OlvkMW0sv00SB1ZcRWZxc0gaQiKiqwyXapHSxvypjrEqT2btB00k-VkDG-EQWc8UU8JtlMVtM",
+      "https://www.google.com/goto?url=CAESYwHrOzAVgV_0h8b2cllAoLZtvHUyT8uftKQq-YKloDq_yHgFBsNbdnWMM3Wos91zryxzaDOgSdQ6GKba72JyoybQtSxQwtoFITZZWW6hCcLIrbYOyZo6sdMVl09LXN_C1cQPEg",
+      "https://www.founderx.co.uk/global-innovator-awards",
+      "https://www.google.com/goto?url=CAESbQHrOzAVw0P_aYoQQEnKH8zpgh36fhYi5jwPUKTa4VFqeQ6MJaZtUGIZKQBM3Hzshd0YAyKPi1QcWGgvzXV8ahuVNf13ppv0zLmz1wQGMt6cx_Q7kNsY76W_3oVA58zuIF3kOlxcHsWdX1oQfEg",
+      "https://nexuscreativehq.com/event/14",
+      "https://michellehua.co.uk/the-global-innovator-awards-2026/"
+    ]
+  },
+  "metadata": {},
+  "storage": {
+    "expires_in": "7d"
+  }
+}

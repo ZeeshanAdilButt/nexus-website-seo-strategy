@@ -1,0 +1,981 @@
+NEXUS Website Developer Brief
+This brief sets out what we need you to build for the new NEXUS website, why we need it, and how we will agree that the work is complete. Please use it to scope, quote and plan the work, and come back to us with questions before you assume anything. At the same time, we would welcome the same creative direction and feedback you provided when you built our custom 
+globalinnovatorawards.com
+.
+Each requirement carries one of three labels:
+Label
+What it means for you
+Approved
+We have decided this. Please build it as described
+To confirm
+We will confirm the detail. Build in a way that lets us change it later, or use a placeholder
+Optional
+A possible future addition. Please price it separately
+What we have for you:
+Clickable prototype.
+ Our prototype of the main pages, header and footer. Treat it as the guide to layout, section order and copy. We will share access with you.
+NEXUS Brand Guidelines 2025
+, plus our logo files and fonts.
+NEXUS Member Case Studies:
+ seven case studies for the site.
+Photography
+ from our China work, events and team. This will be forthcoming so in the meantime use placeholders.
+1. The project in brief
+Who we are.
+ NEXUS (NEXUS Creative HQ Ltd, company number 12667243) helps technology businesses land, grow and scale in the UK. Our main international corridor is China, within a wider Asia focus. We work with three groups of clients:
+innovation institutions such as science parks, innovation zones, hubs and funds
+international technology companies entering the UK
+UK technology scale-ups that are already trading
+Professional firms such as law, accountancy and banking firms partner with us and sponsor our events. We also review and endorse Innovator Founder visa applicants as a consortium partner of UK Endorsing Services (UKES). That work must always be kept separate from our commercial services on the site.
+Why we are rebuilding.
+ Our current site, www.nexuscreativehq.com, describes what we used to do rather than what we sell. It has no service pages, no clear routes for each type of client, no case studies and no proper enquiry routes. The new site has to explain our offer clearly, prove it, and turn the right visitors into enquiries.
+What success looks like.
+ A steady flow of qualified enquiries from each type of client, with the source of each one recorded: partnership calls, diagnostic requests, sponsor pack requests and delegation registrations.
+Target launch.
+ We want the new site to replace our current website before the Global Innovator Awards on 16 November 2026. Please aim to go live by Thursday 12 November, and tell us in your proposal whether that is achievable. If it is not, tell us what can go live by then; our priorities are in section 12. You will not need access to our current website: we will send you the list of current addresses, the existing articles, our content and access to our domain settings for the switchover.
+In scope:
+all Phase 1 pages in section 3
+header and footer
+enquiry forms and lead capture (section 7)
+redirects from every current address
+security hardening (section 9)
+structured data, analytics and cookie consent
+loading our approved content and placeholders
+testing and handover
+Not in scope unless we agree it separately:
+writing new copy
+translation
+photography
+ongoing maintenance
+a client login area
+2. Decisions we have already made
+Decision
+What it means for you
+Status
+A new custom build
+Build a new custom website, as you did for the Global Innovator Awards. Tell us which platform, hosting and languages you propose, and why
+Approved
+Brand guidelines
+Follow the NEXUS Brand Guidelines 2025 exactly (section 5). Where the prototype differs from the guidelines, the guidelines win.
+Approved
+"Asia corridor"
+The navigation item and page are called 
+Asia corridor
+, at 
+/asia-corridor
+. The page content presents China as our flagship corridor, with Hong Kong as our gateway to the wider region
+Approved
+No Chinese-language pages at launch
+Do not build separate Chinese pages. Make it possible to add a language switcher later without rebuilding (section 7)
+Approved
+No Zoho integration
+Do not connect to Zoho. Forms must store enquiries securely, notify us by email, and be ready to send data to a CRM we will build separately (section 7)
+Approved
+Placeholders
+Where copy or images are still outstanding, use clearly marked placeholders that we can replace through the content management system
+Approved
+PHP security
+The site must address the critical PHP vulnerabilities announced by the NCSC on 21 October 2026, and any later ones (section 9)
+Approved
+3. Sitemap and navigation
+Header (every page):
+ 
+Institutions · International companies · UK scale-ups · Asia corridor · Insights · Events · About
+On the right, show "Partner with NEXUS" and a 
+Talk to us
+ button. Below 1100 px wide, collapse the navigation into a Menu button. There is no language link at launch. 
+Approved
+Footer:
+Who we help:
+The three audience pages, plus Partner with NEXUS
+Explore:
+ 
+Asia corridor, Results, Events, About and team, Endorsing role, Insights
+Contact:
+ 
+Talk to us, email address, social links
+Legal line and legal links
+Approved
+Page
+Address
+Purpose
+Primary action
+Phase
+Home
+/
+Explain NEXUS in five seconds and send each visitor to the right page
+Find your route; Talk to our team
+1
+For institutions
+/institutions
+Sell UK Representation and UK Landing Programmes
+Book a partnership call
+1
+For international companies
+/international-companies
+Sell the Market-Entry Diagnostic, UK Soft Landing and Market Intelligence Reports
+Request a diagnostic
+1
+For UK scale-ups
+/uk-scale-ups
+Sell the Growth Diagnostic and partner-delivered projects
+Request a diagnostic
+1
+Asia corridor
+/asia-corridor
+Show our corridor, led by China, and capture interest in 2027 delegations
+Register for 2027 delegations
+1
+Partner with NEXUS
+/partner-with-nexus
+Sell event sponsorship and referral partnerships to professional firms
+Request the sponsor pack
+1
+Results
+/results
+ and 
+/results/{slug}
+Our case studies (seven are ready)
+The matching audience action
+1
+Events
+/events
+The Global Innovator Awards (GIA) and our session series
+Get tickets (GIA site); Register interest
+1
+Event detail
+/events/{slug}
+One page for each session
+Register
+2
+About
+/about
+Our story, team, mentors and partner network
+Talk to us
+1
+Endorsing role
+/about/endorsing-role
+A factual explanation of our UKES role
+Go to UKES
+1
+Contact
+/contact
+The three enquiry routes plus a general form
+Forms
+1
+Insights
+/insights
+ and 
+/insights/{slug}
+Our intelligence hub: articles, guides, event notes and reports, including those moved from the current site
+Read; download
+1, with topic filters
+Legal
+/privacy
+, 
+/cookies
+, 
+/terms
+, 
+/accessibility
+Compliance
+None
+1
+The page list is 
+Approved
+. Page names and copy are 
+To confirm
+; use the prototype copy until we send final versions.
+4. Page-by-page specifications
+Use the prototype as your guide to layout, section order and copy. Build reusable components first, then assemble pages from them, so our team can edit content without you.
+4.1 Components to build
+Component
+What it must do
+On mobile
+Announcement bar
+One line of text and a link above the header. Editable in the CMS, and can be switched off
+Wraps to two lines
+Header
+Black background, white logo linking home, six navigation items, Partner with NEXUS, and a Talk to us button in Electric Yellow. Mark the current page with a yellow underline
+Logo, Talk to us and a Menu button that opens the full list. The menu must work by keyboard, set 
+aria-expanded
+ and close with Escape
+Footer
+Black background with logo, tagline, link columns, contact details, social links, and the legal line "© 2026 NEXUS Creative HQ Ltd · Company number 12667243 · [registered office]"
+Columns stack
+Hero
+Black or white background. Eyebrow line, H1 in Neutral Face Bold, intro, two buttons, image. Breadcrumb on inner pages
+Image moves below the text
+Proof strip
+Up to four statistics and a row of partner logos, managed in the CMS
+Two columns; logos wrap
+Audience cards
+Three cards, each with a tag, title, short text and link
+Stack
+Offer card
+Tag, title, intro, bulleted inclusions and a price line (a CMS field that can say "On application")
+Stack
+Step list
+Numbered steps, each with a title and one line
+Stack
+Case study card
+Sector tag, company name, one-line headline, the main outcome, and a link to the full case study
+Stack
+Quote block
+Founder quote with name, role and company
+Full width
+FAQ accordion
+Accessible accordion, also output as FAQPage structured data
+Full width
+Contact route tiles
+Three tiles, each with a title, one line and a button
+Stack
+Enquiry form block
+Heading, intro, a "What happens next" list, and the form (section 7)
+Form moves below
+Event card
+Image, date, title, description and buttons (CMS collection)
+Stack
+Team member
+Black and white portrait, name, role and optional profile
+Grid wraps
+Placeholder
+A clearly marked box or image with the text "[Placeholder: …]", shown wherever copy or images are outstanding. Each one is replaced through the CMS and can be hidden with a toggle
+Same
+Brand rule for every page:
+ Electric Yellow is an accent only. Use it for buttons, tags, underlines, icons and highlights, never as a section background. Section backgrounds are plain: black, white or Studio Grey. The prototype uses yellow section backgrounds in places; follow the guidelines instead.
+4.2 Home
+Build the sections in this order:
+Announcement bar (GIA until 16 November, then highlights)
+Header
+Hero
+ on black:
+H1: "Land, grow and scale technology businesses in the UK."
+Buttons: Find your route; Talk to our team
+Image: the Tianjin signing photograph, with its caption 
+To confirm
+Proof strip:
+100+ businesses actively supported
+16 carefully curated global partnerships
+1,400+ business plans assessed
+Supplier and security cleared
+Logos: City of London, TEDA, S-Tron and CBBC (
+To confirm
+ each permission)
+Who we work with:
+ three audience cards (anchor 
+#routes
+)
+How we work:
+ five steps and a photo
+Asia corridor
+, led by China: five partner cards (RidgeCore Ventures, Alibaba Entrepreneurs Fund, Tianjin, S-Tron, Swiss Bluefaer Innovation Centre), a line on Hong Kong as our gateway, and two buttons, on white with the yellow top rule
+Results:
+ three case study cards (Sentian Aerospace, GI Healthcare, Auto Impartial) and a link to 
+/results
+Events
+ on black: the session series and GIA
+Partner network:
+ category chips and a link for firms
+The team
+ (anchor 
+#about
+): a founder quote placeholder and team portraits
+Insights:
+ three latest articles, plus a placeholder card for the China 2027 report and an All insights link
+Common questions:
+ five FAQs
+Contact routes
+ (anchor 
+#contact
+): three tiles
+Footer
+4.3 Audience pages (institutions, international companies, UK scale-ups)
+One template:
+Hero with breadcrumb
+The challenge
+What we provide (offer cards)
+Why us, with evidence and case studies
+Who it is for and not for
+How it works (anchor 
+#how
+)
+Questions
+Enquiry form (anchor 
+#start
+)
+Footer
+Page
+Offers
+Case studies to show
+Institutions
+UK Representation; UK Landing Programme
+Placeholder: "[Institution case study]"
+International companies
+Market-Entry Diagnostic; UK Soft Landing; Market Intelligence Report
+DarkhorseOne; Eco2Life; Smart Patent
+UK scale-ups
+Growth Diagnostic; partner-delivered projects; ongoing access (name 
+To confirm
+)
+GI Healthcare; Sentian Aerospace
+4.4 Asia corridor
+H1:
+ "Our Asia corridor, led by China." Use the prototype copy, with "Asia corridor" in place of "China corridor".
+Sections:
+Hero
+Our partners across Asia: RidgeCore Ventures (China), Alibaba Entrepreneurs Fund (Hong Kong), Tianjin, S-Tron (Shanghai) and Swiss Bluefaer Innovation Centre (Shanghai), plus a Why Hong Kong card and a logo row. Show the Alibaba Entrepreneurs Fund and Swiss Bluefaer by name only, with placeholder wording and no logo, until each confirms in writing
+Where we have been: a timeline managed in the CMS
+Case studies with Asia links: Auto Impartial, Eco2Life, Smart Patent
+2027 delegations to mainland China and Hong Kong, with a destination field on the form: details are a placeholder; include the interest form (anchor 
+#delegations
+)
+Remove
+ the Chinese-language block shown in the prototype.
+4.5 Results
+Listing page:
+ all case studies as cards, filterable by audience in Phase 2.
+Each case study page:
+sector, website link, headline
+About the company, The challenge, How NEXUS helped, The outcome
+Impact at a glance (three short points)
+the founder quote
+a link to the matching audience page
+Content comes from our NEXUS Member Case Studies document (section 6).
+4.6 Partner with NEXUS and Events
+Partner with NEXUS:
+Hero
+Who you will meet, with statistics
+Three ways to partner
+Sponsor pack form (anchor 
+#start
+)
+Events:
+Hero
+Coming up: GIA and the session series (name and venue as placeholders)
+Past events
+Event interest form (anchor 
+#register
+)
+4.7 About, Endorsing role, Contact, Insights, Legal
+These pages are not in the prototype; build them from the same components.
+About:
+ our story, team and mentors, partner categories, clearance.
+Endorsing role:
+ about 200 words of plain text explaining our UKES consortium role, with a link to UKES. No commercial call to action. Wording 
+To confirm
+; use a placeholder until we send it.
+Contact:
+ the three route tiles plus a general form.
+Insights:
+ see section 4.8.
+Legal:
+ standard rich-text pages; we will supply the text.
+4.8 Insights
+Insights is where we share our intelligence: what we see across the UK and Asia from the companies we support, the markets we work in and our partners. It also feeds search and AI answers, and gives our team something useful to send to prospects. Follow the Insights board in the prototype. 
+Approved
+ for structure; topics and first articles 
+To confirm
+.
+Listing page sections:
+Hero
+Featured insight, chosen in the CMS
+Topic filters (All, Asia corridor, Market entry, Funding and IP, CreaTech, Events) and a grid of cards showing image, topic, format, title and summary. Staff can add or rename topics in the CMS
+Report: Doing Business in China 2027, with a request form. In Phase 1 the form records interest; the gated download follows in Phase 2
+Monthly email sign-up, The NEXUS Briefing (working name), recording consent
+Links to NEXUS Startup Diaries and Events
+Article template:
+ title, summary, author with photo and role, date, reading time, topic, format, hero image with alt text, and a body with headings, pull quotes, images and embedded video. End each article with related case studies and insights, a call to action matched to the topic (for example, Asia corridor articles link to the delegation form) and share links. Add Article structured data with author and date.
+Formats
+ in the CMS: Article, Guide, Report, Event notes and Founder story.
+Forms:
+ the report and email sign-up forms use the standard field schema in section 7, with form_type set to report or newsletter.
+Migration:
+ load the existing articles we send you (we will remove duplicates first), and redirect each old /insight/{id} address.
+Placeholders:
+ the proposed article topics in the prototype are placeholders until we send approved text. Do not publish an article that names a partner until we confirm the partner has approved it.
+5. Brand implementation
+Follow the NEXUS Brand Guidelines 2025. The key rules are below; if anything here conflicts with the guidelines, the guidelines win. 
+Approved
+Element
+Requirement
+Colours
+Pitch Black 
+#000000
+ (primary, dominant) · Electric Yellow 
+#DFFF13
+ (primary accent) · Studio Grey 
+#D1D1D1
+ (secondary, neutral) · Pure White 
+#FFFFFF
+ (background, negative space). Use no other colours, except a slightly darker grey for secondary text where contrast requires it (agree this with us)
+Colour use
+Backgrounds are plain. Electric Yellow is an accent, never a background, and never text on white. Black text on yellow is allowed for accents only. White on grey is not allowed. Every text and background pair must meet WCAG AA contrast (4.5:1, or 3:1 for large text)
+Logo
+Use the supplied wordmark files only (SVG preferred). Approved: metallic on white (primary), white on black (primary), black on yellow (accent use). Never metallic on grey. Do not stretch, skew, recolour, add effects or place it on busy backgrounds. Alt text: "NEXUS"
+Headline typeface
+Neutral Face Bold, for headlines, brand statements and display text only
+Body typeface
+General Sans in Light, Regular, Medium and Bold, for body copy, captions, navigation and interface text. Base size 17 px, line height 1.6
+Fonts on the web
+Self-host the font files. Please confirm with us that our licences cover web use before launch. Do not load fonts from Google or other third parties
+Tone in layout
+Bold and confident: large headlines, generous white space, clear contrast, and real NEXUS photography (China signings, S-Tron, dinners, GIA, team). Team portraits in black and white. No stock or AI-generated images
+Buttons
+Pill shape, at least 48 px tall, bold label. Primary: Electric Yellow with black text. Secondary: outline. Visible focus ring on every interactive element
+Layout
+1200 px maximum content width; 32 px gutters (20 px on mobile); 64 to 112 px between sections
+Motion
+Hover and focus states only. Respect 
+prefers-reduced-motion
+Test at 360 px (phone), 768 px (tablet), and 1280 px and 1440 px (desktop).
+6. Content and assets
+Where copy or images are still outstanding, use clearly marked placeholders (section 4.1) so the build is not held up. We will replace each one through the CMS. Do not write substitute claims, statistics, testimonials or case studies.
+Status
+Item
+Notes
+Ready
+Brand guidelines, logo files and fonts
+NEXUS Brand Guidelines 2025
+Ready
+Seven case studies with founder quotes: GI Healthcare, Sentian Aerospace, Auto Impartial, DarkhorseOne, Eco2Life (EcoDo), Smart Patent, Readii
+From our NEXUS Member Case Studies document. Use the structure in section 4.5. Do not refer to visa or endorsement status in any case study
+Ready
+Statistics: 100+ businesses actively supported, 16 curated global partnerships, 1,400+ business plans assessed, supplier and security cleared
+Ready
+Asia corridor facts: RidgeCore Ventures; two MOUs with Tianjin (partner names and dates To confirm); S-Tron Shanghai (exhibiting in 2025, speaking in 2026); CBBC membership. Alibaba Entrepreneurs Fund and Swiss Bluefaer Innovation Centre: names only until wording is approved
+Ready
+Team and mentor names, roles and portraits
+Ready
+Existing insight articles
+We will send these to you, with duplicates removed
+Ready
+Prototype copy for the main pages
+Use as working copy; we may revise it
+To confirm
+Partner logo permissions (City of London, TEDA, S-Tron, CBBC)
+Use placeholders until confirmed
+To confirm
+Prices and price lines for each offer, including the diagnostic fee
+Use "On application" until confirmed
+To confirm
+Endorsing role wording
+Placeholder
+To confirm
+Founder quote; institution case study or testimonial
+Placeholders
+To confirm
+General email address, registered office, response-time promise
+Placeholders
+To confirm
+Session series name, venue partner, first date and topic
+Placeholders
+To confirm
+2027 delegation destinations, dates and price range
+Placeholder
+To confirm
+Legal pages: privacy, cookies, terms, accessibility statement
+We will supply after legal review
+To confirm
+Further photography (GIA, case study companies)
+Placeholders, or images from our existing library
+Optional
+Doing Business in China 2027
+ report
+Placeholder card until the report exists
+7. Forms, enquiries and functionality
+We are not using Zoho. We will build our own CRM as a separate project. Until then, every enquiry must be stored safely on the website, emailed to us, and be ready to send to that CRM later without rebuilding the forms. 
+Approved
+How every form must behave
+Check required fields and email format; show clear, accessible error messages.
+Save the submission to the website's database. Our team must be able to view, filter and export submissions (CSV) in the admin area, with access limited to named NEXUS users.
+Email the submission to the right NEXUS inbox for that form within 5 minutes. Addresses are 
+To confirm
+; make them editable in the CMS.
+Send the person an acknowledgement email; the wording is editable in the CMS.
+Show a thank-you message on the page.
+Optionally, send the submission as JSON to a webhook address we can enter in the CMS later. This is how our new CRM will receive leads. Build the webhook in Phase 1 but leave it switched off.
+Record the source with every submission: page address, form name, button used, UTM source, medium and campaign, referrer, first landing page, and date and time.
+Use one consistent set of field names across all forms, so our CRM can read them:
+Field
+Key
+Used on
+Form type
+form_type
+ (
+partnership_call
+, 
+diagnostic_international
+, 
+diagnostic_scaleup
+, 
+sponsor_pack
+, 
+delegation_interest
+, 
+event_interest
+, 
+general
+, 
+report_download
+)
+All
+Name
+name
+All
+Work email
+email
+All
+Organisation
+organisation
+All
+Role
+role
+Partnership call, sponsor pack
+Country
+country
+Partnership call, international diagnostic
+Organisation type
+organisation_type
+Partnership call, event interest
+Sector
+sector
+Diagnostics, delegation
+Stage or revenue band
+stage
+Diagnostics
+Timeline
+timeline
+International diagnostic
+Main interest or challenge
+interest
+Most forms
+Budget band
+budget_band
+Sponsor pack (optional field)
+Message
+message
+Most forms
+Marketing consent
+marketing_consent
+ (true or false, never pre-ticked)
+All
+Source fields
+page_url
+, 
+cta
+, 
+utm_source
+, 
+utm_medium
+, 
+utm_campaign
+, 
+referrer
+, 
+landing_page
+, 
+submitted_at
+All (hidden)
+Other functionality
+Feature
+What it must do
+Status
+Navigation and mobile menu
+As in section 4.1
+Approved
+Diagnostic requests
+Phase 1: a request form only. We reply with a booking and payment link by hand. Phase 2: online booking with card payment, if we approve it
+Phase 1 approved; Phase 2 To confirm
+Sponsor pack
+Form, then we email the pack by hand (or automatically if you can attach a PDF from the CMS)
+Approved
+Spam protection
+Hidden honeypot field plus server-side rate limiting. 
+Do not use Google reCAPTCHA
+, which is blocked in mainland China
+Approved
+Content management
+Our staff can edit text, images, statistics, logos, FAQs, case studies, events, team, insights, placeholders and the announcement bar without code, with draft and preview before publishing. At least two roles: editor and admin
+Approved
+Cookie consent
+Accept, reject and manage options. Analytics load only after consent
+Approved
+Language switcher
+Not at launch. Later we may add a switcher that changes the site between English and Chinese with one click, using a website translation service with human editing (for example Weglot). Build the templates so this can be added without a rebuild: text kept out of images, and room in the header for one icon
+Optional (future)
+Site search
+Not needed at launch
+Optional
+8. Technical requirements
+Platform.
+ Please build a new custom site, as you did for the Global Innovator Awards. In your proposal, tell us:
+the platform, languages and hosting you will use
+how our team will edit content
+how the site will be kept patched
+We prefer the approach with the fewest moving parts that we can maintain safely, and pages that are pre-built (static or cached) wherever possible. 
+Approved
+ principle; your recommendation 
+To confirm
+.
+Area
+Requirement
+Responsive
+Mobile-first. No horizontal scrolling at 360 px. Touch targets of at least 44 px
+Accessibility
+WCAG 2.2 AA. Pinch-to-zoom enabled (no 
+maximum-scale=1
+ or 
+user-scalable=0
+). One H1 per page, semantic landmarks, visible focus, labelled form fields with clear errors, alt text, reduced-motion support. Publish an accessibility statement
+Performance
+On mobile 4G, for key pages: Largest Contentful Paint under 2.5 s, Interaction to Next Paint under 200 ms, Cumulative Layout Shift under 0.1. Compressed responsive images (WebP or AVIF), self-hosted fonts, minimal third-party scripts
+Access from mainland China
+No Google Fonts, Google Maps, reCAPTCHA or YouTube embeds on key pages. Use a CDN that serves Asia. Test load times from a mainland China location before launch
+Privacy (UK GDPR)
+Privacy notice linked on every form. Collect only the listed fields. Marketing opt-in never pre-ticked. Agreed retention period with automatic deletion. A way to delete a person's data on request
+Analytics
+GA4 (or an agreed privacy-first alternative) with the events in section 11, loaded only after consent. Google Search Console and Bing Webmaster Tools
+Redirects
+A full 301 map from every current address (including each 
+/insight/{id}
+, 
+/event/{id}
+, 
+/video/{id}
+ and 
+/podcast/{id}
+) to its new address. No redirect chains. A custom 404 page linking to the three audience pages. We will send you the list of current addresses.
+Browsers
+The latest two versions of Chrome, Edge, Safari (macOS and iOS) and Firefox, plus Samsung Internet
+Hosting and backups
+UK or EU hosting; daily backups kept for at least 30 days, stored separately from the server; one restore tested before launch
+Minimum legacy redirects
+Current address
+New address
+/purpose
+/about
+/memberships
+, 
+/esg
+, 
+/scale-up-journey
+, 
+/investment
+/uk-scale-ups
+/visa-routes
+/about/endorsing-role
+/become-partner
+/partner-with-nexus
+/booking
+, 
+/locations
+/contact
+/videos
+, 
+/podcasts
+/insights
+9. Security, including the PHP vulnerabilities
+On 21 October 2026 the NCSC issued an alert about two critical PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619. The NCSC says they may let attackers execute commands on any web server running PHP, and that organisations using any version of PHP are affected (
+NCSC alert
+). The new site must be protected against these and any future vulnerabilities. 
+Approved
+What the new website must include
+Inventory.
+ Give us a written list of every component and its version: platform, language runtime (including PHP if used), plugins, libraries, server software and third-party services. Keep it updated.
+Supported versions only.
+ If PHP is used anywhere, run a currently supported PHP branch, patched to the latest fixed release at launch. No end-of-life software of any kind.
+Smallest attack surface.
+ Prefer pre-built pages, with form handling in one small, hardened endpoint. Remove unused plugins, extensions and features. Turn off error display on the live site. Give each component only the permissions it needs.
+Patching commitment.
+ Apply critical security updates within 48 hours of release, and other security updates within 14 days. Put this in the support agreement and tell us when it has been done.
+Vendor monitoring.
+ Watch security notices for every third-party product the site depends on, including any that bundle PHP, and apply their updates.
+Protection layers.
+ HTTPS everywhere with HSTS. A web application firewall or CDN protection. Security headers (Content-Security-Policy, X-Content-Type-Options, frame-ancestors, Referrer-Policy). Rate limiting on forms and the admin login.
+Admin access.
+ Strong unique passwords and two-factor authentication for every admin account. Admin area not publicly advertised. Accounts removed when people leave.
+Data.
+ Enquiry data encrypted in transit and at rest. Admin and database access logged. Backups protected.
+Testing.
+ Before launch, run a vulnerability scan and a dependency audit, fix every high or critical finding, and send us the results.
+Monitoring.
+ Uptime monitoring and alerts for unexpected file changes, with a named contact who responds to security incidents.
+As a UK Government supplier with security clearance, we expect these controls to follow the NCSC's guidance and the Cyber Essentials standard. Please confirm in your proposal that they will.
+10. Search and AI discoverability
+We want search engines and AI assistants to describe NEXUS accurately and send the right people to the right page. Please build in the following. 
+Approved
+Addresses and indexing
+Lower-case, hyphenated, readable addresses, as in section 3.
+A self-referencing canonical tag on every page.
+An automatically generated XML sitemap, submitted to Google Search Console and Bing Webmaster Tools.
+robots.txt that allows public pages and blocks admin, search and thank-you pages. Thank-you pages are also 
+noindex
+.
+No duplicate articles; the redirect map resolves the duplicates on the current site.
+Page markup
+One H1 per page, then H2 and H3 in order.
+All copy as real HTML text, never text in images.
+Descriptive alt text on meaningful images; empty alt on decorative ones.
+Open Graph and Twitter card tags with a 1200 × 630 image for each main page.
+Titles and meta descriptions.
+ Use these until we send final versions (
+To confirm
+):
+Page
+Title
+Meta description
+Home
+NEXUS | Land, grow and scale technology businesses in the UK
+NEXUS helps international technology companies, the institutions behind them and UK scale-ups land, grow and scale in the UK, with China as our flagship corridor.
+Institutions
+UK representation for innovation institutions | NEXUS
+UK Representation and Landing Programmes for science parks, innovation zones, hubs and funds. Your operating partner in the UK.
+International companies
+UK market entry for technology companies | NEXUS
+Enter the UK with a team on the ground: market-entry diagnostic, soft landing support, market intelligence and vetted specialist partners.
+UK scale-ups
+Growth diagnostic for UK tech scale-ups | NEXUS
+A focused growth diagnostic, then partner-delivered projects in go-to-market, investment readiness, AI adoption and tax. One contact throughout.
+Asia corridor
+UK and Asia innovation corridor, led by China | NEXUS
+Our working corridor between the UK and Asia, led by China, with Hong Kong as our gateway, partners on the ground and 2027 delegations.
+Results
+Results and case studies | NEXUS
+How NEXUS has helped technology founders build in the UK, from first customers to an international acquisition.
+Partner with NEXUS
+Sponsorship and referral partnerships | NEXUS
+Meet international founders, UK scale-ups and innovation institutions through NEXUS sessions, the Global Innovator Awards and referrals.
+Events
+Events and the Global Innovator Awards | NEXUS
+NEXUS sessions, the Global Innovator Awards and delegations, bringing founders, institutions and specialists together.
+Structured data (JSON-LD).
+ Validate everything with Google's Rich Results Test and the Schema.org validator.
+Organization
+ (site-wide):
+name
+ "NEXUS" and 
+legalName
+ "NEXUS Creative HQ Ltd"
+url
+, 
+logo
+ and 
+description
+identifier
+ (12667243)
+address
+ (to confirm) and 
+contactPoint
+sameAs
+ links to our LinkedIn, Instagram, X and Facebook
+Service
+ for each named offer.
+Event
+ for GIA and each session.
+Article
+ for insights and case studies.
+Person
+ for the leadership team.
+FAQPage
+ where there are questions.
+BreadcrumbList
+ on inner pages.
+Use these descriptions wherever NEXUS is described:
+One line:
+ NEXUS helps technology businesses land, grow and scale in the UK, with China as its flagship corridor.
+One paragraph:
+ NEXUS is the UK growth partner for international technology companies, the innovation institutions that back them, and UK scale-ups ready for their next stage. China is our flagship corridor and Hong Kong our gateway to the wider region, with partners on the ground in China and membership of the China-Britain Business Council. We have assessed more than 1,400 business plans and actively supported more than 100 businesses.
+Internal links
+Each audience page links to the Asia corridor, Results and at least two relevant insights.
+Each case study links to its audience page.
+Use descriptive link text, never "click here".
+No special AI files or tactics are needed. Clear text, consistent descriptions, valid structured data and pages that crawlers can read are what matter.
+11. Conversion tracking and measurement
+We measure success by qualified enquiries, not traffic. Please track these events in analytics (after consent). Each form submission is also stored with its source fields (section 7). 
+Approved
+Event name
+Fires when
+Key parameters
+Conversion
+partnership_call_request
+Institutions form submitted
+page, organisation_type, interest
+Primary
+diagnostic_request
+Either diagnostic form submitted
+page, form_type, sector, stage
+Primary
+sponsor_pack_request
+Partner form submitted
+interest, budget_band
+Primary
+delegation_interest
+Delegation form submitted
+sector, interest
+Yes
+event_interest
+Event form submitted
+organisation_type
+Yes
+general_enquiry
+Contact form submitted
+page
+Yes
+report_download
+Report form submitted (when the report exists)
+report_name
+Secondary
+cta_click
+Any primary or secondary button clicked
+button_text, page, destination
+No
+case_study_view
+A case study page is viewed
+case_study, sector
+No
+outbound_gia_click
+Click through to the GIA site
+page
+No
+Attribution.
+ Keep the UTM parameters and first landing page for the visit, and pass them into the hidden form fields. We will tag our campaign links.
+Reporting (Phase 2).
+ A simple monthly dashboard showing:
+conversions by type
+conversion rate for each audience page
+top landing pages and channels
+Search Console queries for priority pages
+12. Phases
+Phase
+What you will deliver
+What you need from us
+0. Proposal
+Within two working days of receiving this brief: recommended platform and hosting, a component inventory, a fixed quote and timeline (including whether a 12 November launch is achievable), and the support and patching terms
+This brief, the prototype, the brand guidelines and the case studies
+1. Launch, by 12 November
+The Phase 1 pages in section 3; all components; forms with database storage, email notifications and the webhook switched off; cookie consent; analytics; structured data; redirects; security controls; content and placeholders loaded; testing
+Approved copy as it becomes available; logo and font files; photography; legal pages; inbox addresses for each form; access to our domain settings at switchover
+2. After launch
+Event detail pages with registration; results filters; online diagnostic booking and payment (if approved); report download; monthly dashboard; switching on the CRM webhook once our CRM is ready
+Our decisions on booking and payment; the CRM webhook address; the report
+3. Future (Optional)
+English and Chinese language switcher; client login area; online purchase of sponsorship
+A business case from us
+If everything cannot be ready by 12 November,
+ launch first with Home, the three audience pages, Asia corridor, Partner with NEXUS, Events, Results, About, Endorsing role, Contact and the legal pages, together with the forms, cookie consent, analytics, redirects and every security control in section 9. Insights can launch as a simple list of the existing articles, with the featured insight, topic filters, report and email sign-up added within four weeks of launch.
+13. Testing and acceptance criteria
+We will treat the work as complete when every check below passes on the staging site and we have signed it off. Please send evidence: screenshots, reports and a test log.
+Area
+Acceptance criterion
+How you test it
+Layout
+Every Phase 1 page follows the prototype's section order, content and components, adjusted to the brand guidelines, at 360, 768, 1280 and 1440 px, with no overlapping or horizontal scrolling
+Real devices and browser tools
+Brand
+Colours, logo use and typography match the NEXUS Brand Guidelines 2025. No Electric Yellow backgrounds
+Our review
+Navigation
+All links work; no 404s; the mobile menu works by touch and keyboard
+Link crawl plus a manual check
+Forms
+Each form validates input, stores the submission, emails the right inbox within 5 minutes, sends an acknowledgement, and records all source fields. Admin export works. The webhook sends correct JSON to a test address
+A test submission per form
+Placeholders
+Every placeholder is clearly marked, editable and can be hidden through the CMS. None is styled to look like final content
+A review of each page
+Content
+Statistics, partner names, logos and case studies match what we approved
+Our sign-off checklist
+Performance
+Mobile Lighthouse performance of 85 or more on Home and the audience pages; LCP under 2.5 s; CLS under 0.1
+Lighthouse and PageSpeed Insights
+Accessibility
+Lighthouse accessibility of 95 or more on every template; no critical axe errors; full keyboard use; zoom to 200% without loss of content
+axe, Lighthouse, and a screen reader check
+Mainland China
+Home and the Asia corridor page load fully in under 5 s from a mainland China test location, with no blocked resources
+A third-party China speed test
+Security
+Every component is on a supported, patched version; the vulnerability scan and dependency audit show no high or critical issues; security headers are present; two-factor authentication is on for all admin accounts; a backup restore has been tested
+Scan reports, the inventory and a header check
+Privacy
+The cookie banner blocks analytics until consent; a privacy notice is linked on every form; marketing consent is never pre-ticked
+Cookie audit
+Analytics
+Every event in section 11 fires once per action, only after consent
+GA4 DebugView
+SEO
+Unique titles and descriptions; one H1 per page; canonicals correct; sitemap valid; structured data has no errors
+Crawl tool and validators
+Redirects
+Every old address returns a single 301 to its mapped page
+A crawl of the old URL list
+Browsers
+No functional defects in Chrome, Edge, Safari (macOS and iOS), Firefox and Samsung Internet
+Manual test matrix
+CMS
+One of our editors can, unaided, edit a statistic, replace a placeholder, add an event, add a case study and change the announcement bar
+A live training session
+14. Launch and handover
+Live site on our domain, with every Phase 1 acceptance check passed and signed off
+Approved content loaded; any remaining placeholders agreed with us or hidden
+Redirects live and checked after launch
+Analytics, Google Search Console and Bing Webmaster Tools owned by a NEXUS account, with the sitemap submitted
+All admin, hosting, domain, DNS and third-party credentials handed to us securely (through a password manager, never by email); your access reduced to the agreed level
+A short CMS guide or recorded walkthrough, plus one live training session
+Technical documentation: platform, the component inventory and versions, integrations, the form field schema, webhook details, redirect map and analytics events
+Backups running, with one restore tested
+Security summary: patch levels at launch, scan results, and your patching commitment (section 9)
+A defect-fix period after launch [length to agree]
+Ongoing support, hosting and maintenance quoted separately. They are not included unless we agree them in writing
+15. What we still need to confirm
+We will confirm these in writing. Until then, please build them so they can be changed easily, or use placeholders.
+#
+Item
+Affects
+1
+Your recommended platform, hosting and support terms (your proposal)
+The whole build
+2
+Final copy for each page (prototype copy in the meantime)
+All pages
+3
+Prices, including the diagnostic fee
+Offer cards
+4
+Inbox addresses and the response-time promise for each form
+Forms, acknowledgement emails
+5
+Partner logo permissions
+Proof strip, Asia corridor page
+6
+Online booking and payment for diagnostics
+Phase 2
+7
+Session series name, venue partner and first date
+Events page
+8
+2027 delegation details
+Asia corridor page
+9
+Endorsing role wording
+Endorsing role page
+10
+Legal pages and privacy notice
+Forms, consent, launch
+11
+Registered office and general email address
+Footer, schema
+12
+The CRM webhook address, once our CRM is built
+Phase 2
+13
+Written approval to name the Alibaba Entrepreneurs Fund and the Swiss Bluefaer Innovation Centre, and the wording for each
+Home, Asia corridor page
+14
+Tianjin partner names and the dates of both MOUs
+Asia corridor page
+15
+Email platform for The NEXUS Briefing, and the first insights to publish
+Insights

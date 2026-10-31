@@ -1,0 +1,7 @@
+500 Internal Server Error
+
+# 500 Internal Server Error
+
+* * *
+
+nginx

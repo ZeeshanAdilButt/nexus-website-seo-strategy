@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>NEXUS Website, SEO and AEO Strategy Plan</title><style>
+body{margin:0;background:#fff;color:#000;font-family:'General Sans','Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.6}
+main{max-width:1100px;margin:0 auto;padding:40px 24px 80px}
+h1,h2,h3{font-family:'Neutral Face','Arial Black',Arial,sans-serif;line-height:1.15}
+h1{font-size:2.4rem;text-transform:uppercase;border-bottom:6px solid #DFFF13;padding-bottom:12px}
+h2{font-size:1.6rem;margin-top:56px;padding:10px 14px;background:#000;color:#fff}
+h3{font-size:1.2rem;margin-top:32px;border-left:6px solid #DFFF13;padding-left:10px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th{background:#000;color:#fff;text-align:left}
+th,td{border:1px solid #D1D1D1;padding:8px;vertical-align:top}
+tr:nth-child(even) td{background:#f6f6f6}
+code{background:#f1f1f1;padding:1px 4px;border-radius:3px;font-size:13px}
+pre{background:#111;color:#eee;padding:14px;overflow:auto;border-radius:4px}
+pre code{background:none;color:inherit}
+blockquote{margin:16px 0;padding:12px 16px;background:#f6f6f6;border-left:6px solid #DFFF13}
+hr{border:0;border-top:1px solid #D1D1D1;margin:40px 0}
+@media print{h2{break-before:page}table,pre{break-inside:avoid}}
+</style></head><body><main><h1 id="nexus-website-seo-and-aeo-strategy-plan">NEXUS Website, SEO and AEO Strategy Plan</h1>
+<p>Draft v1, 31 Oct 2026. Builds on the Developer Brief (approved sitemap) and <code>01-NEXUS-Research-Findings.md</code>. Items marked <strong>[Decision]</strong> need client sign-off.</p>
+<hr />
+<h2 id="1-business-goals-website-goals">1. Business goals → website goals</h2>
+<table>
+<thead>
+<tr>
+<th>Business goal (from brief)</th>
+<th>Website job</th>
+<th>Primary KPI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Win institutional partners (science parks, zones, funds)</td>
+<td>Show NEXUS as their operating partner in the UK</td>
+<td><code>partnership_call_request</code></td>
+</tr>
+<tr>
+<td>Sell paid diagnostics to international tech companies</td>
+<td>Make market entry feel low-risk and concrete</td>
+<td><code>diagnostic_request</code> (international)</td>
+</tr>
+<tr>
+<td>Sell growth diagnostics/projects to UK scale-ups</td>
+<td>Fast route to a scoped project</td>
+<td><code>diagnostic_request</code> (UK)</td>
+</tr>
+<tr>
+<td>Monetise audience through sponsors</td>
+<td>Prove audience quality (GIA, sessions)</td>
+<td><code>sponsor_pack_request</code></td>
+</tr>
+<tr>
+<td>Fill 2027 China/HK delegations</td>
+<td>Capture early interest</td>
+<td><code>delegation_interest</code></td>
+</tr>
+<tr>
+<td>Be the AI and search "answer" for UK–China tech market entry</td>
+<td>Clear entity data, corridor-led content</td>
+<td>Brand + corridor queries in GSC; AI answers naming NEXUS</td>
+</tr>
+</tbody>
+</table>
+<p><strong>North-star:</strong> qualified enquiries per month, by source and audience (traffic is a supporting metric only).</p>
+<h2 id="2-positioning-fix-responding-to-the-whatsapp-feedback">2. Positioning fix (responding to the WhatsApp feedback)</h2>
+<p>The H1 "Land, grow and scale technology businesses in the UK." is strong for people but <strong>generic for search engines and AI engines</strong>: it could describe any of the competitors. Our AEO test supports this: the AI answer repeated "China as its flagship corridor" from NEXUS's own site, but couldn't name a single China partner, and NEXUS was absent from every UK–China category answer.</p>
+<p><strong>Recommendation: keep the bold H1 but put the corridor in the machine-readable layers around it.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Current</th>
+<th>Proposed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eyebrow (above H1)</td>
+<td>"UK growth partner · China flagship corridor"</td>
+<td>"The UK–China innovation corridor"</td>
+</tr>
+<tr>
+<td>H1 option A (keep brand voice)</td>
+<td>Land, grow and scale technology businesses in the UK.</td>
+<td><em>unchanged</em></td>
+</tr>
+<tr>
+<td>H1 option B <strong>[Decision]</strong></td>
+<td></td>
+<td>"Land, grow and scale in the UK. <strong>From China and beyond.</strong>" (yellow on the second line)</td>
+</tr>
+<tr>
+<td>Intro sentence (first 160 chars, which AI engines quote)</td>
+<td>"NEXUS works with international technology companies…"</td>
+<td>"NEXUS is the operational bridge between the UK and China for technology companies, science parks and innovation zones: one accountable team in London, partners on the ground in Tianjin, Shanghai and Hong Kong."</td>
+</tr>
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td>NEXUS | Land, grow and scale technology businesses in the UK</td>
+<td><strong>NEXUS | UK–China Tech Market Entry &amp; Scale-Up Partner</strong></td>
+</tr>
+<tr>
+<td>Meta description</td>
+<td>"…with China as our flagship corridor."</td>
+<td>"The UK–China operational bridge for technology companies and innovation institutions. Market entry, UK soft landing, representation and scale-up delivery from London."</td>
+</tr>
+<tr>
+<td>Organization schema <code>description</code> + <code>knowsAbout</code></td>
+<td>Generic</td>
+<td>Corridor-first, plus <code>areaServed</code>: GB, CN, HK</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entity disambiguation (critical, because "Nexus" is a crowded name):</strong> always say "NEXUS Creative HQ" in the first mention on About, Contact, footer and schema <code>legalName</code>/<code>alternateName</code>; use one email domain; keep LinkedIn, Companies House and site descriptions identical; add <code>sameAs</code> links (LinkedIn, Instagram, X, Facebook, GIA site, Startup Diaries, Companies House URL).</p>
+<h2 id="3-audiences-who-what-they-search-what-we-offer-cta">3. Audiences (who, what they search, what we offer, CTA)</h2>
+<table>
+<thead>
+<tr>
+<th>Audience</th>
+<th>Pain</th>
+<th>Search/AI language (hypotheses to validate)</th>
+<th>Offer</th>
+<th>CTA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Innovation institutions</strong> (CN science parks, zones, e.g. TEDA/Binhai; UK/EU hubs)</td>
+<td>Need a real UK presence for their portfolio, not reports</td>
+<td>"UK landing programme for science park", "UK representation office for innovation zone", "UK partner for Chinese incubator", 英国落地 / 英国代表处 (Chinese terms, for later)</td>
+<td>UK Representation; UK Landing Programme; delegations</td>
+<td>Book a partnership call</td>
+</tr>
+<tr>
+<td><strong>International tech companies</strong> (China, HK, Asia, then global)</td>
+<td>Wasting months and money working out UK entry alone</td>
+<td>"UK market entry for tech companies", "expand tech company to UK from China", "UK soft landing programme", "set up UK company from China"</td>
+<td>Market-Entry Diagnostic → Soft Landing → Market Intelligence Report</td>
+<td>Request a diagnostic</td>
+</tr>
+<tr>
+<td><strong>UK scale-ups</strong> (AI, deep tech, life sciences)</td>
+<td>A specific growth problem with no time</td>
+<td>"R&amp;D tax credit help scale-up", "Series A fundraising support UK", "AI adoption consultancy SME", "scale-up advisory London"</td>
+<td>Growth Diagnostic → partner projects</td>
+<td>Request a growth diagnostic</td>
+</tr>
+<tr>
+<td><strong>Professional firms / sponsors</strong></td>
+<td>Want access to international founders and institutions</td>
+<td>"sponsor startup awards London", "reach international founders UK"</td>
+<td>GIA + session sponsorship, referrals</td>
+<td>Request the sponsor pack</td>
+</tr>
+<tr>
+<td><strong>UK companies going to China/Asia (outbound)</strong></td>
+<td>Want customers, partners or investors in China/HK without going alone</td>
+<td>"doing business in China 2027", "Hong Kong gateway to Asia", "UK trade delegation China", "expand UK tech company to China"</td>
+<td>2027 delegations (mainland China/HK); China representation via RidgeCore; <em>Doing Business in China 2027</em> report</td>
+<td>Register delegation interest / request the report</td>
+</tr>
+<tr>
+<td><strong>Visa applicants (non-commercial)</strong></td>
+<td>Innovator Founder endorsement</td>
+<td>"innovator founder visa endorsement", "UKES endorsement"</td>
+<td>Factual Endorsing-role page → UKES</td>
+<td>Go to UKES</td>
+</tr>
+</tbody>
+</table>
+<p><strong>[Decision] Visa traffic:</strong> high search volume and many backlinks, but it attracts the wrong leads. Recommendation: one factual page, no commercial CTA, internal links to UKES only. It keeps the authority without polluting the pipeline.</p>
+<h2 id="4-sitemap-keyword-mapping-brief-sitemap-with-seo-targets">4. Sitemap + keyword mapping (brief sitemap, with SEO targets)</h2>
+<p>One primary keyword cluster per page, so pages don't compete with each other. Volumes are <strong>unvalidated</strong> until the Semrush/GSC pull (see §7).</p>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Primary cluster</th>
+<th>Secondary / AEO question it must answer</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>UK–China tech market entry partner; NEXUS Creative HQ (brand)</td>
+<td>"What is NEXUS?"</td>
+<td>Organization, WebSite, FAQPage</td>
+</tr>
+<tr>
+<td><code>/institutions</code></td>
+<td>UK landing programme / UK representation for science parks and innovation zones</td>
+<td>"How can a Chinese science park get UK representation?"</td>
+<td>Service ×2, FAQPage, Breadcrumb</td>
+</tr>
+<tr>
+<td><code>/international-companies</code></td>
+<td>UK market entry for tech companies; UK soft landing</td>
+<td>"How do I expand my tech company to the UK from China?"</td>
+<td>Service ×3, FAQPage</td>
+</tr>
+<tr>
+<td><code>/uk-scale-ups</code></td>
+<td>scale-up advisory UK; growth diagnostic</td>
+<td>"Where can UK deep-tech scale-ups get Series A / R&amp;D tax help?"</td>
+<td>Service, FAQPage</td>
+</tr>
+<tr>
+<td><code>/asia-corridor</code></td>
+<td>UK–China innovation corridor; China–UK tech partnerships; Hong Kong gateway; UK delegation to China 2027</td>
+<td>"Who connects Tianjin/Shanghai tech firms with the UK?" and "How can a UK tech company enter China via Hong Kong?"</td>
+<td>Organization (partners), Event (delegations), FAQPage</td>
+</tr>
+<tr>
+<td><code>/results</code> + <code>/results/{slug}</code></td>
+<td>[company] case study; "UK expansion case study China"</td>
+<td>Proof for every claim</td>
+<td>Article</td>
+</tr>
+<tr>
+<td><code>/partner-with-nexus</code></td>
+<td>sponsor startup events London; referral partnership</td>
+<td></td>
+<td>Service</td>
+</tr>
+<tr>
+<td><code>/events</code> (+ GIA)</td>
+<td>Global Innovator Awards; UK–China founder events London</td>
+<td></td>
+<td>Event</td>
+</tr>
+<tr>
+<td><code>/about</code></td>
+<td>NEXUS Creative HQ team, CEO</td>
+<td>"Who runs NEXUS?"</td>
+<td>AboutPage, Person</td>
+</tr>
+<tr>
+<td><code>/about/endorsing-role</code></td>
+<td>Innovator Founder endorsement UKES consortium</td>
+<td>Factual only</td>
+<td>WebPage, FAQPage</td>
+</tr>
+<tr>
+<td><code>/insights</code> + <code>/insights/{slug}</code></td>
+<td>Topic clusters (§5)</td>
+<td>Long-tail questions</td>
+<td>Article, Report</td>
+</tr>
+<tr>
+<td><code>/contact</code></td>
+<td></td>
+<td></td>
+<td>ContactPage, PostalAddress</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additions to consider [Decision]:</strong>
+1. <code>/asia-corridor/china</code>, <code>/asia-corridor/hong-kong</code> (Phase 2): dedicated city/market pages win "UK from Hong Kong" searches.
+2. Absorb <strong>nexusstartupdiaries.com</strong> into <code>/insights</code> (or point it at the main domain with 301s). Two domains split authority; the Diaries content is the most on-strategy content NEXUS has.
+3. A <code>/glossary</code> or "UK market entry guide" pillar page: very citable by AI engines.</p>
+<h2 id="5-content-and-aeo-plan">5. Content and AEO plan</h2>
+<p><strong>Topic clusters for Insights</strong> (each cluster = 1 pillar guide + 4–6 supporting posts, linking to its audience page):</p>
+<ol>
+<li><strong>UK market entry from China/Asia (inbound)</strong>: free pillar page "Entering the UK from China: 2027 Guide". Supporting posts: UK company setup steps, UK banking for Chinese founders, UK soft landing explained, costs of UK entry, Hong Kong vs direct route.</li>
+<li><strong>Institutions and corridors</strong>: how UK landing programmes work, the Tianjin MOU story, S-Tron takeaways, delegations.</li>
+<li><strong>Scale-up growth</strong>: R&amp;D tax credits, Seed/Series A readiness, AI adoption (reuse existing funding-map articles).</li>
+<li><strong>Global founders in the UK</strong>: GIA stories, founder interviews (migrate Startup Diaries).</li>
+<li><strong>UK → China and Asia (outbound)</strong>: the brief's gated report <strong>"Doing Business in China 2027"</strong>. The prototype describes it as an annual guide <em>for UK technology companies looking at China and Hong Kong</em>, i.e. outbound, not inbound. Supporting posts: "Hong Kong as a gateway: a first step into Asia for UK founders" (the prototype's featured insight), what a 2027 delegation involves, S-Tron lessons for UK exhibitors, Manchester and China. CTA: report request + delegation interest.</li>
+</ol>
+<p><strong>Note: the corridor runs both ways.</strong> The prototype calls it "a working corridor in both directions" (RidgeCore represents NEXUS clients in China; delegations take UK companies to China/HK; NEXUS opened a company in China in March 2026, wording to be confirmed). Inbound is the main revenue focus, but outbound content and the report are the main lead magnets for the delegation programme.</p>
+<p><strong>AEO / GEO rules (AI answer engines):</strong>
+- Start every service page and article with a <strong>40–60 word direct answer</strong> paragraph.
+- Visible FAQ blocks (5 per page) phrased exactly like the questions buyers ask, plus FAQPage schema.
+- Specific, citable facts (numbers, dates, partner names, places) instead of adjectives. AI engines quote specifics.
+- Same one-line and one-paragraph description everywhere (brief §10), including LinkedIn and partner sites.
+- Earn <strong>third-party mentions</strong> on CBBC, the GIA judges' organisations, City of London, S-Tron and partner sites. AI engines trust what others say about NEXUS more than what NEXUS says about itself.
+- Allow AI crawlers (GPTBot, PerplexityBot, ClaudeBot, Google-Extended) in robots.txt. Serve real HTML (pre-rendered), no text in images.
+- Monthly <strong>AI visibility check</strong>: run 10 fixed prompts in ChatGPT, Perplexity, Gemini and Copilot, and record whether NEXUS is named.</p>
+<p><strong>Legacy content audit (101 insights + 30 podcasts + 15 events + 7 videos):</strong>
+- Keep and refresh: funding, R&amp;D, IP, scale-up, S-Tron, City of London, China items.
+- Consolidate: duplicates (e.g. "Are Women Becoming the UK's Growth Advantage?" appears twice, "2026 Funding Map" twice).
+- Retire with a 301 to the nearest topic or <code>/insights</code>: off-strategy creative pieces (Canva, influencer, music). <strong>Never leave a linked URL as a 404.</strong> Check Ahrefs "best by links" first.</p>
+<h2 id="6-technical-seo-essentials-adds-to-brief-810">6. Technical SEO essentials (adds to brief §8–10)</h2>
+<ul>
+<li>A full 301 map for all 173 URLs plus the 11 known 404s plus image URLs that have backlinks (from Ahrefs).</li>
+<li>Mainland China access: no Google Fonts, Maps, reCAPTCHA or YouTube; an Asia CDN; a &lt;5 s test. Already in the brief.</li>
+<li><code>hreflang</code> ready for a future zh-Hans version (the brief allows a later language switcher).</li>
+<li>Self-host Neutral Face and General Sans (the prototype uses Google Fonts, which <strong>must change</strong>).</li>
+<li>Move legal pages from the Nexudus subdomain to <code>/privacy</code>, <code>/terms</code>, <code>/cookies</code>.</li>
+<li>Fix the GIA date conflict (17 Oct vs 16 Nov) on the live site <strong>now</strong>.</li>
+</ul>
+<h2 id="7-tools-what-why-when-from-the-tool-guide-prioritised">7. Tools: what, why, when (from the Tool Guide, prioritised)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Tool</th>
+<th>Benefit to NEXUS</th>
+<th>When</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Google Search Console</td>
+<td>Baseline queries; sitemap; migration monitoring</td>
+<td><strong>Now</strong> (client to add us)</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Ahrefs Webmaster Tools</td>
+<td>Find which old URLs hold the 884 domains' links, which drives the redirect map</td>
+<td><strong>Now</strong></td>
+<td>Free</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Bing Webmaster Tools</td>
+<td>Bing feeds Copilot/ChatGPT search; AI performance report</td>
+<td>Now</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Semrush (free tier) / Ahrefs Lite</td>
+<td>Keyword volumes; competitor rankings (CBBC, Strategi, TusPark)</td>
+<td>Before copy is final</td>
+<td>Free / $129 per month</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Screaming Frog</td>
+<td>Crawl staging; test every 301; titles, H1s, canonicals</td>
+<td>Staging + launch</td>
+<td>Free ≤500 URLs</td>
+</tr>
+<tr>
+<td>6</td>
+<td>SparkToro</td>
+<td>Where institutions and founders spend time online (podcasts, sites)</td>
+<td>Before launch</td>
+<td>Free previews</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Lyssna 5-second test</td>
+<td>Does the hero say "UK–China"? A/B the H1 options</td>
+<td>Before copy is final</td>
+<td>Free (15 responses)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>GA4 + GTM (consent-gated)</td>
+<td>The 10 conversion events in brief §11</td>
+<td>Launch</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Microsoft Clarity</td>
+<td>Recordings and heatmaps on audience pages</td>
+<td>Launch</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PageSpeed / Lighthouse + China speed test</td>
+<td>Acceptance targets (LCP &lt; 2.5 s, China &lt; 5 s)</td>
+<td>Staging + launch</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>+</td>
+<td>Olostep (already set up)</td>
+<td>Competitor crawls, AI-answer monitoring, content audits at scale</td>
+<td>Ongoing</td>
+<td>Existing key</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-kpis-and-90-day-targets-proposed-to-be-agreed-with-the-client">8. KPIs and 90-day targets (proposed, to be agreed with the client)</h2>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Baseline</th>
+<th>90 days after launch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary conversions (partnership + diagnostic + sponsor)</td>
+<td>~0 tracked</td>
+<td>8–12 qualified per month</td>
+</tr>
+<tr>
+<td>Organic non-brand keywords ranking top 100</td>
+<td>0</td>
+<td>50+</td>
+</tr>
+<tr>
+<td>Non-brand clicks (GSC)</td>
+<td>~0</td>
+<td>150+ per month</td>
+</tr>
+<tr>
+<td>Old URLs returning 404</td>
+<td>11 pages, 59–77 images (depends on the check)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AI visibility (10 prompts × 4 engines)</td>
+<td>0 of 3 category prompts (Olostep); full 40-prompt baseline to run in week 1</td>
+<td>8/40</td>
+</tr>
+<tr>
+<td>Lighthouse mobile performance / accessibility</td>
+<td>n/a</td>
+<td>≥85 / ≥95</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-timeline-launch-target-thu-12-nov-2026-gia-on-16-nov">9. Timeline (launch target Thu 12 Nov 2026, GIA on 16 Nov)</h2>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Work</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mon 2 Nov</td>
+<td>Send client pack (03); get GSC/GA4/Bing/Ahrefs access; fix the live GIA date; export backlinks; <strong>start data exports</strong> (old-site subscribers, Zoho, Typeform)</td>
+</tr>
+<tr>
+<td>Tue 3 – Fri 6 Nov</td>
+<td>Keyword validation (Semrush + GSC); finalise titles, meta, H1 options; build redirect map v1; legacy content triage</td>
+</tr>
+<tr>
+<td>Mon 9 – Tue 10 Nov</td>
+<td>Staging crawl (Screaming Frog); schema validation; Lyssna hero test; copy edits for the AEO intro paragraphs</td>
+</tr>
+<tr>
+<td>Wed 11 – Thu 12 Nov</td>
+<td>Launch; 301 checks; submit sitemaps; GA4 DebugView</td>
+</tr>
+<tr>
+<td>Fri 13 – Mon 30 Nov</td>
+<td>Monitor 404s and coverage daily; GIA (Mon 16 Nov) content push; update GIA Event schema and llms.txt after the event; first corridor pillar article</td>
+</tr>
+<tr>
+<td>Dec–Jan</td>
+<td>Content clusters 1, 2 and 5 (outbound report); absorb Startup Diaries; outreach for third-party mentions; monthly report</td>
+</tr>
+</tbody>
+</table>
+<p><strong>If 12 Nov is at risk (MVP order):</strong> Home → three audience pages → Asia corridor → Contact/forms → redirects → Events (GIA) → Results → the rest.</p>
+<h2 id="9b-the-wider-toolset-decisions-needed-alongside-the-website">9b. The wider toolset: decisions needed alongside the website</h2>
+<p>Full inventory in <code>01</code> §8. Each decision affects SEO, tracking or data:</p>
+<table>
+<thead>
+<tr>
+<th>Decision</th>
+<th>Recommendation</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One <strong>ticketing</strong> platform</td>
+<td>Ticket Tailor (already used for GIA) for GIA and NEXUS Sessions; UTMs on every link</td>
+<td>Attendee data in one place; ticket clicks measurable</td>
+</tr>
+<tr>
+<td><strong>"Ask Fin"</strong> (Intercom AI agent)</td>
+<td>Keep on GIA through 16 Nov; consent-gate it; add a visa guardrail; Phase 2 decision for the NEXUS site</td>
+<td>Compliance; accurate answers; keeps UKES separate</td>
+</tr>
+<tr>
+<td>One <strong>email/newsletter</strong> platform</td>
+<td>Choose one for "The NEXUS Briefing"; merge Mailchimp, old-site, Ghost (and Brevo) lists with consent</td>
+<td>Four lists = duplicate sends, GDPR risk, old "Cellar Door" branding</td>
+</tr>
+<tr>
+<td><strong>Data exports</strong> before switch-off</td>
+<td>Zoho, Typeform, old-site subscribers, Nexudus members</td>
+<td>Otherwise leads and subscribers are lost at migration</td>
+</tr>
+<tr>
+<td><strong>Email deliverability</strong></td>
+<td>One transactional sender for forms; DMARC to quarantine; DMARC on the GIA domain</td>
+<td>Form notifications and acknowledgements must arrive (brief §7)</td>
+</tr>
+<tr>
+<td><strong>Analytics standard</strong></td>
+<td>Same consent-gated GA4 setup on GIA and NEXUS; cross-domain tracking GIA ↔ NEXUS</td>
+<td>Today GIA appears to track before consent; NEXUS has no baseline</td>
+</tr>
+<tr>
+<td><strong>Entity links</strong></td>
+<td>GIA schema <code>organizer.url</code> → nexuscreativehq.com; Startup Diaries links to the main site</td>
+<td>Connects NEXUS, GIA and the Diaries as one entity for Google and AI</td>
+</tr>
+<tr>
+<td><strong>Retire legacy</strong></td>
+<td>Nexudus, Zoho, old Laravel admin after launch</td>
+<td>Smaller attack surface (NCSC PHP alert); no off-domain legal pages</td>
+</tr>
+<tr>
+<td><strong>Booking + payments (Phase 2)</strong></td>
+<td>Choose a diagnostic booking/payment tool that also handles <strong>mainland China clients</strong> (invoice/bank transfer or Alipay/WeChat Pay via a provider)</td>
+<td>An open prototype FAQ; card-only checkout may block Chinese institutions</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10-risks">10. Risks</h2>
+<ul>
+<li>Unconfirmed claims (supplier clearance, partner names, case-study consent) published too early: legal and reputational risk.</li>
+<li>Redirect map incomplete at launch: loses the link equity that is the site's main SEO asset.</li>
+<li>Prototype deviates from brand rules (Google Fonts, yellow section backgrounds): follow the guidelines.</li>
+<li>Two domains (Startup Diaries) keep splitting authority if not resolved.</li>
+<li>Visa-related traffic overwhelms commercial forms if the endorsing page has commercial CTAs.</li>
+</ul></main></body></html>

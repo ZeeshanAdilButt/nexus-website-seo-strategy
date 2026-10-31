@@ -1,0 +1,114 @@
+Nexus         
+
+[
+
+**_GLOBAL INNOVATOR AWARDS GALA, THE DORCHESTER - GET TICKETS HERE_**
+
+](https://www.tickettailor.com/events/nexus4/2408591)
+
+[](/)
+
+[Sign up](https://forms.zohopublic.eu/gracenexuscr1/form/NEXUSWebsiteEnquiryForm/formperma/8Ikc6HP6xDqPm1Cc4U4viXauqPRm9dl-n6TNOSzzP1I)
+
+# A Year of Building Together: NEXUS Team Reflections on 2025
+
+*   [![facebook-b](https://nexuscreativehq.com/img/icons/social/facebook-b.svg)](http://www.facebook.com/share.php?u=https://nexuscreativehq.com/insight/92)
+*   [![twitter-b](https://nexuscreativehq.com/img/icons/social/twitter-b.svg)](https://twitter.com/intent/tweet?text=https://nexuscreativehq.com/insight/92)
+*   [![linkedin-b](https://nexuscreativehq.com/img/icons/social/linkedin-b.svg)](https://www.linkedin.com/sharing/share-offsite/?url=https://nexuscreativehq.com/insight/92)
+
+## **Jonny’s 2025 Reflections & Message to Founders**
+
+Looking back on 2025, I’m genuinely delighted by the individual and collective progress NEXUS members have made in building their businesses. From funds raised to sales milestones, grants unlocked and conference pitches delivered — everything we’ve witnessed this year has been nothing short of inspiring. Well done to every single one of you.
+
+On a personal note, one of my standout highlights has been the growing uptake in office hours. Each week, I sit down with founders to discuss everything from HR challenges to fundraising searches, MVP testing, and strategic planning. The variety of conversations keeps things fresh and endlessly engaging.
+
+Another milestone this year was the launch of our NEXUS Masterclasses over the summer. We welcomed incredible speakers covering topics from raising investment to AI tools, legal essentials and conference preparation. The Q&As have been particularly lively — some sessions ran far beyond their planned time, which is always a sign that the community is finding real value in them.
+
+Add to that our NEXUS Startup Diaries reaching 36 articles, plus our participation at conferences throughout the year, and it’s clear why we’re so energised about continuing to champion and showcase the founders who embody the NEXUS ethos.
+
+### **Looking Ahead to 2026**
+
+As we move into 2026, I want to encourage our founders to keep connecting with me and the wider team. Taking even 30 minutes a week to meet, reflect and plan can unlock clarity, new insights, and practical solutions that move your business forward.
+
+I’m also excited about the next wave of Masterclasses we’ll be delivering — from 2026 goal setting, to community building, International Women’s Day programming, and conference networking. We have some fantastic deep dives in store.
+
+So stay safe this winter, stay inspired, keep launching, keep experimenting, and most importantly, keep winning. Let’s go.
+
+* * *
+
+## **Mark’s 2025 Reflections & Vision for 2026**
+
+The standout moments of 2025, for me, were the relationships that shifted from talk into action.
+
+Our **MOU with Binhai Zhongguancun Science & Tech Park** was a significant strategic step forward. At a time when some countries take an increasingly inward-facing approach, this partnership reaffirmed the importance of cross-border collaboration. It positioned us to support Binhai’s UK expansion across key sectors including Life Sciences, AI, and New Materials. We’ve moved beyond a theoretical partnership into something real — a foundation we are now ready to build on in 2026.
+
+Our participation at **S-Tron in Shanghai** was another defining moment. After four months of building trust, we took a NEXUS delegation to China, showcased UK founders, and represented the UK on stage. It was a demonstration of what meaningful collaboration looks like when both sides are aligned and intentional.
+
+Domestically, partnering with the **City of London Corporation** reaffirmed the value of being rooted in one of the world’s most influential business districts. It’s a place where capital, talent, and policy converge — and where many of our founders choose to grow their global companies.
+
+### **Looking Ahead to 2026**
+
+Both domestic and international partnerships will unlock new markets, accelerate knowledge flow, and create real pathways to scale for founders. But partnerships aren’t only external — they’re also within the NEXUS community itself.
+
+My message to our members:
+
+**Use the network. Share investors, insight and intel. When one founder gains ground, the value increases for everyone.**
+
+* * *
+
+## **Farouk’s Insight: Enshittification & What It Means for 2026**
+
+**“Enshittification”** — a term coined by writer Cory Doctorow — describes the decline of major online platforms through a predictable three-stage process:
+
+### **Stage 1: Benefit the users**
+
+A platform begins by offering high-quality, low-cost service to attract users and build lock-in.
+
+### **Stage 2: Benefit the business customers**
+
+The focus shifts to advertisers or commercial partners, often degrading the user experience with more ads or less relevant content.
+
+### **Stage 3: Extract value from everyone**
+
+Once both users and businesses are fully locked in, the platform prioritizes shareholder value above all else, resulting in a significantly worsened experience for all.
+
+### **Real-World Examples**
+
+*   **Social media:** Feeds flooded with ads while burying posts users actually care about.
+*   **Search engines:** More paid placements and AI-generated content, making quality organic results harder to find.
+*   **Streaming services:** Rising subscription fees and the push of unwanted or algorithm-driven content.
+
+### **Why It Happens** 
+
+*   **Market dominance:** Limited competition gives platforms room to erode user value.
+*   **User lock-in:** Social, economic and political interdependencies make it difficult for users to leave.
+
+### **So… what do we do in 2026?**
+
+We _own_ our own stuff. Build assets we control. Protect our attention and trust.
+
+The alternative is dependency — and as we’ve seen, platform dependency rarely ends well.
+
+* * *
+
+## **Mauria’s 2025 Highlights & Message to Founders**
+
+### **My 2025 NEXUS Highlights**
+
+*   The engagement from our Chinese founders has been exceptional this year. They represent a significant part of our community and global network, and the momentum was clear — from NEXUS speaking sessions at S-Tron Shanghai, to our first Chinese-speaking dinner, and the dedicated Chinese-speaking R&D webinar. It truly showcased how global, diverse and connected our community has become.
+*   Watching our members succeed — from revenue milestones above £1M, to breakthrough partnerships and major deals — has been incredibly inspiring.
+*   Growing closer to many of our active members has been another highlight. These relationships have strengthened our network and helped attract new partners, sponsors and collaborations ahead of 2026.
+
+### **My Message to Founders Ahead of 2026**
+
+2026 will be a year where **community truly matters.** One of my favourite quotes is:
+
+> **“If you want to go fast, go alone. If you want to go far, go together.”**
+
+The founder journey isn’t always easy — but the right environment changes everything.
+
+When you engage, communicate, and fully use the support available within NEXUS, you move closer to your goals not only faster, but stronger.
+
+NEXUS is designed to be that ecosystem.
+
+Keep showing up. Keep building. And keep going.

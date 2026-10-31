@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>NEXUS Home</title>
+<meta name="description" content="NEXUS helps international technology companies, the institutions behind them and UK scale-ups land, grow and scale in the UK, with China as our flagship corridor.">
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fff;color:#000;font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+*,*::before,*::after{box-sizing:border-box}
+img{max-width:100%;height:auto;display:block}
+p{margin:0}
+h1,h2,h3,h4{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+
+/* Type: Archivo and DM Sans stand in for Neutral Face Bold and General Sans in this prototype only. Production self-hosts the licensed fonts. */
+.nx-h{font-family:'Archivo','Arial Black',Impact,sans-serif;font-stretch:100%;font-weight:800;text-transform:uppercase;letter-spacing:-0.015em;line-height:1;overflow-wrap:break-word}
+.nx-h1{font-size:clamp(2.25rem,4vw + .9rem,4.5rem)}
+.nx-h2{font-size:clamp(1.9rem,3.2vw + .8rem,3.5rem)}
+.nx-h3{font-size:clamp(1.2rem,1vw + .9rem,1.55rem);line-height:1.08}
+
+.nx-c{width:100%;max-width:1264px;margin:0 auto;padding-inline:20px}
+@media (min-width:768px){.nx-c{padding-inline:32px}}
+.nx-sec{padding-block:clamp(64px,9vw,112px)}
+.nx-black{background:#000;color:#fff}
+.nx-white{background:#fff;color:#000}
+.nx-grey{background:#D1D1D1;color:#000}
+.nx-sub{color:#4A4A4A}
+.nx-black .nx-sub{color:#D1D1D1}
+.nx-grey .nx-sub{color:#1F1F1F}
+
+.nx-eyebrow{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;line-height:1.3}
+.nx-dot{width:10px;height:10px;border-radius:50%;background:#DFFF13;flex:none}
+.nx-white .nx-dot,.nx-grey .nx-dot{background:#000}
+
+/* Buttons: pill, 48px minimum, bold label */
+.nx-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 28px;border-radius:999px;border:2px solid transparent;font:700 15px/1.2 'DM Sans',system-ui,sans-serif;text-decoration:none;cursor:pointer;transition:background .18s,color .18s,border-color .18s,transform .18s;text-align:center}
+.nx-btn-y{background:#DFFF13;color:#000;border-color:#DFFF13}
+.nx-btn-y:hover{background:#fff;border-color:#fff}
+.nx-white .nx-btn-y,.nx-grey .nx-btn-y{border-color:#000}
+.nx-white .nx-btn-y:hover,.nx-grey .nx-btn-y:hover{background:#000;color:#DFFF13}
+.nx-btn-o{background:transparent;color:#fff;border-color:#fff}
+.nx-btn-o:hover{background:#fff;color:#000}
+.nx-white .nx-btn-o,.nx-grey .nx-btn-o{color:#000;border-color:#000}
+.nx-white .nx-btn-o:hover,.nx-grey .nx-btn-o:hover{background:#000;color:#fff}
+.nx-btn:active{transform:translateY(1px)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #DFFF13;outline-offset:3px}
+.nx-white a:focus-visible,.nx-grey a:focus-visible,.nx-white summary:focus-visible,.nx-grey summary:focus-visible{outline-color:#000}
+
+.nx-link{color:inherit;font-weight:700;text-decoration:underline;text-decoration-color:#DFFF13;text-decoration-thickness:3px;text-underline-offset:5px;transition:background .15s}
+.nx-link:hover{background:#DFFF13;color:#000;text-decoration-color:#000}
+
+.nx-tag{display:inline-flex;align-items:center;align-self:flex-start;min-height:26px;padding:2px 12px;border-radius:999px;background:#DFFF13;color:#000;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1.2}
+.nx-tag-o{background:transparent;color:inherit;border:1.5px solid currentColor}
+
+/* Placeholder component (brief 4.1) */
+.nx-ph{display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;border:2px dashed #888;font-size:13px;font-weight:500;line-height:1.4;background:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 10px,transparent 10px 20px);color:#D1D1D1}
+.nx-white .nx-ph,.nx-grey .nx-ph{border-color:#000;color:#000;background:repeating-linear-gradient(135deg,rgba(0,0,0,.06) 0 10px,transparent 10px 20px)}
+.nx-grey .nx-ph{background:repeating-linear-gradient(135deg,rgba(0,0,0,.08) 0 10px,transparent 10px 20px)}
+
+/* Header */
+.nx-skip{position:absolute;left:-9999px;top:8px;z-index:100;background:#DFFF13;color:#000;padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none}
+.nx-skip:focus{left:12px}
+.nx-ann{background:#000;color:#fff;border-bottom:1px solid rgba(255,255,255,.2);font-size:14px;line-height:1.4}
+.nx-ann-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 20px;min-height:44px;padding-block:8px}
+.nx-ann a{color:#DFFF13;font-weight:700;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.nx-hdr{position:sticky;top:0;z-index:50;background:#000;color:#fff;border-bottom:1px solid rgba(255,255,255,.2)}
+.nx-hdr-in{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
+.nx-logo{display:block;line-height:0;flex:none}
+.nx-nav{display:none;align-items:center;gap:22px}
+.nx-nav a{color:#fff;text-decoration:none;font-size:14px;font-weight:500;padding:10px 0;border-bottom:3px solid transparent;transition:border-color .15s,color .15s}
+.nx-nav a:hover{border-color:#DFFF13}
+.nx-nav a[aria-current="page"]{border-color:#DFFF13}
+.nx-hdr-r{display:flex;align-items:center;gap:14px}
+.nx-hdr-r .nx-partner{display:none;color:#fff;font-size:14px;font-weight:700;text-decoration:underline;text-decoration-color:#DFFF13;text-decoration-thickness:3px;text-underline-offset:5px}
+.nx-menu-btn{min-height:48px;padding:0 20px;border-radius:999px;border:2px solid #fff;background:transparent;color:#fff;font:700 15px/1 'DM Sans',system-ui,sans-serif;cursor:pointer}
+.nx-menu-btn:hover{background:#fff;color:#000}
+.nx-hdr .nx-btn{min-height:48px;padding:0 20px}
+@media (max-width:479px){.nx-hdr .nx-btn,.nx-menu-btn{padding:0 14px;font-size:14px}.nx-hdr-in{gap:12px}.nx-hdr-r{gap:10px}}
+.nx-menu{display:none;border-top:1px solid rgba(255,255,255,.2);padding-block:12px 28px}
+.nx-menu.is-open{display:block}
+.nx-menu a.nx-m{display:flex;align-items:center;justify-content:space-between;min-height:56px;color:#fff;text-decoration:none;font-family:'Archivo','Arial Black',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;letter-spacing:-.01em;border-bottom:1px solid rgba(255,255,255,.2)}
+.nx-menu a.nx-m:hover{color:#DFFF13}
+@media (min-width:1280px){
+.nx-nav{display:flex}
+.nx-hdr-r .nx-partner{display:inline}
+.nx-menu-btn{display:none}
+.nx-menu,.nx-menu.is-open{display:none}
+}
+
+/* Hero */
+.nx-hero{position:relative;overflow:hidden}
+.nx-hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(500px,100%),1fr));gap:48px clamp(32px,5vw,72px);align-items:center}
+.nx-hero-intro{max-width:34rem;font-size:clamp(1.05rem,.4vw + 1rem,1.2rem)}
+.nx-route-links{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:15px}
+.nx-route-links a{color:#fff;text-decoration:underline;text-decoration-color:#DFFF13;text-decoration-thickness:3px;text-underline-offset:5px;font-weight:700}
+.nx-route-links a:hover{color:#DFFF13}
+.nx-fig{margin:0;display:flex;flex-direction:column;gap:12px}
+.nx-fig-img{aspect-ratio:4/5;width:100%;min-height:320px}
+@media (max-width:1135px){.nx-fig-img{aspect-ratio:16/10;min-height:0}}
+@media (max-width:559px){.nx-fig-img{aspect-ratio:4/3}}
+.nx-fig figcaption{font-size:13px;color:#D1D1D1}
+
+/* Corridor strip in hero */
+.nx-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:0 24px;margin:0;padding:0}
+.nx-strip li{position:relative;padding-top:26px;border-top:2px solid rgba(255,255,255,.35)}
+.nx-strip li::before{content:'';position:absolute;top:-8px;left:0;width:14px;height:14px;border-radius:50%;background:#000;border:2px solid #DFFF13}
+.nx-strip li:first-child::before{background:#DFFF13}
+.nx-strip li:first-child{border-top-color:#DFFF13}
+.nx-strip b{display:block;font-size:1.05rem}
+.nx-strip span{display:block;font-size:14px;color:#D1D1D1;line-height:1.5;margin-top:2px}
+@media (max-width:559px){
+.nx-strip{grid-template-columns:1fr;gap:0}
+.nx-strip li{border-top:0;border-left:2px solid rgba(255,255,255,.35);padding:0 0 22px 28px}
+.nx-strip li::before{top:2px;left:-8px}
+.nx-strip li:first-child{border-left-color:#DFFF13}
+.nx-strip li:last-child{padding-bottom:0}
+}
+
+/* Proof */
+.nx-proof{border-top:1px solid rgba(255,255,255,.25)}
+.nx-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:32px 24px}
+.nx-num{font-family:'Archivo','Arial Black',sans-serif;font-weight:800;font-size:clamp(2.1rem,3vw + 1rem,3.6rem);line-height:1;color:#DFFF13;letter-spacing:-.02em}
+.nx-stat p+p{margin-top:10px;font-size:15px;color:#D1D1D1;line-height:1.45;max-width:16rem}
+.nx-logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr));gap:16px}
+.nx-logos .nx-ph{min-height:72px}
+
+/* Audience cards */
+.nx-cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:20px}
+.nx-aud{display:flex;flex-direction:column;gap:18px;padding:clamp(24px,3vw,36px);border:2px solid #000;border-radius:4px;background:#fff;color:#000;text-decoration:none;transition:background .2s,color .2s}
+.nx-aud .nx-go{margin-top:auto;padding-top:6px;font-weight:700;display:inline-flex;align-items:center;gap:10px}
+.nx-aud .nx-arrow{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#DFFF13;color:#000;flex:none;transition:transform .2s}
+.nx-aud:hover{background:#000;color:#fff}
+.nx-aud:hover .nx-sub{color:#D1D1D1}
+.nx-aud:hover .nx-arrow{transform:translateX(4px)}
+.nx-aud:focus-visible{outline:3px solid #000;outline-offset:4px}
+
+/* Steps */
+.nx-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(190px,100%),1fr));gap:0 28px;counter-reset:s}
+.nx-steps li{border-top:4px solid #000;padding:20px 0 28px;position:relative}
+.nx-steps .nx-sn{font-family:'Archivo','Arial Black',sans-serif;font-weight:800;font-size:2.6rem;line-height:1;letter-spacing:-.03em}
+.nx-steps h3{font-size:1.05rem;font-weight:700;margin:14px 0 6px}
+.nx-steps p{font-size:15px;line-height:1.5}
+.nx-how-top{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:40px clamp(32px,5vw,72px);align-items:center}
+
+/* Corridor */
+.nx-corr{border-top:8px solid #DFFF13}
+.nx-pcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:16px}
+.nx-pc{display:flex;flex-direction:column;gap:10px;padding:22px;border:2px solid #000;border-radius:4px;min-height:200px}
+.nx-pc .nx-loc{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.nx-pc h3{font-family:'Archivo','Arial Black',sans-serif;font-weight:800;font-size:1.25rem;line-height:1.1;text-transform:uppercase;letter-spacing:-.01em}
+.nx-pc p{font-size:15px;line-height:1.5}
+.nx-pc .nx-tbc{margin-top:auto;font-size:12.5px;font-weight:500}
+.nx-hk{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:20px 24px;margin-top:16px;background:#000;color:#fff;border-radius:4px}
+.nx-hk b{color:#DFFF13}
+
+/* Results */
+.nx-case{display:flex;flex-direction:column;background:#fff;color:#000;border-radius:4px;overflow:hidden;text-decoration:none;transition:transform .2s}
+.nx-case:hover{transform:translateY(-4px)}
+.nx-case .nx-ph{aspect-ratio:16/10;border-width:0 0 2px 0;border-radius:0}
+.nx-case-b{display:flex;flex-direction:column;gap:12px;padding:24px;flex:1}
+.nx-case h3.nx-h{font-size:1.35rem;line-height:1.08}
+.nx-case .nx-big{font-weight:700;font-size:15px;border-top:1px solid #000;padding-top:12px;margin-top:auto}
+.nx-case .nx-go{font-weight:700;text-decoration:underline;text-decoration-color:#DFFF13;text-decoration-thickness:3px;text-underline-offset:5px}
+
+/* Events */
+.nx-ev{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:20px}
+.nx-evc{display:flex;flex-direction:column;gap:18px;padding:clamp(24px,3.4vw,44px);border:2px solid rgba(255,255,255,.45);border-radius:4px}
+.nx-evc.nx-gia{border-color:#DFFF13}
+.nx-date{font-family:'Archivo','Arial Black',sans-serif;font-weight:800;font-size:clamp(2.4rem,4vw + 1rem,4.4rem);line-height:.95;color:#DFFF13;letter-spacing:-.03em}
+.nx-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:auto;padding-top:8px}
+
+/* Network chips */
+.nx-chips{display:flex;flex-wrap:wrap;gap:10px}
+.nx-chip{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border:2px solid #000;border-radius:999px;font-weight:700;font-size:15px}
+
+/* Team */
+.nx-quote{font-family:'Archivo','Arial Black',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(1.3rem,1.8vw + 1rem,2.1rem);line-height:1.12;letter-spacing:-.01em;max-width:46rem}
+.nx-team{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:28px 20px}
+.nx-team .nx-ph{aspect-ratio:3/4;font-size:12px;padding:10px}
+.nx-team b{display:block;margin-top:12px;font-size:16px;line-height:1.3}
+.nx-team span{display:block;font-size:14px;line-height:1.4}
+
+/* Insights */
+.nx-ins{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:20px}
+.nx-art{display:flex;flex-direction:column;gap:14px;padding:24px 0 0;border-top:4px solid #000;text-decoration:none;color:#000}
+.nx-art h3{font-size:1.2rem;font-weight:700;line-height:1.3}
+.nx-art:hover h3{text-decoration:underline;text-decoration-color:#DFFF13;text-decoration-thickness:3px;text-underline-offset:5px}
+.nx-rep{display:flex;flex-direction:column;gap:14px;padding:24px;background:#000;color:#fff;border-radius:4px}
+
+/* FAQ */
+.nx-faq details{border-bottom:1px solid #000}
+.nx-faq details:first-child{border-top:3px solid #000}
+.nx-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding-block:12px;font-weight:700;font-size:1.08rem;line-height:1.35}
+.nx-faq summary::-webkit-details-marker{display:none}
+.nx-faq summary::after{content:'+';flex:none;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#DFFF13;color:#000;font-size:22px;line-height:1;font-weight:500}
+.nx-faq details[open] summary::after{content:'\2013'}
+.nx-faq details p{padding:0 56px 22px 0;max-width:46rem}
+
+/* Contact + footer */
+.nx-tile{display:flex;flex-direction:column;gap:14px;padding:26px;border:2px solid rgba(255,255,255,.45);border-radius:4px}
+.nx-tile .nx-btn{margin-top:auto;align-self:flex-start}
+.nx-foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:40px 32px}
+.nx-foot h4{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#DFFF13;margin-bottom:14px}
+.nx-foot li{margin-bottom:4px}
+.nx-foot a{color:#fff;text-decoration:none;display:inline-block;padding:6px 0}
+.nx-foot a:hover{text-decoration:underline;text-decoration-color:#DFFF13;text-decoration-thickness:3px;text-underline-offset:5px}
+.nx-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px;margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.25);font-size:14px;color:#D1D1D1}
+.nx-legal ul{display:flex;flex-wrap:wrap;gap:4px 22px}
+
+.nx-anchor{scroll-margin-top:96px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</helmet>
+
+<div style="width:100%;background:#fff" onKeyDown="{{onKey}}">
+
+<a class="nx-skip" href="#main">Skip to main content</a>
+
+<!-- 1. Announcement bar -->
+<div class="nx-ann">
+  <div class="nx-c nx-ann-in">
+    <p>Global Innovator Awards · 16 November 2026 · The Dorchester, London</p>
+    <a href="#events">Get tickets →</a>
+  </div>
+</div>
+
+<!-- 2. Header -->
+<header class="nx-hdr">
+  <div class="nx-c nx-hdr-in">
+    <a class="nx-logo" href="#top" aria-label="NEXUS home"><img src="./assets/ccc9e9c317202666259038aed4454c9d.svg" alt="NEXUS" width="130" height="30" style="width:min(130px,32vw);height:auto"></a>
+    <nav class="nx-nav" aria-label="Main">
+      <a href="#routes">Institutions</a>
+      <a href="#routes">International companies</a>
+      <a href="#routes">UK scale-ups</a>
+      <a href="#corridor">Asia corridor</a>
+      <a href="#insights">Insights</a>
+      <a href="#events">Events</a>
+    </nav>
+    <div class="nx-hdr-r">
+      <a class="nx-partner" href="#network">Partner with NEXUS</a>
+      <a class="nx-btn nx-btn-y" href="#contact">Talk to us</a>
+      <button class="nx-menu-btn" type="button" aria-expanded="{{menuExpanded}}" aria-controls="nx-menu" onClick="{{toggleMenu}}">{{menuLabel}}</button>
+    </div>
+  </div>
+  <div id="nx-menu" class="nx-menu {{menuClass}}">
+    <nav class="nx-c" aria-label="Menu">
+      <a class="nx-m" href="#routes" onClick="{{closeMenu}}">Institutions <span aria-hidden="true">→</span></a>
+      <a class="nx-m" href="#routes" onClick="{{closeMenu}}">International companies <span aria-hidden="true">→</span></a>
+      <a class="nx-m" href="#routes" onClick="{{closeMenu}}">UK scale-ups <span aria-hidden="true">→</span></a>
+      <a class="nx-m" href="#corridor" onClick="{{closeMenu}}">Asia corridor <span aria-hidden="true">→</span></a>
+      <a class="nx-m" href="#insights" onClick="{{closeMenu}}">Insights <span aria-hidden="true">→</span></a>
+      <a class="nx-m" href="#events" onClick="{{closeMenu}}">Events <span aria-hidden="true">→</span></a>
+      <a class="nx-m" href="#about" onClick="{{closeMenu}}">About <span aria-hidden="true">→</span></a>
+      <a class="nx-m" href="#network" onClick="{{closeMenu}}">Partner with NEXUS <span aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- 3. Hero -->
+<section class="nx-hero nx-black nx-sec" style="padding-bottom:clamp(48px,6vw,80px)">
+  <div class="nx-c">
+    <div class="nx-hero-grid">
+      <div style="display:flex;flex-direction:column;gap:28px">
+        <p class="nx-eyebrow"><span class="nx-dot"></span>UK growth partner · China flagship corridor</p>
+        <h1 class="nx-h nx-h1">Land, grow and scale technology businesses <span style="color:#DFFF13">in the UK.</span></h1>
+        <p class="nx-hero-intro nx-sub">NEXUS works with international technology companies, the institutions that back them, and UK scale-ups ready for their next stage. One accountable team in the UK, with partners on the ground in China.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a class="nx-btn nx-btn-y" href="#routes">Find your route</a>
+          <a class="nx-btn nx-btn-o" href="#contact">Talk to our team</a>
+        </div>
+        <p class="nx-route-links" style="align-items:center">
+          <span class="nx-sub" style="font-size:14px">I am an</span>
+          <a href="#route-institutions">Institution</a>
+          <a href="#route-companies">International company</a>
+          <a href="#route-scaleups">UK scale-up</a>
+        </p>
+      </div>
+      <figure class="nx-fig">
+        <div class="nx-ph nx-fig-img" role="img" aria-label="Placeholder for the Tianjin signing photograph">[Placeholder: Tianjin signing photograph, black and white or full colour per brand photography]</div>
+        <figcaption>Signing ceremony, Tianjin. [Caption to be confirmed]</figcaption>
+      </figure>
+    </div>
+
+    <div style="margin-top:clamp(48px,6vw,80px)">
+      <p class="nx-eyebrow" style="margin-bottom:34px"><span class="nx-dot"></span>The corridor</p>
+      <ul class="nx-strip">
+        <li><b>London</b><span>UK operating base for your companies</span></li>
+        <li><b>Hong Kong</b><span>Gateway to the wider region</span></li>
+        <li><b>Tianjin</b><span>Two signed MOUs, building a pipeline into the UK</span></li>
+        <li><b>Shanghai</b><span>Two years exhibiting and speaking at S-Tron</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Proof strip -->
+<section class="nx-black nx-proof" style="padding-block:clamp(48px,6vw,72px)" aria-label="NEXUS in numbers">
+  <div class="nx-c" style="display:flex;flex-direction:column;gap:48px">
+    <div class="nx-stats">
+      <div class="nx-stat"><p class="nx-num">100+</p><p>Businesses actively supported</p></div>
+      <div class="nx-stat"><p class="nx-num">16</p><p>Carefully curated global partnerships</p></div>
+      <div class="nx-stat"><p class="nx-num">1,400+</p><p>Business plans assessed</p></div>
+      <div class="nx-stat"><p class="nx-num">Cleared</p><p>Supplier and security cleared [citable reference to be confirmed]</p></div>
+    </div>
+    <div>
+      <p class="nx-eyebrow" style="margin-bottom:18px"><span class="nx-dot"></span>Partners and memberships</p>
+      <div class="nx-logos">
+        <div class="nx-ph">[Logo: City of London · permission to confirm]</div>
+        <div class="nx-ph">[Logo: TEDA · permission to confirm]</div>
+        <div class="nx-ph">[Logo: S-Tron · permission to confirm]</div>
+        <div class="nx-ph">[Logo: CBBC · permission to confirm]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Who we work with -->
+<section id="routes" class="nx-white nx-sec nx-anchor">
+  <div class="nx-c" style="display:flex;flex-direction:column;gap:clamp(32px,4vw,56px)">
+    <div style="display:flex;flex-direction:column;gap:18px;max-width:46rem">
+      <p class="nx-eyebrow"><span class="nx-dot"></span>Who we work with</p>
+      <h2 class="nx-h nx-h2">Three ways in. One team behind them.</h2>
+    </div>
+    <div class="nx-cards3">
+      <a id="route-institutions" class="nx-aud nx-anchor" href="#contact">
+        <span class="nx-tag">For institutions</span>
+        <h3 class="nx-h nx-h3">A UK operating partner for your companies</h3>
+        <p class="nx-sub">For science parks, innovation zones, hubs and funds. We act as your UK presence: showcase events, a deal-flow pipeline and landing support for your portfolio.</p>
+        <span class="nx-go">Explore institutional partnership <span class="nx-arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a id="route-companies" class="nx-aud nx-anchor" href="#contact">
+        <span class="nx-tag">For international companies</span>
+        <h3 class="nx-h nx-h3">Reach UK customers sooner</h3>
+        <p class="nx-sub">For technology companies entering the UK. Market intelligence, qualified introductions, soft landing support and vetted legal, finance and banking partners.</p>
+        <span class="nx-go">See market entry support <span class="nx-arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a id="route-scaleups" class="nx-aud nx-anchor" href="#contact">
+        <span class="nx-tag">For UK scale-ups</span>
+        <h3 class="nx-h nx-h3">Solve the growth problem in front of you</h3>
+        <p class="nx-sub">For frontier-tech companies already trading. A focused diagnostic, then specialist delivery through our partner network, managed by NEXUS.</p>
+        <span class="nx-go">Book a growth diagnostic <span class="nx-arrow" aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. How we work -->
+<section class="nx-grey nx-sec">
+  <div class="nx-c" style="display:flex;flex-direction:column;gap:clamp(40px,5vw,64px)">
+    <div class="nx-how-top">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <p class="nx-eyebrow"><span class="nx-dot"></span>How we work</p>
+        <h2 class="nx-h nx-h2">Hands-on, with one point of accountability.</h2>
+        <p class="nx-sub" style="max-width:34rem">We stay with you from the first conversation to results, and bring in specialists only when you need them. No generic programmes and no hand-offs you have to manage yourself.</p>
+      </div>
+      <div class="nx-ph" style="aspect-ratio:16/10;width:100%" role="img" aria-label="Placeholder for a NEXUS working session photograph">[Placeholder: real NEXUS photography, a working session or dinner]</div>
+    </div>
+    <ol class="nx-steps">
+      <li><span class="nx-sn" aria-hidden="true">1</span><h3>Diagnose</h3><p>We pinpoint what you need to achieve in the UK, and what stands in the way.</p></li>
+      <li><span class="nx-sn" aria-hidden="true">2</span><h3>Plan</h3><p>A clear plan with owners, timings and costs.</p></li>
+      <li><span class="nx-sn" aria-hidden="true">3</span><h3>Connect</h3><p>Introductions to the customers, partners, investors and advisers that matter.</p></li>
+      <li><span class="nx-sn" aria-hidden="true">4</span><h3>Deliver</h3><p>We manage the work, including specialist partners, as your single contact.</p></li>
+      <li><span class="nx-sn" aria-hidden="true">5</span><h3>Grow</h3><p>We review results with you and plan the next stage.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 7. Asia corridor -->
+<section id="corridor" class="nx-white nx-corr nx-sec nx-anchor">
+  <div class="nx-c" style="display:flex;flex-direction:column;gap:clamp(32px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:24px clamp(32px,5vw,72px);align-items:end">
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <p class="nx-eyebrow"><span class="nx-dot"></span>Our Asia corridor, led by China</p>
+        <h2 class="nx-h nx-h2">A working corridor in both directions.</h2>
+      </div>
+      <p class="nx-sub" style="max-width:34rem">China is our flagship international market, and Hong Kong is our gateway to the wider region. We have built what many UK organisations spend years trying to establish: an operating corridor between the UK and Asia, with partners on the ground.</p>
+    </div>
+    <div class="nx-pcards">
+      <div class="nx-pc"><span class="nx-loc">China</span><h3>RidgeCore Ventures</h3><p>A reciprocal partnership. We represent their clients in the UK; they represent ours in China.</p></div>
+      <div class="nx-pc"><span class="nx-loc">Hong Kong</span><h3>Alibaba Entrepreneurs Fund</h3><p>A route for growth-stage companies expanding overseas through Hong Kong.</p><span class="nx-tbc">[Name only until wording is approved in writing]</span></div>
+      <div class="nx-pc"><span class="nx-loc">Tianjin</span><h3>Tianjin</h3><p>Two signed MOUs, building a pipeline of Tianjin companies into the UK.</p><span class="nx-tbc">[Partner names and dates to confirm]</span></div>
+      <div class="nx-pc"><span class="nx-loc">Shanghai</span><h3>S-Tron</h3><p>Two years together at S-Tron Shanghai, exhibiting and speaking.</p></div>
+      <div class="nx-pc"><span class="nx-loc">Shanghai</span><h3>Swiss Bluefaer Innovation Centre</h3><p>Connecting European and Chinese innovators.</p><span class="nx-tbc">[Name only until wording is approved in writing]</span></div>
+    </div>
+    <div class="nx-hk">
+      <p style="flex:1 1 280px"><b>Hong Kong is our gateway</b> to the wider region, for companies and institutions looking beyond mainland China.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px">
+      <a class="nx-btn nx-btn-y" href="#contact">Explore the Asia corridor</a>
+      <a class="nx-btn nx-btn-o" href="#contact">Register interest in 2027 delegations</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Results -->
+<section id="results" class="nx-grey nx-sec nx-anchor">
+  <div class="nx-c" style="display:flex;flex-direction:column;gap:clamp(32px,4vw,56px)">
+    <div style="display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px">
+      <div style="display:flex;flex-direction:column;gap:18px;max-width:46rem">
+        <p class="nx-eyebrow"><span class="nx-dot"></span>Results</p>
+        <h2 class="nx-h nx-h2">What we have delivered for clients.</h2>
+      </div>
+      <a class="nx-link" href="#results">All case studies →</a>
+    </div>
+    <div class="nx-cards3">
+      <a class="nx-case" href="#results">
+        <div class="nx-ph" role="img" aria-label="Placeholder for Sentian Aerospace image">[Placeholder: Sentian Aerospace image]</div>
+        <div class="nx-case-b">
+          <span class="nx-tag">Aerospace and deep tech</span>
+          <h3 class="nx-h">Sentian Aerospace: from a garage to an international acquisition</h3>
+          <p>NEXUS gave the founders structure, accountability and an independent commercial view through investment, restructuring and acquisition.</p>
+          <p class="nx-big">Technology acquired by Volatus Aerospace, a publicly listed company, in under two years from UK incorporation.</p>
+          <span class="nx-go">Read the case study →</span>
+        </div>
+      </a>
+      <a class="nx-case" href="#results">
+        <div class="nx-ph" role="img" aria-label="Placeholder for GI Healthcare image">[Placeholder: GI Healthcare image]</div>
+        <div class="nx-case-b">
+          <span class="nx-tag">Deep tech and robotics</span>
+          <h3 class="nx-h">GI Healthcare: from an early prototype to customer-backed pilots</h3>
+          <p>Warm introductions to customers and investors, candid commercial mentoring, and the visibility to hold bigger conversations.</p>
+          <p class="nx-big">From no customers to a customer-funded proof of concept.</p>
+          <span class="nx-go">Read the case study →</span>
+        </div>
+      </a>
+      <a class="nx-case" href="#results">
+        <div class="nx-ph" role="img" aria-label="Placeholder for Auto Impartial image">[Placeholder: Auto Impartial image]</div>
+        <div class="nx-case-b">
+          <span class="nx-tag">AI compute infrastructure</span>
+          <h3 class="nx-h">Auto Impartial: new silicon for the age of private AI</h3>
+          <p>NEXUS helped establish the company in the UK and is forming its international research consortium.</p>
+          <p class="nx-big">Core architecture independently validated; a UK and Asia research consortium in formation with Innovate UK.</p>
+          <span class="nx-go">Read the case study →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Events -->
+<section id="events" class="nx-black nx-sec nx-anchor">
+  <div class="nx-c" style="display:flex;flex-direction:column;gap:clamp(32px,4vw,56px)">
+    <div style="display:flex;flex-direction:column;gap:18px;max-width:46rem">
+      <p class="nx-eyebrow"><span class="nx-dot"></span>Events</p>
+      <h2 class="nx-h nx-h2">The right people in the right room.</h2>
+    </div>
+    <div class="nx-ev">
+      <article class="nx-evc nx-gia">
+        <span class="nx-tag">The Dorchester, London</span>
+        <p class="nx-date">16 Nov<br>2026</p>
+        <h3 class="nx-h nx-h3" style="font-size:clamp(1.5rem,1.6vw + 1rem,2.2rem)">Global Innovator Awards</h3>
+        <p class="nx-sub">Created and delivered by NEXUS. Celebrating overseas founders building businesses in the UK.</p>
+        <div class="nx-btns">
+          <a class="nx-btn nx-btn-y" href="#contact">Get tickets</a>
+          <a class="nx-btn nx-btn-o" href="#contact">About the awards</a>
+        </div>
+      </article>
+      <article class="nx-evc">
+        <span class="nx-tag nx-tag-o">Monthly · In person</span>
+        <h3 class="nx-h nx-h3" style="font-size:clamp(1.5rem,1.6vw + 1rem,2.2rem)">[Working name] NEXUS Sessions</h3>
+        <p class="nx-sub">In-person sessions on a set topic, at partner venues around the UK. Each one brings together founders, institutions and specialists.</p>
+        <p class="nx-sub" style="font-size:14px">[Series name, venue partner, first date and topic to be confirmed]</p>
+        <div class="nx-btns">
+          <a class="nx-btn nx-btn-y" href="#contact">Register interest</a>
+          <a class="nx-btn nx-btn-o" href="#contact">Sponsor a session</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Partner network -->
+<section id="network" class="nx-white nx-sec nx-anchor">
+  <div class="nx-c" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:36px clamp(32px,5vw,72px);align-items:start">
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <p class="nx-eyebrow"><span class="nx-dot"></span>Partner network</p>
+      <h2 class="nx-h nx-h2">Specialists join when you need them.</h2>
+      <p class="nx-sub" style="max-width:32rem">NEXUS stays your single point of contact.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <ul class="nx-chips">
+        <li class="nx-chip">Accountancy</li>
+        <li class="nx-chip">Corporate finance</li>
+        <li class="nx-chip">Banking and payments</li>
+        <li class="nx-chip">Legal</li>
+        <li class="nx-chip">IP and patents</li>
+        <li class="nx-chip">AI strategy</li>
+        <li class="nx-chip">R&amp;D tax</li>
+        <li class="nx-chip">Venues</li>
+      </ul>
+      <p class="nx-sub" style="font-size:14px">[Named partners and logos appear only once each partner confirms in writing]</p>
+      <p><a class="nx-link" href="#contact">Professional firm? Partner with NEXUS →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- 11. Team -->
+<section id="about" class="nx-grey nx-sec nx-anchor">
+  <div class="nx-c" style="display:flex;flex-direction:column;gap:clamp(32px,4vw,56px)">
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <p class="nx-eyebrow"><span class="nx-dot"></span>The team</p>
+      <p class="nx-quote">[Placeholder: founder quote, one or two sentences on why NEXUS exists, to be approved]</p>
+    </div>
+    <ul class="nx-team">
+      <li><div class="nx-ph" role="img" aria-label="Placeholder for portrait of Mark Sarfo-Kantanka">[Portrait: black and white]</div><b>Mark Sarfo-Kantanka</b><span>CEO and Co-Founder</span></li>
+      <li><div class="nx-ph" role="img" aria-label="Placeholder for portrait of Mauria Fransishku">[Portrait: black and white]</div><b>Mauria Fransishku</b><span>NEXUS Manager</span></li>
+      <li><div class="nx-ph" role="img" aria-label="Placeholder for portrait of Grace Mander">[Portrait: black and white]</div><b>Grace Mander</b><span>Operations Manager</span></li>
+      <li><div class="nx-ph" role="img" aria-label="Placeholder for portrait of Kolos Sipos">[Portrait: black and white]</div><b>Kolos Sipos</b><span>Business and Finance Analyst</span></li>
+      <li><div class="nx-ph" role="img" aria-label="Placeholder for portrait of Jonny Quirk">[Portrait: black and white]</div><b>Jonny Quirk</b><span>Head of Community</span></li>
+      <li><div class="nx-ph" role="img" aria-label="Placeholder for portrait of Sheleene Sealy">[Portrait: black and white]</div><b>Sheleene Sealy</b><span>Social Media Manager</span></li>
+      <li><div class="nx-ph" role="img" aria-label="Placeholder for portrait of Zee West">[Portrait: black and white]</div><b>Zee West</b><span>Head of Development</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 12. Insights -->
+<section id="insights" class="nx-white nx-sec nx-anchor">
+  <div class="nx-c" style="display:flex;flex-direction:column;gap:clamp(32px,4vw,56px)">
+    <div style="display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px">
+      <div style="display:flex;flex-direction:column;gap:18px;max-width:46rem">
+        <p class="nx-eyebrow"><span class="nx-dot"></span>Insights</p>
+        <h2 class="nx-h nx-h2">Intelligence from the UK and Asia innovation corridor.</h2>
+      </div>
+      <a class="nx-link" href="#insights">All insights →</a>
+    </div>
+    <div class="nx-ins">
+      <a class="nx-art" href="#insights"><span class="nx-eyebrow" style="font-size:11.5px">Insight</span><h3>The Next £10bn Opportunities in Creative-Tech: Where We're Seeing Signals</h3><span style="font-weight:700">Read →</span></a>
+      <a class="nx-art" href="#insights"><span class="nx-eyebrow" style="font-size:11.5px">Insight</span><h3>IP as an Asset: How Creative Founders Can Make Their Work Investable</h3><span style="font-weight:700">Read →</span></a>
+      <a class="nx-art" href="#insights"><span class="nx-eyebrow" style="font-size:11.5px">Insight</span><h3>Partnerships as Growth: How to Secure Collabs That Move Revenue</h3><span style="font-weight:700">Read →</span></a>
+      <div class="nx-rep">
+        <span class="nx-tag">Report</span>
+        <h3 class="nx-h nx-h3">Doing Business in China 2027</h3>
+        <p class="nx-sub" style="font-size:15px">[Placeholder: report in development. Content and publication date to be confirmed]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13. FAQ -->
+<section class="nx-white" style="padding-bottom:clamp(64px,9vw,112px)">
+  <div class="nx-c" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:32px clamp(32px,5vw,72px);align-items:start">
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <p class="nx-eyebrow"><span class="nx-dot"></span>Common questions</p>
+      <h2 class="nx-h nx-h2">Straight answers.</h2>
+    </div>
+    <div class="nx-faq" style="grid-column:span 1">
+      <details><summary>What does NEXUS do?</summary><p>NEXUS helps technology businesses land, grow and scale in the UK. We work with international technology companies entering the UK, the innovation institutions that back them, and UK scale-ups ready for their next stage. China is our flagship corridor.</p></details>
+      <details><summary>Who do you work with?</summary><p>Science parks, innovation zones, hubs and funds; international technology companies; UK frontier-tech companies that are already trading; and professional firms that partner with us or sponsor our events.</p></details>
+      <details><summary>How do you work with institutions outside the UK?</summary><p>We act as their operational presence in the UK. We represent them, run showcase events, build a pipeline of opportunities and support their companies as they land. Our MOU with Binhai Zhongguancun Science Park in Tianjin is one example.</p></details>
+      <details><summary>Do you endorse visa applications?</summary><p>NEXUS reviews and endorses Innovator Founder applicants as a consortium partner of UK Endorsing Services (UKES). Applications are made through UKES, and endorsement decisions are entirely separate from our commercial services.</p></details>
+      <details><summary>How do I start, and what does it cost?</summary><p>Companies and scale-ups start with a paid diagnostic: a focused session and a written plan, with the fee credited against further work [fee to be confirmed]. Institutions start with a partnership call.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 14. Contact routes -->
+<section id="contact" class="nx-black nx-sec nx-anchor">
+  <div class="nx-c" style="display:flex;flex-direction:column;gap:clamp(32px,4vw,56px)">
+    <div style="display:flex;flex-direction:column;gap:18px;max-width:46rem">
+      <h2 class="nx-h nx-h1">Tell us where you want to <span style="color:#DFFF13">grow.</span></h2>
+      <p class="nx-sub">Choose the route that fits. Each one goes straight to the right person on our team.</p>
+    </div>
+    <div class="nx-cards3">
+      <div class="nx-tile">
+        <span class="nx-eyebrow" style="font-size:11.5px">Institutions</span>
+        <h3 class="nx-h nx-h3">Discuss a UK partnership</h3>
+        <p class="nx-sub">Representation and landing programmes for your companies.</p>
+        <a class="nx-btn nx-btn-y" href="#contact">Book a partnership call</a>
+      </div>
+      <div class="nx-tile">
+        <span class="nx-eyebrow" style="font-size:11.5px">Companies and scale-ups</span>
+        <h3 class="nx-h nx-h3">Start with a diagnostic</h3>
+        <p class="nx-sub">A focused session and written plan for your next stage.</p>
+        <a class="nx-btn nx-btn-y" href="#contact">Book a paid diagnostic</a>
+      </div>
+      <div class="nx-tile">
+        <span class="nx-eyebrow" style="font-size:11.5px">Firms and sponsors</span>
+        <h3 class="nx-h nx-h3">Reach our audience</h3>
+        <p class="nx-sub">Session and awards sponsorship, and referral partnerships.</p>
+        <a class="nx-btn nx-btn-y" href="#contact">Request the sponsor pack</a>
+      </div>
+    </div>
+    <p class="nx-sub" style="font-size:15px">General enquiries: [email address to be confirmed] · [response-time promise to be confirmed]</p>
+  </div>
+</section>
+</main>
+
+<!-- 15. Footer -->
+<footer class="nx-black nx-foot" style="padding-top:clamp(56px,7vw,88px);padding-bottom:32px;border-top:1px solid rgba(255,255,255,.25)">
+  <div class="nx-c">
+    <div class="nx-foot-grid">
+      <div style="display:flex;flex-direction:column;gap:18px;max-width:20rem">
+        <a href="#top" aria-label="NEXUS home" style="padding:0;line-height:0"><img src="./assets/ccc9e9c317202666259038aed4454c9d.svg" alt="NEXUS" width="150" height="35" style="width:150px;height:auto"></a>
+        <p class="nx-eyebrow" style="font-size:13px">The launchpad for innovative businesses.</p>
+        <p class="nx-sub" style="font-size:15px">Helping technology businesses land, grow and scale in the UK, with China as our flagship corridor.</p>
+      </div>
+      <div>
+        <h4>Who we help</h4>
+        <ul>
+          <li><a href="#routes">Institutions</a></li>
+          <li><a href="#routes">International companies</a></li>
+          <li><a href="#routes">UK scale-ups</a></li>
+          <li><a href="#network">Partner with NEXUS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#corridor">Asia corridor</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#about">About and team</a></li>
+          <li><a href="#about">Endorsing role</a></li>
+          <li><a href="#insights">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#contact">Talk to us</a></li>
+          <li><span class="nx-sub" style="font-size:15px;display:inline-block;padding:6px 0">[Email address to be confirmed]</span></li>
+          <li><span class="nx-sub" style="font-size:15px;display:inline-block;padding:6px 0">[Social links: LinkedIn, Instagram, X, Facebook]</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nx-legal">
+      <p>© 2026 NEXUS Creative HQ Ltd · Company number 12667243 · [Registered office to be confirmed]</p>
+      <ul>
+        <li><a href="#top">Privacy</a></li>
+        <li><a href="#top">Cookies</a></li>
+        <li><a href="#top">Terms</a></li>
+        <li><a href="#top">Accessibility</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":9800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const open = !!(this.state && this.state.menuOpen);
+    return {
+      menuExpanded: open ? 'true' : 'false',
+      menuLabel: open ? 'Close' : 'Menu',
+      menuClass: open ? 'is-open' : '',
+      toggleMenu: () => this.setState({ menuOpen: !open }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      onKey: (e) => { if (e && e.key === 'Escape' && open) { this.setState({ menuOpen: false }); } }
+    };
+  }
+}
+</script>
+</body>
+</html>

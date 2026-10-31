@@ -1,0 +1,22 @@
+{
+  "id": "answer_y9iswlgb2d",
+  "object": "answer",
+  "created": 1793462261,
+  "task": "What is the 2025-2026 context for Chinese and Hong Kong technology companies investing in or expanding to the UK: UK-China relations, Prime Minister visits, trade dialogues, Chinese FDI into UK tech, Hong Kong as gateway, key sectors (AI, EV, life sciences, fintech), and UK Innovator Founder visa statistics? Give dated facts with sources.",
+  "result": {
+    "json_content": "{\"result\":\"**UK–China relations and official engagement:** On 11 January 2025, Chancellor Rachel Reeves and Vice Premier He Lifeng concluded the 11th Economic and Financial Dialogue in Beijing. They described a durable, stable and respectful relationship as mutually beneficial, and agreed to engage constructively to give businesses greater certainty. The outcomes included plans for trade and industrial dialogues and support for investment in clean technologies, life sciences, digital technology and financial services, subject to national-security frameworks. On 11 January 2025, the sides also said they would convene the 14th Joint Economic and Trade Commission (JETCO) at an appropriate time. A British Chambers of Commerce account dated 2 July 2026 says the JETCO met in Beijing the previous September, and places it in a renewed-engagement sequence that included Prime Minister Keir Starmer’s January 2026 China visit. During that visit, the two governments agreed to develop a long-term, consistent comprehensive strategic partnership. **Technology-related areas:** The 2025 dialogue committed the sides to exchange views on automobile standards and policy, green and low-carbon development, and the digital economy; it also identified clean technologies, life sciences, digital technology and financial services as growth sectors for investment. The dialogue welcomed continued cooperation on financial technology and encouraged UK fintech firms to work with licensed Chinese institutions and apply to innovation-regulatory schemes in Beijing, Shanghai and Shenzhen. It also committed the sides to maintain communication on AI. These points establish areas of cooperation, not a specific UK–China EV investment agreement. **Chinese investment into UK technology:** The available figures do not quantify Chinese FDI specifically into UK technology. A report on Chinese investment in Europe says Chinese outbound investment in the EU and UK combined rose 67% in 2025 to €16.8 billion, from €10.1 billion in 2024; that combined figure should not be treated as a UK-only or technology-only total. **Hong Kong as a gateway:** At London Tech Week, 9–13 June 2025, InvestHK and the London ETO presented Hong Kong as a gateway for UK technology businesses expanding into Asia. InvestHK cited more than HK$200 billion in government support for technology growth including AI, biotech and Web3, and said its 2024 Startup Survey ranked the UK as Hong Kong’s second-largest source of international startup founders. This is evidence about Hong Kong’s role for UK firms going into Asia, rather than a measure of Hong Kong companies entering the UK. **Innovator Founder visa:** A report dated 14 October 2026 says 221 main applicants were issued Innovator Founder visas from outside the UK in the year ending June 2026, up 15% from 193 the year before. The figure is not broken down by Chinese or Hong Kong nationality.\"}",
+    "json_hosted_url": "https://olostep-storage.s3.us-east-1.amazonaws.com/answer_y9iswlgb2d.json",
+    "sources": [
+      "https://startgrowimprove.com/uk-innovator-founder-visa-statistics/",
+      "https://merics.org/en/report/chinese-investment-rises-7-year-high-chinese-fdi-europe-2025-update",
+      "https://www.investhk.gov.hk/en/news/investhk-and-london-eto-strengthen-hksar-uk-innovation-ties-at-london-tech-week-2025",
+      "https://www.britishchambers.org.uk/news/2026/07/why-uk-china-trade-dialogue-matters/",
+      "https://www.fmprc.gov.cn/eng/gjhdq_665435/3265_665445/3371_664802/",
+      "https://www.gov.uk/government/publications/2025-uk-china-economic-and-financial-dialogue-policy-outcomes/2025-uk-china-economic-and-financial-dialogue-policy-outcomes"
+    ]
+  },
+  "metadata": {},
+  "storage": {
+    "expires_in": "7d"
+  }
+}

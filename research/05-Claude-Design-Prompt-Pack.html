@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>NEXUS: Claude Design prompt pack</title><style>
+body{margin:0;background:#fff;color:#000;font-family:'General Sans','Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.6}
+main{max-width:1100px;margin:0 auto;padding:40px 24px 80px}
+h1,h2,h3{font-family:'Neutral Face','Arial Black',Arial,sans-serif;line-height:1.15}
+h1{font-size:2.4rem;text-transform:uppercase;border-bottom:6px solid #DFFF13;padding-bottom:12px}
+h2{font-size:1.6rem;margin-top:56px;padding:10px 14px;background:#000;color:#fff}
+h3{font-size:1.2rem;margin-top:32px;border-left:6px solid #DFFF13;padding-left:10px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th{background:#000;color:#fff;text-align:left}
+th,td{border:1px solid #D1D1D1;padding:8px;vertical-align:top}
+tr:nth-child(even) td{background:#f6f6f6}
+code{background:#f1f1f1;padding:1px 4px;border-radius:3px;font-size:13px}
+pre{background:#111;color:#eee;padding:14px;overflow:auto;border-radius:4px}
+pre code{background:none;color:inherit}
+blockquote{margin:16px 0;padding:12px 16px;background:#f6f6f6;border-left:6px solid #DFFF13}
+hr{border:0;border-top:1px solid #D1D1D1;margin:40px 0}
+@media print{h2{break-before:page}table,pre{break-inside:avoid}}
+</style></head><body><main><h1 id="nexus-claude-design-prompt-pack">NEXUS: Claude Design prompt pack</h1>
+<p><strong>Why a prompt pack:</strong> Cline (this agent) can't operate Claude Design directly. You run these prompts in Claude Design (claude.ai, the Design tab, or <code>/design</code> inside Claude Code), export the results into <code>research\design-exports\</code>, and Cline then checks them against the SEO plan.</p>
+<p><strong>Exports available:</strong> PDF, PPTX, standalone HTML / HTML bundle, Google Slides, partner tools (e.g. Canva, Vercel), and <strong>Handoff to Claude Code</strong> for the build.</p>
+<blockquote>
+<p><strong>Likely origin of the existing drafts:</strong> <code>seo lady draft.html</code> (with <code>&lt;x-dc&gt;</code>, <code>DCLogic</code>, <code>support.js</code>) and "NEXUS Website Redesign Prototype-2" (a "Loading… Unpacking…" shell) look like Claude Design exports. If you have the original project, <strong>re-export it as PDF or standalone HTML</strong>. That's the easiest way for us to finally read Prototype-2.</p>
+</blockquote>
+<hr />
+<h2 id="step-1-design-system-do-this-once">Step 1: Design system (do this once)</h2>
+<p>Upload, or create in Settings → Design Systems:</p>
+<table>
+<thead>
+<tr>
+<th>Upload</th>
+<th>From</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brand guidelines</td>
+<td><code>NEXUS Brand Assets\NEXUS Brand Guidelines\NEXUS Brand Guidelines 2025.pdf</code></td>
+</tr>
+<tr>
+<td>Logos</td>
+<td><code>NEXUS Brand Assets\PNG\</code> (white-on-black, metallic-on-white)</td>
+</tr>
+<tr>
+<td>Brand graphics</td>
+<td><code>NEXUS Brand Assets\NEXUS Brand Graphics\</code> (X shapes)</td>
+</tr>
+<tr>
+<td>Fonts</td>
+<td>Neutral Face Bold, General Sans (licensed files from NEXUS)</td>
+</tr>
+<tr>
+<td>Copy source</td>
+<td><code>research\local-docs\prototype\*.txt</code> + the Developer Brief</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Create a design system for NEXUS from the uploaded brand guidelines.
+- <strong>Colours:</strong> Pitch Black #000000 (dominant), Electric Yellow #DFFF13 (accent only, never a section background, never text on white), Studio Grey #D1D1D1, Pure White #FFFFFF.
+- <strong>Type:</strong> headlines in Neutral Face Bold, uppercase; body in General Sans, 17px, line height 1.6.
+- <strong>Buttons:</strong> pill shape, at least 48px tall. Primary is yellow with black text; secondary is outline.
+- <strong>Layout:</strong> 1200px max width, 32px gutters (20px on mobile), 64–112px between sections.
+- <strong>Logo:</strong> white on black or metallic on white only.
+- <strong>Tone:</strong> direct and confident; provocative headlines, substantive body copy.
+- <strong>Images:</strong> no stock or AI-generated photos. Use labelled boxes "[Placeholder: …]".
+- <strong>Accessibility:</strong> WCAG 2.2 AA contrast; visible focus states; respect reduced motion.</p>
+</blockquote>
+<hr />
+<h2 id="step-2-prompts">Step 2: Prompts</h2>
+<h3 id="a-homepage-hero-two-variants-for-the-lyssna-5-second-test">A. Homepage hero: two variants (for the Lyssna 5-second test)</h3>
+<blockquote>
+<p>Using the NEXUS design system, create two hero variants on black, each at 1440px desktop and 390px mobile.</p>
+<p><strong>Shared elements</strong>
+- Eyebrow: "The UK–China innovation corridor"
+- Intro: "NEXUS is the operational bridge between the UK and China for technology companies, science parks and innovation zones: one accountable team in London, partners on the ground in Tianjin, Shanghai and Hong Kong."
+- Buttons: "Find your route" (yellow) and "Talk to our team" (outline)
+- Image: "[Placeholder: Tianjin signing photograph]"</p>
+<p><strong>Headlines</strong>
+- Variant A H1: "Land, grow and scale technology businesses in the UK."
+- Variant B H1: "Land, grow and scale in the UK.", with a second line "From China and beyond." in yellow.</p>
+<p><strong>Under each hero, a proof strip</strong>
+- Stats: 100+ businesses actively supported · 16 curated global partnerships · 1,400+ business plans assessed · Supplier and security cleared
+- Four logo placeholders: City of London, TEDA, S-Tron, CBBC, each marked "permission to confirm"</p>
+</blockquote>
+<h3 id="b-audience-page-template-international-companies">B. Audience page template: <code>/international-companies</code></h3>
+<blockquote>
+<p>Create the "For international companies" page.
+- <strong>Header:</strong> breadcrumb Home / For international companies; H1 "Reach UK customers sooner."
+- <strong>Answer-first paragraph</strong> (about 50 words, real text, for search and AI): NEXUS helps international technology companies, especially from China and Hong Kong, enter the UK. It starts with a paid Market-Entry Diagnostic, followed by UK Soft Landing support.</p>
+<p><strong>Sections, in order</strong>
+1. The challenge
+2. What we provide: three offer cards (Market-Entry Diagnostic, UK Soft Landing, Market Intelligence Report), each with the price line "On application"
+3. Why us: 1,400+ plans assessed; RidgeCore represents clients in China; one accountable team
+4. Case study cards: DarkhorseOne, Eco2Life, Smart Patent
+5. Who this is for, and not for. Not for visa-only enquiries, which go to UK Endorsing Services.
+6. How it works: Diagnose, Plan, Land, Grow
+7. Four FAQs as an accordion
+8. Enquiry form: company, HQ country, sector, stage, timeline, name, work email, an unticked marketing-consent box and a privacy link</p>
+</blockquote>
+<h3 id="c-asia-corridor-page-both-directions">C. Asia corridor page (both directions)</h3>
+<blockquote>
+<p>Create the "Asia corridor" page.
+- <strong>H1:</strong> "Our Asia corridor, led by China."
+- <strong>Intro:</strong> the corridor works in both directions: Chinese companies and institutions landing in the UK, and UK companies entering China via Hong Kong.
+- <strong>Partner cards:</strong>
+  - RidgeCore Ventures (reciprocal representation)
+  - Tianjin (two MOUs)
+  - S-Tron Shanghai (exhibiting in 2025, speaking in 2026)
+  - Alibaba Entrepreneurs Fund and Swiss Bluefaer: name only, marked "[wording to be approved]", no logos
+- <strong>"Why Hong Kong" card.</strong>
+- <strong>Vertical timeline:</strong>
+  - 2025: first Tianjin MOU
+  - 2025: S-Tron Shanghai
+  - March 2026: NEXUS opens in China [to confirm]
+  - April 2026: CBBC delegation to Hangzhou
+  - 2026: speaking at S-Tron
+  - 2026: second Tianjin MOU
+- <strong>2027 delegations section</strong> with an interest form. Destination field: Mainland China / Hong Kong / Both / Not sure.
+- <strong>Case studies:</strong> Auto Impartial, Eco2Life, Smart Patent.
+- Do <strong>not</strong> include a Chinese-language block.</p>
+</blockquote>
+<h3 id="d-client-strategy-deck-10-slides-pptxpdf">D. Client strategy deck (10 slides, PPTX/PDF)</h3>
+<blockquote>
+<p>Upload <code>02-NEXUS-Website-SEO-Strategy-Plan.md</code> and <code>04-NEXUS-SEO-Guide.md</code>, and use them to create a 10-slide deck in the NEXUS design system:
+1. Title: "Making NEXUS the answer for UK–China tech"
+2. Where we are: 884 linking domains, 2 ranking keywords, every page titled "Nexus"
+3. How AI describes NEXUS today
+4. The positioning fix (hero A and B)
+5. Five audiences, including outbound UK → China
+6. Site map with one keyword cluster per page
+7. Content clusters A–E
+8. Your wider toolset (Ticket Tailor, Ask Fin, Mailchimp, Ghost, Typeform, Zoho, Nexudus) and the decisions needed
+9. Timeline: launch Thursday 12 November, GIA Monday 16 November
+10. What we need from you: the top questions and the accesses</p>
+<p>Style: big numbers, one idea per slide, black backgrounds with yellow used only as an accent.</p>
+</blockquote>
+<h3 id="e-one-pager-the-nexus-tool-ecosystem">E. One-pager: the NEXUS tool ecosystem</h3>
+<blockquote>
+<p>From <code>01-NEXUS-Research-Findings.md</code> section 8, create a single A4 diagram of NEXUS's systems, grouped by job: Website, Awards site, Blog, Tickets, AI chat, Newsletters, Forms, Memberships, Email, Analytics, DNS. Tag each system with one status: Keep / Merge / Export then retire / Decide.</p>
+</blockquote>
+<hr />
+<h2 id="step-3-bring-it-back-and-check">Step 3: Bring it back and check</h2>
+<ol>
+<li>Export pages as <strong>standalone HTML</strong>, and the deck and one-pager as <strong>PPTX/PDF</strong>. Save them in <code>research\design-exports\</code>.</li>
+<li>Ask Cline to check the exports:
+   - one H1 per page
+   - copy is real text, not images
+   - an answer-first paragraph and FAQs are present
+   - no Google Fonts, YouTube or reCAPTCHA (these break in mainland China)
+   - brand rules followed: yellow never used as a background
+   - placeholders are kept, with no invented claims</li>
+<li>For the build: <strong>Handoff to Claude Code</strong>, or give the HTML to the developer together with the brief.</li>
+</ol>
+<p><strong>Confidentiality:</strong> the case studies are marked "Private &amp; Confidential", and <code>01</code> contains security notes. Keep the Claude Design project private to your organisation, and don't share public links until NEXUS approves.</p></main></body></html>

@@ -1,0 +1,25 @@
+{
+  "id": "answer_9ep7reik2o",
+  "object": "answer",
+  "created": 1793462269,
+  "task": "Which organisations operate as a UK-China technology bridge or landing partner for Chinese science parks, high-tech zones (e.g. Zhongguancun, TEDA Tianjin, Shanghai, Shenzhen, Suzhou) and Chinese tech startups coming to London or the UK? Include UK-China innovation centres, Chinese overseas incubators in London, cross-border accelerators, law/consulting firms with China desks and Hong Kong-UK bridges (InvestHK, HKSTP, Cyberport UK links). Give name, website, services, and positioning.",
+  "result": {
+    "json_content": "{\"result\":\"Supported examples (websites and services below are only those stated in the passages):\\n\\n• TusPark UK — https://www.tuspark.co.uk/our-science-parks/ — Runs Cambridge and Newcastle innovation spaces, including co-working and bio-incubator space; offers accelerator access, investor networking, business-partner matching, and access to legal, accounting and IP support. Positioned as a UK base in the wider TusPark ecosystem, supporting UK companies’ access to China and venture growth.\\n\\n• UK-China Business & Innovation Hub — The CBBC page is https://www.cbbc.org/events/opening-ceremony-uk-china-business-innovation-hub-suzhou — A joint initiative of the China-Britain Business Council and Jiangsu Provincial Government. The passage identifies it as a business and innovation hub in Suzhou, but does not specify its service offer.\\n\\n• London & Partners and TechNode — The passage identifies a content partnership to bridge London and China’s tech ecosystems; it does not provide either organisation’s website or describe additional services.\\n\\n• Hong Kong Science and Technology Parks Corporation (HKSTP) and the UK Department for International Trade — The passage reports a collaboration to enhance a Hong Kong–UK fintech start-up exchange. It does not give a website or further service details.\\n\\n• Cocoon Networks — The passage reports plans for a £500 million fund and incubator space in London. No website or further service details are provided.\\n\\n• Chan Neill Solicitors LLP — China Desk; the passage describes dedicated legal services for Chinese and international clients across the UK and overseas. A website URL is not stated in the passage.\\n\\n• DAC Beachcroft — https://www.dacbeachcroft.com/en/Location/International-Groups-and-Desks/China-Desk — China Desk of lawyers across practice areas with experience serving clients from China and the Asia-Pacific region. The passage does not specify particular services.\\n\\n• WilmerHale — https://www.wilmerhale.com/en/solutions/geographic-reach/asia/china-desk — China Desk; the passage describes experience with China-related regulatory and transactional challenges, policy issues and geopolitical risk. It does not establish a specific UK landing-partner service.\\n\\nThe supplied passages do not identify or describe InvestHK or Cyberport UK links, nor do they establish that these organisations provide UK landing services. The China Innovation Hub snippet gives a London address and NCUB contact details but no service description or usable website URL.\"}",
+    "json_hosted_url": "https://olostep-storage.s3.us-east-1.amazonaws.com/answer_9ep7reik2o.json",
+    "sources": [
+      "https://www.google.com/goto?url=CAESkwEB6zswFZcZVwfLeAQGZWpQcmAcuDPVJi5I7Mp632QiyjpSzZKLKQy9_UFggOj55LIFI9x2W8ifN0neygXIH4-a5xa5tV0cKkvH-d0l0YOgDl4Hmo0hFY_SkGKr5MYiGNCrg-KOXHXz9XVhGVeWBZ-T9tKDyKXjPBheSv1iCAGYsITtBoFtfIZPwnZj9-S8K998Pbk",
+      "https://www.wilmerhale.com/en/solutions/geographic-reach/asia/china-desk",
+      "https://www.dacbeachcroft.com/en/Location/International-Groups-and-Desks/China-Desk",
+      "https://www.google.com/goto?url=CAEScgHrOzAVPUCBgePTELWTdeEPoxZrAZ-3bp-vODpBayFS2V-csKt3hoQod4nXSni6IlhqbQcQSxj9TXWoe9ZGnMVF2SQsJk2ExmU2V5QAvDmY2arC5HuD5D-3EBkL3TKFZtXvCAfkme1kv9T6Dfvzfa2CPw",
+      "https://www.google.com/goto?url=CAEStwEB6zswFVHjCtDUnz6sN1L2uftC7BSyLxoL3CLQxX-j35TFkO8rG1HlWNb_FFml3qsMQhMFI0jE9WORw0pwHimatVuATPC41wj_7TdL8eWZP6sd1Y43t7d4QbdnhobHaasTFzB26LUu82b04zEqc9C7QzVJIiZsmCd7Wj9ZlIhJjYroDsaW5NYf80VvFxijuc_XIQ_qPT35YfJ76JCfRhx0GQt2euzbYQIg3Cfh9YmIr7vM6bbk7Jg",
+      "https://www.google.com/goto?url=CAESrgEB6zswFTpcjrglYnZWML3HwAPa3LS9Az_0m1XbVzBvmkqOntMFGP7L4wxqrWb_FWhnxa3tcpE6H0AvYFoZbYfl9ONZGYS215aB_qL1JhQ2UuOU5Rl5V7oa2dXtpPHVdr2CXSat90wlVtpd17l4sHCiE5Sm0NRrq8mLXhLcPsAYVHn1JywC9hJRysmwK2s0TiZmKHdMS3OiF_t3S7lbVySyDmdV2T3M8EdOndAaz9Q&gsessionid=TzUAbTg9303R3DE7Nz2-bXlviQSp7FouWpX7j_sGTLDqE_MH2IaRCg",
+      "https://www.google.com/goto?url=CAEStwEB6zswFVa28ef_nHFoA3pzdvgezXQbPPiSH0ACYYbcmC8N4gquM0knV61Y_KvJUkNsxhmySHrquFSQINjm6oBuqoSkTPoXjILg39WOzN_aNHZJVuaBsp64-dny6Ny-jqWkRIQNF9e-laLpgmZL2o4CcR_e-IorYYdSj7yHzVydqg7ZmqLpwv-faQSU9cY4Wspo-kD0sQEDJvltCTI6bnXXMyUNO7UERB_g8OKpZw1KWYWG1oMpGaY",
+      "https://www.cbbc.org/events/opening-ceremony-uk-china-business-innovation-hub-suzhou",
+      "https://www.tuspark.co.uk/our-science-parks/"
+    ]
+  },
+  "metadata": {},
+  "storage": {
+    "expires_in": "7d"
+  }
+}

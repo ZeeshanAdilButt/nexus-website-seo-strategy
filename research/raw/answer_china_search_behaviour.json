@@ -1,0 +1,22 @@
+{
+  "id": "answer_cz23yi3uxn",
+  "object": "answer",
+  "created": 1793462684,
+  "task": "How do Chinese companies and Chinese science parks research overseas expansion partners online? Which platforms matter (Baidu, WeChat official accounts, Zhihu, Xiaohongshu, LinkedIn China), what Chinese search terms are used for UK market entry or setting up a company in the UK (e.g. 英国落地, 出海英国, 英国公司注册, 英国市场准入), and what do Western firms do to be found by Chinese decision makers? Give practical, dated evidence.",
+  "result": {
+    "json_content": "{\"result\":\"Chinese companies should treat online partner research as a cross-platform process, not a single search. A recent marketing post claims 70%+ of B2B buyers research through Baidu and Zhihu before contacting suppliers; treat that as a claim from the post, not an independently verified statistic. Baidu is useful for finding structured, searchable information; Zhihu for expert answers and comparisons; Xiaohongshu/RedNote for discovery and peer validation; and WeChat Official Accounts, groups and WeCom for deeper engagement and follow-up. A China B2B article describes buyers checking AI summaries, social discussions, media mentions and community recommendations before visiting a company site, and recommends expert explainers, case studies, trade-media coverage and other third-party credibility signals.\\n\\nFor UK-related searches, passages document the wording 英国市场准入 (UK market access), 英国公司注册 (UK company registration), and 英国出海 (UK expansion/going abroad). 英国公司设立 and compliance-related wording also appear in UK-entry material. These are evidenced terms and page headings, not measured search queries. 英国落地 is not documented in the passages. Practical searches could combine the evidenced terms with a sector or service, but no query-volume data is provided.\\n\\nPractical evidence: on 21 April 2025, a Chinese-language UK-market article advised companies planning UK expansion to plan legal, tax and compliance matters and referenced 英国市场准入 and company establishment. A Chinese-language UK company-registration page presents registration as a route for Chinese companies entering the UK. The UK Department for Business and Trade’s Chinese-language page describes help for Chinese investors, including finding business-development contacts, company-registration support, and help comparing locations; the BIST platform likewise says it matches Chinese companies and buyers with UK suppliers and projects. For firms seeking to be found, publish useful Chinese-language material around these needs, make it searchable and answer-led, and reinforce it with expert content, third-party coverage and a credible WeChat presence. The passages do not establish that LinkedIn China is a leading research platform: one B2B post contrasts cold LinkedIn outreach with WeCom, while offering no current usage evidence for LinkedIn China. Nor do they separately document science-park staff’s online research habits.\"}",
+    "json_hosted_url": "https://olostep-storage.s3.us-east-1.amazonaws.com/answer_cz23yi3uxn.json",
+    "sources": [
+      "https://www.google.com/goto?url=CAESWgHrOzAVXIXNqDyHbH9JebNyod64as3SIKtkJz16dp7I1En_Nn7RcyWbXVyM6QNWsu1wr3VuluRjYiKy3N94OpZMu_oDDYwxbkOKPvP-fS0yMmo07no6xtysPw",
+      "https://www.google.com/goto?url=CAEShgEB6zswFfXgYwVY4FA2KWSi7RcGwP9_v6dtY_Y6W-DLzgPIj_BPzhgojWUrjxG1d3MLjofijPf8l7nA6hK-YigSlGk73s0fiUH5RFcdlDW-sRjEUlUkxI1VucqQcJwiG2XyyGekDQ7wk1dKJ_0eKVqCCihoBE27sYgX0Q_JNXUjsFMMQ1plVg",
+      "https://www.google.com/goto?url=CAESsgEB6zswFXVcnGNTl3742qUxNwIpZnVfIYZhKNQsjLN_Lv-73xKE-hBhcN61soVO8tSDhWBObmzFoYd5YCH1_8eAwA0U4GMdL1Q5CKtRiVw9rSUqmV3-AZIsDiFYHfkX_tVCV9t6Eg62DZOSBjVruyl0ZsI8qfems_-Sy-vytPKNwR-bSx4tqaNUZNO0K62uH7HIwBhSAW5llCCOPahyaHQxqwJnPWrvb8nt4GIid3_mFqBj",
+      "https://www.google.com/goto?url=CAESZwHrOzAVlsH0AYI6zocWEMGn5nQNUOPdyotiMhCR8njSXTCsn4mRwasYMc06yU2ZRhQId-IIkF7J-rq4m4-KHJfH6tQs1Ce7av32ee6SNEdLKjpEE2R8kjwJTKGDvPVMU4TUxcZf8PI",
+      "https://www.brandigochina.com/b2b-marketing-in-china-is-getting-wildly-complicated",
+      "https://www.google.com/goto?url=CAESlgEB6zswFSs61XG7VMKR99gr5mp-9Ov6WEc2Moo4MnFdsMgVWpNYrHzhc9wK6DbKdn5f8Emy-g3HRXPCswIiyeDbq1lxsG6o0fwgpPHP0_QHCXjnZpd3zDcHbekrYbGPHdYOJJCmymRvvGSNf-qTmpnN8PWxkWRTl94bj9_s9ZHxMk7rGW916Yl37ieorBM1jinDPAnza8Y"
+    ]
+  },
+  "metadata": {},
+  "storage": {
+    "expires_in": "7d"
+  }
+}

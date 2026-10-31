@@ -1,0 +1,21 @@
+{
+  "id": "answer_p613l9vab2",
+  "object": "answer",
+  "created": 1793461954,
+  "task": "Who are the best UK-China business bridge or market entry organisations for technology companies in 2026, which would AI assistants like ChatGPT and Perplexity recommend, and why? Name specific organisations and what evidence (case studies, partnerships, government links) makes them credible.",
+  "result": {
+    "json_content": "{\"result\":\"The passages do not show which organisations ChatGPT or Perplexity actually recommend, nor do they provide named technology-company case studies to compare. Based on the evidence available, the strongest shortlist is: **China-Britain Business Council (CBBC)** for a broad UK–China bridge—it says it helps members grow trade and investment, has close links to the UK Government and devolved administrations, and in 2026 led 50 UK businesses to Shanghai across areas including AI. **Department for Business and Trade’s China Technology Team** for government-backed support: its China-based trade and investment officer supports UK tech companies navigating the market, including SMEs exploring the Yangtze River Delta. **techUK** as a sector-network partner: it co-organised the 2025 UK-China Tech Forum with CBBC, bringing together business, government and academia. These are evidence-based options, not verified AI-assistant endorsements; CBBC appears the broadest starting point, with DBT for official guidance and techUK for technology-sector connections.\"}",
+    "json_hosted_url": "https://olostep-storage.s3.us-east-1.amazonaws.com/answer_p613l9vab2.json",
+    "sources": [
+      "https://www.google.com/goto?url=CAEScQHrOzAVUQn83s4AVR0ZPBJULK-PaXqhV0gT7O7lWF1sDajB9Nt0hJahNYMFcq_S2e1hA5ERy2lZ7NPNp2r2dLvXyQzV-0amFuYPUnterqAqH9IaITJy6TAwll-G6qb_PP5TvW5-_EANRy0YF4mpFzty",
+      "https://www.google.com/goto?url=CAESrAEB6zswFbCRRoGBH7CwBC5YyC4aoyn0gZmeM2UgIvoOtXbEx5Lx00IImllg4gFC9F4wkMGHkCzqTlBbHjS6xDhcf9G9efxWsgr_nrzI2VM6SaXyqz2WAaa8v4jhTScZlQ4cyS5Nq_XdsDVI84ogn3_oG_Prh1W4R9QyWmeqZkgH3nrJ6GgXv-CYwhafCGHJasVmPD21KdsUyKvDNcj1VOEeyOZKCdoUvjfQGyJd",
+      "https://www.google.com/goto?url=CAESrAEB6zswFbJfkDNuwrasWnlJ_ghIpYNuY6paEsvODTqrEMz7hQ8g7oS5ObZ5EkiTgl5pzUfR7pcvNEKxmz6UZGNdeRkcLiMHJyL9IjZ5nYPkTrv57h-6aaOgJAIT2BNRu7ZfAG7ldkbXDlL3Mo_iKrB94j3qsRjBJSWZXqYvDVolr2wUFL9QqKyNLTE7x08jtV0cJl79RZiZ3reOv0JFMXpMQPgcUksRWMou5nAr",
+      "https://www.google.com/goto?url=CAESWgHrOzAVP0pEAyTX0YPVXMHyAGw8Ddot17AhCTHj-07qXQLPpHDbZWu7lxoSdnjkDsLJ7cW4LlrJfVZpfHzX-YLb34usvTIKDCcw8mYZrEvIyZng_Kng5fWsYw",
+      "https://www.cbbc.org/"
+    ]
+  },
+  "metadata": {},
+  "storage": {
+    "expires_in": "7d"
+  }
+}

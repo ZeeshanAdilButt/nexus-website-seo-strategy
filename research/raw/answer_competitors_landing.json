@@ -1,0 +1,20 @@
+{
+  "id": "answer_6j3v3rqn8x",
+  "object": "answer",
+  "created": 1793461957,
+  "task": "List London and UK-based consultancies, landing pads and agencies that run UK soft landing programmes, UK market entry, UK representation or international landing programmes for overseas science parks, innovation zones, tech incubators and Chinese or Hong Kong technology companies. Examples could include London & Partners, UK-China innovation centres, Sino-UK incubators, GoGlobal-style landing pads, Plexal, Tech Nation, Hong Kong Trade Development Council London, InvestHK. For each give name, website, target client, services and pricing model if known.",
+  "result": {
+    "json_content": "{\"result\":\"Evidence-supported options (the passages do not substantiate a broader list of UK inbound landing-pad providers):\\n\\n- **London & Partners** — Website: https://www.londonandpartners.com/. Target: London businesses seeking growth; the passages also record a historical example of helping overseas company Stitch Fix choose London. Services evidenced: London growth support and, in that example, research into setup costs in different cities. Its current Grow London Global programme is for London scaleups expanding internationally, rather than overseas companies entering the UK. Pricing: not stated; the general support for London small businesses is described as free.\\n- **Plexal** — Website: https://www.plexal.com/. Target: UK businesses exploring expansion to Maryland, and Maryland companies exploring the UK through the Maryland Global Gateway exchange. Services evidenced: access to facilities, resources, advisors and affordable rates for businesses exploring Maryland; Maryland companies exploring the UK receive a grant and additional support from the Maryland Department of Commerce. Plexal is identified as an exchange partner, not as the provider of a standalone UK inbound landing programme. Pricing: not stated.\\n- **UK Landing Pad Platform** — Website: https://www.uklandingpad.com/. Target: Indonesian startups and innovative growth-stage companies preparing to explore the UK market. Services: a digital hub and market-readiness resources; tailored mentoring and UK market advice; introductions to relevant investors, corporates and partners; and practical support on visa pathways, UK business banking and tax information. Pricing: not stated.\\n- **OCO Global** — Website: not stated in the passages. Target: the Maryland Department of Commerce’s UK and Ireland work, and companies seeking trade or investment support; the passage describes its role facilitating a UK cybersecurity company’s move to Maryland. Services evidenced: trade, investment and economic-development advisory, and leading the Maryland Department of Commerce office in the UK and Ireland. Pricing: not stated.\\n\\nFor HKTDC, InvestHK, Sino-UK incubators and other named examples, the passages do not provide enough evidence of relevant UK market-entry or landing services to include them.\"}",
+    "json_hosted_url": "https://olostep-storage.s3.us-east-1.amazonaws.com/answer_6j3v3rqn8x.json",
+    "sources": [
+      "https://www.uklandingpad.com/",
+      "https://www.plexal.com/news/global-gateway-uk-startups-landing-pad-us/",
+      "https://www.google.com/goto?url=CAESkQEB6zswFbOi0HOQWq9sFEMoTzw_AWrWwRAsCp6laYAbDu_J8NPQPZyR-0ismgC55lspBuOHwlbJzayDPX-PywYCu3gaG5rnWnLNv8_VNm9RC1XFdaUBCJXEYgBtgO5IUEQhqqUS1JWs0pxUBwq6N_DMCb2LbRDbWJAKVjRY3uYXWBWbvT4zWlEFH4SU955rLs-1",
+      "https://www.londonandpartners.com/"
+    ]
+  },
+  "metadata": {},
+  "storage": {
+    "expires_in": "7d"
+  }
+}

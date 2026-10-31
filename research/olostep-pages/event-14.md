@@ -1,0 +1,84 @@
+Nexus         
+
+[
+
+**_GLOBAL INNOVATOR AWARDS GALA, THE DORCHESTER - GET TICKETS HERE_**
+
+](https://www.tickettailor.com/events/nexus4/2408591)
+
+[](/)
+
+[Sign up](https://forms.zohopublic.eu/gracenexuscr1/form/NEXUSWebsiteEnquiryForm/formperma/8Ikc6HP6xDqPm1Cc4U4viXauqPRm9dl-n6TNOSzzP1I)
+
+18 Aug
+
+![purpose bg](https://www.nexuscreativehq.com/app/1272/cb13d55c8904dfc3e6cd49a35b5b8080.png)                      
+
+18 August 2026 | 8am
+
+# Global Innovator Awards 2026: Recognising the Innovators Who Chose the UK to Build
+
+*   [![facebook-b](https://nexuscreativehq.com/img/icons/social/facebook-b.svg)](http://www.facebook.com/share.php?u=https://nexuscreativehq.com/event/14)
+*   [![twitter-b](https://nexuscreativehq.com/img/icons/social/twitter-b.svg)](https://twitter.com/intent/tweet?text=https://nexuscreativehq.com/event/14)
+*   [![linkedin-b](https://nexuscreativehq.com/img/icons/social/linkedin-b.svg)](https://www.linkedin.com/sharing/share-offsite/?url=https://nexuscreativehq.com/event/14)
+
+**Nominations are now open for the Global Innovator Awards 2026, a new awards programme created by NEXUS to recognise international founders, innovators and exceptional talent building and contributing in the UK.**
+
+Across the UK, some of the most ambitious businesses, technologies and ideas are being shaped by people who made a deliberate decision to bring their talent here.
+
+They have built companies, commercialised research, created jobs, entered new markets and contributed new perspectives to the UK innovation ecosystem.
+
+The [**Global Innovator Awards**](https://www.globalinnovatorawards.com) were created to give those achievements a dedicated platform for recognition.
+
+## Why NEXUS Created the Awards
+
+At NEXUS, we work at the intersection of international ambition and UK opportunity, supporting founders and innovators as they establish, grow and scale in the UK.
+
+Through that work, we see first-hand that the international dimension behind many successful UK ventures is not incidental. The experience, expertise, networks and perspectives founders bring with them can become a fundamental part of what they build here.
+
+The Global Innovator Awards were created to recognise that contribution, and to increase the visibility of the people behind it.
+
+## Who Can Be Nominated?
+
+The awards are open to founders, innovators and exceptional talent who came to the UK through qualifying innovation and talent routes, including:
+
+*   Innovator Founder Visa
+    
+*   Global Talent Visa
+    
+*   Graduate Visa
+    
+*   Innovator Visa
+    
+*   Start-up Visa
+    
+*   Tier 1 Exceptional Talent
+    
+*   Tier 1 Entrepreneur
+    
+
+Nominees should be able to demonstrate meaningful achievement, innovation or contribution through the work they are building in the UK.
+
+You can **nominate yourself or nominate someone whose work deserves greater recognition**. Entry is free.
+
+## Independent Recognition
+
+Nominations will be reviewed by an independent judging panel, bringing together expertise from across business, investment, innovation and the wider UK ecosystem.
+
+The Global Innovator Awards will recognise achievement across ten award categories, alongside an honorary **Pioneer Award**.
+
+Finalists will have the opportunity to gain greater visibility across the GIA ecosystem, with winners announced at the Global Innovator Awards ceremony in Central London in **November 2026**.
+
+## Your Nomination Could Put Someone on the Stage
+
+Some of the innovators most deserving of recognition will not necessarily put themselves forward.
+
+They may be a founder you have invested in, a colleague you have watched build, an innovator you have mentored, or someone whose contribution to their sector deserves a wider audience.
+
+If someone comes to mind, this is the opportunity to recognise them.
+
+**Nominations are now closed.**
+
+**[Visit The Global Innovator Awards](https://globalinnovatorawards.com/)**
+
+[Book now](https://globalinnovatorawards.com/)
