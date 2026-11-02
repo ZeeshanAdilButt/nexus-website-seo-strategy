@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Direction A · The Crossing</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;display=swap">
+<style>
+body{margin:0;background:#000}
+a{color:#FFFFFF}a:hover{color:#DFFF13}
+.d{font-family:'Outfit',Arial,sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-0.015em}
+a:focus-visible,button:focus-visible{outline:3px solid #DFFF13;outline-offset:4px}
+.row{transition:background .2s}.row:hover{background:#0D0D0D}.row:hover .ar{color:#DFFF13;transform:translateX(6px)}
+.ar{transition:transform .2s,color .2s}
+@media (prefers-reduced-motion:no-preference){
+.route{stroke-dasharray:1600;stroke-dashoffset:1600;animation:draw 1.6s .3s ease-out forwards}
+.route2{animation-delay:.7s}
+.ping{animation:ping 2.4s 2s ease-out infinite}
+}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes ping{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}
+</style>
+</helmet>
+<div style="font-family: 'DM Sans', Arial, sans-serif; font-size: 18px; line-height: 1.6; color: #FFFFFF; background: #000000">
+
+  <header style="max-width: 1280px; margin: 0 auto; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px">
+    <img src="/_blob/384f10695d602865bdd54b973fa5c57c" alt="NEXUS" style="height: 22px; width: auto; display: block">
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 32px; font-size: 15px; font-weight: 500">
+      <a href="#" style="text-decoration: none">Institutions</a>
+      <a href="#" style="text-decoration: none">International companies</a>
+      <a href="#" style="text-decoration: none">UK scale-ups</a>
+      <a href="#" style="text-decoration: none">Asia corridor</a>
+      <a href="#" style="text-decoration: none">Insights</a>
+      <a href="#" style="text-decoration: none">About</a>
+    </nav>
+    <a href="#" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; border-radius: 999px; background: #DFFF13; color: #000000; font-weight: 700; font-size: 15px; text-decoration: none">Talk to us</a>
+  </header>
+
+  <!-- Hero -->
+  <section style="max-width: 1280px; margin: 0 auto; padding: 56px 32px 120px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+    <div style="flex: 1 1 520px; min-width: 0">
+      <p style="margin: 0 0 32px; font-size: 15px; color: #BDBDBD; display: flex; align-items: center; gap: 12px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #DFFF13; display: inline-block"></span>NEXUS Creative HQ · London</p>
+      <h1 class="d" style="margin: 0; font-size: clamp(42px, 5vw, 72px); line-height: 0.96">UK–China market entry.<span style="display: block; color: #7A7A7A">One accountable team.</span></h1>
+      <p style="margin: 36px 0 0; max-width: 520px; font-size: 19px; color: #D1D1D1; text-wrap: pretty">A London team that helps technology companies, science parks and innovation zones enter and grow in the UK, with partners on the ground in China and Hong Kong.</p>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; margin-top: 40px">
+        <a href="#routes" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 30px; border-radius: 999px; background: #DFFF13; color: #000000; font-weight: 700; text-decoration: none">Find your route</a>
+        <a href="#" style="font-weight: 700; font-size: 16px; text-decoration: underline; text-decoration-color: #DFFF13; text-underline-offset: 6px">For science parks and zones</a>
+      </div>
+    </div>
+
+    <!-- The Crossing -->
+    <div style="flex: 1 1 460px; min-width: 0; max-width: 640px; margin: 0 auto">
+      <div style="position: relative; width: 100%; aspect-ratio: 1080 / 1070">
+        <svg aria-hidden="true" viewBox="0 0 1080 1070" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible">
+          <polygon points="0,0 540,348 1080,0 1080,350 790,538 1080,724 1080,1070 540,718 0,1070 0,724 290,538 0,350" fill="none" stroke="#3A3A3A" stroke-width="2"></polygon>
+          <line class="route" x1="0" y1="175" x2="1080" y2="897" stroke="#DFFF13" stroke-width="2.5"></line>
+          <line class="route route2" x1="1080" y1="175" x2="0" y2="897" stroke="#FFFFFF" stroke-width="2.5"></line>
+        </svg>
+        <!-- centre -->
+        <div style="position: absolute; left: 50%; top: 50.3%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 10px">
+          <span style="position: relative; display: block; width: 18px; height: 18px">
+            <span class="ping" style="position: absolute; inset: 0; border-radius: 50%; background: #DFFF13"></span>
+            <span style="position: absolute; inset: 0; border-radius: 50%; background: #DFFF13; box-shadow: 0 0 0 6px #000000"></span>
+          </span>
+        </div>
+        <div style="position: absolute; left: 50%; top: 58%; transform: translateX(-50%); text-align: center; background: #000000; padding: 4px 10px">
+          <div class="d" style="font-size: 15px; letter-spacing: 0.06em">NEXUS</div>
+          <div style="font-size: 12px; color: #9E9E9E; white-space: nowrap">Where every route crosses</div>
+        </div>
+        <!-- four notches -->
+        <div style="position: absolute; left: 50%; top: 9%; transform: translateX(-50%); text-align: center">
+          <div class="d" style="font-size: 16px">Tianjin</div><div style="font-size: 13px; color: #9E9E9E">Two signed MOUs</div>
+        </div>
+        <div style="position: absolute; right: 1%; top: 50%; transform: translateY(-50%); text-align: right">
+          <div class="d" style="font-size: 16px">Shanghai</div><div style="font-size: 13px; color: #9E9E9E">S-Tron 2025 · 2026</div>
+        </div>
+        <div style="position: absolute; left: 50%; bottom: 8%; transform: translateX(-50%); text-align: center">
+          <div class="d" style="font-size: 16px">Hong Kong</div><div style="font-size: 13px; color: #9E9E9E">Gateway to Asia</div>
+        </div>
+        <div style="position: absolute; left: 1%; top: 50%; transform: translateY(-50%)">
+          <div class="d" style="font-size: 16px; color: #DFFF13">United Kingdom</div><div style="font-size: 13px; color: #9E9E9E">Customers · partners · investors</div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; gap: 28px; margin-top: 18px; font-size: 13px; color: #9E9E9E">
+        <span style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 2px; background: #DFFF13"></span>Into the UK</span>
+        <span style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 2px; background: #FFFFFF"></span>Into China and Hong Kong</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routes as open rows -->
+  <section id="routes" style="border-top: 1px solid #262626">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 96px 32px 120px">
+      <h2 class="d" style="margin: 0 0 12px; font-size: clamp(30px, 3.4vw, 46px); line-height: 1.02; max-width: 860px">UK representation, market entry and scale-up support.</h2>
+      <p style="margin: 0 0 56px; color: #BDBDBD; max-width: 600px">Three ways in. Each starts with a conversation or a diagnostic, and the same team stays with you.</p>
+      <div style="border-top: 1px solid #333333">
+        <a href="#" class="row" style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; padding: 36px 8px; border-bottom: 1px solid #333333; text-decoration: none; color: #FFFFFF">
+          <span class="d" style="flex: 0 0 56px; font-size: 18px; color: #7A7A7A">01</span>
+          <span style="flex: 1 1 300px; min-width: 0"><span style="display: block; font-size: 14px; color: #9E9E9E">For science parks, innovation zones and funds</span><span class="d" style="display: block; font-size: 28px; line-height: 1.1; margin-top: 4px">Institutions</span></span>
+          <span style="flex: 1 1 340px; min-width: 0; font-size: 16px; color: #D1D1D1">UK Representation (annual) and the UK Landing Programme (per cohort). Starts with a partnership call.</span>
+          <span class="ar" aria-hidden="true" style="flex: 0 0 40px; text-align: right; font-size: 28px">→</span>
+        </a>
+        <a href="#" class="row" style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; padding: 36px 8px; border-bottom: 1px solid #333333; text-decoration: none; color: #FFFFFF">
+          <span class="d" style="flex: 0 0 56px; font-size: 18px; color: #7A7A7A">02</span>
+          <span style="flex: 1 1 300px; min-width: 0"><span style="display: block; font-size: 14px; color: #9E9E9E">For technology companies entering the UK</span><span class="d" style="display: block; font-size: 28px; line-height: 1.1; margin-top: 4px">International companies</span></span>
+          <span style="flex: 1 1 340px; min-width: 0; font-size: 16px; color: #D1D1D1">Market-Entry Diagnostic, UK Soft Landing and Market Intelligence Reports. Starts with a paid diagnostic.</span>
+          <span class="ar" aria-hidden="true" style="flex: 0 0 40px; text-align: right; font-size: 28px">→</span>
+        </a>
+        <a href="#" class="row" style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; padding: 36px 8px; border-bottom: 1px solid #333333; text-decoration: none; color: #FFFFFF">
+          <span class="d" style="flex: 0 0 56px; font-size: 18px; color: #7A7A7A">03</span>
+          <span style="flex: 1 1 300px; min-width: 0"><span style="display: block; font-size: 14px; color: #9E9E9E">For frontier-tech companies already trading</span><span class="d" style="display: block; font-size: 28px; line-height: 1.1; margin-top: 4px">UK scale-ups</span></span>
+          <span style="flex: 1 1 340px; min-width: 0; font-size: 16px; color: #D1D1D1">A Growth Diagnostic, then AI, R&amp;D tax, IP and fundraising projects through our partner network.</span>
+          <span class="ar" aria-hidden="true" style="flex: 0 0 40px; text-align: right; font-size: 28px">→</span>
+        </a>
+      </div>
+      <p style="margin: 28px 0 0; font-size: 15px; color: #9E9E9E">UK company heading to China or Hong Kong? <a href="#" style="font-weight: 700; text-decoration: underline; text-decoration-color: #DFFF13; text-underline-offset: 5px">See the Asia corridor and 2027 delegations</a></p>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1700}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

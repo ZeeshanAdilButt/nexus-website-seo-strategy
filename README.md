@@ -11,6 +11,7 @@ Research and planning for the rebuild of [nexuscreativehq.com](https://nexuscrea
 | [`research/01-NEXUS-Research-Findings.md`](research/01-NEXUS-Research-Findings.md) | Fact base, with each fact marked verified, client-stated, conflicting or missing |
 | [`research/03-Client-Pack-What-To-Send.md`](research/03-Client-Pack-What-To-Send.md) | Message, questions and access list for the client |
 | [`research/05-Claude-Design-Prompt-Pack.md`](research/05-Claude-Design-Prompt-Pack.md) | Prompts for designing pages and the deck in Claude Design |
+| [`research/06-NEXUS-Landing-Page-Design-Plan.md`](research/06-NEXUS-Landing-Page-Design-Plan.md) | Which landing pages to design first in Claude Design, the design direction, considerations and business case |
 | [`research/NEXUS-NotebookLM-Source.md`](research/NEXUS-NotebookLM-Source.md) | All four documents in one file, for NotebookLM |
 
 Each document also has an `.html` copy styled in the NEXUS brand; download and open it in a browser, or print it to PDF.
@@ -21,6 +22,8 @@ Each document also has an `.html` copy styled in the NEXUS brand; download and o
 - `NEXUS Brand Assets/`, `Partner Logos/` (and their `.zip` files): brand and partner logo files.
 - `research/live-site/`, `research/olostep-pages/`, `research/raw/`: crawl of the current site and saved research answers.
 - `research/local-docs/`: plain-text copies of the brief, case studies and prototype pages.
+- `research/design-canvas/`: source of the Claude Design canvas (one `.dc.html` per artboard plus `canvas.json`). The chosen design is `HomeA`, `InternationalA`, `InstitutionsA` and `AsiaA`; `Direction*` are the three explored directions and the rest is the first draft.
+- `research/design-reviews/`: Codex and Gemini 4 Argon design and SEO critiques (two rounds) and screenshots of the directions and final pages.
 
 ## Scripts (Python 3)
 

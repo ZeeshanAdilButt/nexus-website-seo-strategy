@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NEXUS homepage</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#000}
+a{color:#DFFF13}a:hover{color:#FFFFFF}
+.d{font-family:'Archivo',Arial,sans-serif;font-stretch:125%;font-weight:800;text-transform:uppercase;letter-spacing:-0.01em}
+.lt a{color:#000}.lt a:hover{color:#444}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #DFFF13;outline-offset:3px}
+.lt a:focus-visible,.lt summary:focus-visible,.lt button:focus-visible{outline-color:#000}
+summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:none}
+details[open] .pl{transform:rotate(45deg)}
+@media (prefers-reduced-motion:no-preference){.pl{transition:transform .2s}.mq{animation:mq 40s linear infinite}}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+</style>
+</helmet>
+<div style="font-family: 'Manrope', Arial, sans-serif; font-size: 17px; line-height: 1.6; color: #FFFFFF; background: #000000; overflow-x: hidden">
+
+  <!-- Announcement bar -->
+  <div style="background: #000000; border-bottom: 1px solid #262626; padding: 10px 20px; text-align: center; font-size: 14px; font-weight: 600; color: #FFFFFF">
+    <span style="color: #DFFF13">Global Innovator Awards</span> · Monday 16 November 2026 · The Dorchester, London · <a href="#events" style="font-weight: 700">Get tickets</a>
+  </div>
+
+  <!-- Header -->
+  <header style="background: #000000; position: relative; z-index: 2">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 22px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px">
+      <a href="#top" aria-label="NEXUS home" style="display: flex"><img src="/_blob/384f10695d602865bdd54b973fa5c57c" alt="NEXUS" style="height: 24px; width: auto; display: block"></a>
+      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 26px; font-size: 15px; font-weight: 600">
+        <a href="Institutions.dc.html" style="color: #FFFFFF; text-decoration: none">Institutions</a>
+        <a href="InternationalCompanies.dc.html" style="color: #FFFFFF; text-decoration: none">International companies</a>
+        <a href="#routes" style="color: #FFFFFF; text-decoration: none">UK scale-ups</a>
+        <a href="#corridor" style="color: #FFFFFF; text-decoration: none">Asia corridor</a>
+        <a href="#insights" style="color: #FFFFFF; text-decoration: none">Insights</a>
+        <a href="#events" style="color: #FFFFFF; text-decoration: none">Events</a>
+        <a href="#about" style="color: #FFFFFF; text-decoration: none">About</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap">
+        <a href="#partners" style="color: #FFFFFF; font-size: 15px; font-weight: 600">Partner with NEXUS</a>
+        <a href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #DFFF13; color: #000000; font-weight: 700; font-size: 15px; text-decoration: none">Talk to us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" style="position: relative; background: #000000; overflow: hidden">
+    <svg aria-hidden="true" viewBox="0 0 1080 1070" style="position: absolute; right: -220px; top: -60px; width: 900px; height: 892px; opacity: 1">
+      <polygon points="0,0 540,348 1080,0 1080,350 790,538 1080,724 1080,1070 540,718 0,1070 0,724 290,538 0,350" fill="none" stroke="#242424" stroke-width="4"></polygon>
+    </svg>
+    <div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 72px 20px 96px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+      <div style="flex: 999 1 560px; min-width: 0">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 28px">
+          <span style="display: block; width: 36px; height: 3px; background: #DFFF13"></span>
+          <span style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #DFFF13">The UK–China innovation corridor</span>
+        </div>
+        <sc-if value="{{isB}}" hint-placeholder-val="{{ true }}">
+          <h1 class="d" style="margin: 0; font-size: clamp(42px, 6.2vw, 88px); line-height: 0.98">Land, grow and scale in the UK.<span style="display: block; color: #DFFF13; margin-top: 10px">From China and beyond.</span></h1>
+        </sc-if>
+        <sc-if value="{{isA}}" hint-placeholder-val="{{ false }}">
+          <h1 class="d" style="margin: 0; font-size: clamp(42px, 6.2vw, 88px); line-height: 0.98">Land, grow and scale technology businesses in the UK.</h1>
+        </sc-if>
+        <img src="/_blob/7955e644f7dfdfbb324701d24a4ad7a6" alt="" style="display: block; width: 320px; max-width: 70%; height: auto; margin: 22px 0 30px">
+        <p style="margin: 0 0 36px; max-width: 620px; font-size: 19px; color: #D1D1D1">NEXUS is the operational bridge between the UK and China for technology companies, science parks and innovation zones: one accountable team in London, partners on the ground in Tianjin, Shanghai and Hong Kong.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px">
+          <a href="#routes" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #DFFF13; color: #000000; font-weight: 700; text-decoration: none">Find your route
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+          <a href="#contact" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 999px; border: 2px solid #FFFFFF; color: #FFFFFF; font-weight: 700; text-decoration: none">Talk to our team</a>
+        </div>
+        <p style="margin: 22px 0 0; font-size: 15px; color: #BDBDBD">Representing a science park, innovation zone or fund? <a href="Institutions.dc.html" style="font-weight: 700">Partner with us →</a></p>
+      </div>
+
+      <!-- Corridor visual -->
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+        <div style="background: #0B0B0B; border: 1px solid #2A2A2A; border-radius: 20px; padding: 28px">
+          <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #9E9E9E; margin-bottom: 22px">A working corridor in both directions</div>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px">
+            <div style="flex: 1 1 120px; border: 2px solid #DFFF13; border-radius: 14px; padding: 16px">
+              <div class="d" style="font-size: 20px">London</div>
+              <div style="font-size: 13px; color: #BDBDBD; line-height: 1.4; margin-top: 4px">One accountable team</div>
+            </div>
+            <div aria-hidden="true" style="flex: 1 1 50px; display: flex; flex-direction: column; align-items: center; gap: 6px">
+              <svg width="72" height="20" viewBox="0 0 72 20" fill="none" stroke="#DFFF13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h66M62 1l6 5-6 5"></path><path d="M70 15H4M10 10l-6 5 6 5"></path></svg>
+            </div>
+            <div style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 8px">
+              <div style="border: 1px solid #3A3A3A; border-radius: 12px; padding: 10px 14px"><div class="d" style="font-size: 15px">Tianjin</div><div style="font-size: 12px; color: #BDBDBD; line-height: 1.4">Two signed MOUs</div></div>
+              <div style="border: 1px solid #3A3A3A; border-radius: 12px; padding: 10px 14px"><div class="d" style="font-size: 15px">Shanghai</div><div style="font-size: 12px; color: #BDBDBD; line-height: 1.4">S-Tron, 2025 and 2026</div></div>
+              <div style="border: 1px solid #3A3A3A; border-radius: 12px; padding: 10px 14px"><div class="d" style="font-size: 15px">Hong Kong</div><div style="font-size: 12px; color: #BDBDBD; line-height: 1.4">Gateway to Asia</div></div>
+            </div>
+          </div>
+        </div>
+        <div style="position: relative">
+          <div role="img" aria-label="Placeholder for the Tianjin signing photograph" style="height: 220px; border: 1px dashed #4A4A4A; border-radius: 20px; background: #111111; display: flex; align-items: flex-start; justify-content: center; text-align: center; padding: 40px 20px; font-size: 14px; color: #9E9E9E">[Placeholder: Tianjin signing photograph, black and white · caption to confirm]</div>
+          <div style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #000000; border-radius: 14px; padding: 12px 16px; max-width: 80%">
+            <div style="font-weight: 700; font-size: 15px; line-height: 1.3">Built in London. Working in China.</div>
+            <div style="font-size: 13px; color: #555555; line-height: 1.4">Partners in Tianjin, Shanghai and Hong Kong</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corridor marquee -->
+  <div style="background: #000000; border-top: 1px solid #262626; overflow: hidden; padding: 18px 0">
+    <p style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: 0">Where NEXUS works: London, Tianjin, Shanghai, Hong Kong, Hangzhou and Singapore.</p>
+    <div class="mq" aria-hidden="true" style="display: flex; width: max-content; gap: 0">
+      <div style="display: flex; align-items: center; gap: 36px; padding-right: 36px; font-family: 'Archivo', Arial, sans-serif; font-stretch: 125%; font-weight: 800; text-transform: uppercase; font-size: 18px; color: #6E6E6E; white-space: nowrap">
+        <span style="color: #FFFFFF">London</span><span style="color: #DFFF13">✕</span><span>Tianjin</span><span style="color: #DFFF13">✕</span><span style="color: #FFFFFF">Shanghai</span><span style="color: #DFFF13">✕</span><span>Hong Kong</span><span style="color: #DFFF13">✕</span><span style="color: #FFFFFF">Hangzhou</span><span style="color: #DFFF13">✕</span><span>Singapore</span><span style="color: #DFFF13">✕</span><span style="color: #FFFFFF">S-Tron 2025 · 2026</span><span style="color: #DFFF13">✕</span><span>CBBC member</span><span style="color: #DFFF13">✕</span><span style="color: #FFFFFF">Global Innovator Awards</span><span style="color: #DFFF13">✕</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 36px; padding-right: 36px; font-family: 'Archivo', Arial, sans-serif; font-stretch: 125%; font-weight: 800; text-transform: uppercase; font-size: 18px; color: #6E6E6E; white-space: nowrap">
+        <span style="color: #FFFFFF">London</span><span style="color: #DFFF13">✕</span><span>Tianjin</span><span style="color: #DFFF13">✕</span><span style="color: #FFFFFF">Shanghai</span><span style="color: #DFFF13">✕</span><span>Hong Kong</span><span style="color: #DFFF13">✕</span><span style="color: #FFFFFF">Hangzhou</span><span style="color: #DFFF13">✕</span><span>Singapore</span><span style="color: #DFFF13">✕</span><span style="color: #FFFFFF">S-Tron 2025 · 2026</span><span style="color: #DFFF13">✕</span><span>CBBC member</span><span style="color: #DFFF13">✕</span><span style="color: #FFFFFF">Global Innovator Awards</span><span style="color: #DFFF13">✕</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Proof strip -->
+  <section aria-label="NEXUS in numbers" style="background: #000000; border-top: 1px solid #262626; border-bottom: 1px solid #262626">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 48px 20px">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px">
+        <div><div class="d" style="font-size: 56px; line-height: 1; color: #DFFF13">100+</div><div style="margin-top: 10px; color: #D1D1D1; font-size: 15px">Businesses actively supported</div></div>
+        <div><div class="d" style="font-size: 56px; line-height: 1; color: #DFFF13">16</div><div style="margin-top: 10px; color: #D1D1D1; font-size: 15px">Curated global partnerships</div></div>
+        <div><div class="d" style="font-size: 56px; line-height: 1; color: #DFFF13">1,400+</div><div style="margin-top: 10px; color: #D1D1D1; font-size: 15px">Business plans assessed</div></div>
+        <div><div class="d" style="font-size: 30px; line-height: 1.05; color: #FFFFFF; padding-top: 6px">Supplier and security cleared</div><div style="margin-top: 10px; color: #D1D1D1; font-size: 15px">UK Government supplier [reference to confirm]</div></div>
+      </div>
+      <a href="#about" style="display: inline-block; margin-top: 24px; font-size: 14px; font-weight: 700">How we count these numbers →</a>
+      <div style="margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px">
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #9E9E9E; margin-right: 8px">Partners and memberships</span>
+        <span style="border: 1px dashed #4A4A4A; border-radius: 10px; padding: 12px 18px; font-size: 13px; color: #BDBDBD">City of London · permission to confirm</span>
+        <span style="border: 1px dashed #4A4A4A; border-radius: 10px; padding: 12px 18px; font-size: 13px; color: #BDBDBD">TEDA · permission to confirm</span>
+        <span style="border: 1px dashed #4A4A4A; border-radius: 10px; padding: 12px 18px; font-size: 13px; color: #BDBDBD">S-Tron · permission to confirm</span>
+        <span style="border: 1px dashed #4A4A4A; border-radius: 10px; padding: 12px 18px; font-size: 13px; color: #BDBDBD">CBBC · permission to confirm</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routes -->
+  <section id="routes" class="lt" style="background: #D1D1D1; color: #000000">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 20px">
+      <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px">Who we work with</div>
+      <h2 class="d" style="margin: 0 0 36px; font-size: clamp(32px, 4vw, 54px); line-height: 1.02; max-width: 900px">Start where you are. Who are you?</h2>
+      <div role="group" aria-label="Choose who you are" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px">
+        <sc-for list="{{tabs}}" as="t" hint-placeholder-count="5">
+          <button type="button" onClick="{{t.pick}}" aria-pressed="{{t.pressed}}" style="min-height: 48px; padding: 0 22px; border-radius: 999px; border: 2px solid #000000; background: {{t.bg}}; color: {{t.fg}}; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">{{t.label}}</button>
+        </sc-for>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px">
+        <div style="flex: 999 1 560px; min-width: 0; background: #000000; color: #FFFFFF; border-radius: 22px; padding: 40px; display: flex; flex-direction: column; gap: 16px">
+          <span style="align-self: flex-start; background: #DFFF13; color: #000000; border-radius: 999px; padding: 4px 12px; font-size: 13px; font-weight: 700">{{cur.tag}}</span>
+          <span class="d" style="font-size: clamp(26px, 3vw, 38px); line-height: 1.05">{{cur.title}}</span>
+          <span style="font-size: 17px; color: #D1D1D1; max-width: 640px">{{cur.text}}</span>
+          <ul style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+            <sc-for list="{{cur.items}}" as="it" hint-placeholder-count="3">
+              <li style="display: flex; gap: 10px; font-size: 16px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DFFF13" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 3px"><path d="M4 12l5 5L20 6"></path></svg>{{it}}</li>
+            </sc-for>
+          </ul>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 22px; padding: 40px; display: flex; flex-direction: column; gap: 14px; justify-content: space-between">
+          <div>
+            <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #555555; margin-bottom: 10px">Your first step</div>
+            <div class="d" style="font-size: 22px; line-height: 1.1">{{cur.step}}</div>
+            <p style="margin: 10px 0 0; font-size: 15px; color: #333333">{{cur.stepText}}</p>
+          </div>
+          <a href="{{cur.href}}" style="display: inline-flex; justify-content: center; align-items: center; min-height: 52px; border-radius: 999px; background: #000000; color: #FFFFFF; font-weight: 700; text-decoration: none">{{cur.cta}} →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Asia corridor -->
+  <section id="corridor" class="lt" style="background: #FFFFFF; color: #000000; border-top: 8px solid #DFFF13">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 20px">
+      <div style="display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-end; margin-bottom: 56px">
+        <div style="flex: 999 1 560px; min-width: 0">
+          <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px">Our Asia corridor, led by China</div>
+          <h2 class="d" style="margin: 0; font-size: clamp(32px, 4vw, 54px); line-height: 1.02">A working corridor in both directions.</h2>
+        </div>
+        <p style="flex: 1 1 360px; min-width: 0; margin: 0; color: #333333">China is our flagship international market, and Hong Kong is our gateway to the wider region. Chinese companies and institutions land in the UK through NEXUS; UK companies reach China and Hong Kong through our partners on the ground.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px">
+        <div style="border: 1px solid #D1D1D1; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #555555">China</span>
+          <span class="d" style="font-size: 19px; line-height: 1.1">RidgeCore Ventures</span>
+          <span style="font-size: 15px; color: #333333">Reciprocal: we represent their clients in the UK; they represent ours in China.</span>
+        </div>
+        <div style="border: 1px solid #D1D1D1; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #555555">Tianjin</span>
+          <span class="d" style="font-size: 19px; line-height: 1.1">Tianjin</span>
+          <span style="font-size: 15px; color: #333333">Two signed MOUs, building a pipeline of Tianjin companies into the UK.</span>
+        </div>
+        <div style="border: 1px solid #D1D1D1; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #555555">Shanghai</span>
+          <span class="d" style="font-size: 19px; line-height: 1.1">S-Tron</span>
+          <span style="font-size: 15px; color: #333333">Two years at S-Tron Shanghai: exhibiting in 2025, speaking in 2026.</span>
+        </div>
+        <div style="border: 1px dashed #9E9E9E; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #555555">Hong Kong</span>
+          <span class="d" style="font-size: 19px; line-height: 1.1">Alibaba Entrepreneurs Fund</span>
+          <span style="font-size: 15px; color: #333333">[Name used only with written approval]</span>
+        </div>
+        <div style="border: 1px dashed #9E9E9E; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #555555">Shanghai · Switzerland</span>
+          <span class="d" style="font-size: 19px; line-height: 1.1">Swiss Bluefaer Innovation Centre</span>
+          <span style="font-size: 15px; color: #333333">[Relationship wording to be approved]</span>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <ol style="list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0; border-top: 2px solid #000000">
+        <li style="padding: 18px 16px 0 0; position: relative"><span style="position: absolute; top: -8px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: #DFFF13; border: 2px solid #000000"></span><div class="d" style="font-size: 16px; margin-top: 8px">2025</div><div style="font-size: 14px; color: #333333">First Tianjin MOU</div></li>
+        <li style="padding: 18px 16px 0 0; position: relative"><span style="position: absolute; top: -8px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: #DFFF13; border: 2px solid #000000"></span><div class="d" style="font-size: 16px; margin-top: 8px">2025</div><div style="font-size: 14px; color: #333333">S-Tron Shanghai, exhibiting</div></li>
+        <li style="padding: 18px 16px 0 0; position: relative"><span style="position: absolute; top: -8px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: #DFFF13; border: 2px solid #000000"></span><div class="d" style="font-size: 16px; margin-top: 8px">Mar 2026</div><div style="font-size: 14px; color: #333333">NEXUS opens in China [to confirm]</div></li>
+        <li style="padding: 18px 16px 0 0; position: relative"><span style="position: absolute; top: -8px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: #DFFF13; border: 2px solid #000000"></span><div class="d" style="font-size: 16px; margin-top: 8px">Apr 2026</div><div style="font-size: 14px; color: #333333">CBBC delegation to Hangzhou</div></li>
+        <li style="padding: 18px 16px 0 0; position: relative"><span style="position: absolute; top: -8px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: #DFFF13; border: 2px solid #000000"></span><div class="d" style="font-size: 16px; margin-top: 8px">2026</div><div style="font-size: 14px; color: #333333">Speaking at S-Tron; second Tianjin MOU</div></li>
+        <li style="padding: 18px 16px 0 0; position: relative"><span style="position: absolute; top: -8px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: #000000; border: 2px solid #000000"></span><div class="d" style="font-size: 16px; margin-top: 8px">2027</div><div style="font-size: 14px; color: #333333">Delegations to mainland China and Hong Kong</div></li>
+      </ol>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 48px">
+        <a href="#corridor" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #000000; color: #FFFFFF; font-weight: 700; text-decoration: none">Explore the Asia corridor</a>
+        <a href="#contact" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 999px; border: 2px solid #000000; color: #000000; font-weight: 700; text-decoration: none">Register interest in 2027 delegations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How we work -->
+  <section style="background: #000000">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 20px">
+      <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #DFFF13; margin-bottom: 14px">How we work</div>
+      <h2 class="d" style="margin: 0 0 18px; font-size: clamp(32px, 4vw, 54px); line-height: 1.02; max-width: 900px">Hands-on, with one point of accountability.</h2>
+      <p style="margin: 0 0 56px; max-width: 680px; color: #D1D1D1">We stay with you from the first conversation to results, and bring in specialists only when you need them. No generic programmes and no hand-offs you have to manage yourself.</p>
+      <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+        <li style="border-top: 2px solid #DFFF13; padding-top: 20px"><div class="d" style="font-size: 44px; line-height: 1; color: #DFFF13">01</div><div class="d" style="font-size: 20px; margin: 14px 0 6px">Diagnose</div><div style="font-size: 15px; color: #BDBDBD">We pinpoint what you need to achieve in the UK, and what stands in the way.</div></li>
+        <li style="border-top: 2px solid #DFFF13; padding-top: 20px"><div class="d" style="font-size: 44px; line-height: 1; color: #DFFF13">02</div><div class="d" style="font-size: 20px; margin: 14px 0 6px">Plan</div><div style="font-size: 15px; color: #BDBDBD">A clear plan with owners, timings and costs.</div></li>
+        <li style="border-top: 2px solid #DFFF13; padding-top: 20px"><div class="d" style="font-size: 44px; line-height: 1; color: #DFFF13">03</div><div class="d" style="font-size: 20px; margin: 14px 0 6px">Connect</div><div style="font-size: 15px; color: #BDBDBD">Introductions to the customers, partners, investors and advisers that matter.</div></li>
+        <li style="border-top: 2px solid #DFFF13; padding-top: 20px"><div class="d" style="font-size: 44px; line-height: 1; color: #DFFF13">04</div><div class="d" style="font-size: 20px; margin: 14px 0 6px">Deliver</div><div style="font-size: 15px; color: #BDBDBD">We manage the work, including specialist partners, as your single contact.</div></li>
+        <li style="border-top: 2px solid #DFFF13; padding-top: 20px"><div class="d" style="font-size: 44px; line-height: 1; color: #DFFF13">05</div><div class="d" style="font-size: 20px; margin: 14px 0 6px">Grow</div><div style="font-size: 15px; color: #BDBDBD">We review results with you and plan the next stage.</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="lt" style="background: #FFFFFF; color: #000000">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 20px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 48px">
+        <div>
+          <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px">Results</div>
+          <h2 class="d" style="margin: 0; font-size: clamp(32px, 4vw, 54px); line-height: 1.02">What we have delivered.</h2>
+        </div>
+        <a href="#top" style="font-weight: 700">All case studies →</a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
+        <article style="display: flex; flex-direction: column; gap: 12px">
+          <div role="img" aria-label="Placeholder image for Sentian Aerospace" style="height: 220px; border-radius: 18px; background: #EDEDED; border: 1px dashed #9E9E9E; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #555555">[Placeholder: Sentian Aerospace image]</div>
+          <span style="align-self: flex-start; background: #DFFF13; border-radius: 999px; padding: 3px 12px; font-size: 12px; font-weight: 700">Aerospace and deep tech</span>
+          <h3 class="d" style="margin: 0; font-size: 22px; line-height: 1.1">Sentian Aerospace</h3>
+          <p style="margin: 0; font-weight: 600">From a garage to an international acquisition.</p>
+          <p style="margin: 0; font-size: 15px; color: #333333">Technology acquired by Volatus Aerospace, a publicly listed company, in under two years from UK incorporation.</p>
+          <a href="#top" style="font-weight: 700">Read the case study →</a>
+        </article>
+        <article style="display: flex; flex-direction: column; gap: 12px">
+          <div role="img" aria-label="Placeholder image for GI Healthcare" style="height: 220px; border-radius: 18px; background: #EDEDED; border: 1px dashed #9E9E9E; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #555555">[Placeholder: GI Healthcare image]</div>
+          <span style="align-self: flex-start; background: #DFFF13; border-radius: 999px; padding: 3px 12px; font-size: 12px; font-weight: 700">Deep tech and robotics</span>
+          <h3 class="d" style="margin: 0; font-size: 22px; line-height: 1.1">GI Healthcare</h3>
+          <p style="margin: 0; font-weight: 600">From an early prototype to customer-backed pilots.</p>
+          <p style="margin: 0; font-size: 15px; color: #333333">From no customers to a customer-funded proof of concept and a follow-on programme.</p>
+          <a href="#top" style="font-weight: 700">Read the case study →</a>
+        </article>
+        <article style="display: flex; flex-direction: column; gap: 12px">
+          <div role="img" aria-label="Placeholder image for Auto Impartial" style="height: 220px; border-radius: 18px; background: #EDEDED; border: 1px dashed #9E9E9E; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #555555">[Placeholder: Auto Impartial image]</div>
+          <span style="align-self: flex-start; background: #DFFF13; border-radius: 999px; padding: 3px 12px; font-size: 12px; font-weight: 700">AI compute infrastructure</span>
+          <h3 class="d" style="margin: 0; font-size: 22px; line-height: 1.1">Auto Impartial</h3>
+          <p style="margin: 0; font-weight: 600">New silicon for the age of private AI.</p>
+          <p style="margin: 0; font-size: 15px; color: #333333">Core architecture independently validated; a UK and Asia research consortium in formation with Innovate UK.</p>
+          <a href="#top" style="font-weight: 700">Read the case study →</a>
+        </article>
+      </div>
+      <p style="margin: 24px 0 0; font-size: 13px; color: #555555">[Each case study published only with the client's written consent]</p>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" style="background: #000000">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 20px">
+      <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #DFFF13; margin-bottom: 14px">Events</div>
+      <h2 class="d" style="margin: 0 0 48px; font-size: clamp(32px, 4vw, 54px); line-height: 1.02">The right people in the right room.</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
+        <div style="border: 2px solid #DFFF13; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 14px">
+          <span style="align-self: flex-start; background: #DFFF13; color: #000000; border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 800; letter-spacing: 0.08em">TICKETS ON SALE</span>
+          <div class="d" style="font-size: 40px; line-height: 1; color: #DFFF13">16 Nov 2026</div>
+          <h3 class="d" style="margin: 0; font-size: 28px; line-height: 1.05">Global Innovator Awards</h3>
+          <p style="margin: 0; color: #D1D1D1">The Dorchester, London. Created and delivered by NEXUS, celebrating overseas founders building businesses in the UK. Ten categories, one hundred finalists.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
+            <a href="#events" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #DFFF13; color: #000000; font-weight: 700; text-decoration: none">Get tickets</a>
+            <a href="#events" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 2px solid #FFFFFF; color: #FFFFFF; font-weight: 700; text-decoration: none">About the awards</a>
+          </div>
+        </div>
+        <div style="border: 1px solid #2A2A2A; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 14px">
+          <span style="align-self: flex-start; border: 1px solid #FFFFFF; color: #FFFFFF; border-radius: 999px; padding: 3px 12px; font-size: 12px; font-weight: 800; letter-spacing: 0.08em">COMING SOON · REGISTER INTEREST</span>
+          <div class="d" style="font-size: 40px; line-height: 1; color: #FFFFFF">Monthly</div>
+          <h3 class="d" style="margin: 0; font-size: 28px; line-height: 1.05">NEXUS Sessions <span style="font-family: 'Manrope', Arial, sans-serif; font-size: 14px; font-weight: 600; text-transform: none; color: #9E9E9E">[working name]</span></h3>
+          <p style="margin: 0; color: #D1D1D1">In-person sessions on a set topic at partner venues around the UK, bringing together founders, institutions and specialists. [Venue partner and launch date to confirm]</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto">
+            <a href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 2px solid #FFFFFF; color: #FFFFFF; font-weight: 700; text-decoration: none">Register interest</a>
+            <a href="#partners" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 2px solid #FFFFFF; color: #FFFFFF; font-weight: 700; text-decoration: none">Sponsor a session</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner network -->
+  <section id="partners" class="lt" style="background: #D1D1D1; color: #000000">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 88px 20px; display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: center">
+      <div style="flex: 1 1 380px; min-width: 0">
+        <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px">Our partner network</div>
+        <h2 class="d" style="margin: 0 0 16px; font-size: clamp(28px, 3vw, 40px); line-height: 1.05">Specialists when you need them.</h2>
+        <p style="margin: 0 0 20px; color: #222222">NEXUS stays your single point of contact. [Named partners appear only once each confirms in writing]</p>
+        <a href="#contact" style="font-weight: 700">Professional firm? Partner with NEXUS →</a>
+      </div>
+      <ul style="flex: 1 1 480px; min-width: 0; list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px">
+        <li style="background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Accountancy</li>
+        <li style="background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Corporate finance</li>
+        <li style="background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Banking and payments</li>
+        <li style="background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Legal</li>
+        <li style="background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">IP and patents</li>
+        <li style="background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">AI strategy</li>
+        <li style="background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">R&amp;D tax</li>
+        <li style="background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Venues</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="about" class="lt" style="background: #FFFFFF; color: #000000">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 20px">
+      <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px">The team</div>
+      <blockquote style="margin: 0 0 56px; max-width: 920px">
+        <p class="d" style="margin: 0; font-size: clamp(26px, 3vw, 40px); line-height: 1.1">“[Founder quote: one or two sentences on why NEXUS exists, to be approved]”</p>
+        <footer style="margin-top: 18px; font-weight: 700">Mark Sarfo-Kantanka <span style="font-weight: 500; color: #555555">· CEO and Co-Founder, NEXUS Creative HQ</span></footer>
+      </blockquote>
+      <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px">
+        <li><div role="img" aria-label="Portrait placeholder" style="aspect-ratio: 4 / 5; border-radius: 14px; background: #EDEDED"></div><div style="font-weight: 700; margin-top: 10px">Mark Sarfo-Kantanka</div><div style="font-size: 14px; color: #555555">CEO and Co-Founder</div></li>
+        <li><div role="img" aria-label="Portrait placeholder" style="aspect-ratio: 4 / 5; border-radius: 14px; background: #EDEDED"></div><div style="font-weight: 700; margin-top: 10px">Mauria Fransishku</div><div style="font-size: 14px; color: #555555">NEXUS Manager</div></li>
+        <li><div role="img" aria-label="Portrait placeholder" style="aspect-ratio: 4 / 5; border-radius: 14px; background: #EDEDED"></div><div style="font-weight: 700; margin-top: 10px">Grace Mander</div><div style="font-size: 14px; color: #555555">Operations Manager</div></li>
+        <li><div role="img" aria-label="Portrait placeholder" style="aspect-ratio: 4 / 5; border-radius: 14px; background: #EDEDED"></div><div style="font-weight: 700; margin-top: 10px">Kolos Sipos</div><div style="font-size: 14px; color: #555555">Business and Finance Analyst</div></li>
+        <li><div role="img" aria-label="Portrait placeholder" style="aspect-ratio: 4 / 5; border-radius: 14px; background: #EDEDED"></div><div style="font-weight: 700; margin-top: 10px">Jonny Quirk</div><div style="font-size: 14px; color: #555555">Head of Community</div></li>
+        <li><div role="img" aria-label="Portrait placeholder" style="aspect-ratio: 4 / 5; border-radius: 14px; background: #EDEDED"></div><div style="font-weight: 700; margin-top: 10px">Sheleene Sealy</div><div style="font-size: 14px; color: #555555">Social Media Manager</div></li>
+        <li><div role="img" aria-label="Portrait placeholder" style="aspect-ratio: 4 / 5; border-radius: 14px; background: #EDEDED"></div><div style="font-weight: 700; margin-top: 10px">Zee West</div><div style="font-size: 14px; color: #555555">Head of Development</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section id="insights" style="background: #000000">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 20px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 48px">
+        <div>
+          <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #DFFF13; margin-bottom: 14px">Insights</div>
+          <h2 class="d" style="margin: 0; font-size: clamp(32px, 4vw, 54px); line-height: 1.02; max-width: 820px">Intelligence from the UK–Asia corridor.</h2>
+        </div>
+        <a href="#insights" style="font-weight: 700">All insights →</a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+        <a href="#insights" style="display: flex; flex-direction: column; gap: 12px; border: 1px solid #2A2A2A; border-radius: 18px; padding: 28px; text-decoration: none; color: #FFFFFF">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #DFFF13">Guide · Market entry</span>
+          <span class="d" style="font-size: 20px; line-height: 1.15">Entering the UK from China: the 2027 guide</span>
+          <span style="font-size: 14px; color: #9E9E9E; margin-top: auto">[In development]</span>
+        </a>
+        <a href="#insights" style="display: flex; flex-direction: column; gap: 12px; border: 1px solid #2A2A2A; border-radius: 18px; padding: 28px; text-decoration: none; color: #FFFFFF">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #DFFF13">Insight · Asia corridor</span>
+          <span class="d" style="font-size: 20px; line-height: 1.15">Hong Kong as a gateway: a first step into Asia for UK founders</span>
+          <span style="font-size: 14px; color: #9E9E9E; margin-top: auto">Read →</span>
+        </a>
+        <a href="#insights" style="display: flex; flex-direction: column; gap: 12px; border: 1px solid #2A2A2A; border-radius: 18px; padding: 28px; text-decoration: none; color: #FFFFFF">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #DFFF13">Insight · Delegations</span>
+          <span class="d" style="font-size: 20px; line-height: 1.15">What a 2027 UK delegation to China involves</span>
+          <span style="font-size: 14px; color: #9E9E9E; margin-top: auto">[In development]</span>
+        </a>
+        <div style="display: flex; flex-direction: column; gap: 12px; background: #FFFFFF; color: #000000; border-radius: 18px; padding: 28px">
+          <span style="align-self: flex-start; background: #DFFF13; border-radius: 999px; padding: 3px 12px; font-size: 12px; font-weight: 700">Report · in development</span>
+          <span class="d" style="font-size: 22px; line-height: 1.1">Doing Business in China 2027</span>
+          <span style="font-size: 14px; color: #333333">Our annual guide for UK technology companies looking at China and Hong Kong. [Publication date to confirm]</span>
+          <label for="rep-email" style="font-size: 13px; font-weight: 700; margin-top: 4px">Work email</label>
+          <input id="rep-email" type="email" placeholder="you@company.com" style="min-height: 48px; border: 1px solid #000000; border-radius: 12px; padding: 0 14px; font: inherit; font-size: 15px">
+          <button type="button" style="min-height: 48px; border: 0; border-radius: 999px; background: #000000; color: #FFFFFF; font: inherit; font-weight: 700; cursor: pointer">Request the report</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="lt" style="background: #FFFFFF; color: #000000">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 20px; display: flex; flex-wrap: wrap; gap: 40px 72px">
+      <div style="flex: 1 1 320px; min-width: 0">
+        <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px">Common questions</div>
+        <h2 class="d" style="margin: 0; font-size: clamp(32px, 4vw, 54px); line-height: 1.02">Straight answers.</h2>
+      </div>
+      <div style="flex: 999 1 600px; min-width: 0; border-top: 2px solid #000000">
+        <details style="border-bottom: 1px solid #D1D1D1" open>
+          <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; font-weight: 700; font-size: 19px">What is NEXUS Creative HQ?<span class="pl" aria-hidden="true" style="font-size: 28px; line-height: 1; font-weight: 400">+</span></summary>
+          <p style="margin: 0 0 24px; color: #333333; max-width: 720px">NEXUS Creative HQ is a London-based growth partner and the operational bridge between the UK and China for technology companies, science parks and innovation zones. One accountable team in London works with partners on the ground in Tianjin, Shanghai and Hong Kong.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D1D1D1">
+          <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; font-weight: 700; font-size: 19px">Who does NEXUS work with?<span class="pl" aria-hidden="true" style="font-size: 28px; line-height: 1; font-weight: 400">+</span></summary>
+          <p style="margin: 0 0 24px; color: #333333; max-width: 720px">Three groups: innovation institutions that need a UK presence for their portfolio, international technology companies entering the UK, and UK frontier-tech scale-ups with a specific growth problem.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D1D1D1">
+          <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; font-weight: 700; font-size: 19px">How does working with NEXUS start?<span class="pl" aria-hidden="true" style="font-size: 28px; line-height: 1; font-weight: 400">+</span></summary>
+          <p style="margin: 0 0 24px; color: #333333; max-width: 720px">Companies start with a paid diagnostic; institutions start with a partnership call. Pricing is on application.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D1D1D1">
+          <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; font-weight: 700; font-size: 19px">Does NEXUS have partners in China?<span class="pl" aria-hidden="true" style="font-size: 28px; line-height: 1; font-weight: 400">+</span></summary>
+          <p style="margin: 0 0 24px; color: #333333; max-width: 720px">Yes. RidgeCore Ventures represents NEXUS clients in China under a reciprocal partnership. NEXUS has two signed MOUs in Tianjin and has exhibited and spoken at S-Tron Shanghai.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D1D1D1">
+          <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; font-weight: 700; font-size: 19px">Do you help with Innovator Founder visas?<span class="pl" aria-hidden="true" style="font-size: 28px; line-height: 1; font-weight: 400">+</span></summary>
+          <p style="margin: 0 0 24px; color: #333333; max-width: 720px">NEXUS reviews and endorses applications as a consortium partner of UK Endorsing Services (UKES). This is separate from our commercial services. <a href="#about">Read about our endorsing role</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="background: #000000">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 20px">
+      <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #DFFF13; margin-bottom: 14px">Talk to us</div>
+      <h2 class="d" style="margin: 0 0 48px; font-size: clamp(32px, 4vw, 54px); line-height: 1.02">Choose your route.</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 56px">
+        <div style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span class="d" style="font-size: 20px">Institutions</span>
+          <span style="font-size: 15px; color: #BDBDBD">A UK presence for your portfolio.</span>
+          <a href="Institutions.dc.html" style="margin-top: 8px; display: inline-flex; align-self: flex-start; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #DFFF13; color: #000000; font-weight: 700; text-decoration: none">Book a partnership call</a>
+        </div>
+        <div style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span class="d" style="font-size: 20px">International companies</span>
+          <span style="font-size: 15px; color: #BDBDBD">Enter the UK with one accountable team.</span>
+          <a href="InternationalCompanies.dc.html" style="margin-top: 8px; display: inline-flex; align-self: flex-start; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #DFFF13; color: #000000; font-weight: 700; text-decoration: none">Request a diagnostic</a>
+        </div>
+        <div style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span class="d" style="font-size: 20px">UK scale-ups</span>
+          <span style="font-size: 15px; color: #BDBDBD">One diagnostic, then specialist delivery.</span>
+          <a href="#contact" style="margin-top: 8px; display: inline-flex; align-self: flex-start; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #DFFF13; color: #000000; font-weight: 700; text-decoration: none">Request a growth diagnostic</a>
+        </div>
+      </div>
+
+      <form style="background: #0B0B0B; border: 1px solid #2A2A2A; border-radius: 20px; padding: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px 20px">
+        <div style="grid-column: 1 / -1"><span class="d" style="font-size: 22px">Or send a general enquiry</span></div>
+        <div style="display: flex; flex-direction: column; gap: 6px"><label for="c-name" style="font-size: 14px; font-weight: 700">Name</label><input id="c-name" type="text" autocomplete="name" style="min-height: 48px; background: #000000; color: #FFFFFF; border: 1px solid #4A4A4A; border-radius: 12px; padding: 0 14px; font: inherit"></div>
+        <div style="display: flex; flex-direction: column; gap: 6px"><label for="c-email" style="font-size: 14px; font-weight: 700">Work email</label><input id="c-email" type="email" autocomplete="email" style="min-height: 48px; background: #000000; color: #FFFFFF; border: 1px solid #4A4A4A; border-radius: 12px; padding: 0 14px; font: inherit"></div>
+        <div style="display: flex; flex-direction: column; gap: 6px"><label for="c-type" style="font-size: 14px; font-weight: 700">I am</label><select id="c-type" style="min-height: 48px; background: #000000; color: #FFFFFF; border: 1px solid #4A4A4A; border-radius: 12px; padding: 0 14px; font: inherit"><option>An innovation institution</option><option>An international company</option><option>A UK scale-up</option><option>A professional firm or sponsor</option><option>Something else</option></select></div>
+        <div style="display: flex; flex-direction: column; gap: 6px; grid-column: 1 / -1"><label for="c-msg" style="font-size: 14px; font-weight: 700">How can we help?</label><textarea id="c-msg" rows="4" style="background: #000000; color: #FFFFFF; border: 1px solid #4A4A4A; border-radius: 12px; padding: 12px 14px; font: inherit; resize: vertical"></textarea></div>
+        <div style="grid-column: 1 / -1; display: flex; align-items: flex-start; gap: 12px"><input id="c-consent" type="checkbox" style="width: 22px; height: 22px; margin: 2px 0 0; accent-color: #DFFF13"><label for="c-consent" style="font-size: 14px; color: #D1D1D1">Send me The NEXUS Briefing. You can unsubscribe at any time. See our <a href="#contact">privacy notice</a>.</label></div>
+        <div style="grid-column: 1 / -1"><button type="button" style="min-height: 52px; padding: 0 32px; border: 0; border-radius: 999px; background: #DFFF13; color: #000000; font: inherit; font-weight: 700; cursor: pointer">Send enquiry</button></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: #000000; border-top: 1px solid #262626">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 64px 20px 40px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px">
+        <div style="flex: 1 1 280px; min-width: 0">
+          <img src="/_blob/384f10695d602865bdd54b973fa5c57c" alt="NEXUS Creative HQ" style="height: 28px; width: auto; display: block">
+          <p style="margin: 18px 0 0; color: #BDBDBD; font-size: 15px; max-width: 320px">The operational bridge between the UK and China for technology companies and innovation institutions.</p>
+          <p style="margin: 14px 0 0; color: #BDBDBD; font-size: 14px">SBREC, 80 Basinghall Street, London EC2V 5AG</p>
+        </div>
+        <nav aria-label="Footer" style="flex: 2 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px; font-size: 15px">
+          <div style="display: flex; flex-direction: column; gap: 10px"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #9E9E9E">Who we help</span><a href="Institutions.dc.html" style="color: #FFFFFF; text-decoration: none">Institutions</a><a href="InternationalCompanies.dc.html" style="color: #FFFFFF; text-decoration: none">International companies</a><a href="#routes" style="color: #FFFFFF; text-decoration: none">UK scale-ups</a></div>
+          <div style="display: flex; flex-direction: column; gap: 10px"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #9E9E9E">NEXUS</span><a href="#corridor" style="color: #FFFFFF; text-decoration: none">Asia corridor</a><a href="#about" style="color: #FFFFFF; text-decoration: none">About and team</a><a href="#about" style="color: #FFFFFF; text-decoration: none">Endorsing role</a></div>
+          <div style="display: flex; flex-direction: column; gap: 10px"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #9E9E9E">Follow</span><a href="#top" style="color: #FFFFFF; text-decoration: none">LinkedIn</a><a href="#top" style="color: #FFFFFF; text-decoration: none">Instagram</a><a href="#top" style="color: #FFFFFF; text-decoration: none">X</a></div>
+        </nav>
+      </div>
+      <div style="margin-top: 56px; padding-top: 24px; border-top: 1px solid #262626; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: #9E9E9E">
+        <span>© 2026 NEXUS Creative HQ Ltd · Company number 12667243 · Registered office: Kings Parade, Lower Coombe Street, Croydon CR0 1AA</span>
+        <span><a href="#top" style="color: #BDBDBD">Privacy</a> · <a href="#top" style="color: #BDBDBD">Terms</a> · <a href="#top" style="color: #BDBDBD">Cookies</a> · <a href="#top" style="color: #BDBDBD">Accessibility</a></span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"heroVariant":{"editor":"enum","options":["B","A"],"default":"B","section":"Hero test"},"$preview":{"width":1440,"height":7600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const v = this.props.heroVariant ?? 'B';
+    const routes = [
+      { id: 'inst', label: 'I run a science park or zone', tag: 'For science parks, innovation zones and funds', title: 'A UK operating partner for your companies', text: 'We act as your UK presence: showcase events, a deal-flow pipeline and landing support for your portfolio, without opening a UK office.', items: ['UK Representation, annual', 'UK Landing Programme, per cohort', 'Regular reporting on activity and outcomes'], step: 'Partnership call', stepText: 'A 30-minute call with our partnerships lead, then a written proposal if there is a fit.', cta: 'Book a partnership call', href: 'Institutions.dc.html' },
+      { id: 'intl', label: 'I am entering the UK', tag: 'For technology companies entering the UK', title: 'Reach UK customers sooner', text: 'Especially from China and Hong Kong. Market intelligence, qualified introductions, soft landing support and vetted legal, finance and banking partners.', items: ['Market-Entry Diagnostic', 'UK Soft Landing', 'Market Intelligence Report'], step: 'Market-Entry Diagnostic', stepText: 'A focused session and a written UK entry plan. The fee is credited against further work.', cta: 'Request a diagnostic', href: 'InternationalCompanies.dc.html' },
+      { id: 'scale', label: 'I lead a UK scale-up', tag: 'For UK frontier-tech scale-ups', title: 'Solve the growth problem in front of you', text: 'For companies already trading. A focused diagnostic, then specialist delivery through our partner network, managed by NEXUS.', items: ['Growth Diagnostic', 'AI adoption, R&D tax and IP projects', 'Seed and Series A readiness'], step: 'Growth Diagnostic', stepText: 'We pinpoint the problem and scope the work, with one point of accountability.', cta: 'Request a growth diagnostic', href: '#contact' },
+      { id: 'out', label: 'I want to reach China', tag: 'For UK companies looking at China and Hong Kong', title: 'Reach customers and partners in Asia', text: 'The corridor runs both ways. Delegations to mainland China and Hong Kong, representation in China through our partner RidgeCore Ventures, and our annual guide.', items: ['2027 delegations to mainland China and Hong Kong', 'Representation in China via RidgeCore Ventures', 'Doing Business in China 2027 report'], step: 'Register interest', stepText: 'Tell us your destination and goals. Delegation details follow. [Dates to confirm]', cta: 'Register delegation interest', href: '#corridor' },
+      { id: 'firm', label: 'I represent a professional firm', tag: 'For law, accountancy, banking and IP firms', title: 'Meet international founders and institutions', text: 'Sponsor the Global Innovator Awards or NEXUS Sessions, and join the partner network our clients rely on.', items: ['Global Innovator Awards sponsorship', 'NEXUS Sessions sponsorship', 'Referral partnerships'], step: 'Sponsor pack', stepText: 'We send the pack with audience details and packages.', cta: 'Request the sponsor pack', href: '#partners' }
+    ];
+    const sel = (this.state && this.state.route) || 'intl';
+    const tabs = routes.map((r) => ({
+      label: r.label,
+      pressed: r.id === sel ? 'true' : 'false',
+      bg: r.id === sel ? '#000000' : '#FFFFFF',
+      fg: r.id === sel ? '#FFFFFF' : '#000000',
+      pick: () => this.setState({ route: r.id })
+    }));
+    const cur = routes.find((r) => r.id === sel) || routes[1];
+    return { isB: v === 'B', isA: v !== 'B', tabs, cur };
+  }
+}
+</script>
+</body>
+</html>

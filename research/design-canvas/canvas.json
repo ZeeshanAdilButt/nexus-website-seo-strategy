@@ -1,0 +1,187 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "AsiaCorridor.dc.html": {
+      "expand": "fill",
+      "h": 7000,
+      "is_interactive": true,
+      "page": "v1",
+      "title": "/asia-corridor · both directions + 2027 delegations",
+      "w": 1440,
+      "x": 4560,
+      "y": 0
+    },
+    "DirectionA.dc.html": {
+      "expand": "fill",
+      "h": 1700,
+      "page": "directions",
+      "title": "Direction A · The Crossing (from Codex)",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "DirectionB.dc.html": {
+      "expand": "fill",
+      "h": 1900,
+      "page": "directions",
+      "title": "Direction B · The Aperture (from Gemini 4 Argon)",
+      "w": 1440,
+      "x": 1520,
+      "y": 0
+    },
+    "DirectionC.dc.html": {
+      "expand": "fill",
+      "h": 1400,
+      "page": "directions",
+      "title": "Direction C · The Dossier (light, editorial)",
+      "w": 1440,
+      "x": 3040,
+      "y": 0
+    },
+    "Institutions.dc.html": {
+      "expand": "fill",
+      "h": 6000,
+      "is_interactive": true,
+      "page": "v1",
+      "title": "/institutions · UK Representation and Landing Programme",
+      "w": 1440,
+      "x": 3040,
+      "y": 0
+    },
+    "InternationalCompanies.dc.html": {
+      "expand": "fill",
+      "h": 6200,
+      "is_interactive": true,
+      "page": "v1",
+      "title": "/international-companies · flagship SEO landing page",
+      "w": 1440,
+      "x": 1520,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 7600,
+      "is_interactive": true,
+      "page": "v1",
+      "title": "Homepage · corridor-first (desktop)",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "HomeA.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 6600,
+      "title": "Homepage · A + B + index",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "build"
+    },
+    "InternationalA.dc.html": {
+      "x": 1520,
+      "y": 0,
+      "w": 1440,
+      "h": 5700,
+      "title": "/international-companies",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "build"
+    },
+    "InstitutionsA.dc.html": {
+      "x": 3040,
+      "y": 0,
+      "w": 1440,
+      "h": 5800,
+      "title": "/institutions",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "build"
+    },
+    "AsiaA.dc.html": {
+      "x": 4560,
+      "y": 0,
+      "w": 1440,
+      "h": 6300,
+      "title": "/asia-corridor",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "build"
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-01T22:20:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas",
+    "page": "build"
+  },
+  "notes": {
+    "dirtitle": {
+      "kind": "title1",
+      "maxW": 4480,
+      "page": "directions",
+      "text": "Pick a direction for the homepage",
+      "w": 240,
+      "x": 0,
+      "y": -320
+    },
+    "title": {
+      "kind": "title1",
+      "maxW": 6000,
+      "page": "v1",
+      "text": "NEXUS website: first draft",
+      "w": 240,
+      "x": 0,
+      "y": -320
+    },
+    "buildtitle": {
+      "x": 0,
+      "y": -320,
+      "text": "NEXUS website: A + B + index",
+      "kind": "title1",
+      "maxW": 6000,
+      "page": "build"
+    },
+    "launchlist": {
+      "x": 6080,
+      "y": 0,
+      "w": 520,
+      "size": "m",
+      "fill": "orange",
+      "page": "build",
+      "text": "Before launch (client to confirm)\n\n• Written consent for each case study\n• Logo permissions: City of London, TEDA, S-Tron, CBBC\n• Tianjin partner names and MOU dates\n• Alibaba Entrepreneurs Fund, Swiss Bluefaer wording\n• Diagnostic fee and booking/payment tool\n• Payments from mainland China\n• Reply time and public email address\n• Method page for 1,400+ / 100+ / 16\n• Licensed fonts: Neutral Face Bold, General Sans (self-host)\n\nBuild notes: canvas links map to /institutions, /international-companies, /uk-scale-ups, /asia-corridor, /results, /insights, /about. Add meta description, canonical and Organization, WebSite, FAQPage and Event JSON-LD per page. Live clock needs a static fallback in server HTML."
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "InternationalCompanies.dc.html",
+    "Institutions.dc.html",
+    "AsiaCorridor.dc.html",
+    "DirectionA.dc.html",
+    "DirectionB.dc.html",
+    "DirectionC.dc.html",
+    "HomeA.dc.html",
+    "InternationalA.dc.html",
+    "InstitutionsA.dc.html",
+    "AsiaA.dc.html"
+  ],
+  "pages": [
+    {
+      "id": "build",
+      "name": "A + B + index · full site"
+    },
+    {
+      "id": "directions",
+      "name": "New directions"
+    },
+    {
+      "id": "v1",
+      "name": "First draft (v1)"
+    }
+  ],
+  "title": "NEXUS Landing Page"
+}
