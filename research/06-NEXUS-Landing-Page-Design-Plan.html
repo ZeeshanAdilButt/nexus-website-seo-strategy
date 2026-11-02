@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>NEXUS: Landing page design plan (Claude Design)</title><style>
+body{margin:0;background:#fff;color:#000;font-family:'General Sans','Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.6}
+main{max-width:1100px;margin:0 auto;padding:40px 24px 80px}
+h1,h2,h3{font-family:'Neutral Face','Arial Black',Arial,sans-serif;line-height:1.15}
+h1{font-size:2.4rem;text-transform:uppercase;border-bottom:6px solid #DFFF13;padding-bottom:12px}
+h2{font-size:1.6rem;margin-top:56px;padding:10px 14px;background:#000;color:#fff}
+h3{font-size:1.2rem;margin-top:32px;border-left:6px solid #DFFF13;padding-left:10px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th{background:#000;color:#fff;text-align:left}
+th,td{border:1px solid #D1D1D1;padding:8px;vertical-align:top}
+tr:nth-child(even) td{background:#f6f6f6}
+code{background:#f1f1f1;padding:1px 4px;border-radius:3px;font-size:13px}
+pre{background:#111;color:#eee;padding:14px;overflow:auto;border-radius:4px}
+pre code{background:none;color:inherit}
+blockquote{margin:16px 0;padding:12px 16px;background:#f6f6f6;border-left:6px solid #DFFF13}
+hr{border:0;border-top:1px solid #D1D1D1;margin:40px 0}
+@media print{h2{break-before:page}table,pre{break-inside:avoid}}
+</style></head><body><main><h1 id="nexus-landing-page-design-plan-claude-design">NEXUS: Landing page design plan (Claude Design)</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Date</td>
+<td>1 November 2026</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>Which pages to design first in Claude Design, how they should look and read, and why, for both search and the client's revenue</td>
+</tr>
+<tr>
+<td>Audience</td>
+<td>Project lead (internal); sections 3 and 4 can be shared with NEXUS</td>
+</tr>
+<tr>
+<td>Builds on</td>
+<td><code>02</code> Strategy Plan, <code>04</code> SEO Guide, <code>05</code> Claude Design Prompt Pack, the Developer Brief §4.2</td>
+</tr>
+<tr>
+<td>Not in scope</td>
+<td>Build platform, hosting, CMS choice, full sitemap (already approved in the brief)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-executive-summary">1. Executive summary</h2>
+<p>Design <strong>two pages</strong>, in this order: the <strong>Homepage</strong> as a corridor-first router, then <strong><code>/international-companies</code></strong> as the flagship SEO landing page. Every other page reuses their components.</p>
+<p>The homepage tells Google, AI engines and visitors one thing in five seconds: NEXUS is the UK–China bridge for technology companies. The international page is where search intent and revenue meet: "UK market entry from China" has buyers, weak competitors, and leads to the paid Market-Entry Diagnostic.</p>
+<p><strong>Do in order:</strong>
+1. Set up the NEXUS design system in Claude Design (prompt pack <code>05</code>, Step 1).
+2. Design hero Variants A and B; run the Lyssna 5-second test; pick the winner.
+3. Design the Homepage (prompt in §3.3).
+4. Design <code>/international-companies</code> (prompt pack <code>05</code>, prompt B, plus the changes in §3.4).
+5. Export as standalone HTML, run the checklist in §6, then <strong>Handoff to Claude Code</strong> for the real build.</p>
+<p><strong>Your call (needs the client):</strong> if NEXUS answers question 3 in <code>questions.txt</code> with "institutions bring the most revenue", swap step 4 to <code>/institutions</code>. Same template, different copy.</p>
+<hr />
+<h2 id="2-the-call-why-these-two-pages">2. The call: why these two pages</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Search value</th>
+<th>Client value</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Homepage</strong></td>
+<td>Brand + entity page; carries most of the 884 linking domains after the 301s</td>
+<td>First impression for every partner, judge and GIA guest</td>
+<td><strong>Design first</strong></td>
+</tr>
+<tr>
+<td><strong><code>/international-companies</code></strong></td>
+<td>Highest-intent cluster: "UK market entry for tech companies", "UK soft landing", "expand to UK from China"</td>
+<td>Leads to the paid diagnostic (direct revenue)</td>
+<td><strong>Design second (flagship)</strong></td>
+</tr>
+<tr>
+<td><code>/institutions</code></td>
+<td>Low search volume, high deal value</td>
+<td>Biggest contracts, few buyers</td>
+<td>Swap in if the client says so</td>
+</tr>
+<tr>
+<td><code>/asia-corridor</code></td>
+<td>Strong for AI answers ("who connects Tianjin with the UK?")</td>
+<td>Differentiator, but not a conversion page</td>
+<td>Phase 1, after the template exists</td>
+</tr>
+<tr>
+<td><code>/events</code> (GIA)</td>
+<td>Short-lived spike to 16 Nov</td>
+<td>Ticket sales already run on the GIA site</td>
+<td>Announcement bar only</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reason in one line:</strong> the site has authority (DR 34, 884 domains) but almost no relevance (2 ranking keywords). The homepage fixes relevance; the international page converts it into enquiries.</p>
+<hr />
+<h2 id="3-the-design">3. The design</h2>
+<h3 id="31-design-direction-make-it-stand-out-stay-on-brand">3.1 Design direction ("make it stand out, stay on brand")</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base</td>
+<td>Pitch Black dominant. White and Studio Grey sections for rhythm. <strong>Yellow is accent only</strong> (buttons, underlines, tags, numbers).</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>Neutral Face Bold, uppercase, very large (clamp to 96px desktop / 44px mobile). General Sans body, 17px.</td>
+</tr>
+<tr>
+<td>Signature visual</td>
+<td>A <strong>corridor line</strong>: London on the left, Tianjin, Shanghai and Hong Kong on the right, joined by a thin yellow line. Built in SVG with real text labels, so it is crawlable and fast. This replaces a stock "globe".</td>
+</tr>
+<tr>
+<td>Brand graphics</td>
+<td>The NEXUS <strong>X</strong> (<code>NEXUS Brand Graphics/</code>) as a large cropped outline behind the hero and section breaks. The <strong>scribble</strong> marks to underline one key word per section.</td>
+</tr>
+<tr>
+<td>Proof</td>
+<td>Big-number strip (100+, 16, 1,400+). Numbers in yellow on black, labels in white.</td>
+</tr>
+<tr>
+<td>Photography</td>
+<td>Real photos only (Tianjin signing, S-Tron, GIA). Clear <code>[Placeholder: …]</code> boxes until supplied. No stock, no AI images.</td>
+</tr>
+<tr>
+<td>Motion</td>
+<td>One effect: the corridor line draws in on load. Off when <code>prefers-reduced-motion</code> is set.</td>
+</tr>
+<tr>
+<td>Feel</td>
+<td>Confident and editorial, closer to a consultancy annual report than a startup template.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-hero-shared-by-both-variants">3.2 Hero (shared by both variants)</h3>
+<pre><code class="language-text">Eyebrow : THE UK–CHINA INNOVATION CORRIDOR
+H1 (A)  : LAND, GROW AND SCALE TECHNOLOGY BUSINESSES IN THE UK.
+H1 (B)  : LAND, GROW AND SCALE IN THE UK. / FROM CHINA AND BEYOND.   (line 2 in yellow)
+Intro   : NEXUS is the operational bridge between the UK and China for technology
+          companies, science parks and innovation zones: one accountable team in
+          London, partners on the ground in Tianjin, Shanghai and Hong Kong.
+Buttons : [Find your route] yellow   [Talk to our team] outline
+Visual  : corridor line + [Placeholder: Tianjin signing photograph]
+</code></pre>
+<p><strong>Recommendation: Variant B.</strong> It puts "China" in the H1, which Google weights most and AI engines quote. Keep A only if the Lyssna test shows B confuses UK scale-ups.</p>
+<h3 id="33-homepage-section-order">3.3 Homepage: section order</h3>
+<p>Follows the brief §4.2, with three changes marked <strong>Change</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Section</th>
+<th>Job for search / AI</th>
+<th>Job for the client</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Announcement bar (GIA, 16 Nov)</td>
+<td>Fresh event signal</td>
+<td>Ticket and visibility push</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Hero (Variant B)</td>
+<td>H1 + 160-character intro carry "UK–China"</td>
+<td>Five-second clarity</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Proof strip: 3 stats + 4 logos</td>
+<td>Citable numbers</td>
+<td>Trust before scrolling</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Who we work with: three route cards + one text link "UK company going to China? →"</td>
+<td>One internal link per audience page</td>
+<td>Visitor self-selects. <strong>Change:</strong> adds the outbound route</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Asia corridor</strong> (5 partner cards, Hong Kong line)</td>
+<td>Named partners and places, which AI engines repeat</td>
+<td>The differentiator. <strong>Change:</strong> moved up from #6, above "How we work"</td>
+</tr>
+<tr>
+<td>6</td>
+<td>How we work (5 steps)</td>
+<td>Process answers "how does it work?"</td>
+<td>Lowers perceived risk</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Results (3 case study cards)</td>
+<td>Proof for every claim</td>
+<td>Shows outcomes, not promises</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Events: NEXUS Sessions + GIA</td>
+<td>Event schema</td>
+<td>Sponsor and ticket path</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Partner network chips</td>
+<td>Topical terms (R&amp;D tax, IP, banking)</td>
+<td>Sponsor pipeline</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Team (portraits, founder quote)</td>
+<td>Names the CEO (AI engines currently cannot)</td>
+<td>Human trust</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Insights (3 cards + China 2027 report)</td>
+<td>Freshness, internal links</td>
+<td>Lead magnet. <strong>Change:</strong> replace the three old creative-tech articles with corridor content</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Common questions (5 FAQs)</td>
+<td>FAQPage schema, direct answers</td>
+<td>Removes objections</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Contact routes (3 tiles + form)</td>
+<td>ContactPage signals</td>
+<td>Conversion</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Claude Design prompt (Homepage):</strong></p>
+<blockquote>
+<p>Using the NEXUS design system, design the full homepage at 1440px and 390px. Black hero with Variant B (from the hero prompt), the corridor line visual, and a large cropped X outline behind it. Then, in this order: proof strip (100+ businesses actively supported, 16 curated global partnerships, 1,400+ business plans assessed, Supplier and security cleared; four logo placeholders marked "permission to confirm"); three route cards plus the text link "UK company going to China? See the Asia corridor"; the Asia corridor section on white with a yellow top rule and five partner cards; How we work (Diagnose, Plan, Connect, Deliver, Grow); three case study cards (Sentian Aerospace, GI Healthcare, Auto Impartial); Events on black (NEXUS Sessions, Global Innovator Awards 16 November 2026); partner chips; team portraits in black and white; three insight cards plus the "Doing Business in China 2027" report card; five FAQs as an accordion; three contact tiles and a form. Yellow only as an accent, never a background. All text is live text, never in images. One H1. Use "[Placeholder: …]" boxes for every missing image or unapproved claim.</p>
+</blockquote>
+<h3 id="34-international-companies-the-flagship-landing-page">3.4 <code>/international-companies</code>: the flagship landing page</h3>
+<p>Use prompt B from <code>05</code>. Add these SEO and conversion rules:</p>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td>UK Market Entry for Tech Companies from China | NEXUS</td>
+</tr>
+<tr>
+<td>H1</td>
+<td>"Reach UK customers sooner." Keep it. The keyword sits in the title, eyebrow and first paragraph instead.</td>
+</tr>
+<tr>
+<td>Eyebrow</td>
+<td>UK MARKET ENTRY FROM CHINA AND ASIA</td>
+</tr>
+<tr>
+<td>First paragraph</td>
+<td>40–60 word direct answer (search and AI quote it). Real text.</td>
+</tr>
+<tr>
+<td>Primary CTA</td>
+<td>"Request a Market-Entry Diagnostic", repeated three times: hero, after the offers, final form</td>
+</tr>
+<tr>
+<td>Proof position</td>
+<td>One result directly under the offers (DarkhorseOne or Smart Patent), not only at the bottom</td>
+</tr>
+<tr>
+<td>"Not for" block</td>
+<td>Visa-only enquiries go to UKES. Keeps the pipeline clean.</td>
+</tr>
+<tr>
+<td>FAQs</td>
+<td>4–5, phrased as buyers ask: "How long does UK market entry take?", "Do I need a UK company to start?", "How are payments from mainland China handled?"</td>
+</tr>
+<tr>
+<td>Form</td>
+<td>Company, HQ country, sector, stage, timeline, name, work email, unticked consent. Event: <code>diagnostic_request</code>.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-text">Visitor flow:
+Search &quot;UK market entry from China&quot; -&gt; hero + answer paragraph -&gt; 3 offers
+-&gt; proof card -&gt; how it works -&gt; FAQs -&gt; diagnostic form -&gt; NEXUS replies [response time to confirm]
+</code></pre>
+<hr />
+<h2 id="4-considerations">4. Considerations</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Consideration</th>
+<th>Risk if ignored</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Claude Design output is a design, not the site.</strong> Exports can use web components, scripts and Google Fonts (<code>seo lady draft.html</code> shows <code>&lt;x-dc&gt;</code> and <code>support.js</code>).</td>
+<td>Content invisible to crawlers; broken in mainland China</td>
+<td>Use exports as the visual spec. Build real HTML via Handoff to Claude Code.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Mainland China access</strong></td>
+<td>Fonts, maps, YouTube or reCAPTCHA fail; the target audience sees a broken page</td>
+<td>Self-host fonts; no Google services; test under 5 s from China</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Unapproved claims and logos</strong></td>
+<td>Legal and reputational risk</td>
+<td>Every partner name, logo, stat and case study stays a placeholder until written consent</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Entity confusion</strong> ("Nexus" is a crowded name)</td>
+<td>AI engines mix NEXUS with other companies</td>
+<td>"NEXUS Creative HQ" in first mentions, footer and schema; one email domain</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Visa separation</strong></td>
+<td>Visa leads flood commercial forms</td>
+<td>No commercial CTA near UKES content</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Brand drift</strong></td>
+<td>Prototype already uses yellow backgrounds</td>
+<td>Yellow accent only; check every export</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>One H1, live text, FAQ schema</strong></td>
+<td>Lost rankings and AI citations</td>
+<td>Part of the export checklist (§6)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Accessibility (WCAG 2.2 AA)</strong></td>
+<td>Excludes users; fails public-sector buyers</td>
+<td>Contrast, focus states, 48px buttons, reduced motion</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Timeline</strong> (launch Thu 12 Nov, GIA Mon 16 Nov)</td>
+<td>Design runs late and eats build time</td>
+<td>Design finished by Fri 6 Nov (§5)</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Confidentiality</strong></td>
+<td>Private case studies leak through a shared link</td>
+<td>Keep the Claude Design project private to the organisation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-business">5. Business</h2>
+<h3 id="51-how-each-page-earns">5.1 How each page earns</h3>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Offer it sells</th>
+<th>Conversion event</th>
+<th>Who pays</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homepage</td>
+<td>Routes to every offer</td>
+<td><code>cta_click</code>, <code>partnership_call_request</code></td>
+<td>All audiences</td>
+</tr>
+<tr>
+<td><code>/international-companies</code></td>
+<td>Market-Entry Diagnostic → UK Soft Landing retainer → Market Intelligence Report</td>
+<td><code>diagnostic_request</code></td>
+<td>International tech companies</td>
+</tr>
+<tr>
+<td>(swap option) <code>/institutions</code></td>
+<td>UK Representation, UK Landing Programme</td>
+<td><code>partnership_call_request</code></td>
+<td>Science parks, innovation zones</td>
+</tr>
+</tbody>
+</table>
+<p>Prices are "On application" until NEXUS confirms them.</p>
+<h3 id="52-targets-at-90-days-after-launch-from-02-to-agree-with-the-client">5.2 Targets at 90 days after launch (from <code>02</code>, to agree with the client)</h3>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Baseline</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qualified enquiries (partnership + diagnostic + sponsor)</td>
+<td>~0 tracked</td>
+<td>8–12 per month</td>
+</tr>
+<tr>
+<td>Non-brand clicks (Google Search Console)</td>
+<td>~0</td>
+<td>150+ per month</td>
+</tr>
+<tr>
+<td>Non-brand keywords in top 100</td>
+<td>0</td>
+<td>50+</td>
+</tr>
+<tr>
+<td>AI engines naming NEXUS (40 prompts)</td>
+<td>0 of 3 category prompts</td>
+<td>8 of 40</td>
+</tr>
+<tr>
+<td>Lighthouse mobile: performance / accessibility</td>
+<td>n/a</td>
+<td>≥85 / ≥95</td>
+</tr>
+</tbody>
+</table>
+<h3 id="53-schedule-the-one-sequencing-list">5.3 Schedule (the one sequencing list)</h3>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Work</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mon 2 Nov</td>
+<td>Design system in Claude Design; hero Variants A and B</td>
+</tr>
+<tr>
+<td>Tue 3 Nov</td>
+<td>Lyssna 5-second test; pick the hero</td>
+</tr>
+<tr>
+<td>Wed 4 – Thu 5 Nov</td>
+<td>Homepage and <code>/international-companies</code>, desktop and mobile</td>
+</tr>
+<tr>
+<td>Fri 6 Nov</td>
+<td>Export, run §6 checklist, Handoff to Claude Code</td>
+</tr>
+<tr>
+<td>Mon 9 – Tue 10 Nov</td>
+<td>Staging: crawl, schema, speed and China tests</td>
+</tr>
+<tr>
+<td>Thu 12 Nov</td>
+<td>Launch</td>
+</tr>
+</tbody>
+</table>
+<h3 id="54-needed-from-nexus-before-the-design-is-final">5.4 Needed from NEXUS before the design is final</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Blocks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Answer to question 3 (which audience brings most revenue)</td>
+<td>Choice of flagship page</td>
+</tr>
+<tr>
+<td>Tianjin signing photo + caption</td>
+<td>Hero image</td>
+</tr>
+<tr>
+<td>Written permission for logos and case studies</td>
+<td>Proof strip, results cards</td>
+</tr>
+<tr>
+<td>Licensed font files (Neutral Face, General Sans)</td>
+<td>Exact type rendering</td>
+</tr>
+<tr>
+<td>Payment method for mainland China clients</td>
+<td>FAQ answer on the international page</td>
+</tr>
+</tbody>
+</table>
+<p>Cost: Claude Design is part of the existing Claude plan; Lyssna, GSC, Bing and Clarity are free tiers.</p>
+<hr />
+<h2 id="6-export-checklist-run-on-every-claude-design-export">6. Export checklist (run on every Claude Design export)</h2>
+<ul>
+<li>[ ] Exactly one H1, containing or next to "UK–China" / "UK market entry"</li>
+<li>[ ] All copy is live text; nothing important inside images</li>
+<li>[ ] 40–60 word answer paragraph under the hero</li>
+<li>[ ] FAQ block present (5 on Home, 4–5 on the international page)</li>
+<li>[ ] No Google Fonts, Maps, YouTube or reCAPTCHA</li>
+<li>[ ] Yellow never used as a section background or as text on white</li>
+<li>[ ] Every unconfirmed claim, logo and photo is a <code>[Placeholder: …]</code></li>
+<li>[ ] Mobile 390px version exists and buttons are at least 48px tall</li>
+<li>[ ] Form has an unticked consent box and a privacy link</li>
+<li>[ ] Visa content links only to UKES, with no commercial CTA</li>
+</ul>
+<hr />
+<h2 id="7-closing-view">7. Closing view</h2>
+<p>The homepage and one flagship landing page are enough to change how Google and AI engines describe NEXUS. Once both templates exist, the remaining audience and corridor pages are copy swaps, not new design work. The one open decision is which audience gets the flagship slot, and that comes from the client's answer to question 3.</p></main></body></html>
