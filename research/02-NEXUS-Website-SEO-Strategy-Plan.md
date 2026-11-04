@@ -1,5 +1,7 @@
 # NEXUS Website, SEO and AEO Strategy Plan
 
+> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
+
 Draft v1, 31 Oct 2026. Builds on the Developer Brief (approved sitemap) and `01-NEXUS-Research-Findings.md`. Items marked **[Decision]** need client sign-off.
 
 ---
@@ -28,7 +30,7 @@ The H1 "Land, grow and scale technology businesses in the UK." is strong for peo
 | Eyebrow (above H1) | "UK growth partner · China flagship corridor" | "The UK–China innovation corridor" |
 | H1 option A (keep brand voice) | Land, grow and scale technology businesses in the UK. | *unchanged* |
 | H1 option B **[Decision]** | | "Land, grow and scale in the UK. **From China and beyond.**" (yellow on the second line) |
-| Intro sentence (first 160 chars, which AI engines quote) | "NEXUS works with international technology companies…" | "NEXUS is the operational bridge between the UK and China for technology companies, science parks and innovation zones: one accountable team in London, partners on the ground in Tianjin, Shanghai and Hong Kong." |
+| Intro sentence (first 160 chars, which AI engines quote) | "NEXUS works with international technology companies…" | "NEXUS is the operational bridge between the UK and China for technology companies, science parks and innovation zones: one accountable team in the UK, with partners on the ground in China." |
 | `<title>` | NEXUS \| Land, grow and scale technology businesses in the UK | **NEXUS \| UK–China Tech Market Entry & Scale-Up Partner** |
 | Meta description | "…with China as our flagship corridor." | "The UK–China operational bridge for technology companies and innovation institutions. Market entry, UK soft landing, representation and scale-up delivery from London." |
 | Organization schema `description` + `knowsAbout` | Generic | Corridor-first, plus `areaServed`: GB, CN, HK |

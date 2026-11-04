@@ -45,7 +45,7 @@ Prices: none confirmed ("On application").
 | Company | Sector | Headline outcome | Best page |
 |---|---|---|---|
 | Sentian Aerospace | Aerospace / UAV | Acquired by Volatus Aerospace (listed) < 2 yrs from UK incorporation | UK scale-ups / Home |
-| GI Healthcare | Deep tech | Customer-funded PoC; GB Entrepreneur Awards 2025 finalist | UK scale-ups |
+| GI Healthcare | Deep tech | Customer-funded PoC; founders named Scotland finalists, Great British Entrepreneur Awards 2025 | UK scale-ups |
 | Auto Impartial | AI compute | Architecture validated; UK–Asia consortium with Innovate UK | Asia corridor |
 | DarkhorseOne | AI enterprise software | UK patent filed; commercial collaboration via NEXUS | International companies |
 | Eco2Life (EcoDo) | CreaTech | Live AI platform, early revenue | International / Asia |

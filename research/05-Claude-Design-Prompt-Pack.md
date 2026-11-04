@@ -1,5 +1,7 @@
 # NEXUS: Claude Design prompt pack
 
+> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
+
 **Why a prompt pack:** Cline (this agent) can't operate Claude Design directly. You run these prompts in Claude Design (claude.ai, the Design tab, or `/design` inside Claude Code), export the results into `research\design-exports\`, and Cline then checks them against the SEO plan.
 
 **Exports available:** PDF, PPTX, standalone HTML / HTML bundle, Google Slides, partner tools (e.g. Canva, Vercel), and **Handoff to Claude Code** for the build.
@@ -40,7 +42,7 @@ Upload, or create in Settings → Design Systems:
 >
 > **Shared elements**
 > - Eyebrow: "The UK–China innovation corridor"
-> - Intro: "NEXUS is the operational bridge between the UK and China for technology companies, science parks and innovation zones: one accountable team in London, partners on the ground in Tianjin, Shanghai and Hong Kong."
+> - Intro: "NEXUS is the operational bridge between the UK and China for technology companies, science parks and innovation zones: one accountable team in the UK, with partners on the ground in China."
 > - Buttons: "Find your route" (yellow) and "Talk to our team" (outline)
 > - Image: "[Placeholder: Tianjin signing photograph]"
 >
@@ -54,7 +56,7 @@ Upload, or create in Settings → Design Systems:
 
 ### B. Audience page template: `/international-companies`
 > Create the "For international companies" page.
-> - **Header:** breadcrumb Home / For international companies; H1 "Reach UK customers sooner."
+> - **Header:** breadcrumb Home / For international companies; H1 "Enter the UK with a team already on the ground."
 > - **Answer-first paragraph** (about 50 words, real text, for search and AI): NEXUS helps international technology companies, especially from China and Hong Kong, enter the UK. It starts with a paid Market-Entry Diagnostic, followed by UK Soft Landing support.
 >
 > **Sections, in order**

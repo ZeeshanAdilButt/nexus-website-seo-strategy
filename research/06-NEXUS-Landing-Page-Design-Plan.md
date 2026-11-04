@@ -1,5 +1,7 @@
 # NEXUS: Landing page design plan (Claude Design)
 
+> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
+
 | | |
 |---|---|
 | Date | 1 November 2026 |
@@ -64,12 +66,12 @@ H1 (A)  : LAND, GROW AND SCALE TECHNOLOGY BUSINESSES IN THE UK.
 H1 (B)  : LAND, GROW AND SCALE IN THE UK. / FROM CHINA AND BEYOND.   (line 2 in yellow)
 Intro   : NEXUS is the operational bridge between the UK and China for technology
           companies, science parks and innovation zones: one accountable team in
-          London, partners on the ground in Tianjin, Shanghai and Hong Kong.
+          the UK, with partners on the ground in China.
 Buttons : [Find your route] yellow   [Talk to our team] outline
 Visual  : corridor line + [Placeholder: Tianjin signing photograph]
 ```
 
-**Recommendation: Variant B.** It puts "China" in the H1, which Google weights most and AI engines quote. Keep A only if the Lyssna test shows B confuses UK scale-ups.
+**Build default: Variant A, Mark's H1.** Variant B is our proposal for Mark to decide: it puts "China" in the H1, which Google weights most and AI engines quote. Test both with Lyssna, then put the result to Mark.
 
 ### 3.3 Homepage: section order
 
@@ -78,7 +80,7 @@ Follows the brief §4.2, with three changes marked **Change**.
 | # | Section | Job for search / AI | Job for the client |
 |---|---|---|---|
 | 1 | Announcement bar (GIA, 16 Nov) | Fresh event signal | Ticket and visibility push |
-| 2 | Hero (Variant B) | H1 + 160-character intro carry "UK–China" | Five-second clarity |
+| 2 | Hero (Variant A; B only if Mark approves) | H1 + 160-character intro carry "UK–China" | Five-second clarity |
 | 3 | Proof strip: 3 stats + 4 logos | Citable numbers | Trust before scrolling |
 | 4 | Who we work with: three route cards + one text link "UK company going to China? →" | One internal link per audience page | Visitor self-selects. **Change:** adds the outbound route |
 | 5 | **Asia corridor** (5 partner cards, Hong Kong line) | Named partners and places, which AI engines repeat | The differentiator. **Change:** moved up from #6, above "How we work" |
@@ -93,7 +95,7 @@ Follows the brief §4.2, with three changes marked **Change**.
 
 **Claude Design prompt (Homepage):**
 
-> Using the NEXUS design system, design the full homepage at 1440px and 390px. Black hero with Variant B (from the hero prompt), the corridor line visual, and a large cropped X outline behind it. Then, in this order: proof strip (100+ businesses actively supported, 16 curated global partnerships, 1,400+ business plans assessed, Supplier and security cleared; four logo placeholders marked "permission to confirm"); three route cards plus the text link "UK company going to China? See the Asia corridor"; the Asia corridor section on white with a yellow top rule and five partner cards; How we work (Diagnose, Plan, Connect, Deliver, Grow); three case study cards (Sentian Aerospace, GI Healthcare, Auto Impartial); Events on black (NEXUS Sessions, Global Innovator Awards 16 November 2026); partner chips; team portraits in black and white; three insight cards plus the "Doing Business in China 2027" report card; five FAQs as an accordion; three contact tiles and a form. Yellow only as an accent, never a background. All text is live text, never in images. One H1. Use "[Placeholder: …]" boxes for every missing image or unapproved claim.
+> Using the NEXUS design system, design the full homepage at 1440px and 390px. Black hero with Variant A, Mark's H1 (from the hero prompt), the corridor line visual, and a large cropped X outline behind it. Then, in this order: proof strip (100+ businesses actively supported, 16 curated global partnerships, 1,400+ business plans assessed, Supplier and security cleared; four logo placeholders marked "permission to confirm"); three route cards plus the text link "UK company going to China? See the Asia corridor"; the Asia corridor section on white with a yellow top rule and five partner cards; How we work (Diagnose, Plan, Connect, Deliver, Grow); three case study cards (Sentian Aerospace, GI Healthcare, Auto Impartial); Events on black (NEXUS Sessions, Global Innovator Awards 16 November 2026); partner chips; team portraits in black and white; three insight cards plus the "Doing Business in China 2027" report card; five FAQs as an accordion; three contact tiles and a form. Yellow only as an accent, never a background. All text is live text, never in images. One H1. Use "[Placeholder: …]" boxes for every missing image or unapproved claim.
 
 ### 3.4 `/international-companies`: the flagship landing page
 
@@ -102,7 +104,7 @@ Use prompt B from `05`. Add these SEO and conversion rules:
 | Rule | Detail |
 |---|---|
 | `<title>` | UK Market Entry for Tech Companies from China \| NEXUS |
-| H1 | "Reach UK customers sooner." Keep it. The keyword sits in the title, eyebrow and first paragraph instead. |
+| H1 | "Enter the UK with a team already on the ground." (Mark's prototype H1). Keep it. The keyword sits in the title, eyebrow and first paragraph instead. |
 | Eyebrow | UK MARKET ENTRY FROM CHINA AND ASIA |
 | First paragraph | 40–60 word direct answer (search and AI quote it). Real text. |
 | Primary CTA | "Request a Market-Entry Diagnostic", repeated three times: hero, after the offers, final form |

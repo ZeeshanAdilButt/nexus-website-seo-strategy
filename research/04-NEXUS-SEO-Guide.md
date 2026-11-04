@@ -1,5 +1,7 @@
 # The NEXUS SEO Guide
 
+> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
+
 **Understand the business first, then the strategy, then the tools.**
 Version 1 · 31 October 2026 · For the NEXUS website rebuild (launch target 12 Nov 2026)
 
@@ -453,7 +455,7 @@ Free dashboard joining GA4 + GSC. **NEXUS monthly page:** (1) primary conversion
 
 ### 6.3 Writing an audience page (template: `/international-companies`)
 1. **Title:** `UK Market Entry for Tech Companies from China & Asia | NEXUS`
-2. **H1 (brand voice):** "Reach UK customers sooner."
+2. **H1 (Mark's prototype):** "Enter the UK with a team already on the ground."
 3. **Answer-first paragraph (≤ 60 words):** "NEXUS helps international technology companies, especially from China and Hong Kong, enter the UK market. We start with a paid Market-Entry Diagnostic, then provide UK soft landing support: company setup, vetted legal, banking and accountancy partners, qualified introductions and an accountable team in London."
 4. H2s as questions: *What does UK market entry involve? · What is included in a UK soft landing? · How long does it take and what does it cost? · Who is it for (and not for)? · What results have we delivered?*
 5. Offer cards (Diagnostic / Soft Landing / Intelligence Report) with "On application" pricing.
