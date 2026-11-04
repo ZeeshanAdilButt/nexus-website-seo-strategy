@@ -36,6 +36,8 @@ Two working website drafts of the same four pages (Home, International companies
 | Draft one | The chosen design above (`HomeA`, `InternationalA`, `InstitutionsA`, `AsiaA`) built page for page as a working site: live corridor clocks, mobile menu, self-hosted fonts | [hasaanwayne.github.io/nexus-website-draft-one](https://hasaanwayne.github.io/nexus-website-draft-one/) | [Hasaanwayne/nexus-website-draft-one](https://github.com/Hasaanwayne/nexus-website-draft-one) |
 | Colour redesign | The Crossing direction carried forward with public-domain paintings of London and China, a porcelain ground in place of Studio Grey, motion, and a single spacing system for sections, text and columns | [hasaanwayne.github.io/nexus-website-draft](https://hasaanwayne.github.io/nexus-website-draft/) | [Hasaanwayne/nexus-website-draft](https://github.com/Hasaanwayne/nexus-website-draft) |
 
+Review against Mark's documents: [`research/design-reviews/hasaan-wayne/REVIEW.md`](research/design-reviews/hasaan-wayne/REVIEW.md) (what to fix first, and what to carry into the build).
+
 | Page | Draft one | Colour redesign |
 |---|---|---|
 | Home | ![Draft one, home](research/design-reviews/hasaan-wayne/draft-one-home.jpg) | ![Colour redesign, home](research/design-reviews/hasaan-wayne/colour-home.jpg) |
