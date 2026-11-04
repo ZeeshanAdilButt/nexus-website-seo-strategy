@@ -108,6 +108,60 @@
       "expand": "fill",
       "is_interactive": true,
       "page": "build"
+    },
+    "HomeV3.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 4600,
+      "title": "Homepage · v3 brand-led",
+      "expand": "fill",
+      "page": "v3"
+    },
+    "Home31.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 10150,
+      "title": "Homepage",
+      "expand": "fill",
+      "page": "v31"
+    },
+    "International31.dc.html": {
+      "x": 1520,
+      "y": 0,
+      "w": 1440,
+      "h": 6430,
+      "title": "/international-companies",
+      "expand": "fill",
+      "page": "v31"
+    },
+    "Institutions31.dc.html": {
+      "x": 3040,
+      "y": 0,
+      "w": 1440,
+      "h": 6100,
+      "title": "/institutions",
+      "expand": "fill",
+      "page": "v31"
+    },
+    "ScaleUps31.dc.html": {
+      "x": 4560,
+      "y": 0,
+      "w": 1440,
+      "h": 6300,
+      "title": "/uk-scale-ups",
+      "expand": "fill",
+      "page": "v31"
+    },
+    "Asia31.dc.html": {
+      "x": 6080,
+      "y": 0,
+      "w": 1440,
+      "h": 5360,
+      "title": "/asia-corridor",
+      "expand": "fill",
+      "page": "v31"
     }
   },
   "createdOnFiles": {
@@ -117,7 +171,7 @@
   "designSystems": [],
   "launch": {
     "view": "canvas",
-    "page": "build"
+    "page": "v31"
   },
   "notes": {
     "dirtitle": {
@@ -154,6 +208,31 @@
       "fill": "orange",
       "page": "build",
       "text": "Before launch (client to confirm)\n\n• Written consent for each case study\n• Logo permissions: City of London, TEDA, S-Tron, CBBC\n• Tianjin partner names and MOU dates\n• Alibaba Entrepreneurs Fund, Swiss Bluefaer wording\n• Diagnostic fee and booking/payment tool\n• Payments from mainland China\n• Reply time and public email address\n• Method page for 1,400+ / 100+ / 16\n• Licensed fonts: Neutral Face Bold, General Sans (self-host)\n\nBuild notes: canvas links map to /institutions, /international-companies, /uk-scale-ups, /asia-corridor, /results, /insights, /about. Add meta description, canonical and Organization, WebSite, FAQPage and Event JSON-LD per page. Live clock needs a static fallback in server HTML."
+    },
+    "v3title": {
+      "x": 0,
+      "y": -320,
+      "text": "NEXUS homepage · v3, brand-led",
+      "kind": "title1",
+      "maxW": 1440,
+      "page": "v3"
+    },
+    "v31title": {
+      "x": 0,
+      "y": -320,
+      "text": "NEXUS website · v3.1, Mark's brief in the brand look",
+      "kind": "title1",
+      "maxW": 7520,
+      "page": "v31"
+    },
+    "v31confirm": {
+      "x": 7600,
+      "y": 0,
+      "w": 520,
+      "size": "m",
+      "fill": "orange",
+      "page": "v31",
+      "text": "To confirm (from Mark's brief, section 6)\n\n• Partner logo permissions: City of London, TEDA, S-Tron, CBBC\n• Prices and the diagnostic fee (showing 'On application')\n• Founder quote; institution case study or testimonial\n• Email address, registered office, response time\n• Session series name, venue, first date\n• 2027 delegation destinations, dates, prices\n• Tianjin partner names and MOU dates\n• Alibaba Entrepreneurs Fund and Swiss Bluefaer wording\n• Payments from mainland China; equity question (scale-ups)\n• Photography: Tianjin signing, team portraits, events\n• Licensed fonts (Neutral Face Bold, General Sans), self-hosted\n\nOpen decision for Mark: add 'From China and beyond' to the H1 for search (strategy option B)."
     }
   },
   "order": [
@@ -167,9 +246,23 @@
     "HomeA.dc.html",
     "InternationalA.dc.html",
     "InstitutionsA.dc.html",
-    "AsiaA.dc.html"
+    "AsiaA.dc.html",
+    "HomeV3.dc.html",
+    "Home31.dc.html",
+    "International31.dc.html",
+    "Institutions31.dc.html",
+    "ScaleUps31.dc.html",
+    "Asia31.dc.html"
   ],
   "pages": [
+    {
+      "id": "v31",
+      "name": "v3.1 · Mark's brief"
+    },
+    {
+      "id": "v3",
+      "name": "v3 · brand-led"
+    },
     {
       "id": "build",
       "name": "A + B + index · full site"
