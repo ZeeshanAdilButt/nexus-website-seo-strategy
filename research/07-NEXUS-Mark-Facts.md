@@ -417,4 +417,4 @@ These are proposals. Mark's version is the default until Mark decides otherwise.
 
 ## Closing
 
-Mark has already settled most of the questions a designer or developer would otherwise guess at. The open items are in section 13, and the conflicts to raise with Mark are in section 14. Our SEO proposals in section 15 should reach Mark as one short decision list, not as changes already built in.
+Mark has already settled most of the questions a designer or developer would otherwise guess at. The open items are in section 13, and the conflicts to raise with Mark are in section 14. Our SEO proposals in section 15 go to Mark as one short decision list, not as changes already built in: [`08-NEXUS-Decisions-For-Mark.md`](08-NEXUS-Decisions-For-Mark.md).
