@@ -24,6 +24,23 @@ Each document also has an `.html` copy styled in the NEXUS brand; download and o
 - `research/local-docs/`: plain-text copies of the brief, case studies and prototype pages.
 - `research/design-canvas/`: source of the Claude Design canvas (one `.dc.html` per artboard plus `canvas.json`). The chosen design is `HomeA`, `InternationalA`, `InstitutionsA` and `AsiaA`; `Direction*` are the three explored directions and the rest is the first draft.
 - `research/design-reviews/`: Codex and Gemini 4 Argon design and SEO critiques (two rounds) and screenshots of the directions and final pages.
+- `research/design-reviews/hasaan-wayne/`: screenshots of Hasaan Wayne's two website drafts (see below).
+
+## Hasaan Wayne's designs
+
+Two working website drafts of the same four pages (Home, International companies, Institutions, Asia corridor), both live on GitHub Pages. Each is a client-review copy: hidden from search engines, labelled as a draft, and with partner and client names awaiting approval shown as placeholders.
+
+| Draft | What it is | Live site | Code |
+|---|---|---|---|
+| Draft one | The chosen design above (`HomeA`, `InternationalA`, `InstitutionsA`, `AsiaA`) built page for page as a working site: live corridor clocks, mobile menu, self-hosted fonts | [hasaanwayne.github.io/nexus-website-draft-one](https://hasaanwayne.github.io/nexus-website-draft-one/) | [Hasaanwayne/nexus-website-draft-one](https://github.com/Hasaanwayne/nexus-website-draft-one) |
+| Colour redesign | The Crossing direction carried forward with public-domain paintings of London and China, a porcelain ground in place of Studio Grey, motion, and a single spacing system for sections, text and columns | [hasaanwayne.github.io/nexus-website-draft](https://hasaanwayne.github.io/nexus-website-draft/) | [Hasaanwayne/nexus-website-draft](https://github.com/Hasaanwayne/nexus-website-draft) |
+
+| Page | Draft one | Colour redesign |
+|---|---|---|
+| Home | ![Draft one, home](research/design-reviews/hasaan-wayne/draft-one-home.jpg) | ![Colour redesign, home](research/design-reviews/hasaan-wayne/colour-home.jpg) |
+| International companies | ![Draft one, international companies](research/design-reviews/hasaan-wayne/draft-one-international-companies.jpg) | ![Colour redesign, international companies](research/design-reviews/hasaan-wayne/colour-international-companies.jpg) |
+| Institutions | ![Draft one, institutions](research/design-reviews/hasaan-wayne/draft-one-institutions.jpg) | ![Colour redesign, institutions](research/design-reviews/hasaan-wayne/colour-institutions.jpg) |
+| Asia corridor | ![Draft one, Asia corridor](research/design-reviews/hasaan-wayne/draft-one-asia-corridor.jpg) | ![Colour redesign, Asia corridor](research/design-reviews/hasaan-wayne/colour-asia-corridor.jpg) |
 
 ## Scripts (Python 3)
 
