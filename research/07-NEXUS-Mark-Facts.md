@@ -400,7 +400,8 @@ These are proposals. Mark's version is the default until Mark decides otherwise.
 | International companies H1 "Reach UK customers sooner." | `04`, `05`, `06` | "Enter the UK with a team already on the ground." ("Reach UK customers sooner" is the Home audience card title) | Corrected in those documents |
 | "GB Entrepreneur Awards 2025 finalist" for GI Healthcare | `01` | "Founders named Scotland finalists, Great British Entrepreneur Awards 2025" | Corrected in `01` |
 | Archivo and DM Sans | Claude Design canvas (v3.1) | Neutral Face Bold and General Sans, self-hosted | Stand-ins for the design only |
-| Porcelain ground, paintings, motion | Hasaan's colour redesign | Plain black, white or Studio Grey; real NEXUS photography; motion on hover and focus only | Breaks written rules; keep it as an exploration |
+| Home H1 "UK–China market entry.", a fourth audience, case study and partner names hidden, details from outside Mark's documents | Hasaan's two drafts | Sections 4, 6 and 7 above | See [`design-reviews/hasaan-wayne/REVIEW.md`](design-reviews/hasaan-wayne/REVIEW.md) |
+| Porcelain ground, paintings, scroll and count-up motion | Hasaan's colour redesign | Plain black, white or Studio Grey; real NEXUS photography; motion on hover and focus only | Breaks written rules; keep it as an exploration |
 
 ## Checklist for any page before it goes to Mark
 
