@@ -6,6 +6,7 @@ Research and planning for the rebuild of [nexuscreativehq.com](https://nexuscrea
 
 | Document | What it is |
 |---|---|
+| [`research/07-NEXUS-Mark-Facts.md`](research/07-NEXUS-Mark-Facts.md) | **Read first.** Mark's facts in one place: decisions, page specs, copy, proof, brand, forms, search and launch rules, what is still to confirm, and where our proposals differ |
 | [`research/04-NEXUS-SEO-Guide.md`](research/04-NEXUS-SEO-Guide.md) | The main guide: the business explained, site audit, SEO/AEO/GEO strategy, each tool explained, playbooks, and NEXUS's other systems |
 | [`research/02-NEXUS-Website-SEO-Strategy-Plan.md`](research/02-NEXUS-Website-SEO-Strategy-Plan.md) | Strategy plan: goals, positioning, audiences, keyword map, KPIs, timeline |
 | [`research/01-NEXUS-Research-Findings.md`](research/01-NEXUS-Research-Findings.md) | Fact base, with each fact marked verified, client-stated, conflicting or missing |

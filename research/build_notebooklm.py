@@ -1,7 +1,7 @@
 """Combine the NEXUS research documents into one source file for NotebookLM.
 
 NotebookLM works best with a single, well-headed text source, so this joins
-01-04 in reading order with a short orientation header.
+Mark's facts (07) and 01-04 in reading order with a short orientation header.
 
 Usage: python build_notebooklm.py
 Output: research/NEXUS-NotebookLM-Source.md
@@ -11,6 +11,7 @@ from datetime import date
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SOURCES = [
+    ("07-NEXUS-Mark-Facts.md", "Mark's facts: the client's decisions and rules (source of truth)"),
     ("04-NEXUS-SEO-Guide.md", "The NEXUS SEO Guide (business, audit, strategy, tools, other systems)"),
     ("01-NEXUS-Research-Findings.md", "Research findings and fact base"),
     ("02-NEXUS-Website-SEO-Strategy-Plan.md", "Website and SEO strategy plan"),
@@ -20,7 +21,7 @@ OUT = os.path.join(HERE, "NEXUS-NotebookLM-Source.md")
 
 HEADER = f"""# NEXUS: Complete Website, SEO and Tools Knowledge Base
 
-Compiled {date.today():%d %B %Y} for NotebookLM. This single file contains four documents about NEXUS Creative HQ Ltd
+Compiled {date.today():%d %B %Y} for NotebookLM. This single file contains five documents about NEXUS Creative HQ Ltd
 (company no. 12667243), a London company that helps technology businesses land, grow and scale in the UK, with China
 as its flagship corridor. It covers: what the business does and sells, its audiences, the current website audit,
 how AI assistants describe NEXUS today, the SEO/AEO/GEO strategy, each SEO tool explained, NEXUS's other tools

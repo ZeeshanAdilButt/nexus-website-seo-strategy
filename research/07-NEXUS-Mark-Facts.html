@@ -1,0 +1,1050 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>NEXUS: Mark's facts (the source of truth)</title><style>
+body{margin:0;background:#fff;color:#000;font-family:'General Sans','Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.6}
+main{max-width:1100px;margin:0 auto;padding:40px 24px 80px}
+h1,h2,h3{font-family:'Neutral Face','Arial Black',Arial,sans-serif;line-height:1.15}
+h1{font-size:2.4rem;text-transform:uppercase;border-bottom:6px solid #DFFF13;padding-bottom:12px}
+h2{font-size:1.6rem;margin-top:56px;padding:10px 14px;background:#000;color:#fff}
+h3{font-size:1.2rem;margin-top:32px;border-left:6px solid #DFFF13;padding-left:10px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th{background:#000;color:#fff;text-align:left}
+th,td{border:1px solid #D1D1D1;padding:8px;vertical-align:top}
+tr:nth-child(even) td{background:#f6f6f6}
+code{background:#f1f1f1;padding:1px 4px;border-radius:3px;font-size:13px}
+pre{background:#111;color:#eee;padding:14px;overflow:auto;border-radius:4px}
+pre code{background:none;color:inherit}
+blockquote{margin:16px 0;padding:12px 16px;background:#f6f6f6;border-left:6px solid #DFFF13}
+hr{border:0;border-top:1px solid #D1D1D1;margin:40px 0}
+@media print{h2{break-before:page}table,pre{break-inside:avoid}}
+</style></head><body><main><h1 id="nexus-marks-facts-the-source-of-truth">NEXUS: Mark's facts (the source of truth)</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Date</td>
+<td>4 November 2026</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>Everything Mark has stated in writing about the new site: decisions, page specs, copy, proof, brand, forms, search, technical and launch rules</td>
+</tr>
+<tr>
+<td>Audience</td>
+<td>Everyone designing, writing or building the NEXUS site (Zeeshan, Hasaan, any developer)</td>
+</tr>
+<tr>
+<td>Sources</td>
+<td><code>research/local-docs/</code>: Developer Brief (<code>NEXUS Website Brief Developer - clean.txt</code>), prototype copy (<code>prototype/*.txt</code>), <code>NEXUS Member Case Studies.txt</code>, <code>NEXUS Brand Guidelines 2025.txt</code></td>
+</tr>
+<tr>
+<td>Not in scope</td>
+<td>Our own SEO proposals (see section 15 for where they differ), tool choices, the build platform</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>Mark's documents are the facts. Where any other document in this repo, a design or a draft site differs from them, Mark's version is what we build, and the difference goes to Mark as a question.</p>
+<ol>
+<li><strong>Order of authority:</strong> Brand Guidelines 2025, then the Developer Brief, then the prototype copy, then everything else. The brief itself says "where the prototype differs from the guidelines, the guidelines win".</li>
+<li><strong>Labels:</strong> Mark tags each requirement as <strong>Approved</strong> (build it as described), <strong>To confirm</strong> (build it so it can change, or use a placeholder) or <strong>Optional</strong> (price it separately).</li>
+<li><strong>Copy:</strong> use the prototype copy until Mark sends final versions. Do not write substitute claims, statistics, testimonials or case studies. Anything missing becomes a visible <code>[Placeholder: …]</code>.</li>
+<li><strong>Two lines that are never crossed:</strong> no case study mentions visa or endorsement status, and the UKES endorsing role stays separate from every commercial service.</li>
+<li><strong>Our proposals</strong> (H1 option B, alternative titles and intros) are still options for Mark to decide. They are not defaults. Section 15 lists them, and the earlier documents now say so.</li>
+</ol>
+<hr />
+<h2 id="1-who-nexus-is-in-marks-words">1. Who NEXUS is, in Mark's words</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Mark's wording</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Legal entity</td>
+<td>NEXUS Creative HQ Ltd, company number 12667243</td>
+</tr>
+<tr>
+<td>One line</td>
+<td>NEXUS helps technology businesses land, grow and scale in the UK, with China as its flagship corridor.</td>
+</tr>
+<tr>
+<td>One paragraph</td>
+<td>NEXUS is the UK growth partner for international technology companies, the innovation institutions that back them, and UK scale-ups ready for their next stage. China is our flagship corridor and Hong Kong our gateway to the wider region, with partners on the ground in China and membership of the China-Britain Business Council. We have assessed more than 1,400 business plans and actively supported more than 100 businesses.</td>
+</tr>
+<tr>
+<td>Three client groups</td>
+<td>Innovation institutions (science parks, innovation zones, hubs, funds); international technology companies entering the UK; UK technology scale-ups already trading</td>
+</tr>
+<tr>
+<td>Partners and sponsors</td>
+<td>Professional firms (law, accountancy, banking) partner with NEXUS and sponsor its events</td>
+</tr>
+<tr>
+<td>UKES</td>
+<td>NEXUS reviews and endorses Innovator Founder visa applicants as a consortium partner of UK Endorsing Services. Always kept separate from commercial services</td>
+</tr>
+<tr>
+<td>Mission (guidelines)</td>
+<td>To be the most trusted operational bridge between the UK and the world's most dynamic innovation ecosystems, turning global connections into real business outcomes</td>
+</tr>
+<tr>
+<td>Brand lines (guidelines)</td>
+<td>"The launchpad for innovative businesses." · "We build bridges between worlds." · "Bold founders deserve bold backing." · "We build businesses" (footer lockup)</td>
+</tr>
+<tr>
+<td>Why rebuild</td>
+<td>The current site describes what NEXUS used to do, not what it sells: no service pages, no routes per client type, no case studies, no proper enquiry routes</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>A steady flow of qualified enquiries from each client type, with the source of each recorded</td>
+</tr>
+<tr>
+<td>Launch</td>
+<td>Live by Thursday 12 November 2026, before the Global Innovator Awards on Monday 16 November 2026</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-decisions-mark-has-made-approved">2. Decisions Mark has made (Approved)</h2>
+<table>
+<thead>
+<tr>
+<th>Decision</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New custom build</td>
+<td>Like the Global Innovator Awards site. The developer proposes the platform, hosting and languages. Pre-built (static or cached) pages wherever possible</td>
+</tr>
+<tr>
+<td>Brand guidelines</td>
+<td>Follow them exactly. They beat the prototype</td>
+</tr>
+<tr>
+<td>"Asia corridor"</td>
+<td>The nav item and page are "Asia corridor" at <code>/asia-corridor</code>. China is the flagship, and Hong Kong is the gateway to the wider region. On the Asia corridor page, use "Asia corridor" in place of the prototype's "China corridor" (brief 4.4)</td>
+</tr>
+<tr>
+<td>No Chinese pages at launch</td>
+<td>Leave room for a later language switcher (text out of images, space for one header icon)</td>
+</tr>
+<tr>
+<td>No Zoho</td>
+<td>Forms store enquiries on the site, email NEXUS and are ready for a future CRM webhook</td>
+</tr>
+<tr>
+<td>Placeholders</td>
+<td>Clearly marked, replaceable in the CMS, can be hidden with a toggle, never styled to look final</td>
+</tr>
+<tr>
+<td>PHP security</td>
+<td>Protect against NCSC-flagged CVE-2026-109618 and CVE-2026-109619 and any later ones</td>
+</tr>
+<tr>
+<td>Out of scope</td>
+<td>Writing new copy, translation, photography, ongoing maintenance, a client login</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-sitemap-header-and-footer">3. Sitemap, header and footer</h2>
+<p><strong>Header:</strong> Institutions · International companies · UK scale-ups · Asia corridor · Insights · Events · About. On the right, "Partner with NEXUS" plus a yellow "Talk to us" button. The current page gets a yellow underline. Below 1100px it collapses into a Menu button that works by keyboard, sets <code>aria-expanded</code> and closes with Escape. No language link at launch. An <strong>announcement bar</strong> above the header is editable and can be switched off. It runs GIA until 16 November, then highlights.</p>
+<p><strong>Footer:</strong>
+- <strong>Who we help:</strong> the three audience pages plus Partner with NEXUS.
+- <strong>Explore:</strong> Asia corridor, Results, Events, About and team, Endorsing role, Insights. The prototype also lists NEXUS Startup Diaries.
+- <strong>Contact:</strong> Talk to us, email, social links (LinkedIn, Instagram, X, Facebook).
+- <strong>Legal line:</strong> "© 2026 NEXUS Creative HQ Ltd · Company number 12667243 · [registered office]", plus Privacy, Cookies, Terms, Accessibility.</p>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Address</th>
+<th>Primary action</th>
+<th>Phase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Home</td>
+<td><code>/</code></td>
+<td>Find your route; Talk to our team</td>
+<td>1</td>
+</tr>
+<tr>
+<td>For institutions</td>
+<td><code>/institutions</code></td>
+<td>Book a partnership call</td>
+<td>1</td>
+</tr>
+<tr>
+<td>For international companies</td>
+<td><code>/international-companies</code></td>
+<td>Request a diagnostic</td>
+<td>1</td>
+</tr>
+<tr>
+<td>For UK scale-ups</td>
+<td><code>/uk-scale-ups</code></td>
+<td>Request a diagnostic</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Asia corridor</td>
+<td><code>/asia-corridor</code></td>
+<td>Register for 2027 delegations</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Partner with NEXUS</td>
+<td><code>/partner-with-nexus</code></td>
+<td>Request the sponsor pack</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Results</td>
+<td><code>/results</code>, <code>/results/{slug}</code></td>
+<td>The matching audience action</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Events</td>
+<td><code>/events</code></td>
+<td>Get tickets (GIA site); Register interest</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Event detail</td>
+<td><code>/events/{slug}</code></td>
+<td>Register</td>
+<td>2</td>
+</tr>
+<tr>
+<td>About</td>
+<td><code>/about</code></td>
+<td>Talk to us</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Endorsing role</td>
+<td><code>/about/endorsing-role</code></td>
+<td>Go to UKES (no commercial CTA)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td><code>/contact</code></td>
+<td>Three route tiles plus a general form</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Insights</td>
+<td><code>/insights</code>, <code>/insights/{slug}</code></td>
+<td>Read; download</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Legal</td>
+<td><code>/privacy</code>, <code>/cookies</code>, <code>/terms</code>, <code>/accessibility</code></td>
+<td>None</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>The page list is Approved. Page names and copy are To confirm.</p>
+<h2 id="4-page-specs-section-order-is-fixed">4. Page specs (section order is fixed)</h2>
+<h3 id="home-brief-42">Home (brief 4.2)</h3>
+<ol>
+<li>Announcement bar</li>
+<li>Header</li>
+<li>Hero on black:
+   - eyebrow "UK growth partner · China flagship corridor"
+   - H1 <strong>"Land, grow and scale technology businesses in the UK."</strong>
+   - intro "NEXUS works with international technology companies, the institutions that back them, and UK scale-ups ready for their next stage. One accountable team in the UK, with partners on the ground in China."
+   - buttons: Find your route; Talk to our team
+   - image: the Tianjin signing photograph (caption To confirm)</li>
+<li>Proof strip:
+   - the four statistics (section 6)
+   - logos for City of London, TEDA, S-Tron and CBBC, each permission To confirm</li>
+<li>Who we work with (<code>#routes</code>): three audience cards</li>
+<li>How we work: five steps (Diagnose, Plan, Connect, Deliver, Grow) and a photo</li>
+<li>Asia corridor, led by China:
+   - five partner cards: RidgeCore Ventures, Alibaba Entrepreneurs Fund, Tianjin, S-Tron, Swiss Bluefaer Innovation Centre
+   - a Hong Kong gateway line
+   - two buttons
+   - <strong>on white with the yellow top rule</strong></li>
+<li>Results: Sentian Aerospace, GI Healthcare, Auto Impartial, plus a link to <code>/results</code></li>
+<li>Events on black: the session series and GIA</li>
+<li>Partner network:<ul>
+<li>category chips: Accountancy, Corporate finance, Banking and payments, Legal, IP and patents, AI strategy, R&amp;D tax, Venues</li>
+<li>a link for firms</li>
+</ul>
+</li>
+<li>The team (<code>#about</code>): a founder quote placeholder and team portraits</li>
+<li>Insights: three latest articles, a placeholder card for the Doing Business in China 2027 report, and an All insights link</li>
+<li>Common questions: five FAQs (prototype)</li>
+<li>Contact routes (<code>#contact</code>): three tiles</li>
+<li>Footer</li>
+</ol>
+<h3 id="audience-pages-brief-43-one-template">Audience pages (brief 4.3, one template)</h3>
+<p>Template, in order:
+1. Hero with breadcrumb
+2. The challenge
+3. What we provide (offer cards)
+4. Why us, with evidence and case studies
+5. Who it is for and not for
+6. How it works (<code>#how</code>)
+7. Questions
+8. Enquiry form (<code>#start</code>)
+9. Footer</p>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Mark's H1 (prototype)</th>
+<th>Offers</th>
+<th>Case studies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Institutions</td>
+<td>Your operating partner in the UK.</td>
+<td>UK Representation; UK Landing Programme</td>
+<td><code>[Institution case study]</code> placeholder</td>
+</tr>
+<tr>
+<td>International companies</td>
+<td>Enter the UK with a team already on the ground.</td>
+<td>Market-Entry Diagnostic; UK Soft Landing; Market Intelligence Report</td>
+<td>DarkhorseOne; Eco2Life; Smart Patent</td>
+</tr>
+<tr>
+<td>UK scale-ups</td>
+<td>Your next stage, with the right specialists.</td>
+<td>Growth Diagnostic; partner-delivered projects; ongoing access (name To confirm)</td>
+<td>GI Healthcare; Sentian Aerospace</td>
+</tr>
+</tbody>
+</table>
+<h3 id="asia-corridor-brief-44">Asia corridor (brief 4.4)</h3>
+<ul>
+<li><strong>H1:</strong> "Our Asia corridor, led by China."</li>
+<li><strong>Our partners across Asia:</strong></li>
+<li>RidgeCore Ventures (China), Alibaba Entrepreneurs Fund (Hong Kong), Tianjin, S-Tron (Shanghai) and Swiss Bluefaer Innovation Centre (Shanghai)</li>
+<li>a Why Hong Kong card and a logo row</li>
+<li>Alibaba Entrepreneurs Fund and Swiss Bluefaer appear <strong>by name only, with placeholder wording and no logo</strong>, until each confirms in writing</li>
+<li><strong>Where we have been:</strong> a timeline managed in the CMS (section 6).</li>
+<li><strong>Case studies:</strong> Auto Impartial, Eco2Life, Smart Patent.</li>
+<li><strong>2027 delegations</strong> to mainland China and Hong Kong: details are a placeholder, and the interest form (<code>#delegations</code>) has a destination field.</li>
+<li><strong>Remove</strong> the prototype's Chinese-language block.</li>
+</ul>
+<h3 id="other-pages">Other pages</h3>
+<ul>
+<li><strong>Results (4.5):</strong></li>
+<li>listing of all case studies (audience filter in Phase 2)</li>
+<li>each case study page has: sector, website link, headline; About the company, The challenge, How NEXUS helped, The outcome; Impact at a glance (three points); the founder quote; a link to the matching audience page</li>
+<li><strong>Partner with NEXUS (4.6):</strong> hero; who you will meet, with statistics; three ways to partner (Sessions, Awards, Referrals); sponsor pack form (<code>#start</code>).</li>
+<li><strong>Events (4.6):</strong> hero; coming up (GIA and the session series, name and venue as placeholders); past events; interest form (<code>#register</code>).</li>
+<li><strong>About (4.7):</strong> story, team and mentors, partner categories, clearance.</li>
+<li><strong>Endorsing role:</strong> about 200 words of plain text on the UKES consortium role, with a link to UKES and no commercial CTA. Wording is a placeholder until Mark sends it.</li>
+<li><strong>Contact:</strong> three route tiles plus a general form.</li>
+<li><strong>Insights (4.8):</strong></li>
+<li>hero and a featured insight</li>
+<li>topic filters: All, Asia corridor, Market entry, Funding and IP, CreaTech, Events</li>
+<li>card grid</li>
+<li>the China 2027 report request form (interest only in Phase 1)</li>
+<li>The NEXUS Briefing monthly email (working name)</li>
+<li>links to NEXUS Startup Diaries and Events</li>
+<li>formats: Article, Guide, Report, Event notes, Founder story</li>
+<li>do not publish an article that names a partner until that partner approves</li>
+</ul>
+<h2 id="5-offers-and-price-lines-prototype">5. Offers and price lines (prototype)</h2>
+<table>
+<thead>
+<tr>
+<th>Audience</th>
+<th>Offer</th>
+<th>Price line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Institutions</td>
+<td>UK Representation (annual): named UK contact, showcase events, pipeline of UK partners, customers and investors, landing support, regular reporting</td>
+<td>Annual retainer, on application</td>
+</tr>
+<tr>
+<td>Institutions</td>
+<td>UK Landing Programme (per cohort): pre-arrival briefing, curated UK programme [format To confirm], showcase event, legal, banking and accountancy introductions, follow-up</td>
+<td>Priced per cohort, on application</td>
+</tr>
+<tr>
+<td>International</td>
+<td>Market-Entry Diagnostic: opportunity, route to market, introductions needed, costed plan</td>
+<td>Fixed fee [To confirm], credited against further work</td>
+</tr>
+<tr>
+<td>International</td>
+<td>UK Soft Landing: named UK contact, qualified introductions, legal, banking and accountancy partners, event representation</td>
+<td>Set-up fee plus monthly retainer, on application</td>
+</tr>
+<tr>
+<td>International</td>
+<td>Market Intelligence Report: market size, competitors, regulation, next steps</td>
+<td>Fixed fee, on application</td>
+</tr>
+<tr>
+<td>Scale-ups</td>
+<td>Growth Diagnostic: where growth stalls, top one or two priorities, who delivers and at what cost, next steps</td>
+<td>Fixed fee [To confirm], credited against further work</td>
+</tr>
+<tr>
+<td>Scale-ups</td>
+<td>Partner-delivered projects: go-to-market, investment readiness, AI strategy and adoption, R&amp;D tax credits, accountancy, legal and IP</td>
+<td>Priced per project, on application</td>
+</tr>
+<tr>
+<td>Scale-ups</td>
+<td>Ongoing access: partner network, roundtables, peer sessions</td>
+<td>[Name, format and price To confirm]</td>
+</tr>
+<tr>
+<td>Firms</td>
+<td>Session sponsorship · GIA sponsorship · Referral network</td>
+<td>Packages To confirm · on the awards site · by agreement</td>
+</tr>
+</tbody>
+</table>
+<p>Every price is a CMS field and can say "On application". No fee has been confirmed.</p>
+<h2 id="6-proof-mark-has-supplied">6. Proof Mark has supplied</h2>
+<p><strong>Statistics (Ready), exact wording:</strong>
+- 100+ businesses actively supported
+- 16 carefully curated global partnerships
+- 1,400+ business plans assessed (the institutions and international pages add "within the UK endorsement system")
+- Supplier and security cleared (prototype sub-line: "UK Government supplier")</p>
+<p><strong>Asia corridor facts (Ready unless marked):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Partner</th>
+<th>What Mark says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RidgeCore Ventures</td>
+<td>A reciprocal partnership: NEXUS represents their clients in the UK, they represent NEXUS clients in China. Investment, knowledge transfer and franchise opportunities</td>
+</tr>
+<tr>
+<td>Tianjin</td>
+<td>Two signed MOUs, building UK showcase events and a pipeline of Tianjin companies into the UK. Co-exhibited with NEXUS at S-Tron Shanghai. The prototype FAQ names Binhai Zhongguancun Science Park. Partner names and MOU dates To confirm</td>
+</tr>
+<tr>
+<td>S-Tron Shanghai</td>
+<td>Two years: exhibiting with UK companies in 2025, speaking on stage in 2026</td>
+</tr>
+<tr>
+<td>CBBC</td>
+<td>NEXUS is a member of the China-Britain Business Council</td>
+</tr>
+<tr>
+<td>Alibaba Entrepreneurs Fund</td>
+<td>In discussion. Name only, placeholder wording, no logo, until written approval</td>
+</tr>
+<tr>
+<td>Swiss Bluefaer Innovation Centre</td>
+<td>Swiss innovation centre in Shanghai's Yangpu district. Name only until wording is approved</td>
+</tr>
+<tr>
+<td>Hong Kong</td>
+<td>The gateway: a familiar base for UK companies taking a first step into Asia, and a launch point for Chinese companies heading to the UK and Europe</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Timeline (prototype, CMS-managed):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025</td>
+<td>First MOU with Tianjin [month, partner To confirm]</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>S-Tron Shanghai, co-exhibited with Tianjin</td>
+</tr>
+<tr>
+<td>March 2026</td>
+<td>NEXUS opens in China, with partners in Beijing and Shanghai [wording To confirm]</td>
+</tr>
+<tr>
+<td>April 2026</td>
+<td>CBBC delegation to Hangzhou (AI, robotics, life sciences)</td>
+</tr>
+<tr>
+<td>2026</td>
+<td>S-Tron Shanghai, speaking on stage</td>
+</tr>
+<tr>
+<td>2026</td>
+<td>Second MOU with Tianjin [date To confirm]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Past events (prototype):</strong> S-Tron Shanghai 2025; TOKEN2049 Singapore, 30 September 2025; City of London Corporation and NEXUS partnership launch; founder dinners and sponsored roundtables.</p>
+<p><strong>Global Innovator Awards:</strong> 16 November 2026. "Created and delivered by NEXUS. Celebrating overseas founders building businesses in the UK." Tickets are sold on the GIA site.</p>
+<p><strong>Case studies (seven, Ready, from <code>NEXUS Member Case Studies.txt</code>):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Sector</th>
+<th>Headline</th>
+<th>Main outcome</th>
+<th>Founder(s)</th>
+<th>Shown on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sentian Aerospace</td>
+<td>Aerospace and deep tech</td>
+<td>From a garage to an international acquisition</td>
+<td>Technology acquired by Volatus Aerospace (publicly listed) in under two years from UK incorporation; founders retained</td>
+<td>Edmund Moyo, Dalumuzi Dube</td>
+<td>Home, UK scale-ups</td>
+</tr>
+<tr>
+<td>GI Healthcare</td>
+<td>Deep tech and robotics</td>
+<td>From an early prototype to customer-backed pilots</td>
+<td>No customers to a customer-funded proof of concept and follow-on programme, towards TRL 7; founders named Scotland finalists, Great British Entrepreneur Awards 2025</td>
+<td>Ash Ganesan Indra, Adip Ranjan Das</td>
+<td>Home, UK scale-ups</td>
+</tr>
+<tr>
+<td>Auto Impartial</td>
+<td>AI compute infrastructure</td>
+<td>New silicon for the age of private AI</td>
+<td>Core architecture independently validated; UK and Asia research consortium in formation with Innovate UK</td>
+<td>Dr Xiusun Huang</td>
+<td>Home, Asia corridor</td>
+</tr>
+<tr>
+<td>DarkhorseOne</td>
+<td>AI native enterprise software</td>
+<td>AI native software, built for British business</td>
+<td>UK patent application filed; commercial collaboration secured through the NEXUS network</td>
+<td>Jian Ma</td>
+<td>International</td>
+</tr>
+<tr>
+<td>Eco2Life (EcoDo)</td>
+<td>CreaTech</td>
+<td>Global brands, local stories, powered by AI</td>
+<td>Consultancy to a live AI platform with early revenue; UK patent application in progress; route into Shanghai and Singapore</td>
+<td>Qingwen (Joy) Li</td>
+<td>International, Asia corridor</td>
+</tr>
+<tr>
+<td>Smart Patent</td>
+<td>Legal tech</td>
+<td>World-class IP strategy, made accessible by AI</td>
+<td>Live platform; finalist in a national AI venture programme in China; preparing a UK and China raise</td>
+<td>Jack Zhu</td>
+<td>International, Asia corridor</td>
+</tr>
+<tr>
+<td>Readii</td>
+<td>EdTech</td>
+<td>Helping every child find their voice in the UK classroom</td>
+<td>Live, revenue-generating within two years; partner value around double its own revenue</td>
+<td>Xiaoyu Su</td>
+<td>Results only (no page assigned)</td>
+</tr>
+</tbody>
+</table>
+<p>Each case study has a founder quote in the source document. Use those quotes word for word, and don't edit them. The documents are marked "Private &amp; Confidential", so check consent before anything goes live.</p>
+<p><strong>Team (prototype):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mark Sarfo-Kantanka</td>
+<td>CEO and Co-Founder</td>
+</tr>
+<tr>
+<td>Mauria Fransishku</td>
+<td>NEXUS Manager</td>
+</tr>
+<tr>
+<td>Grace Mander</td>
+<td>Operations Manager</td>
+</tr>
+<tr>
+<td>Kolos Sipos</td>
+<td>Business and Finance Analyst</td>
+</tr>
+<tr>
+<td>Jonny Quirk</td>
+<td>Head of Community</td>
+</tr>
+<tr>
+<td>Sheleene Sealy</td>
+<td>Social Media Manager</td>
+</tr>
+<tr>
+<td>Zee West</td>
+<td>Head of Development</td>
+</tr>
+</tbody>
+</table>
+<p>Mentors are described as having "experience at Google, Microsoft, NBCUniversal, Sky, Disney and Apple" (scale-ups page). Portraits are black and white.</p>
+<h2 id="7-what-can-and-cannot-be-said">7. What can and cannot be said</h2>
+<table>
+<thead>
+<tr>
+<th>Do</th>
+<th>Do not</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use prototype copy word for word until final copy arrives</td>
+<td>Write substitute claims, statistics, testimonials, case studies, prices, emails, addresses or response times</td>
+</tr>
+<tr>
+<td>Mark gaps as <code>[Placeholder: …]</code></td>
+<td>Style a placeholder to look like final content</td>
+</tr>
+<tr>
+<td>Say "Asia corridor, led by China", with Hong Kong as the gateway</td>
+<td>Call it the "China corridor" in navigation or page names</td>
+</tr>
+<tr>
+<td>Name Alibaba Entrepreneurs Fund and Swiss Bluefaer as text only, with placeholder wording</td>
+<td>Show their logos, or describe the relationship as signed</td>
+</tr>
+<tr>
+<td>Show City of London, TEDA, S-Tron and CBBC logos as placeholders until each permission arrives</td>
+<td>Present partner logos as approved</td>
+</tr>
+<tr>
+<td>Keep the UKES role on its own factual page, with no commercial CTA</td>
+<td>Mention visa or endorsement status in any case study, or sell visas</td>
+</tr>
+<tr>
+<td>Answer "Can you help with visas?" with Mark's FAQ: introductions to immigration law specialists; endorsement handled separately through UKES</td>
+<td>Market NEXUS as a visa route</td>
+</tr>
+<tr>
+<td>Use real NEXUS photography (China signings, S-Tron, dinners, GIA, team)</td>
+<td>Use stock or AI-generated images</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-brand-rules-guidelines-plus-brief-section-5">8. Brand rules (guidelines plus brief section 5)</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Colours</td>
+<td>Pitch Black #000000 (dominant), Electric Yellow #DFFF13 (accent), Studio Grey #D1D1D1 (neutral), Pure White #FFFFFF. No other colours, except a slightly darker grey for secondary text if Mark agrees</td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td>Accent only: buttons, tags, underlines, icons, highlights. <strong>Never a section background, never text on white.</strong> Black on yellow for accents only</td>
+</tr>
+<tr>
+<td>Backgrounds</td>
+<td>Plain black, white or Studio Grey. White text on grey is not allowed. Every pair meets WCAG AA (4.5:1, or 3:1 for large text)</td>
+</tr>
+<tr>
+<td>Logo</td>
+<td>Supplied wordmark files only (SVG preferred). Metallic on white, white on black, black on yellow (accent). Never metallic on grey, never stretched, recoloured, with effects or on busy backgrounds. Alt text "NEXUS"</td>
+</tr>
+<tr>
+<td>Headlines</td>
+<td>Neutral Face Bold, for headlines, brand statements and display only</td>
+</tr>
+<tr>
+<td>Body</td>
+<td>General Sans (Light, Regular, Medium, Bold) at 17px, line height 1.6</td>
+</tr>
+<tr>
+<td>Fonts</td>
+<td>Self-hosted. Licences to be confirmed for web use. Nothing from Google or other third parties</td>
+</tr>
+<tr>
+<td>Buttons</td>
+<td>Pill shape, at least 48px tall, bold label. Primary: yellow with black text. Secondary: outline. Visible focus ring everywhere</td>
+</tr>
+<tr>
+<td>Layout</td>
+<td>1200px max content width; 32px gutters (20px mobile); 64 to 112px between sections</td>
+</tr>
+<tr>
+<td>Motion</td>
+<td>Hover and focus states only. Respect <code>prefers-reduced-motion</code></td>
+</tr>
+<tr>
+<td>Tone</td>
+<td>Bold and confident: large headlines, generous white space, clear contrast</td>
+</tr>
+<tr>
+<td>Test widths</td>
+<td>360, 768, 1280 and 1440px</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-forms-and-tracking">9. Forms and tracking</h2>
+<p><strong>Every form must:</strong>
+- validate input
+- save the submission to the site database (staff can view, filter and export CSV)
+- email the right inbox within 5 minutes
+- send an acknowledgement
+- show a thank-you message
+- record the source fields</p>
+<p><strong>Also:</strong>
+- A JSON webhook for the future CRM, built in Phase 1 and switched off.
+- Spam protection: a honeypot plus rate limiting. <strong>No Google reCAPTCHA</strong> (it is blocked in mainland China).
+- Diagnostics in Phase 1 are a request form only. NEXUS replies by hand with a booking and payment link.</p>
+<p><strong>Field keys:</strong>
+- <code>form_type</code> takes one of: <code>partnership_call</code>, <code>diagnostic_international</code>, <code>diagnostic_scaleup</code>, <code>sponsor_pack</code>, <code>delegation_interest</code>, <code>event_interest</code>, <code>general</code>, <code>report_download</code>.
+- Other fields: <code>name</code>, <code>email</code>, <code>organisation</code>, <code>role</code>, <code>country</code>, <code>organisation_type</code>, <code>sector</code>, <code>stage</code>, <code>timeline</code>, <code>interest</code>, <code>budget_band</code>, <code>message</code>, <code>marketing_consent</code> (never pre-ticked).
+- Hidden: <code>page_url</code>, <code>cta</code>, <code>utm_source</code>, <code>utm_medium</code>, <code>utm_campaign</code>, <code>referrer</code>, <code>landing_page</code>, <code>submitted_at</code>.</p>
+<p><strong>Analytics events (after consent only):</strong>
+- Primary: <code>partnership_call_request</code>, <code>diagnostic_request</code>, <code>sponsor_pack_request</code>
+- Conversions: <code>delegation_interest</code>, <code>event_interest</code>, <code>general_enquiry</code>
+- Secondary: <code>report_download</code>
+- Tracked: <code>cta_click</code>, <code>case_study_view</code>, <code>outbound_gia_click</code></p>
+<p>Success is measured by qualified enquiries, not traffic.</p>
+<h2 id="10-search-and-ai-discoverability-marks-defaults">10. Search and AI discoverability (Mark's defaults)</h2>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Title</th>
+<th>Meta description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Home</td>
+<td>NEXUS | Land, grow and scale technology businesses in the UK</td>
+<td>NEXUS helps international technology companies, the institutions behind them and UK scale-ups land, grow and scale in the UK, with China as our flagship corridor.</td>
+</tr>
+<tr>
+<td>Institutions</td>
+<td>UK representation for innovation institutions | NEXUS</td>
+<td>UK Representation and Landing Programmes for science parks, innovation zones, hubs and funds. Your operating partner in the UK.</td>
+</tr>
+<tr>
+<td>International companies</td>
+<td>UK market entry for technology companies | NEXUS</td>
+<td>Enter the UK with a team on the ground: market-entry diagnostic, soft landing support, market intelligence and vetted specialist partners.</td>
+</tr>
+<tr>
+<td>UK scale-ups</td>
+<td>Growth diagnostic for UK tech scale-ups | NEXUS</td>
+<td>A focused growth diagnostic, then partner-delivered projects in go-to-market, investment readiness, AI adoption and tax. One contact throughout.</td>
+</tr>
+<tr>
+<td>Asia corridor</td>
+<td>UK and Asia innovation corridor, led by China | NEXUS</td>
+<td>Our working corridor between the UK and Asia, led by China, with Hong Kong as our gateway, partners on the ground and 2027 delegations.</td>
+</tr>
+<tr>
+<td>Results</td>
+<td>Results and case studies | NEXUS</td>
+<td>How NEXUS has helped technology founders build in the UK, from first customers to an international acquisition.</td>
+</tr>
+<tr>
+<td>Partner with NEXUS</td>
+<td>Sponsorship and referral partnerships | NEXUS</td>
+<td>Meet international founders, UK scale-ups and innovation institutions through NEXUS sessions, the Global Innovator Awards and referrals.</td>
+</tr>
+<tr>
+<td>Events</td>
+<td>Events and the Global Innovator Awards | NEXUS</td>
+<td>NEXUS sessions, the Global Innovator Awards and delegations, bringing founders, institutions and specialists together.</td>
+</tr>
+</tbody>
+</table>
+<p>These are To confirm, so use them until Mark sends final versions.</p>
+<p><strong>Other rules:</strong>
+- <strong>Addresses and crawling:</strong> lower-case hyphenated URLs; a self-referencing canonical; an XML sitemap; robots.txt blocking admin, search and thank-you pages (which are also <code>noindex</code>).
+- <strong>Headings and text:</strong> one H1 per page, then H2 and H3 in order; all copy as real HTML text.
+- <strong>Images and sharing:</strong> descriptive alt text; Open Graph images at 1200 × 630.
+- <strong>Structured data:</strong> Organization (name "NEXUS", legalName "NEXUS Creative HQ Ltd", identifier 12667243, sameAs for the four socials), Service per offer, Event, Article, Person, FAQPage, BreadcrumbList.
+- <strong>Internal links:</strong> each audience page links to the Asia corridor, Results and two insights; each case study links to its audience page; descriptive link text.
+- Mark's brief: "No special AI files or tactics are needed."</p>
+<h2 id="11-technical-china-access-and-acceptance-targets">11. Technical, China access and acceptance targets</h2>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Responsive</td>
+<td>Mobile-first, no horizontal scroll at 360px, touch targets at least 44px</td>
+</tr>
+<tr>
+<td>Accessibility</td>
+<td>WCAG 2.2 AA, pinch-zoom on, one H1, landmarks, visible focus, labelled fields, alt text, reduced motion, accessibility statement. Lighthouse accessibility 95+ per template</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Mobile 4G: LCP under 2.5s, INP under 200ms, CLS under 0.1. Lighthouse performance 85+ on Home and audience pages. WebP or AVIF images</td>
+</tr>
+<tr>
+<td>Mainland China</td>
+<td>No Google Fonts, Maps, reCAPTCHA or YouTube on key pages; an Asia-serving CDN; Home and Asia corridor load fully in under 5s from a mainland China test</td>
+</tr>
+<tr>
+<td>Privacy</td>
+<td>Privacy notice on every form, only the listed fields, consent never pre-ticked, retention with automatic deletion, deletion on request. Analytics only after consent (accept, reject, manage)</td>
+</tr>
+<tr>
+<td>Redirects</td>
+<td>Full 301 map from every current address, including <code>/insight/{id}</code>, <code>/event/{id}</code>, <code>/video/{id}</code>, <code>/podcast/{id}</code>. No chains. Custom 404 linking the three audience pages</td>
+</tr>
+<tr>
+<td>Minimum redirects</td>
+<td><code>/purpose</code> → <code>/about</code> · <code>/memberships</code>, <code>/esg</code>, <code>/scale-up-journey</code>, <code>/investment</code> → <code>/uk-scale-ups</code> · <code>/visa-routes</code> → <code>/about/endorsing-role</code> · <code>/become-partner</code> → <code>/partner-with-nexus</code> · <code>/booking</code>, <code>/locations</code> → <code>/contact</code> · <code>/videos</code>, <code>/podcasts</code> → <code>/insights</code></td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Component inventory; supported versions only; critical patches within 48 hours, others within 14 days; HTTPS with HSTS; WAF or CDN; security headers; 2FA for admins; encrypted enquiry data; vulnerability scan before launch; NCSC guidance and Cyber Essentials</td>
+</tr>
+<tr>
+<td>Hosting</td>
+<td>UK or EU; daily backups kept 30+ days, stored separately; one restore tested</td>
+</tr>
+<tr>
+<td>Browsers</td>
+<td>Latest two versions of Chrome, Edge, Safari (macOS, iOS), Firefox, plus Samsung Internet</td>
+</tr>
+<tr>
+<td>CMS</td>
+<td>Staff edit text, images, statistics, logos, FAQs, case studies, events, team, insights, placeholders and the announcement bar, with draft and preview. Editor and admin roles</td>
+</tr>
+</tbody>
+</table>
+<h2 id="12-phases-and-the-fallback-launch">12. Phases and the fallback launch</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Delivers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Launch by 12 November</td>
+<td>All Phase 1 pages, components, forms (database, email, webhook off), cookie consent, analytics, structured data, redirects, security, content and placeholders, testing</td>
+</tr>
+<tr>
+<td>2. After launch</td>
+<td>Event detail pages, results filters, online diagnostic booking and payment (if approved), report download, monthly dashboard, CRM webhook on</td>
+</tr>
+<tr>
+<td>3. Future (Optional)</td>
+<td>English and Chinese language switcher, client login, online sponsorship purchase</td>
+</tr>
+</tbody>
+</table>
+<p><strong>If not everything is ready by 12 November:</strong>
+- <strong>Launch first:</strong> Home, the three audience pages, Asia corridor, Partner with NEXUS, Events, Results, About, Endorsing role, Contact and the legal pages, with the forms, consent, analytics, redirects and every security control.
+- <strong>Insights:</strong> can launch as a simple list. The featured insight, filters, report and email sign-up follow within four weeks.</p>
+<h2 id="13-still-to-confirm-marks-list">13. Still to confirm (Mark's list)</h2>
+<ol>
+<li>Platform, hosting and support terms (developer proposal)</li>
+<li>Final copy for each page (prototype copy meanwhile)</li>
+<li>Prices, including the diagnostic fee</li>
+<li>Inbox addresses and the response-time promise for each form</li>
+<li>Partner logo permissions: City of London, TEDA, S-Tron, CBBC</li>
+<li>Online booking and payment for diagnostics (Phase 2)</li>
+<li>Session series name, venue partner, first date and topic</li>
+<li>2027 delegation destinations, dates and price range</li>
+<li>Endorsing role wording</li>
+<li>Legal pages and privacy notice</li>
+<li>Registered office and general email address</li>
+<li>CRM webhook address</li>
+<li>Written approval and wording for the Alibaba Entrepreneurs Fund and the Swiss Bluefaer Innovation Centre</li>
+<li>Tianjin partner names and both MOU dates</li>
+<li>Email platform for The NEXUS Briefing, and the first insights</li>
+<li>Also from section 6 and the prototype:<ul>
+<li>founder quote; institution case study or testimonial</li>
+<li>further photography</li>
+<li>payments from mainland China</li>
+<li>"Do you take equity?" (scale-ups FAQ)</li>
+<li>typical landing programme duration</li>
+<li>the Doing Business in China 2027 report</li>
+</ul>
+</li>
+</ol>
+<h2 id="14-inconsistencies-inside-marks-documents-ask-mark">14. Inconsistencies inside Mark's documents (ask Mark)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Where</th>
+<th>Conflict</th>
+<th>Build meanwhile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Brief 3 vs 4.1</td>
+<td>Section 3 lists seven nav items; 4.1 says "six navigation items"</td>
+<td>Seven, as listed in section 3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Home vs Institutions prototype</td>
+<td>RidgeCore Ventures is "China" on Home and "Hainan" on Institutions</td>
+<td>"China" in cards; ask before using "Hainan"</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Guidelines vs Companies House</td>
+<td>"Est. 2019" vs incorporated 12 June 2020</td>
+<td>Leave the founding year out until Mark confirms</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Live site vs prototype</td>
+<td>Live site says the GIA gala is at The Dorchester; the prototype Events page says "[Venue to be confirmed]"</td>
+<td>Placeholder, as in the prototype</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Prototype vs case study document</td>
+<td>Card headlines are shortened on some pages (DarkhorseOne "for the enterprise" vs "built for British business"; Smart Patent with or without "World-class")</td>
+<td>Prototype wording on cards; case study document wording on <code>/results</code> pages</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Prototype vs guidelines</td>
+<td>The prototype uses yellow section backgrounds and Google Fonts</td>
+<td>Guidelines win (Mark already says so)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Prototype vs brief 4.4</td>
+<td>The prototype Asia page has a Chinese-language block</td>
+<td>Remove it (brief)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Case studies</td>
+<td>Seven are Ready, but Readii has no page assigned, and its "around double its own revenue" partner-value claim has no stated basis</td>
+<td>Show it on <code>/results</code> only; ask about the claim</td>
+</tr>
+</tbody>
+</table>
+<h2 id="15-where-our-documents-and-designs-go-beyond-mark">15. Where our documents and designs go beyond Mark</h2>
+<p>These are proposals. Mark's version is the default until Mark decides otherwise.</p>
+<table>
+<thead>
+<tr>
+<th>Our proposal</th>
+<th>Where</th>
+<th>Mark's version (build default)</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H1 option B "Land, grow and scale in the UK. From China and beyond."</td>
+<td><code>02</code>, <code>04</code>, <code>05</code>, <code>06</code>, canvas note</td>
+<td>"Land, grow and scale technology businesses in the UK."</td>
+<td>Mark's call; can be tested with Lyssna</td>
+</tr>
+<tr>
+<td>Eyebrow "The UK–China innovation corridor"</td>
+<td><code>02</code>, <code>06</code></td>
+<td>"UK growth partner · China flagship corridor"</td>
+<td>Mark's call</td>
+</tr>
+<tr>
+<td>Intro claiming "one accountable team in London, partners on the ground in Tianjin, Shanghai and Hong Kong"</td>
+<td><code>02</code>, <code>05</code>, <code>06</code></td>
+<td>"One accountable team in the UK, with partners on the ground in China."</td>
+<td>Corrected: the Hong Kong partner is still in discussion, so the claim overstated it</td>
+</tr>
+<tr>
+<td>Alternative titles ("UK–China Tech Market Entry &amp; Scale-Up Partner", "…from China &amp; Asia")</td>
+<td><code>02</code>, <code>04</code>, <code>06</code></td>
+<td>The titles in section 10</td>
+<td>Mark's call; Mark's titles stay until then</td>
+</tr>
+<tr>
+<td>International companies H1 "Reach UK customers sooner."</td>
+<td><code>04</code>, <code>05</code>, <code>06</code></td>
+<td>"Enter the UK with a team already on the ground." ("Reach UK customers sooner" is the Home audience card title)</td>
+<td>Corrected in those documents</td>
+</tr>
+<tr>
+<td>"GB Entrepreneur Awards 2025 finalist" for GI Healthcare</td>
+<td><code>01</code></td>
+<td>"Founders named Scotland finalists, Great British Entrepreneur Awards 2025"</td>
+<td>Corrected in <code>01</code></td>
+</tr>
+<tr>
+<td>Archivo and DM Sans</td>
+<td>Claude Design canvas (v3.1)</td>
+<td>Neutral Face Bold and General Sans, self-hosted</td>
+<td>Stand-ins for the design only</td>
+</tr>
+<tr>
+<td>Porcelain ground, paintings, motion</td>
+<td>Hasaan's colour redesign</td>
+<td>Plain black, white or Studio Grey; real NEXUS photography; motion on hover and focus only</td>
+<td>Breaks written rules; keep it as an exploration</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checklist-for-any-page-before-it-goes-to-mark">Checklist for any page before it goes to Mark</h2>
+<ul>
+<li>[ ] Section order matches section 4 for that page</li>
+<li>[ ] H1, eyebrow, intro and button labels are Mark's prototype words</li>
+<li>[ ] Every number, name, price, email and date traces to section 5, 6 or 13; anything else is a <code>[Placeholder: …]</code></li>
+<li>[ ] No yellow backgrounds, no yellow text on white, no white text on grey</li>
+<li>[ ] Alibaba Entrepreneurs Fund and Swiss Bluefaer are text only; the four logos are marked as permission pending</li>
+<li>[ ] No case study mentions visa or endorsement; UKES appears only on the endorsing role page, in the footer and in the visa FAQs</li>
+<li>[ ] Mark's title and meta description from section 10 are in place</li>
+<li>[ ] Form fields use the section 9 keys; consent is not pre-ticked; no reCAPTCHA</li>
+<li>[ ] Fonts are self-hosted; no Google or YouTube requests</li>
+</ul>
+<h2 id="closing">Closing</h2>
+<p>Mark has already settled most of the questions a designer or developer would otherwise guess at. The open items are in section 13, and the conflicts to raise with Mark are in section 14. Our SEO proposals in section 15 should reach Mark as one short decision list, not as changes already built in.</p></main></body></html>
