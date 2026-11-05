@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>NEXUS: what we are building</title><style>
+body{margin:0;background:#fff;color:#000;font-family:'General Sans','Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.6}
+main{max-width:1100px;margin:0 auto;padding:40px 24px 80px}
+h1,h2,h3{font-family:'Neutral Face','Arial Black',Arial,sans-serif;line-height:1.15}
+h1{font-size:2.4rem;text-transform:uppercase;border-bottom:6px solid #DFFF13;padding-bottom:12px}
+h2{font-size:1.6rem;margin-top:56px;padding:10px 14px;background:#000;color:#fff}
+h3{font-size:1.2rem;margin-top:32px;border-left:6px solid #DFFF13;padding-left:10px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th{background:#000;color:#fff;text-align:left}
+th,td{border:1px solid #D1D1D1;padding:8px;vertical-align:top}
+tr:nth-child(even) td{background:#f6f6f6}
+code{background:#f1f1f1;padding:1px 4px;border-radius:3px;font-size:13px}
+pre{background:#111;color:#eee;padding:14px;overflow:auto;border-radius:4px}
+pre code{background:none;color:inherit}
+blockquote{margin:16px 0;padding:12px 16px;background:#f6f6f6;border-left:6px solid #DFFF13}
+hr{border:0;border-top:1px solid #D1D1D1;margin:40px 0}
+@media print{h2{break-before:page}table,pre{break-inside:avoid}}
+</style></head><body><main><h1 id="nexus-what-we-are-building">NEXUS: what we are building</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Date</td>
+<td>5 November 2026</td>
+</tr>
+<tr>
+<td>For</td>
+<td>Us (Zeeshan, Hasaan, the senior SEO specialist). Not for Mark</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Proposed to Mark on 5 November. The build starts on his go-ahead</td>
+</tr>
+<tr>
+<td>Facts</td>
+<td>Mark's brief and prototype, digested in <a href="../knowledge-base/07-NEXUS-Mark-Facts.md"><code>07</code></a>. Where this page and <code>07</code> differ, <code>07</code> wins</td>
+</tr>
+<tr>
+<td>Fee and terms</td>
+<td>Local only: <code>proposals/2026-11-05/</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="in-one-line">In one line</h2>
+<p>Phase 1 of the new nexuscreativehq.com: 24 pre-built pages, a content editor, nine enquiry forms with a small backend, the full redirect map and the security controls in Mark's brief. On Cloudflare, live by <strong>Thursday 12 November 2026</strong>.</p>
+<h2 id="key-dates">Key dates</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fri 6 Nov</td>
+<td>Mark's go-ahead, deposit and the six answers</td>
+</tr>
+<tr>
+<td>Mon 9 Nov</td>
+<td>Content lock: his articles, texts, fonts, logo permissions and access</td>
+</tr>
+<tr>
+<td>Tue 10 Nov</td>
+<td>Staging shared with Mark. China speed test. Security scan</td>
+</tr>
+<tr>
+<td>Wed 11 Nov</td>
+<td>His feedback applied, full test pass, sign-off</td>
+</tr>
+<tr>
+<td>Thu 12 Nov</td>
+<td>Live</td>
+</tr>
+<tr>
+<td>By 10 Dec</td>
+<td>Insights extras: featured insight, topic filters, report form, The NEXUS Briefing sign-up</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pages-24">Pages (24)</h2>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Address</th>
+<th>Main action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Home</td>
+<td><code>/</code></td>
+<td>Find your route · Talk to our team</td>
+</tr>
+<tr>
+<td>For institutions</td>
+<td><code>/institutions</code></td>
+<td>Book a partnership call</td>
+</tr>
+<tr>
+<td>For international companies</td>
+<td><code>/international-companies</code></td>
+<td>Request a diagnostic</td>
+</tr>
+<tr>
+<td>For UK scale-ups</td>
+<td><code>/uk-scale-ups</code></td>
+<td>Request a diagnostic</td>
+</tr>
+<tr>
+<td>Asia corridor</td>
+<td><code>/asia-corridor</code></td>
+<td>Register for 2027 delegations</td>
+</tr>
+<tr>
+<td>Partner with NEXUS</td>
+<td><code>/partner-with-nexus</code></td>
+<td>Request the sponsor pack</td>
+</tr>
+<tr>
+<td>Results, plus 7 case studies</td>
+<td><code>/results</code>, <code>/results/{slug}</code></td>
+<td>The matching audience action</td>
+</tr>
+<tr>
+<td>Events</td>
+<td><code>/events</code></td>
+<td>Get tickets (GIA site) · Register interest</td>
+</tr>
+<tr>
+<td>Insights</td>
+<td><code>/insights</code>, <code>/insights/{slug}</code></td>
+<td>Read · request the report</td>
+</tr>
+<tr>
+<td>About</td>
+<td><code>/about</code></td>
+<td>Talk to us</td>
+</tr>
+<tr>
+<td>Endorsing role</td>
+<td><code>/about/endorsing-role</code></td>
+<td>Go to UKES (ukesapp.co.uk). No sales action</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td><code>/contact</code></td>
+<td>Three route tiles and a general form</td>
+</tr>
+<tr>
+<td>Privacy, Cookies, Terms, Accessibility</td>
+<td><code>/privacy</code> and so on</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Page not found</td>
+<td><code>404</code></td>
+<td>Links to the three audience pages</td>
+</tr>
+</tbody>
+</table>
+<p>Section order, copy and components follow <code>07</code> §4. Headlines are Mark's prototype wording, word for word.</p>
+<h2 id="how-it-is-built">How it is built</h2>
+<pre><code class="language-text">Editor (Decap CMS at /admin, behind Cloudflare Access with 2FA)
+  -&gt; saves content to the GitHub repo (NEXUS org)
+  -&gt; Workers Builds runs Astro -&gt; pre-built HTML
+  -&gt; served by Cloudflare Workers static assets, worldwide
+
+Visitor submits a form
+  -&gt; one Cloudflare Worker: validate, honeypot, rate limit
+  -&gt; D1 (EU) stores it with the source fields
+  -&gt; Email Service: notify the NEXUS inbox (within 5 min) + acknowledge the sender
+  -&gt; webhook to the CRM (built, switched off)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Choice</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hosting</td>
+<td>Cloudflare Workers + static assets</td>
+<td>Workers Paid plan, about $5 a month, paid by NEXUS</td>
+</tr>
+<tr>
+<td>Pages</td>
+<td>Astro, building static HTML</td>
+<td>No PHP, WordPress or plugins</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>One Worker in TypeScript</td>
+<td>The only server code</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>Cloudflare D1, EU jurisdiction</td>
+<td>30-day point-in-time restore, plus a daily copy to R2</td>
+</tr>
+<tr>
+<td>Files and images</td>
+<td>Cloudflare R2, EU jurisdiction</td>
+<td>WebP or AVIF, sized per breakpoint</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>Cloudflare Email Service</td>
+<td>Microsoft 365 as the fallback</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>Decap CMS</td>
+<td>Editor and admin roles. Each editor needs a free GitHub login</td>
+</tr>
+<tr>
+<td>Admin login</td>
+<td>Cloudflare Access</td>
+<td>Two-factor for every admin. Not linked from the site</td>
+</tr>
+<tr>
+<td>Analytics</td>
+<td>GA4, only after consent</td>
+<td>Search Console and Bing under NEXUS accounts</td>
+</tr>
+<tr>
+<td>Fonts</td>
+<td>Neutral Face Bold and General Sans, self-hosted</td>
+<td>A stand-in headline face until Mark sends the web files</td>
+</tr>
+<tr>
+<td>Accounts</td>
+<td>All in NEXUS's name</td>
+<td>We are members, not owners</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-the-editor-manages">What the editor manages</h2>
+<p>The following are all editable, with draft, preview and publish:
+- text on every page
+- statistics, partner logos and FAQs
+- case studies, events, team members and insights
+- placeholders, each of which can be hidden
+- the announcement bar</p>
+<h2 id="forms-9">Forms (9)</h2>
+<table>
+<thead>
+<tr>
+<th>Form</th>
+<th><code>form_type</code></th>
+<th>On</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Partnership call</td>
+<td><code>partnership_call</code></td>
+<td>Institutions</td>
+</tr>
+<tr>
+<td>International diagnostic</td>
+<td><code>diagnostic_international</code></td>
+<td>International companies</td>
+</tr>
+<tr>
+<td>Growth diagnostic</td>
+<td><code>diagnostic_scaleup</code></td>
+<td>UK scale-ups</td>
+</tr>
+<tr>
+<td>Sponsor pack</td>
+<td><code>sponsor_pack</code></td>
+<td>Partner with NEXUS</td>
+</tr>
+<tr>
+<td>2027 delegations</td>
+<td><code>delegation_interest</code></td>
+<td>Asia corridor (with a destination field)</td>
+</tr>
+<tr>
+<td>Event interest</td>
+<td><code>event_interest</code></td>
+<td>Events</td>
+</tr>
+<tr>
+<td>General enquiry</td>
+<td><code>general</code></td>
+<td>Contact</td>
+</tr>
+<tr>
+<td>Report request</td>
+<td><code>report_download</code></td>
+<td>Insights and Home</td>
+</tr>
+<tr>
+<td>The NEXUS Briefing</td>
+<td><code>newsletter</code></td>
+<td>Insights</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Every form:</strong>
+- validates its fields
+- stores the submission
+- emails the right inbox within 5 minutes
+- sends an acknowledgement
+- shows a thank-you message
+- records the source fields: page, CTA, UTM tags, referrer, landing page and time
+- never pre-ticks consent
+- has no reCAPTCHA</p>
+<p>Field keys are in <code>07</code> §9. Named NEXUS users can view, filter and export submissions to CSV.</p>
+<h2 id="search-ai-and-redirects">Search, AI and redirects</h2>
+<ul>
+<li><strong>On every page:</strong> Mark's titles and descriptions (<code>07</code> §10), one H1, self-referencing canonicals, share images (1200 × 630) and alt text.</li>
+<li><strong>Structured data:</strong> Organization, Service, Event, Article, Person, FAQPage and BreadcrumbList.</li>
+<li><strong>Indexing:</strong> an XML sitemap and robots.txt, submitted to Google and Bing.</li>
+<li><strong>Blocked services:</strong> no Google Fonts, Maps, reCAPTCHA or YouTube on key pages, because they're blocked in mainland China.</li>
+<li><strong>Redirects:</strong></li>
+<li>one-step 301s for all 175 current addresses, including the 11 broken ones</li>
+<li>Mark's minimum list is in <code>07</code> §11</li>
+<li>the "#!" duplicates disappear with the old site</li>
+<li><strong>Migration review:</strong> the senior SEO specialist checks keyword targets, titles, the redirect map against Ahrefs backlinks, a pre-launch audit, and indexing in the two weeks after launch.</li>
+<li><strong>Pending:</strong> the homepage title naming the China corridor, if Mark agrees (Questions, item 2).</li>
+</ul>
+<h2 id="content-at-launch">Content at launch</h2>
+<ul>
+<li><strong>Copy:</strong> Mark's prototype copy and case-study wording, word for word.</li>
+<li><strong>Placeholders:</strong> anything missing is a visible <code>[Placeholder: …]</code> that can be hidden in the editor.</li>
+<li><strong>Case studies:</strong> all seven named and quoted once Mark confirms consent. Readii appears on Results only.</li>
+<li><strong>Partners:</strong> the Alibaba Entrepreneurs Fund and the Swiss Bluefaer Innovation Centre appear by name only, with no logo. The four partner logos stay marked until each permission arrives.</li>
+<li><strong>Insights:</strong> up to 30 existing articles that Mark sends, each on its own page with a redirect. Today the team posts them as LinkedIn-style posts with slides through the old site's admin. New ones are written in the editor using one article template.</li>
+<li><strong>Startup Diaries:</strong> stays on its own Ghost site for now.</li>
+</ul>
+<h2 id="design">Design</h2>
+<ul>
+<li><strong>Brand:</strong> Mark's brand rules (<code>07</code> §8): black, Electric Yellow as an accent only, white, and Studio Grey for lines. Pill buttons at least 48px, a 1200px content width, motion on hover and focus only.</li>
+<li><strong>Our changes to Hasaan's build, needed before the review link goes to Mark:</strong></li>
+<li>no grey section grounds</li>
+<li>the announcement bar on black, with a yellow "Get tickets"</li>
+<li>five headlines back to Mark's wording</li>
+</ul>
+<p>The details are in <code>proposals/not-sent/</code>.
+- <strong>Homepage:</strong> the photo-led design (Option A), with the Tianjin signing photo in the hero. The other directions stay in Figma.</p>
+<h2 id="security-and-launch">Security and launch</h2>
+<ul>
+<li><strong>Protection:</strong> HTTPS with HSTS, a firewall, security headers (CSP, X-Content-Type-Options, frame-ancestors, Referrer-Policy), and rate limits on the forms and the admin login.</li>
+<li><strong>Data:</strong> encrypted in transit and at rest, with access logged.</li>
+<li><strong>Before launch:</strong></li>
+<li>vulnerability scan and dependency audit, with high and critical findings fixed</li>
+<li>component inventory with versions</li>
+<li>one restore tested</li>
+<li>test evidence and a test log against the acceptance checks in <code>07</code> §18</li>
+<li><strong>Handover:</strong></li>
+<li>credentials through a password manager</li>
+<li>an editing guide and one training session</li>
+<li>technical docs: platform, inventory, integrations, form fields, webhook, redirect map and analytics events</li>
+<li><strong>After launch:</strong> 30 days of free defect fixes. Ongoing support only if Mark agrees it in writing.</li>
+<li><strong>Security contact:</strong> Zeeshan.</li>
+</ul>
+<h2 id="not-building-now">Not building now</h2>
+<ul>
+<li><strong>Phase 2, quoted separately:</strong></li>
+<li>event detail pages with registration</li>
+<li>results filters</li>
+<li>online diagnostic booking and payment</li>
+<li>the gated report download</li>
+<li>the monthly dashboard</li>
+<li>connecting the CRM</li>
+<li><strong>Optional:</strong> the English and Chinese language switcher, site search, and moving Startup Diaries into Insights.</li>
+<li><strong>Out of scope:</strong></li>
+<li>new copywriting, translation or photography</li>
+<li>a client login</li>
+<li>ongoing maintenance unless agreed</li>
+<li>the Cloudflare China Network, which needs an Enterprise plan and an ICP licence</li>
+</ul>
+<h2 id="who-does-what">Who does what</h2>
+<table>
+<thead>
+<tr>
+<th>Person</th>
+<th>Owns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zeeshan</td>
+<td>Lead, platform, backend and forms, security, launch, the relationship with Mark</td>
+</tr>
+<tr>
+<td>Hasaan</td>
+<td>Design and front end: components, templates, the review site</td>
+</tr>
+<tr>
+<td>Senior SEO specialist</td>
+<td>Migration review: keywords, titles, redirects against backlinks, pre-launch audit, indexing check</td>
+</tr>
+</tbody>
+</table>
+<h2 id="open-before-we-can-finish">Open before we can finish</h2>
+<p><strong>Mark's six answers:</strong>
+- go-ahead
+- the homepage title
+- case-study consent
+- form inboxes and the reply time
+- registered office
+- editors</p>
+<p><strong>His materials:</strong>
+- articles
+- endorsing role text
+- legal texts
+- the Neutral Face web fonts
+- logo permissions</p>
+<p><strong>Access:</strong>
+- one.com
+- the old site's admin
+- Search Console
+- Bing
+- GA4
+- Zoho
+- Nexudus</p>
+<p>Everything that can wait is listed in <code>proposals/not-sent/</code>.</p></main></body></html>

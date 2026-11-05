@@ -49,6 +49,7 @@ The 31 October dates come from file dates. Correct them if the real dates differ
 
 | File | What it gives you |
 |---|---|
+| [09-NEXUS-What-We-Are-Building.md](plan/09-NEXUS-What-We-Are-Building.md) | **Read first in plan.** Everything we build, how, who does what, what we don't build, and what's still open |
 | [04-NEXUS-SEO-Guide.md](plan/04-NEXUS-SEO-Guide.md) | The main guide: the business, site audit, SEO, AEO and GEO strategy, every tool explained, playbooks, NEXUS's other systems |
 | [02-NEXUS-Website-SEO-Strategy-Plan.md](plan/02-NEXUS-Website-SEO-Strategy-Plan.md) | Goals, positioning, audiences, keyword map, KPIs, timeline |
 | [06-NEXUS-Landing-Page-Design-Plan.md](plan/06-NEXUS-Landing-Page-Design-Plan.md) | Which pages to design first, the design direction, considerations, business case |
@@ -57,13 +58,14 @@ The 31 October dates come from file dates. Correct them if the real dates differ
 
 ## Read in this order
 1. [07 Mark's facts](knowledge-base/07-NEXUS-Mark-Facts.md)
-2. [design/README.md](design/README.md), then the live review site
-3. `proposals/README.md`, then the three documents in `proposals/2026-11-05/` (local)
-4. [04 SEO guide](plan/04-NEXUS-SEO-Guide.md)
-5. [02 strategy plan](plan/02-NEXUS-Website-SEO-Strategy-Plan.md)
-6. [01 research findings](knowledge-base/01-NEXUS-Research-Findings.md)
+2. [09 What we are building](plan/09-NEXUS-What-We-Are-Building.md)
+3. [design/README.md](design/README.md), then the live review site
+4. `proposals/README.md`, then the three documents in `proposals/2026-11-05/` (local)
+5. [04 SEO guide](plan/04-NEXUS-SEO-Guide.md)
+6. [02 strategy plan](plan/02-NEXUS-Website-SEO-Strategy-Plan.md)
+7. [01 research findings](knowledge-base/01-NEXUS-Research-Findings.md)
 
-The numbers in file names (01 to 08) are the IDs the documents use to point at each other, for example "07 §14". `03` lives in `emails-and-meetings/` and `08` in `_archive/`.
+The numbers in file names (01 to 09) are the IDs the documents use to point at each other, for example "07 §14". `03` lives in `emails-and-meetings/` and `08` in `_archive/`.
 
 ## Kept local (not on GitHub)
 
