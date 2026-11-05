@@ -50,6 +50,7 @@ The 31 October dates come from file dates. Correct them if the real dates differ
 | File | What it gives you |
 |---|---|
 | [09-NEXUS-What-We-Are-Building.md](plan/09-NEXUS-What-We-Are-Building.md) | **Read first in plan.** Everything we build, how, who does what, what we don't build, and what's still open |
+| [10-NEXUS-Astro-and-Decap-101.md](plan/10-NEXUS-Astro-and-Decap-101.md) | How the build works: Astro and Decap CMS explained, the two set-up traps and their fixes, the build order, with links |
 | [04-NEXUS-SEO-Guide.md](plan/04-NEXUS-SEO-Guide.md) | The main guide: the business, site audit, SEO, AEO and GEO strategy, every tool explained, playbooks, NEXUS's other systems |
 | [02-NEXUS-Website-SEO-Strategy-Plan.md](plan/02-NEXUS-Website-SEO-Strategy-Plan.md) | Goals, positioning, audiences, keyword map, KPIs, timeline |
 | [06-NEXUS-Landing-Page-Design-Plan.md](plan/06-NEXUS-Landing-Page-Design-Plan.md) | Which pages to design first, the design direction, considerations, business case |
@@ -65,7 +66,7 @@ The 31 October dates come from file dates. Correct them if the real dates differ
 6. [02 strategy plan](plan/02-NEXUS-Website-SEO-Strategy-Plan.md)
 7. [01 research findings](knowledge-base/01-NEXUS-Research-Findings.md)
 
-The numbers in file names (01 to 09) are the IDs the documents use to point at each other, for example "07 §14". `03` lives in `emails-and-meetings/` and `08` in `_archive/`.
+The numbers in file names (01 to 10) are the IDs the documents use to point at each other, for example "07 §14". `03` lives in `emails-and-meetings/` and `08` in `_archive/`.
 
 ## Kept local (not on GitHub)
 

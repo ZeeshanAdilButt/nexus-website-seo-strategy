@@ -209,9 +209,14 @@ Visitor submits a form
 <td>30-day point-in-time restore, plus a daily copy to R2</td>
 </tr>
 <tr>
-<td>Files and images</td>
+<td>Images</td>
+<td>Uploaded through the editor into the repo</td>
+<td>Resized to WebP or AVIF by Astro at build time</td>
+</tr>
+<tr>
+<td>Backup copies</td>
 <td>Cloudflare R2, EU jurisdiction</td>
-<td>WebP or AVIF, sized per breakpoint</td>
+<td>A daily copy of the database</td>
 </tr>
 <tr>
 <td>Email</td>
@@ -220,8 +225,8 @@ Visitor submits a form
 </tr>
 <tr>
 <td>Editor</td>
-<td>Decap CMS</td>
-<td>Editor and admin roles. Each editor needs a free GitHub login</td>
+<td>Decap CMS, with a small GitHub sign-in Worker</td>
+<td>Roles enforced in GitHub. Each editor needs a free GitHub login. How it works: <a href="10-NEXUS-Astro-and-Decap-101.md"><code>10</code></a></td>
 </tr>
 <tr>
 <td>Admin login</td>

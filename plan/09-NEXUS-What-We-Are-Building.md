@@ -65,9 +65,10 @@ Visitor submits a form
 | Pages | Astro, building static HTML | No PHP, WordPress or plugins |
 | Backend | One Worker in TypeScript | The only server code |
 | Database | Cloudflare D1, EU jurisdiction | 30-day point-in-time restore, plus a daily copy to R2 |
-| Files and images | Cloudflare R2, EU jurisdiction | WebP or AVIF, sized per breakpoint |
+| Images | Uploaded through the editor into the repo | Resized to WebP or AVIF by Astro at build time |
+| Backup copies | Cloudflare R2, EU jurisdiction | A daily copy of the database |
 | Email | Cloudflare Email Service | Microsoft 365 as the fallback |
-| Editor | Decap CMS | Editor and admin roles. Each editor needs a free GitHub login |
+| Editor | Decap CMS, with a small GitHub sign-in Worker | Roles enforced in GitHub. Each editor needs a free GitHub login. How it works: [`10`](10-NEXUS-Astro-and-Decap-101.md) |
 | Admin login | Cloudflare Access | Two-factor for every admin. Not linked from the site |
 | Analytics | GA4, only after consent | Search Console and Bing under NEXUS accounts |
 | Fonts | Neutral Face Bold and General Sans, self-hosted | A stand-in headline face until Mark sends the web files |

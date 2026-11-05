@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Astro and Decap CMS: a 101 for the NEXUS build</title><style>
+body{margin:0;background:#fff;color:#000;font-family:'General Sans','Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.6}
+main{max-width:1100px;margin:0 auto;padding:40px 24px 80px}
+h1,h2,h3{font-family:'Neutral Face','Arial Black',Arial,sans-serif;line-height:1.15}
+h1{font-size:2.4rem;text-transform:uppercase;border-bottom:6px solid #DFFF13;padding-bottom:12px}
+h2{font-size:1.6rem;margin-top:56px;padding:10px 14px;background:#000;color:#fff}
+h3{font-size:1.2rem;margin-top:32px;border-left:6px solid #DFFF13;padding-left:10px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th{background:#000;color:#fff;text-align:left}
+th,td{border:1px solid #D1D1D1;padding:8px;vertical-align:top}
+tr:nth-child(even) td{background:#f6f6f6}
+code{background:#f1f1f1;padding:1px 4px;border-radius:3px;font-size:13px}
+pre{background:#111;color:#eee;padding:14px;overflow:auto;border-radius:4px}
+pre code{background:none;color:inherit}
+blockquote{margin:16px 0;padding:12px 16px;background:#f6f6f6;border-left:6px solid #DFFF13}
+hr{border:0;border-top:1px solid #D1D1D1;margin:40px 0}
+@media print{h2{break-before:page}table,pre{break-inside:avoid}}
+</style></head><body><main><h1 id="astro-and-decap-cms-a-101-for-the-nexus-build">Astro and Decap CMS: a 101 for the NEXUS build</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Date</td>
+<td>5 November 2026 (versions and links checked that day)</td>
+</tr>
+<tr>
+<td>For</td>
+<td>Us, before and during the build</td>
+</tr>
+<tr>
+<td>Goes with</td>
+<td><a href="09-NEXUS-What-We-Are-Building.md"><code>09</code> what we are building</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-idea-in-one-picture">The idea in one picture</h2>
+<pre><code class="language-text">NEXUS editor  -&gt;  Decap CMS at /admin  -&gt;  saves files to GitHub (NEXUS org)
+                                                |
+                                  Cloudflare Workers Builds sees the change
+                                                |
+                                     Astro builds every page as HTML
+                                                |
+                       Cloudflare serves the HTML worldwide (no PHP, no database behind pages)
+
+Visitor sends a form  -&gt;  one small Worker  -&gt;  D1 database (EU) + email to NEXUS
+</code></pre>
+<h2 id="astro-the-page-builder">Astro: the page builder</h2>
+<p><strong>What it is.</strong> A free, open-source tool that turns templates plus content into finished HTML pages. It runs when the site is built, not on the live site, so visitors only ever get plain, fast pages. Current major version: Astro 7.</p>
+<p><strong>What we use it for:</strong>
+- <strong>Layouts and components.</strong> Hasaan's 24 pages split into reusable pieces: header, footer, hero, offer card, case-study card, FAQ, form block.
+- <strong>Content collections.</strong> Case studies, events, insights, team, FAQs and statistics stored as Markdown or JSON files in <code>src/content/</code>. Astro checks each file against a schema, so a missing field fails the build instead of the live site.
+- <strong>SEO.</strong> Titles, descriptions, canonicals, JSON-LD and the sitemap are generated for every page.
+- <strong>One server route.</strong> <code>/api/enquiry</code> handles the forms. Every other page is pre-built.</p>
+<p><strong>How it reaches Cloudflare.</strong> We connect the GitHub repo in the Cloudflare dashboard, which is Workers Builds. The build command is <code>npx astro build</code>. The deploy command is <code>npx wrangler deploy</code>. The <code>wrangler.jsonc</code> file points <code>assets</code> at <code>./dist</code>. The forms route needs <code>npx astro add cloudflare</code> (the <code>@astrojs/cloudflare</code> adapter). Pages stay pre-rendered.</p>
+<p><strong>Learn it:</strong>
+- <a href="https://docs.astro.build/en/getting-started/">Getting started</a>
+- <a href="https://docs.astro.build/en/tutorial/0-introduction/">The official tutorial</a> (a few hours, the best first step)
+- <a href="https://docs.astro.build/en/guides/content-collections/">Content collections</a>
+- <a href="https://docs.astro.build/en/guides/deploy/cloudflare/">Deploy to Cloudflare</a></p>
+<h2 id="decap-cms-the-editing-screen">Decap CMS: the editing screen</h2>
+<p><strong>What it is.</strong> A free, open-source editing screen, formerly Netlify CMS. It's one HTML page at <code>/admin</code> plus a <code>config.yml</code> file. Editors fill in forms, and Decap saves their changes as files in the GitHub repo. There's no database and no server of its own. It is actively maintained: version 3.17.3 was released on 26 October 2026.</p>
+<p><strong>What we use it for:</strong>
+- One collection per content type. Each one maps to the same files Astro reads in <code>src/content/</code>.
+- Editors change text, statistics, logos, FAQs, case studies, events, team members, insights, placeholders and the announcement bar.
+- Image uploads go into the repo (for example <code>public/uploads/</code>). Astro then resizes them at build time.</p>
+<p><strong>Drafts and publishing (editorial workflow):</strong> set <code>publish_mode: editorial_workflow</code> in <code>config.yml</code>.</p>
+<pre><code class="language-text">Save draft         -&gt; Decap creates a branch and a pull request on GitHub
+Edit draft         -&gt; another commit on that branch
+Approve + publish  -&gt; Decap merges the pull request -&gt; Cloudflare rebuilds -&gt; live in about two minutes
+</code></pre>
+<p><strong>Learn it:</strong>
+- <a href="https://decapcms.org/docs/intro/">Introduction</a>
+- <a href="https://decapcms.org/docs/basic-steps/">Basic steps</a>
+- <a href="https://decapcms.org/docs/configuration-options/">Configuration options</a>
+- <a href="https://decapcms.org/docs/editorial-workflows/">Editorial workflow</a>
+- <a href="https://decapcms.org/docs/github-backend/">GitHub backend</a>
+- <a href="https://docs.astro.build/en/guides/cms/decap-cms/">Astro's own Decap guide</a></p>
+<h2 id="two-things-that-would-get-us-in-trouble-and-the-fix">Two things that would get us in trouble, and the fix</h2>
+<h3 id="1-github-login-needs-a-small-auth-server">1. GitHub login needs a small auth server</h3>
+<p>Decap's GitHub login needs an OAuth server, and only Netlify provides one built in. We are on Cloudflare, so we deploy one ourselves.</p>
+<p><strong>The fix:</strong>
+1. Deploy <a href="https://github.com/sveltia/sveltia-cms-auth">sveltia-cms-auth</a>. It's a tiny Cloudflare Worker, it is compatible with Decap, and it was last updated in October 2026.
+2. Create a GitHub OAuth app, with the callback set to <code>&lt;worker-url&gt;/callback</code>.
+3. Add <code>GITHUB_CLIENT_ID</code> and <code>GITHUB_CLIENT_SECRET</code> to the Worker.
+4. Set <code>ALLOWED_DOMAINS</code> to nexuscreativehq.com.
+5. In <code>config.yml</code>, add <code>base_url: &lt;worker-url&gt;</code> under <code>backend</code>.</p>
+<p><strong>Do this on day 1</strong>, before any template work, and test a full sign-in.</p>
+<h3 id="2-editors-draft-admins-publish-is-not-built-into-decap">2. "Editors draft, admins publish" is not built into Decap</h3>
+<p>Decap has no roles. The proposal promises two roles, so we enforce them in GitHub. <strong>Test this on day 1 as well.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Who</th>
+<th>GitHub permission</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>Write</td>
+<td>Can save drafts (branches and pull requests). Publishing is blocked until an admin approves</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>Maintain or Admin</td>
+<td>Can approve and publish. Allowed to bypass the review rule</td>
+</tr>
+</tbody>
+</table>
+<p>To set this up:
+- Protect <code>main</code> with "require a pull request with one approving review", and let admins bypass it (<a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches">protected branches</a>).
+- Require two-factor authentication for everyone in the NEXUS GitHub organisation (<a href="https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization">how</a>). This meets the brief's two-factor rule for editors.
+- Put <a href="https://developers.cloudflare.com/cloudflare-one/access-controls/">Cloudflare Access</a> in front of the enquiries admin (where staff view and export form submissions), with a two-factor code.</p>
+<p>If the role split doesn't behave in testing, <strong>we tell Mark straight away</strong>. The fallback is admins only, plus a draft review by email. We don't wait until launch week.</p>
+<h2 id="build-order-to-hit-12-november">Build order (to hit 12 November)</h2>
+<ol>
+<li><strong>Fri 6:</strong>
+   - the NEXUS GitHub org and Cloudflare account
+   - the repo with an Astro 7 starter
+   - Workers Builds connected
+   - the auth Worker and Decap sign-in working
+   - the role split tested</li>
+<li><strong>Sat 7 and Sun 8:</strong>
+   - Hasaan's pages as Astro layouts and components, with Mark's headlines
+   - content collections, with Decap collections mapped to them
+   - the forms Worker, the D1 table and emails</li>
+<li><strong>Mon 9:</strong>
+   - Mark's content and articles loaded
+   - the <code>_redirects</code> file with all 175 addresses
+   - JSON-LD, sitemap, consent and GA4</li>
+<li><strong>Tue 10:</strong> staging shared, the China speed test, the security scan.</li>
+<li><strong>Wed 11:</strong> feedback, full testing, a restore test, sign-off.</li>
+<li><strong>Thu 12:</strong> switch the domain, check the redirects, submit the sitemap.</li>
+</ol>
+<h2 id="other-references">Other references</h2>
+<ul>
+<li><a href="https://developers.cloudflare.com/workers/ci-cd/builds/">Workers Builds: deploy on every push</a></li>
+<li><a href="https://developers.cloudflare.com/workers/static-assets/">Workers static assets</a></li>
+<li><a href="https://developers.cloudflare.com/d1/">D1 database</a></li>
+<li><a href="https://github.com/sveltia/sveltia-cms">Sveltia CMS</a>: a modern, actively developed alternative to Decap that reads the same <code>config.yml</code>. Keep it as a fallback, not the plan.</li>
+</ul></main></body></html>
