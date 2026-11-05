@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Date | 4 November 2026 |
+| Date | 4 November 2026; sections 16 to 19 added 5 November from a full re-read of the brief's Word file |
 | Scope | Everything Mark has stated in writing about the new site: decisions, page specs, copy, proof, brand, forms, search, technical and launch rules |
 | Audience | Everyone designing, writing or building the NEXUS site (Zeeshan, Hasaan, any developer) |
 | Sources | `emails-and-meetings/2026-10-31-mark-brief-and-assets/`: the Developer Brief (`NEXUS Website Brief Developer.docx`, text copy in `text-copies/`), prototype copy (`text-copies/prototype/*.txt`), `text-copies/NEXUS Member Case Studies.txt`, `text-copies/NEXUS Brand Guidelines 2025.txt` |
@@ -341,6 +341,7 @@ These are To confirm, so use them until Mark sends final versions.
 
 | Phase | Delivers |
 |---|---|
+| 0. Proposal | **Within two working days of receiving the brief:** recommended platform and hosting, a component inventory, a fixed quote and timeline (including whether 12 November is achievable), and the support and patching terms. Mark supplies the brief, prototype, guidelines and case studies |
 | 1. Launch by 12 November | All Phase 1 pages, components, forms (database, email, webhook off), cookie consent, analytics, structured data, redirects, security, content and placeholders, testing |
 | 2. After launch | Event detail pages, results filters, online diagnostic booking and payment (if approved), report download, monthly dashboard, CRM webhook on |
 | 3. Future (Optional) | English and Chinese language switcher, client login, online sponsorship purchase |
@@ -386,6 +387,7 @@ These are To confirm, so use them until Mark sends final versions.
 | 6 | Prototype vs guidelines | The prototype uses yellow section backgrounds and Google Fonts | Guidelines win (Mark already says so) |
 | 7 | Prototype vs brief 4.4 | The prototype Asia page has a Chinese-language block | Remove it (brief) |
 | 8 | Case studies | Seven are Ready, but Readii has no page assigned, and its "around double its own revenue" partner-value claim has no stated basis | Show it on `/results` only; ask about the claim |
+| 9 | Brief 4.8 vs 7 | 4.8 sets `form_type` to "report or newsletter"; the section 7 list has `report_download` and no newsletter type | Use `report_download` and add `newsletter` for The NEXUS Briefing |
 
 ## 15. Where our documents and designs go beyond Mark
 
@@ -402,6 +404,98 @@ These are proposals. Mark's version is the default until Mark decides otherwise.
 | Archivo and DM Sans | Claude Design canvas (v3.1) | Neutral Face Bold and General Sans, self-hosted | Stand-ins for the design only |
 | Home H1 "UK–China market entry.", a fourth audience, case study and partner names hidden, details from outside Mark's documents | Hasaan's two drafts | Sections 4, 6 and 7 above | See [`design/reviews/hasaan-wayne/REVIEW.md`](../design/reviews/hasaan-wayne/REVIEW.md) |
 | Porcelain ground, paintings, scroll and count-up motion | Hasaan's colour redesign | Plain black, white or Studio Grey; real NEXUS photography; motion on hover and focus only | Breaks written rules; keep it as an exploration |
+
+## 16. The brief itself
+
+| Item | Fact |
+|---|---|
+| Author | Mark Sarfo-Kantanka. The Word file's author is "NEXUS", last saved by "Mark Sarfo-Kantanka (Creare Capital)". Created and last saved on 25 October 2026 (revision 3). Footer: "NEXUS \| Company Number 12667243" |
+| Addressed to | The team that built globalinnovatorawards.com. Mark asks for "the same creative direction and feedback" as on that build, and to "build a new custom website, as you did for the Global Innovator Awards" |
+| How to respond | "Use it to scope, quote and plan the work, and come back to us with questions before you assume anything" |
+| What Mark supplied | The clickable prototype (the guide to layout, section order and copy; access shared separately), Brand Guidelines 2025 with logo files and fonts, the seven case studies. Photography "will be forthcoming", with placeholders meanwhile |
+| In scope | All Phase 1 pages; header and footer; enquiry forms and lead capture; redirects from every current address; security hardening; structured data, analytics and cookie consent; loading approved content and placeholders; testing and handover |
+| Links in the brief | NCSC alert on the PHP vulnerabilities: https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php · the GIA site: https://www.globalinnovatorawards.com/ |
+| Platform preference | "The approach with the fewest moving parts that we can maintain safely, and pages that are pre-built (static or cached) wherever possible" (principle Approved; our recommendation To confirm). The proposal must say which platform, languages and hosting, how the team edits content, and how the site is kept patched |
+| Security confirmation | "As a UK Government supplier with security clearance, we expect these controls to follow the NCSC's guidance and the Cyber Essentials standard. Please confirm in your proposal that they will." |
+
+The text copy in `text-copies/` matches the Word file word for word (checked 5 November). The Word file adds only the two links and the footer above.
+
+## 17. Components to build (brief 4.1)
+
+Build reusable components first, then assemble pages from them, so NEXUS staff can edit content without a developer.
+
+| Component | What it must do | On mobile |
+|---|---|---|
+| Announcement bar | One line and a link above the header; editable; can be switched off | Wraps to two lines |
+| Header | Black, white logo linking home, the nav, Partner with NEXUS, yellow Talk to us; yellow underline on the current page | Logo, Talk to us and a Menu button (keyboard, `aria-expanded`, Escape) |
+| Footer | Black, logo, tagline, link columns, contact, social links, legal line | Columns stack |
+| Hero | Black or white; eyebrow, H1 in Neutral Face Bold, intro, two buttons, image; breadcrumb on inner pages | Image below the text |
+| Proof strip | Up to four statistics and a row of partner logos, managed in the CMS | Two columns; logos wrap |
+| Audience cards | Three cards: tag, title, short text, link | Stack |
+| Offer card | Tag, title, intro, bulleted inclusions, price line (a CMS field that can say "On application") | Stack |
+| Step list | Numbered steps, each with a title and one line | Stack |
+| Case study card | Sector tag, company name, one-line headline, main outcome, link to the full case study | Stack |
+| Quote block | Founder quote with name, role and company | Full width |
+| FAQ accordion | Accessible, and also output as FAQPage structured data | Full width |
+| Contact route tiles | Three tiles: title, one line, button | Stack |
+| Enquiry form block | Heading, intro, a "What happens next" list, the form | Form below |
+| Event card | Image, date, title, description, buttons (CMS collection) | Stack |
+| Team member | Black and white portrait, name, role, optional profile | Grid wraps |
+| Placeholder | A clearly marked box with "[Placeholder: …]", replaced through the CMS and hidden with a toggle | Same |
+
+**Insights article template (4.8):**
+- **Fields:** title, summary, author with photo and role, date, reading time, topic, format, hero image with alt text.
+- **Body:** headings, pull quotes, images and embedded video.
+- **End of each article:** related case studies and insights, a call to action matched to the topic (Asia corridor articles link to the delegation form), share links.
+- **Structured data:** Article, with author and date.
+- **Migration:** load the existing articles NEXUS sends (duplicates removed first) and redirect each `/insight/{id}`.
+
+**Form behaviour details (section 7):**
+- **Admin access:** submissions can be viewed, filtered and exported only by named NEXUS users.
+- **Editable in the CMS:** the acknowledgement email wording and each form's inbox address.
+- **Sponsor pack:** the form, then NEXUS emails the pack by hand, or automatically if a PDF can be attached in the CMS.
+- **Language switcher (later, Optional):** for example Weglot, with human editing. Keep text out of images, and leave room for one icon in the header.
+- **Site search:** not needed at launch.
+
+**Reporting (section 11):**
+- **Attribution:** keep the UTM parameters and the first landing page for the visit, and pass them into the hidden form fields.
+- **Phase 2 monthly dashboard:** conversions by type, conversion rate per audience page, top landing pages and channels, and Search Console queries for priority pages.
+
+## 18. Acceptance tests (brief 13)
+
+The work counts as complete when every check passes on staging and Mark signs it off. The team sends evidence with it: screenshots, reports and a test log.
+
+| Area | Passes when | How it is tested |
+|---|---|---|
+| Layout | Every Phase 1 page follows the prototype's section order, content and components, adjusted to the guidelines, at 360, 768, 1280 and 1440px, with no overlap or sideways scroll | Real devices and browser tools |
+| Brand | Colours, logo use and type match the guidelines. No Electric Yellow backgrounds | Mark's review |
+| Navigation | All links work, no 404s, the mobile menu works by touch and keyboard | Link crawl and a manual check |
+| Forms | Each form validates, stores, emails the right inbox within 5 minutes, sends an acknowledgement and records all source fields. Admin export works. The webhook sends correct JSON to a test address | A test submission per form |
+| Placeholders | Every placeholder is marked, editable and can be hidden. None looks like final content | Page review |
+| Content | Statistics, partner names, logos and case studies match what Mark approved | Mark's sign-off checklist |
+| Performance | Mobile Lighthouse 85+ on Home and the audience pages; LCP under 2.5s; CLS under 0.1 | Lighthouse, PageSpeed Insights |
+| Accessibility | Lighthouse 95+ on every template; no critical axe errors; full keyboard use; 200% zoom without loss | axe, Lighthouse, a screen reader |
+| Mainland China | Home and Asia corridor load fully in under 5s, with no blocked resources | A third-party China speed test |
+| Security | Supported, patched versions; no high or critical scan findings; security headers present; 2FA on all admins; a backup restore tested | Scan reports, inventory, header check |
+| Privacy | The cookie banner blocks analytics until consent; privacy notice on every form; consent never pre-ticked | Cookie audit |
+| Analytics | Every section 11 event fires once per action, only after consent | GA4 DebugView |
+| SEO | Unique titles and descriptions, one H1 per page, correct canonicals, valid sitemap, structured data without errors | Crawl tool and validators |
+| Redirects | Every old address returns a single 301 to its mapped page | Crawl of the old URL list |
+| Browsers | No functional defects in Chrome, Edge, Safari (macOS, iOS), Firefox, Samsung Internet | Manual test matrix |
+| CMS | A NEXUS editor can, unaided, edit a statistic, replace a placeholder, add an event, add a case study and change the announcement bar | A live training session |
+
+## 19. Launch and handover (brief 14)
+
+- Live site on NEXUS's domain, with every Phase 1 check passed and signed off.
+- Approved content loaded. Any remaining placeholders are agreed with Mark or hidden.
+- Redirects live, and checked again after launch.
+- Analytics, Google Search Console and Bing Webmaster Tools owned by a NEXUS account, with the sitemap submitted.
+- Every admin, hosting, domain, DNS and third-party credential handed over through a password manager, never by email. The team's own access is then reduced to the agreed level.
+- A short CMS guide or recorded walkthrough, plus one live training session.
+- Technical documentation: platform, component inventory and versions, integrations, form field schema, webhook details, redirect map and analytics events.
+- Backups running, with one restore tested.
+- A security summary: patch levels at launch, scan results and the patching commitment.
+- A defect-fix period after launch [length to agree]. Ongoing support, hosting and maintenance are quoted separately and are not included unless agreed in writing.
 
 ## Checklist for any page before it goes to Mark
 

@@ -45,7 +45,7 @@ Conflict = sources disagree; Gap or To confirm = not yet known.</p>
 <tbody>
 <tr>
 <td>Date</td>
-<td>4 November 2026</td>
+<td>4 November 2026; sections 16 to 19 added 5 November from a full re-read of the brief's Word file</td>
 </tr>
 <tr>
 <td>Scope</td>
@@ -886,6 +886,10 @@ Conflict = sources disagree; Gap or To confirm = not yet known.</p>
 </thead>
 <tbody>
 <tr>
+<td>0. Proposal</td>
+<td><strong>Within two working days of receiving the brief:</strong> recommended platform and hosting, a component inventory, a fixed quote and timeline (including whether 12 November is achievable), and the support and patching terms. Mark supplies the brief, prototype, guidelines and case studies</td>
+</tr>
+<tr>
 <td>1. Launch by 12 November</td>
 <td>All Phase 1 pages, components, forms (database, email, webhook off), cookie consent, analytics, structured data, redirects, security, content and placeholders, testing</td>
 </tr>
@@ -988,6 +992,12 @@ Conflict = sources disagree; Gap or To confirm = not yet known.</p>
 <td>Seven are Ready, but Readii has no page assigned, and its "around double its own revenue" partner-value claim has no stated basis</td>
 <td>Show it on <code>/results</code> only; ask about the claim</td>
 </tr>
+<tr>
+<td>9</td>
+<td>Brief 4.8 vs 7</td>
+<td>4.8 sets <code>form_type</code> to "report or newsletter"; the section 7 list has <code>report_download</code> and no newsletter type</td>
+<td>Use <code>report_download</code> and add <code>newsletter</code> for The NEXUS Briefing</td>
+</tr>
 </tbody>
 </table>
 <h2 id="15-where-our-documents-and-designs-go-beyond-mark">15. Where our documents and designs go beyond Mark</h2>
@@ -1058,6 +1068,264 @@ Conflict = sources disagree; Gap or To confirm = not yet known.</p>
 </tr>
 </tbody>
 </table>
+<h2 id="16-the-brief-itself">16. The brief itself</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Fact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Author</td>
+<td>Mark Sarfo-Kantanka. The Word file's author is "NEXUS", last saved by "Mark Sarfo-Kantanka (Creare Capital)". Created and last saved on 25 October 2026 (revision 3). Footer: "NEXUS | Company Number 12667243"</td>
+</tr>
+<tr>
+<td>Addressed to</td>
+<td>The team that built globalinnovatorawards.com. Mark asks for "the same creative direction and feedback" as on that build, and to "build a new custom website, as you did for the Global Innovator Awards"</td>
+</tr>
+<tr>
+<td>How to respond</td>
+<td>"Use it to scope, quote and plan the work, and come back to us with questions before you assume anything"</td>
+</tr>
+<tr>
+<td>What Mark supplied</td>
+<td>The clickable prototype (the guide to layout, section order and copy; access shared separately), Brand Guidelines 2025 with logo files and fonts, the seven case studies. Photography "will be forthcoming", with placeholders meanwhile</td>
+</tr>
+<tr>
+<td>In scope</td>
+<td>All Phase 1 pages; header and footer; enquiry forms and lead capture; redirects from every current address; security hardening; structured data, analytics and cookie consent; loading approved content and placeholders; testing and handover</td>
+</tr>
+<tr>
+<td>Links in the brief</td>
+<td>NCSC alert on the PHP vulnerabilities: https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php · the GIA site: https://www.globalinnovatorawards.com/</td>
+</tr>
+<tr>
+<td>Platform preference</td>
+<td>"The approach with the fewest moving parts that we can maintain safely, and pages that are pre-built (static or cached) wherever possible" (principle Approved; our recommendation To confirm). The proposal must say which platform, languages and hosting, how the team edits content, and how the site is kept patched</td>
+</tr>
+<tr>
+<td>Security confirmation</td>
+<td>"As a UK Government supplier with security clearance, we expect these controls to follow the NCSC's guidance and the Cyber Essentials standard. Please confirm in your proposal that they will."</td>
+</tr>
+</tbody>
+</table>
+<p>The text copy in <code>text-copies/</code> matches the Word file word for word (checked 5 November). The Word file adds only the two links and the footer above.</p>
+<h2 id="17-components-to-build-brief-41">17. Components to build (brief 4.1)</h2>
+<p>Build reusable components first, then assemble pages from them, so NEXUS staff can edit content without a developer.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>What it must do</th>
+<th>On mobile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Announcement bar</td>
+<td>One line and a link above the header; editable; can be switched off</td>
+<td>Wraps to two lines</td>
+</tr>
+<tr>
+<td>Header</td>
+<td>Black, white logo linking home, the nav, Partner with NEXUS, yellow Talk to us; yellow underline on the current page</td>
+<td>Logo, Talk to us and a Menu button (keyboard, <code>aria-expanded</code>, Escape)</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>Black, logo, tagline, link columns, contact, social links, legal line</td>
+<td>Columns stack</td>
+</tr>
+<tr>
+<td>Hero</td>
+<td>Black or white; eyebrow, H1 in Neutral Face Bold, intro, two buttons, image; breadcrumb on inner pages</td>
+<td>Image below the text</td>
+</tr>
+<tr>
+<td>Proof strip</td>
+<td>Up to four statistics and a row of partner logos, managed in the CMS</td>
+<td>Two columns; logos wrap</td>
+</tr>
+<tr>
+<td>Audience cards</td>
+<td>Three cards: tag, title, short text, link</td>
+<td>Stack</td>
+</tr>
+<tr>
+<td>Offer card</td>
+<td>Tag, title, intro, bulleted inclusions, price line (a CMS field that can say "On application")</td>
+<td>Stack</td>
+</tr>
+<tr>
+<td>Step list</td>
+<td>Numbered steps, each with a title and one line</td>
+<td>Stack</td>
+</tr>
+<tr>
+<td>Case study card</td>
+<td>Sector tag, company name, one-line headline, main outcome, link to the full case study</td>
+<td>Stack</td>
+</tr>
+<tr>
+<td>Quote block</td>
+<td>Founder quote with name, role and company</td>
+<td>Full width</td>
+</tr>
+<tr>
+<td>FAQ accordion</td>
+<td>Accessible, and also output as FAQPage structured data</td>
+<td>Full width</td>
+</tr>
+<tr>
+<td>Contact route tiles</td>
+<td>Three tiles: title, one line, button</td>
+<td>Stack</td>
+</tr>
+<tr>
+<td>Enquiry form block</td>
+<td>Heading, intro, a "What happens next" list, the form</td>
+<td>Form below</td>
+</tr>
+<tr>
+<td>Event card</td>
+<td>Image, date, title, description, buttons (CMS collection)</td>
+<td>Stack</td>
+</tr>
+<tr>
+<td>Team member</td>
+<td>Black and white portrait, name, role, optional profile</td>
+<td>Grid wraps</td>
+</tr>
+<tr>
+<td>Placeholder</td>
+<td>A clearly marked box with "[Placeholder: …]", replaced through the CMS and hidden with a toggle</td>
+<td>Same</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Insights article template (4.8):</strong>
+- <strong>Fields:</strong> title, summary, author with photo and role, date, reading time, topic, format, hero image with alt text.
+- <strong>Body:</strong> headings, pull quotes, images and embedded video.
+- <strong>End of each article:</strong> related case studies and insights, a call to action matched to the topic (Asia corridor articles link to the delegation form), share links.
+- <strong>Structured data:</strong> Article, with author and date.
+- <strong>Migration:</strong> load the existing articles NEXUS sends (duplicates removed first) and redirect each <code>/insight/{id}</code>.</p>
+<p><strong>Form behaviour details (section 7):</strong>
+- <strong>Admin access:</strong> submissions can be viewed, filtered and exported only by named NEXUS users.
+- <strong>Editable in the CMS:</strong> the acknowledgement email wording and each form's inbox address.
+- <strong>Sponsor pack:</strong> the form, then NEXUS emails the pack by hand, or automatically if a PDF can be attached in the CMS.
+- <strong>Language switcher (later, Optional):</strong> for example Weglot, with human editing. Keep text out of images, and leave room for one icon in the header.
+- <strong>Site search:</strong> not needed at launch.</p>
+<p><strong>Reporting (section 11):</strong>
+- <strong>Attribution:</strong> keep the UTM parameters and the first landing page for the visit, and pass them into the hidden form fields.
+- <strong>Phase 2 monthly dashboard:</strong> conversions by type, conversion rate per audience page, top landing pages and channels, and Search Console queries for priority pages.</p>
+<h2 id="18-acceptance-tests-brief-13">18. Acceptance tests (brief 13)</h2>
+<p>The work counts as complete when every check passes on staging and Mark signs it off. The team sends evidence with it: screenshots, reports and a test log.</p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Passes when</th>
+<th>How it is tested</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Layout</td>
+<td>Every Phase 1 page follows the prototype's section order, content and components, adjusted to the guidelines, at 360, 768, 1280 and 1440px, with no overlap or sideways scroll</td>
+<td>Real devices and browser tools</td>
+</tr>
+<tr>
+<td>Brand</td>
+<td>Colours, logo use and type match the guidelines. No Electric Yellow backgrounds</td>
+<td>Mark's review</td>
+</tr>
+<tr>
+<td>Navigation</td>
+<td>All links work, no 404s, the mobile menu works by touch and keyboard</td>
+<td>Link crawl and a manual check</td>
+</tr>
+<tr>
+<td>Forms</td>
+<td>Each form validates, stores, emails the right inbox within 5 minutes, sends an acknowledgement and records all source fields. Admin export works. The webhook sends correct JSON to a test address</td>
+<td>A test submission per form</td>
+</tr>
+<tr>
+<td>Placeholders</td>
+<td>Every placeholder is marked, editable and can be hidden. None looks like final content</td>
+<td>Page review</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>Statistics, partner names, logos and case studies match what Mark approved</td>
+<td>Mark's sign-off checklist</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Mobile Lighthouse 85+ on Home and the audience pages; LCP under 2.5s; CLS under 0.1</td>
+<td>Lighthouse, PageSpeed Insights</td>
+</tr>
+<tr>
+<td>Accessibility</td>
+<td>Lighthouse 95+ on every template; no critical axe errors; full keyboard use; 200% zoom without loss</td>
+<td>axe, Lighthouse, a screen reader</td>
+</tr>
+<tr>
+<td>Mainland China</td>
+<td>Home and Asia corridor load fully in under 5s, with no blocked resources</td>
+<td>A third-party China speed test</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Supported, patched versions; no high or critical scan findings; security headers present; 2FA on all admins; a backup restore tested</td>
+<td>Scan reports, inventory, header check</td>
+</tr>
+<tr>
+<td>Privacy</td>
+<td>The cookie banner blocks analytics until consent; privacy notice on every form; consent never pre-ticked</td>
+<td>Cookie audit</td>
+</tr>
+<tr>
+<td>Analytics</td>
+<td>Every section 11 event fires once per action, only after consent</td>
+<td>GA4 DebugView</td>
+</tr>
+<tr>
+<td>SEO</td>
+<td>Unique titles and descriptions, one H1 per page, correct canonicals, valid sitemap, structured data without errors</td>
+<td>Crawl tool and validators</td>
+</tr>
+<tr>
+<td>Redirects</td>
+<td>Every old address returns a single 301 to its mapped page</td>
+<td>Crawl of the old URL list</td>
+</tr>
+<tr>
+<td>Browsers</td>
+<td>No functional defects in Chrome, Edge, Safari (macOS, iOS), Firefox, Samsung Internet</td>
+<td>Manual test matrix</td>
+</tr>
+<tr>
+<td>CMS</td>
+<td>A NEXUS editor can, unaided, edit a statistic, replace a placeholder, add an event, add a case study and change the announcement bar</td>
+<td>A live training session</td>
+</tr>
+</tbody>
+</table>
+<h2 id="19-launch-and-handover-brief-14">19. Launch and handover (brief 14)</h2>
+<ul>
+<li>Live site on NEXUS's domain, with every Phase 1 check passed and signed off.</li>
+<li>Approved content loaded. Any remaining placeholders are agreed with Mark or hidden.</li>
+<li>Redirects live, and checked again after launch.</li>
+<li>Analytics, Google Search Console and Bing Webmaster Tools owned by a NEXUS account, with the sitemap submitted.</li>
+<li>Every admin, hosting, domain, DNS and third-party credential handed over through a password manager, never by email. The team's own access is then reduced to the agreed level.</li>
+<li>A short CMS guide or recorded walkthrough, plus one live training session.</li>
+<li>Technical documentation: platform, component inventory and versions, integrations, form field schema, webhook details, redirect map and analytics events.</li>
+<li>Backups running, with one restore tested.</li>
+<li>A security summary: patch levels at launch, scan results and the patching commitment.</li>
+<li>A defect-fix period after launch [length to agree]. Ongoing support, hosting and maintenance are quoted separately and are not included unless agreed in writing.</li>
+</ul>
 <h2 id="checklist-for-any-page-before-it-goes-to-mark">Checklist for any page before it goes to Mark</h2>
 <ul>
 <li>[ ] Section order matches section 4 for that page</li>
