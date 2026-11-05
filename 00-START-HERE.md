@@ -71,7 +71,7 @@ This repository is **public**. These folders are listed in `.gitignore` and stay
 - `reference docs/`: the GIA project's questions, brief, quote, invoices and support summary
 - `responses/`: drafts in progress
 
-Mark's case study document is marked "Private & Confidential", and its text is in `emails-and-meetings/2026-10-31-mark-brief-and-assets/text-copies/`. Decide whether the repository should be private.
+We decided on 5 November 2026 to keep the repository public. Mark's case study document is marked "Private & Confidential", and its text is already in `emails-and-meetings/2026-10-31-mark-brief-and-assets/text-copies/`. Anything new that is confidential or commercial goes in a gitignored folder.
 
 ## Rules when working on NEXUS
 - Mark's documents win. Use his prototype copy word for word, and mark anything missing as `[Placeholder: …]`.
