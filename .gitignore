@@ -5,8 +5,8 @@ Thumbs.db
 .DS_Store
 __pycache__/
 
-# Kept local while the repo is public: our commercial proposal and drafts in progress
-emails-and-meetings/2026-11-05-proposal/
+# Kept local while the repo is public: proposals and quotes, and drafts in progress
+proposals/
 responses/
 
 # Reference material from the GIA project (quotes, invoices), local only

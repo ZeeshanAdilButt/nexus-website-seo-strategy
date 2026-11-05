@@ -5,7 +5,7 @@ Updated 5 November 2026.
 ## Where we are
 - **The job.** Rebuild [nexuscreativehq.com](https://nexuscreativehq.com) to Mark's Developer Brief. NEXUS helps technology businesses land, grow and scale in the UK, with China as its flagship corridor. The target is to go live on Thursday 12 November 2026, before the Global Innovator Awards on Monday 16 November.
 - **The facts.** Mark's documents are the facts. Everything he has stated is in [07 Mark's facts](knowledge-base/07-NEXUS-Mark-Facts.md). Where anything else differs, Mark's version is what we build, and the difference goes to him as a question.
-- **Our response.** The proposal and design options are dated 5 November. They are kept on this computer only (see "Kept local" below), with a check against Mark's brief beside them.
+- **Our response.** The proposal, questions and quote for Mark are dated 5 November, in `proposals/2026-11-05/`. They stay on this computer only (see "Kept local" below).
 - **The build.** Hasaan's 24-page brand build is the current site, on an unlisted review link. Our Claude Design canvas holds the v3.1 pages. Both are covered in [design/README.md](design/README.md).
 
 ## The folder
@@ -15,6 +15,7 @@ Updated 5 November 2026.
 | `emails-and-meetings/` | **Everything exchanged with NEXUS, in date order.** Each name starts with its date. Mark's brief and assets are here |
 | `knowledge-base/` | **What we know.** Mark's facts, our research findings, the SEO specialist's inputs, the crawl of the current site, saved research answers |
 | `plan/` | **What we propose and how we'd do it.** Strategy, the SEO guide, the design plan and prompts, the tool guide |
+| `proposals/` | **What we send Mark, by date (kept local).** `2026-11-05/` holds only what goes out that day; `not-sent/` holds later questions, Phase 2 prices, sources and drafts. Start with its `README.md` |
 | `design/` | Hasaan's site code, the Claude Design canvas source, design critiques and screenshots |
 | `scripts/` | Python helpers: HTML copies, the NotebookLM file, Olostep research, the site crawl |
 | `_archive/` | Superseded drafts and duplicate files, kept for the record |
@@ -29,7 +30,7 @@ Each Markdown document also has an `.html` copy in the NEXUS style. Open it in a
 | 31 Oct 2026 | the same folder | We have the brief, his prototype copy, the case studies, the Brand Guidelines 2025, the brand assets and the partner logos. `text-copies/` has plain-text versions |
 | 31 Oct 2026 | [2026-10-31-questions-for-mark.txt](emails-and-meetings/2026-10-31-questions-for-mark.txt) | Our six SEO questions for Mark |
 | 31 Oct 2026 | [2026-10-31-03-Client-Pack-What-To-Send.md](emails-and-meetings/2026-10-31-03-Client-Pack-What-To-Send.md) | Message, questions and access list for NEXUS |
-| 5 Nov 2026 | `2026-11-05-proposal/` (kept local) | Our proposal and design options, plus `00-check-against-mark.md` |
+| 5 Nov 2026 | `proposals/2026-11-05/` (kept local) | Our proposal, questions and quote |
 
 The 31 October dates come from file dates. Correct them if the real dates differ.
 
@@ -57,7 +58,7 @@ The 31 October dates come from file dates. Correct them if the real dates differ
 ## Read in this order
 1. [07 Mark's facts](knowledge-base/07-NEXUS-Mark-Facts.md)
 2. [design/README.md](design/README.md), then the live review site
-3. The 5 November proposal and its check (local)
+3. `proposals/README.md`, then the three documents in `proposals/2026-11-05/` (local)
 4. [04 SEO guide](plan/04-NEXUS-SEO-Guide.md)
 5. [02 strategy plan](plan/02-NEXUS-Website-SEO-Strategy-Plan.md)
 6. [01 research findings](knowledge-base/01-NEXUS-Research-Findings.md)
@@ -67,7 +68,7 @@ The numbers in file names (01 to 08) are the IDs the documents use to point at e
 ## Kept local (not on GitHub)
 
 This repository is **public**. These folders are listed in `.gitignore` and stay on this computer:
-- `emails-and-meetings/2026-11-05-proposal/`: our proposal, design options and the check
+- `proposals/`: everything we send Mark, and what's waiting to be sent
 - `reference docs/`: the GIA project's questions, brief, quote, invoices and support summary
 - `responses/`: drafts in progress
 
