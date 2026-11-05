@@ -7,7 +7,7 @@ Usage:
   python olostep.py map <url> <out_name>
   python olostep.py scrape <url> <out_name>
   python olostep.py answer "<question>" <out_name>
-Outputs are saved to research/raw/<out_name>.json (and .md for scrapes).
+Outputs are saved to knowledge-base/research-answers/<out_name>.json (and .md for scrapes).
 """
 import json
 import os
@@ -16,7 +16,7 @@ import urllib.error
 import urllib.request
 
 API = "https://api.olostep.com/v1"
-RAW_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "raw")
+RAW_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "knowledge-base", "research-answers")
 
 
 def get_key():

@@ -1,11 +1,13 @@
 # NEXUS: Decisions for Mark before launch
 
+> **Archived 5 November 2026.** Folded into section 11 (Questions and approvals) and section 9 (materials) of our 5 November proposal. Kept for the record.
+
 | | |
 |---|---|
 | Date | 4 November 2026 |
 | Scope | The questions only Mark can answer before the 12 November launch, each with the default we build meanwhile |
 | Audience | Mark Sarfo-Kantanka (send as an email or message) |
-| Built from | [`07-NEXUS-Mark-Facts.md`](07-NEXUS-Mark-Facts.md) sections 13 to 15 |
+| Built from | [`07-NEXUS-Mark-Facts.md`](../knowledge-base/07-NEXUS-Mark-Facts.md) sections 13 to 15 |
 | Not in scope | Items Mark already settled in the brief; Phase 2 work |
 
 ---

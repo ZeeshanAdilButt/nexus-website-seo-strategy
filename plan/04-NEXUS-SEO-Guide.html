@@ -18,13 +18,13 @@ hr{border:0;border-top:1px solid #D1D1D1;margin:40px 0}
 @media print{h2{break-before:page}table,pre{break-inside:avoid}}
 </style></head><body><main><h1 id="the-nexus-seo-guide">The NEXUS SEO Guide</h1>
 <blockquote>
-<p><strong>Mark's documents win.</strong> Where this document differs from Mark's brief or prototype copy, follow <a href="07-NEXUS-Mark-Facts.md"><code>07-NEXUS-Mark-Facts.md</code></a>. Its section 15 lists our proposals that still need Mark's decision.</p>
+<p><strong>Mark's documents win.</strong> Where this document differs from Mark's brief or prototype copy, follow <a href="../knowledge-base/07-NEXUS-Mark-Facts.md"><code>07-NEXUS-Mark-Facts.md</code></a>. Its section 15 lists our proposals that still need Mark's decision.</p>
 </blockquote>
 <p><strong>Understand the business first, then the strategy, then the tools.</strong>
 Version 1 · 31 October 2026 · For the NEXUS website rebuild (launch target 12 Nov 2026)</p>
 <blockquote>
 <p>How to read this guide: Parts 1–2 explain the business and where the site stands. Part 3 explains SEO and AI search <em>using NEXUS examples</em>. Part 4 is the strategy. Part 5 explains every SEO tool in plain English and what to do with it for NEXUS. Parts 6–9 are playbooks, keyword lists, schema code and a glossary. Part 10 covers NEXUS's other tools (Ticket Tailor, Intercom "Ask Fin", Mailchimp, Ghost, Typeform, Zoho, Nexudus, email/DNS) and what to fix or decide.
-Companion files: <code>01</code> fact base, <code>02</code> strategy plan, <code>03</code> client pack. Evidence: <code>research/raw/</code>, <code>research/live-site/</code>.</p>
+Companion files: <code>01</code> fact base, <code>02</code> strategy plan, <code>03</code> client pack. Evidence: <code>knowledge-base/research-answers/</code>, <code>knowledge-base/current-site/</code>.</p>
 </blockquote>
 <hr />
 <h2 id="part-1-understand-the-business-read-this-before-touching-any-tool">PART 1: Understand the business (read this before touching any tool)</h2>
@@ -162,7 +162,7 @@ Companion files: <code>01</code> fact base, <code>02</code> strategy plan, <code
 </table>
 <hr />
 <h2 id="part-2-where-the-website-stands-today-audit-31-oct-2026">PART 2: Where the website stands today (audit, 31 Oct 2026)</h2>
-<p>Data from our own crawl of the live site (<code>research/live-site/page-inventory.csv</code>, 175 URLs checked) plus Ahrefs figures supplied by the client.</p>
+<p>Data from our own crawl of the live site (<code>knowledge-base/current-site/page-inventory.csv</code>, 175 URLs checked) plus Ahrefs figures supplied by the client.</p>
 <h3 id="21-technical-audit-what-we-measured">2.1 Technical audit: what we measured</h3>
 <table>
 <thead>
@@ -365,7 +365,7 @@ Companion files: <code>01</code> fact base, <code>02</code> strategy plan, <code
 </ol>
 <p><strong>For NEXUS, B2B + international + money decisions = Google treats it as high-stakes.</strong> Trust signals (real address, company number, named team, case studies with consent, partner logos with permission) are ranking factors, not decoration.</p>
 <h3 id="33-how-ai-assistants-decide-what-the-evidence-says-oct-2026">3.3 How AI assistants decide (what the evidence says, Oct 2026)</h3>
-<p>From our Olostep research (<code>raw/answer_geo_evidence.json</code>):
+<p>From our Olostep research (<code>knowledge-base/research-answers/answer_geo_evidence.json</code>):
 - <strong>Third-party mentions</strong> are repeatedly reported as the main signal for ChatGPT recommendations. AI trusts what <em>others</em> say about NEXUS (CBBC, City of London, GIA coverage, partner sites, press).
 - <strong>Copilot uses Bing's index</strong>: if Bing hasn't indexed a page, Copilot can't cite it. ChatGPT search also leans on Bing. <strong>So Bing Webmaster Tools matters a lot for NEXUS.</strong>
 - <strong>Structured data and clear, extractable text</strong> are recommended (no proof they work alone, but they remove ambiguity, which is NEXUS's biggest AI problem).
@@ -669,7 +669,7 @@ Companion files: <code>01</code> fact base, <code>02</code> strategy plan, <code
 <strong>Key concepts:</strong> <strong>status codes</strong> (200 OK; 301 permanent redirect, which passes authority; 302 temporary, <em>don't use</em>; 404 not found; 5xx server error); <strong>redirect chain</strong> (A→B→C, slow and leaky; must be A→C); <strong>canonical</strong> (the page's "official" URL); <strong>indexability</strong>.
 <strong>Do for NEXUS:</strong>
 1. <strong>Crawl staging</strong> (password-protected: Configuration → Authentication) → fix: missing/duplicate titles, ≠1 H1, missing meta, missing canonical, 404 links, images without alt.
-2. <strong>List mode → upload all 175 old URLs</strong> (from <code>live-site/page-inventory.csv</code> + Ahrefs) → after launch, every row must be <strong>one 301 → a 200 page</strong>. No chains, no 404s.
+2. <strong>List mode → upload all 175 old URLs</strong> (from <code>knowledge-base/current-site/page-inventory.csv</code> + Ahrefs) → after launch, every row must be <strong>one 301 → a 200 page</strong>. No chains, no 404s.
 3. Save the exports as <strong>acceptance evidence</strong> (brief §13).
 <strong>Tip:</strong> this is the tool that found "all 164 pages titled Nexus". Run it on the new site before sign-off.</p>
 <h3 id="56-pagespeed-insights-lighthouse-china-speed-test-is-it-fast-and-accessible">5.6 PageSpeed Insights / Lighthouse (+ China speed test): <em>"Is it fast and accessible?"</em></h3>
@@ -705,10 +705,10 @@ Companion files: <code>01</code> fact base, <code>02</code> strategy plan, <code
 <h3 id="512-looker-studio-one-monthly-report">5.12 Looker Studio: <em>"One monthly report"</em></h3>
 <p>Free dashboard joining GA4 + GSC. <strong>NEXUS monthly page:</strong> (1) primary conversions by type and audience, (2) conversion rate per audience page, (3) non-brand clicks and impressions by page, (4) top landing pages and channels incl. "AI assistants", (5) a manual box: AI visibility score + 404 count.</p>
 <h3 id="513-olostep-already-set-up-key-in-env-var-research-and-ai-visibility-monitoring-at-scale">5.13 Olostep (already set up, key in env var): <em>"Research and AI-visibility monitoring at scale"</em></h3>
-<p><strong>What it is:</strong> an API that scrapes, maps and crawls sites and returns cited AI answers from live web data. Our helper: <code>research/olostep.py</code> (<code>map</code>, <code>scrape</code>, <code>answer</code>).
+<p><strong>What it is:</strong> an API that scrapes, maps and crawls sites and returns cited AI answers from live web data. Our helper: <code>scripts/olostep.py</code> (<code>map</code>, <code>scrape</code>, <code>answer</code>).
 <strong>What we used it for:</strong> mapping all 173 live URLs, the competitor scan, the AI "what is NEXUS?" baseline, market context and China search behaviour.
 <strong>Ongoing use for NEXUS:</strong>
-- <strong>Monthly AI visibility check:</strong> run the 10 fixed prompts (Playbook 6.4) through <code>answer</code> and save them to <code>raw/</code>. Did NEXUS appear? Was it described correctly?
+- <strong>Monthly AI visibility check:</strong> run the 10 fixed prompts (Playbook 6.4) through <code>answer</code> and save them to <code>knowledge-base/research-answers/</code>. Did NEXUS appear? Was it described correctly?
 - <strong>Competitor watch:</strong> <code>map</code> competitor sites quarterly to spot new pages (e.g. a new "China landing programme" page at CBBC).
 - <strong>Post-launch QA:</strong> <code>map</code> the new site and diff it against the sitemap to find orphan pages.
 <strong>Limit:</strong> Olostep's "answers" reflect web evidence at that moment. It approximates AI assistants but is not identical to ChatGPT. Also test manually in ChatGPT, Perplexity, Copilot and Gemini.</p>
@@ -757,7 +757,7 @@ Companion files: <code>01</code> fact base, <code>02</code> strategy plan, <code
 <hr />
 <h2 id="part-6-playbooks-step-by-step">PART 6: Playbooks (step by step)</h2>
 <h3 id="61-redirect-map-the-most-important-migration-task">6.1 Redirect map (the most important migration task)</h3>
-<p><strong>Inputs:</strong> <code>live-site/page-inventory.csv</code> (175 URLs) + Ahrefs "Best by links" export + the brief's minimum redirects.
+<p><strong>Inputs:</strong> <code>knowledge-base/current-site/page-inventory.csv</code> (175 URLs) + Ahrefs "Best by links" export + the brief's minimum redirects.
 <strong>Rules:</strong> one 301 per old URL → its <em>closest</em> new page (not everything to Home); no chains; keep query-string variants (<code>/booking?location=…</code>) covered.</p>
 <table>
 <thead>
@@ -1324,8 +1324,8 @@ Companion files: <code>01</code> fact base, <code>02</code> strategy plan, <code
 <hr />
 <h3 id="evidence-index">Evidence index</h3>
 <ul>
-<li>Live-site crawl: <code>research/live-site/page-inventory.csv</code>, <code>image-status.json</code>, <code>external-links.json</code>, <code>robots.txt</code></li>
-<li>Olostep: <code>research/raw/map_nexuscreativehq.json</code>, <code>answer_brand_aeo_nexus.json</code>, <code>answer_competitors_*.json</code>, <code>answer_keywords_intent.json</code>, <code>answer_aeo_category.json</code>, <code>answer_market_context.json</code>, <code>answer_nexus_press.json</code>, <code>answer_geo_evidence.json</code>, <code>answer_china_search_behaviour.json</code></li>
+<li>Live-site crawl: <code>knowledge-base/current-site/page-inventory.csv</code>, <code>image-status.json</code>, <code>external-links.json</code>, <code>robots.txt</code></li>
+<li>Olostep: <code>knowledge-base/research-answers/map_nexuscreativehq.json</code>, <code>answer_brand_aeo_nexus.json</code>, <code>answer_competitors_*.json</code>, <code>answer_keywords_intent.json</code>, <code>answer_aeo_category.json</code>, <code>answer_market_context.json</code>, <code>answer_nexus_press.json</code>, <code>answer_geo_evidence.json</code>, <code>answer_china_search_behaviour.json</code></li>
 <li>Client docs: Developer Brief, Tool Guide, Brand Guidelines 2025, Member Case Studies, prototype, <code>seo finding.txt</code>, <code>undersatding of seo resource.docx</code></li>
 <li>Public: Companies House (12667243), ukesapp.co.uk, globalinnovatorawards.com, nexusstartupdiaries.com</li>
 </ul></main></body></html>

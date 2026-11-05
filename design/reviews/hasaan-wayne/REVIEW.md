@@ -4,7 +4,7 @@
 |---|---|
 | Date | 4 November 2026 |
 | Scope | Draft one (`Hasaanwayne/nexus-website-draft-one` at `2deb844`) and the colour redesign (`Hasaanwayne/nexus-website-draft` at `ee092d2`): Home, International companies, Institutions, Asia corridor |
-| Measured against | [`research/07-NEXUS-Mark-Facts.md`](../../07-NEXUS-Mark-Facts.md) and Mark's source files in `research/local-docs/` |
+| Measured against | [`knowledge-base/07-NEXUS-Mark-Facts.md`](../../../knowledge-base/07-NEXUS-Mark-Facts.md) and Mark's source files in `emails-and-meetings/2026-10-31-mark-brief-and-assets/` |
 | Method | Read the HTML, CSS and JS from shallow clones, plus the screenshots in this folder. No code was run. Contrast was spot-checked by hex value only (no axe or Lighthouse run). The lower parts of pages were read in the code, not seen in screenshots |
 | Not in scope | Hosting, performance, the live sites' behaviour |
 

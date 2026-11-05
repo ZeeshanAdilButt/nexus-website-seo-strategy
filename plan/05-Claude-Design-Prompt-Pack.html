@@ -18,12 +18,12 @@ hr{border:0;border-top:1px solid #D1D1D1;margin:40px 0}
 @media print{h2{break-before:page}table,pre{break-inside:avoid}}
 </style></head><body><main><h1 id="nexus-claude-design-prompt-pack">NEXUS: Claude Design prompt pack</h1>
 <blockquote>
-<p><strong>Mark's documents win.</strong> Where this document differs from Mark's brief or prototype copy, follow <a href="07-NEXUS-Mark-Facts.md"><code>07-NEXUS-Mark-Facts.md</code></a>. Its section 15 lists our proposals that still need Mark's decision.</p>
+<p><strong>Mark's documents win.</strong> Where this document differs from Mark's brief or prototype copy, follow <a href="../knowledge-base/07-NEXUS-Mark-Facts.md"><code>07-NEXUS-Mark-Facts.md</code></a>. Its section 15 lists our proposals that still need Mark's decision.</p>
 </blockquote>
-<p><strong>Why a prompt pack:</strong> Cline (this agent) can't operate Claude Design directly. You run these prompts in Claude Design (claude.ai, the Design tab, or <code>/design</code> inside Claude Code), export the results into <code>research\design-exports\</code>, and Cline then checks them against the SEO plan.</p>
+<p><strong>Why a prompt pack:</strong> Cline (this agent) can't operate Claude Design directly. You run these prompts in Claude Design (claude.ai, the Design tab, or <code>/design</code> inside Claude Code), export the results into <code>design/exports/</code>, and Cline then checks them against the SEO plan.</p>
 <p><strong>Exports available:</strong> PDF, PPTX, standalone HTML / HTML bundle, Google Slides, partner tools (e.g. Canva, Vercel), and <strong>Handoff to Claude Code</strong> for the build.</p>
 <blockquote>
-<p><strong>Likely origin of the existing drafts:</strong> <code>seo lady draft.html</code> (with <code>&lt;x-dc&gt;</code>, <code>DCLogic</code>, <code>support.js</code>) and "NEXUS Website Redesign Prototype-2" (a "Loading… Unpacking…" shell) look like Claude Design exports. If you have the original project, <strong>re-export it as PDF or standalone HTML</strong>. That's the easiest way for us to finally read Prototype-2.</p>
+<p><strong>Likely origin of the existing drafts:</strong> <code>knowledge-base/seo-specialist/seo lady draft.html</code> (with <code>&lt;x-dc&gt;</code>, <code>DCLogic</code>, <code>support.js</code>) and "NEXUS Website Redesign Prototype-2" (a "Loading… Unpacking…" shell) look like Claude Design exports. If you have the original project, <strong>re-export it as PDF or standalone HTML</strong>. That's the easiest way for us to finally read Prototype-2.</p>
 </blockquote>
 <hr />
 <h2 id="step-1-design-system-do-this-once">Step 1: Design system (do this once)</h2>
@@ -54,7 +54,7 @@ hr{border:0;border-top:1px solid #D1D1D1;margin:40px 0}
 </tr>
 <tr>
 <td>Copy source</td>
-<td><code>research\local-docs\prototype\*.txt</code> + the Developer Brief</td>
+<td><code>emails-and-meetings/2026-10-31-mark-brief-and-assets/text-copies/prototype/*.txt</code> + the Developer Brief</td>
 </tr>
 </tbody>
 </table>
@@ -146,7 +146,7 @@ hr{border:0;border-top:1px solid #D1D1D1;margin:40px 0}
 <hr />
 <h2 id="step-3-bring-it-back-and-check">Step 3: Bring it back and check</h2>
 <ol>
-<li>Export pages as <strong>standalone HTML</strong>, and the deck and one-pager as <strong>PPTX/PDF</strong>. Save them in <code>research\design-exports\</code>.</li>
+<li>Export pages as <strong>standalone HTML</strong>, and the deck and one-pager as <strong>PPTX/PDF</strong>. Save them in <code>design/exports/</code>.</li>
 <li>Ask Cline to check the exports:
    - one H1 per page
    - copy is real text, not images

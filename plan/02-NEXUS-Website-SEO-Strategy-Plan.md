@@ -1,6 +1,6 @@
 # NEXUS Website, SEO and AEO Strategy Plan
 
-> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
+> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](../knowledge-base/07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
 
 Draft v1, 31 Oct 2026. Builds on the Developer Brief (approved sitemap) and `01-NEXUS-Research-Findings.md`. Items marked **[Decision]** need client sign-off.
 

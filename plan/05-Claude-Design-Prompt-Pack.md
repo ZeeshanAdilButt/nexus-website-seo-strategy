@@ -1,12 +1,12 @@
 # NEXUS: Claude Design prompt pack
 
-> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
+> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](../knowledge-base/07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
 
-**Why a prompt pack:** Cline (this agent) can't operate Claude Design directly. You run these prompts in Claude Design (claude.ai, the Design tab, or `/design` inside Claude Code), export the results into `research\design-exports\`, and Cline then checks them against the SEO plan.
+**Why a prompt pack:** Cline (this agent) can't operate Claude Design directly. You run these prompts in Claude Design (claude.ai, the Design tab, or `/design` inside Claude Code), export the results into `design/exports/`, and Cline then checks them against the SEO plan.
 
 **Exports available:** PDF, PPTX, standalone HTML / HTML bundle, Google Slides, partner tools (e.g. Canva, Vercel), and **Handoff to Claude Code** for the build.
 
-> **Likely origin of the existing drafts:** `seo lady draft.html` (with `<x-dc>`, `DCLogic`, `support.js`) and "NEXUS Website Redesign Prototype-2" (a "Loading… Unpacking…" shell) look like Claude Design exports. If you have the original project, **re-export it as PDF or standalone HTML**. That's the easiest way for us to finally read Prototype-2.
+> **Likely origin of the existing drafts:** `knowledge-base/seo-specialist/seo lady draft.html` (with `<x-dc>`, `DCLogic`, `support.js`) and "NEXUS Website Redesign Prototype-2" (a "Loading… Unpacking…" shell) look like Claude Design exports. If you have the original project, **re-export it as PDF or standalone HTML**. That's the easiest way for us to finally read Prototype-2.
 
 ---
 
@@ -20,7 +20,7 @@ Upload, or create in Settings → Design Systems:
 | Logos | `NEXUS Brand Assets\PNG\` (white-on-black, metallic-on-white) |
 | Brand graphics | `NEXUS Brand Assets\NEXUS Brand Graphics\` (X shapes) |
 | Fonts | Neutral Face Bold, General Sans (licensed files from NEXUS) |
-| Copy source | `research\local-docs\prototype\*.txt` + the Developer Brief |
+| Copy source | `emails-and-meetings/2026-10-31-mark-brief-and-assets/text-copies/prototype/*.txt` + the Developer Brief |
 
 **Prompt:**
 > Create a design system for NEXUS from the uploaded brand guidelines.
@@ -111,7 +111,7 @@ Upload, or create in Settings → Design Systems:
 ---
 
 ## Step 3: Bring it back and check
-1. Export pages as **standalone HTML**, and the deck and one-pager as **PPTX/PDF**. Save them in `research\design-exports\`.
+1. Export pages as **standalone HTML**, and the deck and one-pager as **PPTX/PDF**. Save them in `design/exports/`.
 2. Ask Cline to check the exports:
    - one H1 per page
    - copy is real text, not images

@@ -1,6 +1,6 @@
 # NEXUS: Landing page design plan (Claude Design)
 
-> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
+> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](../knowledge-base/07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
 
 | | |
 |---|---|
@@ -25,7 +25,7 @@ The homepage tells Google, AI engines and visitors one thing in five seconds: NE
 4. Design `/international-companies` (prompt pack `05`, prompt B, plus the changes in §3.4).
 5. Export as standalone HTML, run the checklist in §6, then **Handoff to Claude Code** for the real build.
 
-**Your call (needs the client):** if NEXUS answers question 3 in `questions.txt` with "institutions bring the most revenue", swap step 4 to `/institutions`. Same template, different copy.
+**Your call (needs the client):** if NEXUS answers question 3 in `emails-and-meetings/2026-10-31-questions-for-mark.txt` with "institutions bring the most revenue", swap step 4 to `/institutions`. Same template, different copy.
 
 ---
 
@@ -125,7 +125,7 @@ Search "UK market entry from China" -> hero + answer paragraph -> 3 offers
 
 | # | Consideration | Risk if ignored | What to do |
 |---|---|---|---|
-| 1 | **Claude Design output is a design, not the site.** Exports can use web components, scripts and Google Fonts (`seo lady draft.html` shows `<x-dc>` and `support.js`). | Content invisible to crawlers; broken in mainland China | Use exports as the visual spec. Build real HTML via Handoff to Claude Code. |
+| 1 | **Claude Design output is a design, not the site.** Exports can use web components, scripts and Google Fonts (`knowledge-base/seo-specialist/seo lady draft.html` shows `<x-dc>` and `support.js`). | Content invisible to crawlers; broken in mainland China | Use exports as the visual spec. Build real HTML via Handoff to Claude Code. |
 | 2 | **Mainland China access** | Fonts, maps, YouTube or reCAPTCHA fail; the target audience sees a broken page | Self-host fonts; no Google services; test under 5 s from China |
 | 3 | **Unapproved claims and logos** | Legal and reputational risk | Every partner name, logo, stat and case study stays a placeholder until written consent |
 | 4 | **Entity confusion** ("Nexus" is a crowded name) | AI engines mix NEXUS with other companies | "NEXUS Creative HQ" in first mentions, footer and schema; one email domain |

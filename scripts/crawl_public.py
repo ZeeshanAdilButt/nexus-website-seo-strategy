@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin,urlsplit,urldefrag
 from concurrent.futures import ThreadPoolExecutor
 def markdownify(html): return BeautifulSoup(html,'html.parser').get_text('\n',strip=True)
-root=Path(r'D:\Projects\Nexus\research\live-site'); (root/'pages').mkdir(exist_ok=True)
+root=Path(__file__).resolve().parent.parent/'knowledge-base'/'current-site'; (root/'pages').mkdir(exist_ok=True)
 base='https://nexuscreativehq.com';seen=set();queue=[base+'/'];rows=[];assets=set();external=set()
 queue += [base+p for p in ['/become-partner','/booking','/booking?location=Accra','/booking?location=London','/booking?location=Shanghai','/esg','/investment','/memberships','/scale-up-journey','/visa-routes','/sitemap_index.xml']]
 def fetch(u):

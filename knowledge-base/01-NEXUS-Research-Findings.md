@@ -1,6 +1,6 @@
 # NEXUS: Research Findings (fact base)
 
-Compiled 31 October 2026. Sources: root project files (Developer Brief, SEO understanding doc, Tool Guide, Brand Guidelines 2025, prototype `seo lady draft.html`, `seo finding.txt`, `questions.txt`), live site crawl (Olostep map + page fetches), Companies House, UKES, globalinnovatorawards.com, nexusstartupdiaries.com, Olostep Answers. Raw Olostep outputs: `research/raw/`.
+Compiled 31 October 2026. Sources: Mark's files in `emails-and-meetings/2026-10-31-mark-brief-and-assets/` (Developer Brief, Brand Guidelines 2025), the SEO specialist's files in `knowledge-base/seo-specialist/` (SEO understanding doc, prototype `seo lady draft.html`, `seo finding.txt`), `plan/NEXUS Website Tool Guide.pdf` and `emails-and-meetings/2026-10-31-questions-for-mark.txt`, live site crawl (Olostep map + page fetches), Companies House, UKES, globalinnovatorawards.com, nexusstartupdiaries.com, Olostep Answers. Raw Olostep outputs: `research/raw/`.
 
 Status key: **Verified** (primary source) · **Client-stated** (client docs, not independently checked) · **Conflict** (sources disagree) · **Gap** (no evidence found).
 
@@ -63,8 +63,8 @@ Prices: none confirmed ("On application").
 | Domain Rating / referring domains | DR 34 / 884 | Client SEO doc (Ahrefs) |
 | Organic keywords / traffic | **2 / 2 users** (brand terms only) | Same |
 | Social | LinkedIn 1,308 · Instagram 2,466 · X 227 · Facebook 171 | Same |
-| URLs on live site | **173**: 101 `/insight/{id}`, 30 `/podcast/{id}`, 15 `/event/{id}`, 7 `/video/{id}`, 4 `/booking*`, core pages | Olostep map (`raw/map_nexuscreativehq.json`) |
-| Broken | 11 pages + 77 images return 404 (`seo finding.txt`); our own check found 59 image 404s plus 313 not checkable, so the counts differ by method. Use the Ahrefs/Screaming Frog crawl as the final list | `seo finding.txt`, `live-site/image-status.json` |
+| URLs on live site | **173**: 101 `/insight/{id}`, 30 `/podcast/{id}`, 15 `/event/{id}`, 7 `/video/{id}`, 4 `/booking*`, core pages | Olostep map (`research-answers/map_nexuscreativehq.json`) |
+| Broken | 11 pages + 77 images return 404 (`seo finding.txt`); our own check found 59 image 404s plus 313 not checkable, so the counts differ by method. Use the Ahrefs/Screaming Frog crawl as the final list | `seo finding.txt`, `current-site/image-status.json` |
 | Third-party pages | Legal/login on Nexudus subdomain; forms on Zoho (being dropped) | `seo finding.txt` |
 | Blog | nexusstartupdiaries.com (Ghost), active Sep–Oct 2026, on-strategy topics (UK founders, Manchester–China) | Live fetch |
 | Host redirects | `http://` and `www.` already 301 to `https://nexuscreativehq.com/` | Verified (curl, 31 Oct) |
@@ -120,7 +120,7 @@ These support timely insight content ("Entering the UK from China 2027", "UK–C
 
 ## 8. The wider digital ecosystem (other tools to figure out or fix)
 
-Found 31 Oct 2026 by inspecting the live NEXUS site, globalinnovatorawards.com (our build), nexusstartupdiaries.com, `live-site/external-links.json` and public DNS. **Verified** = seen in code, links or DNS. **To confirm** = ask the client.
+Found 31 Oct 2026 by inspecting the live NEXUS site, globalinnovatorawards.com (our build), nexusstartupdiaries.com, `current-site/external-links.json` and public DNS. **Verified** = seen in code, links or DNS. **To confirm** = ask the client.
 
 ### 8a. Events, tickets, chat and email capture
 

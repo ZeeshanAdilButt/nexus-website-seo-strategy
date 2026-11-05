@@ -5,7 +5,7 @@
 | Date | 4 November 2026 |
 | Scope | Everything Mark has stated in writing about the new site: decisions, page specs, copy, proof, brand, forms, search, technical and launch rules |
 | Audience | Everyone designing, writing or building the NEXUS site (Zeeshan, Hasaan, any developer) |
-| Sources | `research/local-docs/`: Developer Brief (`NEXUS Website Brief Developer - clean.txt`), prototype copy (`prototype/*.txt`), `NEXUS Member Case Studies.txt`, `NEXUS Brand Guidelines 2025.txt` |
+| Sources | `emails-and-meetings/2026-10-31-mark-brief-and-assets/`: the Developer Brief (`NEXUS Website Brief Developer.docx`, text copy in `text-copies/`), prototype copy (`text-copies/prototype/*.txt`), `text-copies/NEXUS Member Case Studies.txt`, `text-copies/NEXUS Brand Guidelines 2025.txt` |
 | Not in scope | Our own SEO proposals (see section 15 for where they differ), tool choices, the build platform |
 
 ---
@@ -400,7 +400,7 @@ These are proposals. Mark's version is the default until Mark decides otherwise.
 | International companies H1 "Reach UK customers sooner." | `04`, `05`, `06` | "Enter the UK with a team already on the ground." ("Reach UK customers sooner" is the Home audience card title) | Corrected in those documents |
 | "GB Entrepreneur Awards 2025 finalist" for GI Healthcare | `01` | "Founders named Scotland finalists, Great British Entrepreneur Awards 2025" | Corrected in `01` |
 | Archivo and DM Sans | Claude Design canvas (v3.1) | Neutral Face Bold and General Sans, self-hosted | Stand-ins for the design only |
-| Home H1 "UK–China market entry.", a fourth audience, case study and partner names hidden, details from outside Mark's documents | Hasaan's two drafts | Sections 4, 6 and 7 above | See [`design-reviews/hasaan-wayne/REVIEW.md`](design-reviews/hasaan-wayne/REVIEW.md) |
+| Home H1 "UK–China market entry.", a fourth audience, case study and partner names hidden, details from outside Mark's documents | Hasaan's two drafts | Sections 4, 6 and 7 above | See [`design/reviews/hasaan-wayne/REVIEW.md`](../design/reviews/hasaan-wayne/REVIEW.md) |
 | Porcelain ground, paintings, scroll and count-up motion | Hasaan's colour redesign | Plain black, white or Studio Grey; real NEXUS photography; motion on hover and focus only | Breaks written rules; keep it as an exploration |
 
 ## Checklist for any page before it goes to Mark
@@ -417,4 +417,4 @@ These are proposals. Mark's version is the default until Mark decides otherwise.
 
 ## Closing
 
-Mark has already settled most of the questions a designer or developer would otherwise guess at. The open items are in section 13, and the conflicts to raise with Mark are in section 14. Our SEO proposals in section 15 go to Mark as one short decision list, not as changes already built in: [`08-NEXUS-Decisions-For-Mark.md`](08-NEXUS-Decisions-For-Mark.md).
+Mark has already settled most of the questions a designer or developer would otherwise guess at. The open items are in section 13, and the conflicts to raise with Mark are in section 14. Our SEO proposals in section 15 go to Mark as one short decision list, not as changes already built in: the decision list, now folded into section 11 of our 5 November proposal (draft kept in [`_archive/08-NEXUS-Decisions-For-Mark.md`](../_archive/08-NEXUS-Decisions-For-Mark.md)).

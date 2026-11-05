@@ -1,6 +1,6 @@
 # NEXUS: Complete Website, SEO and Tools Knowledge Base
 
-Compiled 04 November 2026 for NotebookLM. This single file contains five documents about NEXUS Creative HQ Ltd
+Compiled 05 November 2026 for NotebookLM. This single file contains five documents about NEXUS Creative HQ Ltd
 (company no. 12667243), a London company that helps technology businesses land, grow and scale in the UK, with China
 as its flagship corridor. It covers: what the business does and sells, its audiences, the current website audit,
 how AI assistants describe NEXUS today, the SEO/AEO/GEO strategy, each SEO tool explained, NEXUS's other tools
@@ -22,7 +22,7 @@ Contents:
 
 # DOCUMENT 1: Mark's facts: the client's decisions and rules (source of truth)
 
-_Source file: 07-NEXUS-Mark-Facts.md_
+_Source file: knowledge-base/07-NEXUS-Mark-Facts.md_
 
 # NEXUS: Mark's facts (the source of truth)
 
@@ -31,7 +31,7 @@ _Source file: 07-NEXUS-Mark-Facts.md_
 | Date | 4 November 2026 |
 | Scope | Everything Mark has stated in writing about the new site: decisions, page specs, copy, proof, brand, forms, search, technical and launch rules |
 | Audience | Everyone designing, writing or building the NEXUS site (Zeeshan, Hasaan, any developer) |
-| Sources | `research/local-docs/`: Developer Brief (`NEXUS Website Brief Developer - clean.txt`), prototype copy (`prototype/*.txt`), `NEXUS Member Case Studies.txt`, `NEXUS Brand Guidelines 2025.txt` |
+| Sources | `emails-and-meetings/2026-10-31-mark-brief-and-assets/`: the Developer Brief (`NEXUS Website Brief Developer.docx`, text copy in `text-copies/`), prototype copy (`text-copies/prototype/*.txt`), `text-copies/NEXUS Member Case Studies.txt`, `text-copies/NEXUS Brand Guidelines 2025.txt` |
 | Not in scope | Our own SEO proposals (see section 15 for where they differ), tool choices, the build platform |
 
 ---
@@ -426,7 +426,7 @@ These are proposals. Mark's version is the default until Mark decides otherwise.
 | International companies H1 "Reach UK customers sooner." | `04`, `05`, `06` | "Enter the UK with a team already on the ground." ("Reach UK customers sooner" is the Home audience card title) | Corrected in those documents |
 | "GB Entrepreneur Awards 2025 finalist" for GI Healthcare | `01` | "Founders named Scotland finalists, Great British Entrepreneur Awards 2025" | Corrected in `01` |
 | Archivo and DM Sans | Claude Design canvas (v3.1) | Neutral Face Bold and General Sans, self-hosted | Stand-ins for the design only |
-| Home H1 "UK–China market entry.", a fourth audience, case study and partner names hidden, details from outside Mark's documents | Hasaan's two drafts | Sections 4, 6 and 7 above | See [`design-reviews/hasaan-wayne/REVIEW.md`](design-reviews/hasaan-wayne/REVIEW.md) |
+| Home H1 "UK–China market entry.", a fourth audience, case study and partner names hidden, details from outside Mark's documents | Hasaan's two drafts | Sections 4, 6 and 7 above | See [`design/reviews/hasaan-wayne/REVIEW.md`](../design/reviews/hasaan-wayne/REVIEW.md) |
 | Porcelain ground, paintings, scroll and count-up motion | Hasaan's colour redesign | Plain black, white or Studio Grey; real NEXUS photography; motion on hover and focus only | Breaks written rules; keep it as an exploration |
 
 ## Checklist for any page before it goes to Mark
@@ -443,24 +443,24 @@ These are proposals. Mark's version is the default until Mark decides otherwise.
 
 ## Closing
 
-Mark has already settled most of the questions a designer or developer would otherwise guess at. The open items are in section 13, and the conflicts to raise with Mark are in section 14. Our SEO proposals in section 15 go to Mark as one short decision list, not as changes already built in: [`08-NEXUS-Decisions-For-Mark.md`](08-NEXUS-Decisions-For-Mark.md).
+Mark has already settled most of the questions a designer or developer would otherwise guess at. The open items are in section 13, and the conflicts to raise with Mark are in section 14. Our SEO proposals in section 15 go to Mark as one short decision list, not as changes already built in: the decision list, now folded into section 11 of our 5 November proposal (draft kept in [`_archive/08-NEXUS-Decisions-For-Mark.md`](../_archive/08-NEXUS-Decisions-For-Mark.md)).
 
 
 ---
 
 # DOCUMENT 2: The NEXUS SEO Guide (business, audit, strategy, tools, other systems)
 
-_Source file: 04-NEXUS-SEO-Guide.md_
+_Source file: plan/04-NEXUS-SEO-Guide.md_
 
 # The NEXUS SEO Guide
 
-> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
+> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](../knowledge-base/07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
 
 **Understand the business first, then the strategy, then the tools.**
 Version 1 · 31 October 2026 · For the NEXUS website rebuild (launch target 12 Nov 2026)
 
 > How to read this guide: Parts 1–2 explain the business and where the site stands. Part 3 explains SEO and AI search *using NEXUS examples*. Part 4 is the strategy. Part 5 explains every SEO tool in plain English and what to do with it for NEXUS. Parts 6–9 are playbooks, keyword lists, schema code and a glossary. Part 10 covers NEXUS's other tools (Ticket Tailor, Intercom "Ask Fin", Mailchimp, Ghost, Typeform, Zoho, Nexudus, email/DNS) and what to fix or decide.
-> Companion files: `01` fact base, `02` strategy plan, `03` client pack. Evidence: `research/raw/`, `research/live-site/`.
+> Companion files: `01` fact base, `02` strategy plan, `03` client pack. Evidence: `knowledge-base/research-answers/`, `knowledge-base/current-site/`.
 
 ---
 
@@ -540,7 +540,7 @@ Think of NEXUS as a **bridge with a team standing on it**. Trade bodies and gove
 
 ## PART 2: Where the website stands today (audit, 31 Oct 2026)
 
-Data from our own crawl of the live site (`research/live-site/page-inventory.csv`, 175 URLs checked) plus Ahrefs figures supplied by the client.
+Data from our own crawl of the live site (`knowledge-base/current-site/page-inventory.csv`, 175 URLs checked) plus Ahrefs figures supplied by the client.
 
 ### 2.1 Technical audit: what we measured
 
@@ -613,7 +613,7 @@ They share 80% of the same work: clear pages, a clear entity and credible mentio
 
 ### 3.3 How AI assistants decide (what the evidence says, Oct 2026)
 
-From our Olostep research (`raw/answer_geo_evidence.json`):
+From our Olostep research (`knowledge-base/research-answers/answer_geo_evidence.json`):
 - **Third-party mentions** are repeatedly reported as the main signal for ChatGPT recommendations. AI trusts what *others* say about NEXUS (CBBC, City of London, GIA coverage, partner sites, press).
 - **Copilot uses Bing's index**: if Bing hasn't indexed a page, Copilot can't cite it. ChatGPT search also leans on Bing. **So Bing Webmaster Tools matters a lot for NEXUS.**
 - **Structured data and clear, extractable text** are recommended (no proof they work alone, but they remove ambiguity, which is NEXUS's biggest AI problem).
@@ -804,7 +804,7 @@ See the KPIs in `02` §8 and the tool setup in Part 5. Monthly report = conversi
 **Key concepts:** **status codes** (200 OK; 301 permanent redirect, which passes authority; 302 temporary, *don't use*; 404 not found; 5xx server error); **redirect chain** (A→B→C, slow and leaky; must be A→C); **canonical** (the page's "official" URL); **indexability**.
 **Do for NEXUS:**
 1. **Crawl staging** (password-protected: Configuration → Authentication) → fix: missing/duplicate titles, ≠1 H1, missing meta, missing canonical, 404 links, images without alt.
-2. **List mode → upload all 175 old URLs** (from `live-site/page-inventory.csv` + Ahrefs) → after launch, every row must be **one 301 → a 200 page**. No chains, no 404s.
+2. **List mode → upload all 175 old URLs** (from `knowledge-base/current-site/page-inventory.csv` + Ahrefs) → after launch, every row must be **one 301 → a 200 page**. No chains, no 404s.
 3. Save the exports as **acceptance evidence** (brief §13).
 **Tip:** this is the tool that found "all 164 pages titled Nexus". Run it on the new site before sign-off.
 
@@ -848,10 +848,10 @@ See the KPIs in `02` §8 and the tool setup in Part 5. Monthly report = conversi
 Free dashboard joining GA4 + GSC. **NEXUS monthly page:** (1) primary conversions by type and audience, (2) conversion rate per audience page, (3) non-brand clicks and impressions by page, (4) top landing pages and channels incl. "AI assistants", (5) a manual box: AI visibility score + 404 count.
 
 ### 5.13 Olostep (already set up, key in env var): *"Research and AI-visibility monitoring at scale"*
-**What it is:** an API that scrapes, maps and crawls sites and returns cited AI answers from live web data. Our helper: `research/olostep.py` (`map`, `scrape`, `answer`).
+**What it is:** an API that scrapes, maps and crawls sites and returns cited AI answers from live web data. Our helper: `scripts/olostep.py` (`map`, `scrape`, `answer`).
 **What we used it for:** mapping all 173 live URLs, the competitor scan, the AI "what is NEXUS?" baseline, market context and China search behaviour.
 **Ongoing use for NEXUS:**
-- **Monthly AI visibility check:** run the 10 fixed prompts (Playbook 6.4) through `answer` and save them to `raw/`. Did NEXUS appear? Was it described correctly?
+- **Monthly AI visibility check:** run the 10 fixed prompts (Playbook 6.4) through `answer` and save them to `knowledge-base/research-answers/`. Did NEXUS appear? Was it described correctly?
 - **Competitor watch:** `map` competitor sites quarterly to spot new pages (e.g. a new "China landing programme" page at CBBC).
 - **Post-launch QA:** `map` the new site and diff it against the sitemap to find orphan pages.
 **Limit:** Olostep's "answers" reflect web evidence at that moment. It approximates AI assistants but is not identical to ChatGPT. Also test manually in ChatGPT, Perplexity, Copilot and Gemini.
@@ -872,7 +872,7 @@ Free dashboard joining GA4 + GSC. **NEXUS monthly page:** (1) primary conversion
 ## PART 6: Playbooks (step by step)
 
 ### 6.1 Redirect map (the most important migration task)
-**Inputs:** `live-site/page-inventory.csv` (175 URLs) + Ahrefs "Best by links" export + the brief's minimum redirects.
+**Inputs:** `knowledge-base/current-site/page-inventory.csv` (175 URLs) + Ahrefs "Best by links" export + the brief's minimum redirects.
 **Rules:** one 301 per old URL → its *closest* new page (not everything to Home); no chains; keep query-string variants (`/booking?location=…`) covered.
 
 | Old URL pattern | New URL | Note |
@@ -1150,8 +1150,8 @@ SEO doesn't stop at the website. NEXUS's search and AI visibility, its tracking 
 
 ### Evidence index
 
-- Live-site crawl: `research/live-site/page-inventory.csv`, `image-status.json`, `external-links.json`, `robots.txt`
-- Olostep: `research/raw/map_nexuscreativehq.json`, `answer_brand_aeo_nexus.json`, `answer_competitors_*.json`, `answer_keywords_intent.json`, `answer_aeo_category.json`, `answer_market_context.json`, `answer_nexus_press.json`, `answer_geo_evidence.json`, `answer_china_search_behaviour.json`
+- Live-site crawl: `knowledge-base/current-site/page-inventory.csv`, `image-status.json`, `external-links.json`, `robots.txt`
+- Olostep: `knowledge-base/research-answers/map_nexuscreativehq.json`, `answer_brand_aeo_nexus.json`, `answer_competitors_*.json`, `answer_keywords_intent.json`, `answer_aeo_category.json`, `answer_market_context.json`, `answer_nexus_press.json`, `answer_geo_evidence.json`, `answer_china_search_behaviour.json`
 - Client docs: Developer Brief, Tool Guide, Brand Guidelines 2025, Member Case Studies, prototype, `seo finding.txt`, `undersatding of seo resource.docx`
 - Public: Companies House (12667243), ukesapp.co.uk, globalinnovatorawards.com, nexusstartupdiaries.com
 
@@ -1160,11 +1160,11 @@ SEO doesn't stop at the website. NEXUS's search and AI visibility, its tracking 
 
 # DOCUMENT 3: Research findings and fact base
 
-_Source file: 01-NEXUS-Research-Findings.md_
+_Source file: knowledge-base/01-NEXUS-Research-Findings.md_
 
 # NEXUS: Research Findings (fact base)
 
-Compiled 31 October 2026. Sources: root project files (Developer Brief, SEO understanding doc, Tool Guide, Brand Guidelines 2025, prototype `seo lady draft.html`, `seo finding.txt`, `questions.txt`), live site crawl (Olostep map + page fetches), Companies House, UKES, globalinnovatorawards.com, nexusstartupdiaries.com, Olostep Answers. Raw Olostep outputs: `research/raw/`.
+Compiled 31 October 2026. Sources: Mark's files in `emails-and-meetings/2026-10-31-mark-brief-and-assets/` (Developer Brief, Brand Guidelines 2025), the SEO specialist's files in `knowledge-base/seo-specialist/` (SEO understanding doc, prototype `seo lady draft.html`, `seo finding.txt`), `plan/NEXUS Website Tool Guide.pdf` and `emails-and-meetings/2026-10-31-questions-for-mark.txt`, live site crawl (Olostep map + page fetches), Companies House, UKES, globalinnovatorawards.com, nexusstartupdiaries.com, Olostep Answers. Raw Olostep outputs: `research/raw/`.
 
 Status key: **Verified** (primary source) · **Client-stated** (client docs, not independently checked) · **Conflict** (sources disagree) · **Gap** (no evidence found).
 
@@ -1227,8 +1227,8 @@ Prices: none confirmed ("On application").
 | Domain Rating / referring domains | DR 34 / 884 | Client SEO doc (Ahrefs) |
 | Organic keywords / traffic | **2 / 2 users** (brand terms only) | Same |
 | Social | LinkedIn 1,308 · Instagram 2,466 · X 227 · Facebook 171 | Same |
-| URLs on live site | **173**: 101 `/insight/{id}`, 30 `/podcast/{id}`, 15 `/event/{id}`, 7 `/video/{id}`, 4 `/booking*`, core pages | Olostep map (`raw/map_nexuscreativehq.json`) |
-| Broken | 11 pages + 77 images return 404 (`seo finding.txt`); our own check found 59 image 404s plus 313 not checkable, so the counts differ by method. Use the Ahrefs/Screaming Frog crawl as the final list | `seo finding.txt`, `live-site/image-status.json` |
+| URLs on live site | **173**: 101 `/insight/{id}`, 30 `/podcast/{id}`, 15 `/event/{id}`, 7 `/video/{id}`, 4 `/booking*`, core pages | Olostep map (`research-answers/map_nexuscreativehq.json`) |
+| Broken | 11 pages + 77 images return 404 (`seo finding.txt`); our own check found 59 image 404s plus 313 not checkable, so the counts differ by method. Use the Ahrefs/Screaming Frog crawl as the final list | `seo finding.txt`, `current-site/image-status.json` |
 | Third-party pages | Legal/login on Nexudus subdomain; forms on Zoho (being dropped) | `seo finding.txt` |
 | Blog | nexusstartupdiaries.com (Ghost), active Sep–Oct 2026, on-strategy topics (UK founders, Manchester–China) | Live fetch |
 | Host redirects | `http://` and `www.` already 301 to `https://nexuscreativehq.com/` | Verified (curl, 31 Oct) |
@@ -1284,7 +1284,7 @@ These support timely insight content ("Entering the UK from China 2027", "UK–C
 
 ## 8. The wider digital ecosystem (other tools to figure out or fix)
 
-Found 31 Oct 2026 by inspecting the live NEXUS site, globalinnovatorawards.com (our build), nexusstartupdiaries.com, `live-site/external-links.json` and public DNS. **Verified** = seen in code, links or DNS. **To confirm** = ask the client.
+Found 31 Oct 2026 by inspecting the live NEXUS site, globalinnovatorawards.com (our build), nexusstartupdiaries.com, `current-site/external-links.json` and public DNS. **Verified** = seen in code, links or DNS. **To confirm** = ask the client.
 
 ### 8a. Events, tickets, chat and email capture
 
@@ -1324,11 +1324,11 @@ Found 31 Oct 2026 by inspecting the live NEXUS site, globalinnovatorawards.com (
 
 # DOCUMENT 4: Website and SEO strategy plan
 
-_Source file: 02-NEXUS-Website-SEO-Strategy-Plan.md_
+_Source file: plan/02-NEXUS-Website-SEO-Strategy-Plan.md_
 
 # NEXUS Website, SEO and AEO Strategy Plan
 
-> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
+> **Mark's documents win.** Where this document differs from Mark's brief or prototype copy, follow [`07-NEXUS-Mark-Facts.md`](../knowledge-base/07-NEXUS-Mark-Facts.md). Its section 15 lists our proposals that still need Mark's decision.
 
 Draft v1, 31 Oct 2026. Builds on the Developer Brief (approved sitemap) and `01-NEXUS-Research-Findings.md`. Items marked **[Decision]** need client sign-off.
 
@@ -1506,7 +1506,7 @@ Full inventory in `01` §8. Each decision affects SEO, tracking or data:
 
 # DOCUMENT 5: Client pack: message, questions and access list
 
-_Source file: 03-Client-Pack-What-To-Send.md_
+_Source file: emails-and-meetings/2026-10-31-03-Client-Pack-What-To-Send.md_
 
 # What to send the client (NEXUS)
 
