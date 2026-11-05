@@ -85,12 +85,12 @@ Decap has no roles. The proposal promises two roles, so we enforce them in GitHu
 | Who | GitHub permission | What happens |
 |---|---|---|
 | Editor | Write | Can save drafts (branches and pull requests). Publishing is blocked until an admin approves |
-| Admin | Maintain or Admin | Can approve and publish. Allowed to bypass the review rule |
+| Admin | Maintain or Admin | Can approve and publish. Allowed to bypass the review rule. **Zeeshan during the build, plus one NEXUS admin who owns the GitHub organisation and Cloudflare account.** At handover, Zeeshan's access drops to the agreed level (brief §14) |
 
 To set this up:
 - Protect `main` with "require a pull request with one approving review", and let admins bypass it ([protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)).
 - Require two-factor authentication for everyone in the NEXUS GitHub organisation ([how](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization)). This meets the brief's two-factor rule for editors.
-- Put [Cloudflare Access](https://developers.cloudflare.com/cloudflare-one/access-controls/) in front of the enquiries admin (where staff view and export form submissions), with a two-factor code.
+- Put [Cloudflare Access](https://developers.cloudflare.com/cloudflare-one/access-controls/) in front of the enquiries admin (where staff view and export form submissions), with a two-factor code. Only named NEXUS users see enquiries. We use test submissions during the build and don't keep access to live enquiry data after handover.
 
 If the role split doesn't behave in testing, **we tell Mark straight away**. The fallback is admins only, plus a draft review by email. We don't wait until launch week.
 

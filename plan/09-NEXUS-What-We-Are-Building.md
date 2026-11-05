@@ -178,7 +178,7 @@ Field keys are in `07` §9. Named NEXUS users can view, filter and export submis
 
 | Person | Owns |
 |---|---|
-| Zeeshan | Lead, platform, backend and forms, security, launch, the relationship with Mark |
+| Zeeshan | Lead, platform, backend and forms, security, launch, the relationship with Mark. Admin on GitHub, Cloudflare and the editor during the build, alongside one NEXUS admin who owns the accounts. Access drops to the agreed level at handover |
 | Hasaan | Design and front end: components, templates, the review site |
 | Senior SEO specialist | Migration review: keywords, titles, redirects against backlinks, pre-launch audit, indexing check |
 

@@ -110,14 +110,14 @@ Approve + publish  -&gt; Decap merges the pull request -&gt; Cloudflare rebuilds
 <tr>
 <td>Admin</td>
 <td>Maintain or Admin</td>
-<td>Can approve and publish. Allowed to bypass the review rule</td>
+<td>Can approve and publish. Allowed to bypass the review rule. <strong>Zeeshan during the build, plus one NEXUS admin who owns the GitHub organisation and Cloudflare account.</strong> At handover, Zeeshan's access drops to the agreed level (brief §14)</td>
 </tr>
 </tbody>
 </table>
 <p>To set this up:
 - Protect <code>main</code> with "require a pull request with one approving review", and let admins bypass it (<a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches">protected branches</a>).
 - Require two-factor authentication for everyone in the NEXUS GitHub organisation (<a href="https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization">how</a>). This meets the brief's two-factor rule for editors.
-- Put <a href="https://developers.cloudflare.com/cloudflare-one/access-controls/">Cloudflare Access</a> in front of the enquiries admin (where staff view and export form submissions), with a two-factor code.</p>
+- Put <a href="https://developers.cloudflare.com/cloudflare-one/access-controls/">Cloudflare Access</a> in front of the enquiries admin (where staff view and export form submissions), with a two-factor code. Only named NEXUS users see enquiries. We use test submissions during the build and don't keep access to live enquiry data after handover.</p>
 <p>If the role split doesn't behave in testing, <strong>we tell Mark straight away</strong>. The fallback is admins only, plus a draft review by email. We don't wait until launch week.</p>
 <h2 id="build-order-to-hit-12-november">Build order (to hit 12 November)</h2>
 <ol>
