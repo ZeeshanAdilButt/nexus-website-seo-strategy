@@ -4,7 +4,7 @@ Research, planning and design for the rebuild of [nexuscreativehq.com](https://n
 
 **Start here: [00-START-HERE.md](00-START-HERE.md).** It covers where things stand, the timeline, every document and the rules.
 
-**For a new website project,** start from [MASTER-WEBSITE-PROJECT-PROMPT.md](MASTER-WEBSITE-PROJECT-PROMPT.md).
+**For a new website project,** start from [MASTER-WEBSITE-PROJECT-PROMPT.md](MASTER-WEBSITE-PROJECT-PROMPT.md) and the specialist agents in [`agents/`](agents/).
 
 | Folder | What's in it |
 |---|---|
@@ -12,6 +12,7 @@ Research, planning and design for the rebuild of [nexuscreativehq.com](https://n
 | [`knowledge-base/`](knowledge-base/) | What we know. [Mark's facts](knowledge-base/07-NEXUS-Mark-Facts.md) comes first |
 | [`plan/`](plan/) | Strategy, the SEO guide, the design plan and prompts |
 | [`design/`](design/) | Hasaan Wayne's site, the Claude Design canvas, reviews and screenshots ([overview](design/README.md)) |
+| [`agents/`](agents/) | Ten reusable specialist agents for future website projects |
 | [`scripts/`](scripts/) | Python helpers |
 | [`_archive/`](_archive/) | Superseded drafts and duplicates |
 
