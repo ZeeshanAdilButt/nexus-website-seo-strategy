@@ -128,7 +128,7 @@ Field keys are in `07` §9. Named NEXUS users can view, filter and export submis
 - **Placeholders:** anything missing is a visible `[Placeholder: …]` that can be hidden in the editor.
 - **Case studies:** all seven named and quoted once Mark confirms consent. Readii appears on Results only.
 - **Partners:** the Alibaba Entrepreneurs Fund and the Swiss Bluefaer Innovation Centre appear by name only, with no logo. The four partner logos stay marked until each permission arrives.
-- **Insights:** up to 30 existing articles that Mark sends, each on its own page with a redirect. Today the team posts them as LinkedIn-style posts with slides through the old site's admin. New ones are written in the editor using one article template.
+- **Insights:** all the existing articles Mark sends (duplicates removed), each on its own page with a redirect. Today the team posts them as LinkedIn-style posts with slides through the old site's admin. New ones are written in the editor using one article template.
 - **Startup Diaries:** stays on its own Ghost site for now.
 
 ## Design
