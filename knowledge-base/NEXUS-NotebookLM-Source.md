@@ -1,6 +1,6 @@
 # NEXUS: Complete Website, SEO and Tools Knowledge Base
 
-Compiled 05 November 2026 for NotebookLM. This single file contains five documents about NEXUS Creative HQ Ltd
+Compiled 06 November 2026 for NotebookLM. This single file contains five documents about NEXUS Creative HQ Ltd
 (company no. 12667243), a London company that helps technology businesses land, grow and scale in the UK, with China
 as its flagship corridor. It covers: what the business does and sells, its audiences, the current website audit,
 how AI assistants describe NEXUS today, the SEO/AEO/GEO strategy, each SEO tool explained, NEXUS's other tools
@@ -1258,7 +1258,7 @@ _Source file: knowledge-base/01-NEXUS-Research-Findings.md_
 
 # NEXUS: Research Findings (fact base)
 
-Compiled 31 October 2026. Sources: Mark's files in `emails-and-meetings/2026-10-31-mark-brief-and-assets/` (Developer Brief, Brand Guidelines 2025), the SEO specialist's files in `knowledge-base/seo-specialist/` (SEO understanding doc, prototype `seo lady draft.html`, `seo finding.txt`), `plan/NEXUS Website Tool Guide.pdf` and `emails-and-meetings/2026-10-31-questions-for-mark.txt`, live site crawl (Olostep map + page fetches), Companies House, UKES, globalinnovatorawards.com, nexusstartupdiaries.com, Olostep Answers. Raw Olostep outputs: `research/raw/`.
+Compiled 31 October 2026. Sources: Mark's files in `emails-and-meetings/2026-10-31-mark-brief-and-assets/` (Developer Brief, Brand Guidelines 2025), Nazia's files in `knowledge-base/nazia/` (SEO understanding doc, prototype `seo lady draft.html`, `seo finding.txt`), `plan/NEXUS Website Tool Guide.pdf` and `emails-and-meetings/2026-10-31-questions-for-mark.txt`, live site crawl (Olostep map + page fetches), Companies House, UKES, globalinnovatorawards.com, nexusstartupdiaries.com, Olostep Answers. Raw Olostep outputs: `research/raw/`.
 
 Status key: **Verified** (primary source) · **Client-stated** (client docs, not independently checked) · **Conflict** (sources disagree) · **Gap** (no evidence found).
 

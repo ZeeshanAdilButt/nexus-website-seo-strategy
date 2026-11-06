@@ -125,7 +125,7 @@ Search "UK market entry from China" -> hero + answer paragraph -> 3 offers
 
 | # | Consideration | Risk if ignored | What to do |
 |---|---|---|---|
-| 1 | **Claude Design output is a design, not the site.** Exports can use web components, scripts and Google Fonts (`knowledge-base/seo-specialist/seo lady draft.html` shows `<x-dc>` and `support.js`). | Content invisible to crawlers; broken in mainland China | Use exports as the visual spec. Build real HTML via Handoff to Claude Code. |
+| 1 | **Claude Design output is a design, not the site.** Exports can use web components, scripts and Google Fonts (`knowledge-base/nazia/seo lady draft.html` shows `<x-dc>` and `support.js`). | Content invisible to crawlers; broken in mainland China | Use exports as the visual spec. Build real HTML via Handoff to Claude Code. |
 | 2 | **Mainland China access** | Fonts, maps, YouTube or reCAPTCHA fail; the target audience sees a broken page | Self-host fonts; no Google services; test under 5 s from China |
 | 3 | **Unapproved claims and logos** | Legal and reputational risk | Every partner name, logo, stat and case study stays a placeholder until written consent |
 | 4 | **Entity confusion** ("Nexus" is a crowded name) | AI engines mix NEXUS with other companies | "NEXUS Creative HQ" in first mentions, footer and schema; one email domain |

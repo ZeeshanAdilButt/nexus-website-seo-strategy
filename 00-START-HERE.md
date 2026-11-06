@@ -41,7 +41,7 @@ The 31 October dates come from file dates. Correct them if the real dates differ
 | [07-NEXUS-Mark-Facts.md](knowledge-base/07-NEXUS-Mark-Facts.md) | **Read first.** Mark's brief, prototype, case studies and guidelines, fact by fact, covering every section of the brief: decisions, sitemap, page specs, offers, proof, brand, forms, search, technical targets, phases (including what the Phase 0 proposal must contain), components, acceptance tests, handover. It also lists what Mark still has to confirm (§13), conflicts inside his own documents (§14), and where our work goes beyond him (§15) |
 | [01-NEXUS-Research-Findings.md](knowledge-base/01-NEXUS-Research-Findings.md) | Our fact base from public sources and the crawl. Each fact is marked verified, client-stated, conflicting or missing |
 | [NEXUS-NotebookLM-Source.md](knowledge-base/NEXUS-NotebookLM-Source.md) | 07, 04, 01, 02 and 03 in one file, for NotebookLM |
-| `seo-specialist/` | The SEO specialist's audit (`seo finding.txt`), business-understanding doc and homepage draft |
+| `nazia/` | Everything from Nazia Ishaq, our senior SEO specialist: her full site crawl (`nexuscreativehq.com crawl.xlsx`), audit (`seo finding.txt`), business-understanding doc and homepage draft |
 | `current-site/` | Our crawl of the live site: page inventory, image status, external links, robots.txt, sitemap, saved pages |
 | `research-answers/` | Saved Olostep answers (AI visibility, competitors, keywords, market) and the site map |
 

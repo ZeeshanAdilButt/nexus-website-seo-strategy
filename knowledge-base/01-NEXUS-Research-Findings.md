@@ -1,6 +1,6 @@
 # NEXUS: Research Findings (fact base)
 
-Compiled 31 October 2026. Sources: Mark's files in `emails-and-meetings/2026-10-31-mark-brief-and-assets/` (Developer Brief, Brand Guidelines 2025), the SEO specialist's files in `knowledge-base/seo-specialist/` (SEO understanding doc, prototype `seo lady draft.html`, `seo finding.txt`), `plan/NEXUS Website Tool Guide.pdf` and `emails-and-meetings/2026-10-31-questions-for-mark.txt`, live site crawl (Olostep map + page fetches), Companies House, UKES, globalinnovatorawards.com, nexusstartupdiaries.com, Olostep Answers. Raw Olostep outputs: `research/raw/`.
+Compiled 31 October 2026. Sources: Mark's files in `emails-and-meetings/2026-10-31-mark-brief-and-assets/` (Developer Brief, Brand Guidelines 2025), Nazia's files in `knowledge-base/nazia/` (SEO understanding doc, prototype `seo lady draft.html`, `seo finding.txt`), `plan/NEXUS Website Tool Guide.pdf` and `emails-and-meetings/2026-10-31-questions-for-mark.txt`, live site crawl (Olostep map + page fetches), Companies House, UKES, globalinnovatorawards.com, nexusstartupdiaries.com, Olostep Answers. Raw Olostep outputs: `research/raw/`.
 
 Status key: **Verified** (primary source) · **Client-stated** (client docs, not independently checked) · **Conflict** (sources disagree) · **Gap** (no evidence found).
 

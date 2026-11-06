@@ -6,7 +6,7 @@
 
 **Exports available:** PDF, PPTX, standalone HTML / HTML bundle, Google Slides, partner tools (e.g. Canva, Vercel), and **Handoff to Claude Code** for the build.
 
-> **Likely origin of the existing drafts:** `knowledge-base/seo-specialist/seo lady draft.html` (with `<x-dc>`, `DCLogic`, `support.js`) and "NEXUS Website Redesign Prototype-2" (a "Loading… Unpacking…" shell) look like Claude Design exports. If you have the original project, **re-export it as PDF or standalone HTML**. That's the easiest way for us to finally read Prototype-2.
+> **Likely origin of the existing drafts:** `knowledge-base/nazia/seo lady draft.html` (with `<x-dc>`, `DCLogic`, `support.js`) and "NEXUS Website Redesign Prototype-2" (a "Loading… Unpacking…" shell) look like Claude Design exports. If you have the original project, **re-export it as PDF or standalone HTML**. That's the easiest way for us to finally read Prototype-2.
 
 ---
 
