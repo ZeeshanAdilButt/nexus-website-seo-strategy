@@ -2,7 +2,7 @@
 
 Updated 5 November 2026.
 
-**For future website projects:** [MASTER-WEBSITE-PROJECT-PROMPT.md](MASTER-WEBSITE-PROJECT-PROMPT.md) is the reusable, generic prompt. It asks what exists, then runs the ten specialist agents in [`agents/`](agents/): intake and facts, research, tech stack, design, proposal and quote, client messages, build, content migration, QA and launch, and tools set-up through your connected Chrome.
+**For future website projects:** [MASTER-WEBSITE-PROJECT-PROMPT.md](MASTER-WEBSITE-PROJECT-PROMPT.md) is the reusable, generic prompt. It asks what exists, then runs the fourteen specialist agents that now live in [ZeeshanAdilButt/client-project-agents](https://github.com/ZeeshanAdilButt/client-project-agents) (see [`agents/README.md`](agents/README.md)).
 
 ## Where we are
 - **The job.** Rebuild [nexuscreativehq.com](https://nexuscreativehq.com) to Mark's Developer Brief. NEXUS helps technology businesses land, grow and scale in the UK, with China as its flagship corridor. The target is to go live on Thursday 12 November 2026, before the Global Innovator Awards on Monday 16 November.

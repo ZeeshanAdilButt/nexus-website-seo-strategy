@@ -1,8 +1,8 @@
 # Master prompt: website projects
 
-Reusable for any website project, whether it's for a client or your own. Paste everything below the line into Claude Code at the start of the project. It asks what it needs to know, then runs the specialist agents in [`agents/`](agents/) in the right order and stops at each checkpoint for your go-ahead.
+Reusable for any website project, whether it's for a client or your own. Paste everything below the line into Claude Code at the start of the project. It asks what it needs to know, then runs the specialist agents in the right order and stops at each checkpoint for your go-ahead.
 
-The ten agents can also be installed as Claude Code subagents: copy `agents/*.md` into `~/.claude/agents/`.
+**The agents and the full playbook now live in [ZeeshanAdilButt/client-project-agents](https://github.com/ZeeshanAdilButt/client-project-agents)** (fourteen agents, one folder each, installed with `scripts/install.sh`). Its `MASTER-PROJECT-PROMPT.md` is the full playbook. This file is the short website version.
 
 ---
 
@@ -28,16 +28,16 @@ Skip anything you can already find in the project folder.
 
 | Step | Agent | Skip or shorten when |
 |---|---|---|
-| 1 | `01-intake-and-facts`: workspace, facts doc, conflicts | Never skip |
-| 2 | `02-research`: crawl, SEO data, AI visibility, competitors, speed with proof, content audit | Research exists. Then check it and fill gaps only |
-| 3 | `03-tech-stack`: hosting, framework, CMS, data location, email, ownership, costs | The stack is already agreed. Then just confirm the data location and ownership |
-| 4 | `04-design`: use the existing design, or create one in Claude Design with critiques | A finished design exists. Then check it against the facts and list fixes |
-| 5 | `10-tools-setup`: DNS, Cloudflare, GitHub, Search Console, Bing, analytics, email, monitoring | Each tool already set up. It checks first and skips them |
-| 6 | `05-proposal-and-quote`: three separate documents (plan, questions, quote) | Your own site. Skip the quote, keep a short plan |
-| 7 | `06-client-messages`: every message the client reads | Your own site |
-| 8 | `07-build`: day-1 traps first, then pages, forms, SEO, redirects, security | Never skip |
-| 9 | `08-content-migration`: old content to new addresses with 301s | Nothing to move |
-| 10 | `09-qa-and-launch`: acceptance tests with evidence, launch, handover | Never skip |
+| 1 | `project-orchestrator` and `research-analyst`: intake, workspace, facts doc, conflicts | Never skip |
+| 2 | `seo-analyst`: crawl, SEO data, AI visibility, competitors, speed with proof, content audit | Research exists. Then check it and fill gaps only |
+| 3 | `solution-architect`: hosting, framework, CMS, data location, email, ownership, costs | The stack is already agreed. Then just confirm the data location and ownership |
+| 4 | `design-director`: use the existing design, or create one in Claude Design with critiques | A finished design exists. Then check it against the facts and list fixes |
+| 5 | `tools-setup`: DNS, Cloudflare, GitHub, Search Console, Bing, analytics, email, monitoring | Each tool already set up. It checks first and skips them |
+| 6 | `proposal-builder`: three separate documents (plan, questions, quote) | Your own site. Skip the quote, keep a short plan |
+| 7 | `client-writer`: every message the client reads | Your own site |
+| 8 | `web-builder`: day-1 traps first, then pages, forms, SEO, redirects, security | Never skip |
+| 9 | `content-migration`: old content to new addresses with 301s | Nothing to move |
+| 10 | `quality-auditor` then `launch-qa`: audits, acceptance tests with evidence, launch, handover | Never skip |
 
 **Checkpoints:** after the facts doc, after research, after the stack, after design, before anything is sent, before launch.
 
