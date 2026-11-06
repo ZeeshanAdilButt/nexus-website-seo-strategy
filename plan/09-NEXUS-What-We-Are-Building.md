@@ -74,6 +74,22 @@ Visitor submits a form
 | Fonts | Neutral Face Bold and General Sans, self-hosted | A stand-in headline face until Mark sends the web files |
 | Accounts | All in NEXUS's name | We are members, not owners |
 
+## Running costs (paid by NEXUS, checked 6 November 2026)
+
+There's no separate server for the blog or the editor. Everything runs on one Cloudflare plan.
+
+| Part | Where it runs | Cost |
+|---|---|---|
+| Pages, the blog, images | Cloudflare Workers static assets | Included. Requests for static files are free and unlimited |
+| Editor (Decap CMS) | The editor's browser. Content is saved as files in the NEXUS GitHub repo | Free (GitHub free organisation) |
+| Editor sign-in | A small Worker on the same Cloudflare account | Included |
+| Rebuild after each publish | Workers Builds | Included: 6,000 build minutes a month. One build takes about a minute or two |
+| Enquiries database | Cloudflare D1 (EU) | Included: 5 GB storage, 25 billion rows read and 50 million written a month |
+| Emails | Cloudflare Email Service | Included: 3,000 a month. Alerts to NEXUS's own verified addresses are free |
+| Admin two-factor | Cloudflare Access | Free plan |
+| Backup copies | Cloudflare R2 (EU) | Within the free allowance at this size |
+| **Total** | | **About $5 a month** (the Workers Paid plan), plus the domain renewal NEXUS already pays |
+
 ## What the editor manages
 
 The following are all editable, with draft, preview and publish:

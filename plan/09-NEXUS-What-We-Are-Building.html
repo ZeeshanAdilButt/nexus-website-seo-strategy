@@ -250,6 +250,64 @@ Visitor submits a form
 </tr>
 </tbody>
 </table>
+<h2 id="running-costs-paid-by-nexus-checked-6-november-2026">Running costs (paid by NEXUS, checked 6 November 2026)</h2>
+<p>There's no separate server for the blog or the editor. Everything runs on one Cloudflare plan.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Where it runs</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pages, the blog, images</td>
+<td>Cloudflare Workers static assets</td>
+<td>Included. Requests for static files are free and unlimited</td>
+</tr>
+<tr>
+<td>Editor (Decap CMS)</td>
+<td>The editor's browser. Content is saved as files in the NEXUS GitHub repo</td>
+<td>Free (GitHub free organisation)</td>
+</tr>
+<tr>
+<td>Editor sign-in</td>
+<td>A small Worker on the same Cloudflare account</td>
+<td>Included</td>
+</tr>
+<tr>
+<td>Rebuild after each publish</td>
+<td>Workers Builds</td>
+<td>Included: 6,000 build minutes a month. One build takes about a minute or two</td>
+</tr>
+<tr>
+<td>Enquiries database</td>
+<td>Cloudflare D1 (EU)</td>
+<td>Included: 5 GB storage, 25 billion rows read and 50 million written a month</td>
+</tr>
+<tr>
+<td>Emails</td>
+<td>Cloudflare Email Service</td>
+<td>Included: 3,000 a month. Alerts to NEXUS's own verified addresses are free</td>
+</tr>
+<tr>
+<td>Admin two-factor</td>
+<td>Cloudflare Access</td>
+<td>Free plan</td>
+</tr>
+<tr>
+<td>Backup copies</td>
+<td>Cloudflare R2 (EU)</td>
+<td>Within the free allowance at this size</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>About $5 a month</strong> (the Workers Paid plan), plus the domain renewal NEXUS already pays</td>
+</tr>
+</tbody>
+</table>
 <h2 id="what-the-editor-manages">What the editor manages</h2>
 <p>The following are all editable, with draft, preview and publish:
 - text on every page
