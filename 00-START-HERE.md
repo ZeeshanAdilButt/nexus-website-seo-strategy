@@ -2,6 +2,8 @@
 
 Updated 5 November 2026.
 
+**For future website projects:** [MASTER-WEBSITE-PROJECT-PROMPT.md](MASTER-WEBSITE-PROJECT-PROMPT.md) is the reusable prompt built from this project: research, facts, design, proposals, client messages, the Cloudflare + Astro + Decap stack, build and launch.
+
 ## Where we are
 - **The job.** Rebuild [nexuscreativehq.com](https://nexuscreativehq.com) to Mark's Developer Brief. NEXUS helps technology businesses land, grow and scale in the UK, with China as its flagship corridor. The target is to go live on Thursday 12 November 2026, before the Global Innovator Awards on Monday 16 November.
 - **The facts.** Mark's documents are the facts. Everything he has stated is in [07 Mark's facts](knowledge-base/07-NEXUS-Mark-Facts.md). Where anything else differs, Mark's version is what we build, and the difference goes to him as a question.
