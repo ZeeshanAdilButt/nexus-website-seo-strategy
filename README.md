@@ -12,7 +12,7 @@ Research, planning and design for the rebuild of [nexuscreativehq.com](https://n
 | [`knowledge-base/`](knowledge-base/) | What we know. [Mark's facts](knowledge-base/07-NEXUS-Mark-Facts.md) comes first |
 | [`plan/`](plan/) | Strategy, the SEO guide, the design plan and prompts |
 | [`design/`](design/) | Hasaan Wayne's site, the Claude Design canvas, reviews and screenshots ([overview](design/README.md)) |
-| [`agents/`](agents/) | Where the reusable agents moved to (the client-project-agents repo), and what each does |
+| [`agents/`](agents/) | Ten reusable specialist agents for future website projects |
 | [`scripts/`](scripts/) | Python helpers |
 | [`_archive/`](_archive/) | Superseded drafts and duplicates |
 
