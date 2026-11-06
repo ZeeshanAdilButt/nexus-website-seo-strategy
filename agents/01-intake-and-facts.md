@@ -79,6 +79,18 @@ Close the doc with a pre-flight checklist for any page.
 
 Also list every place their brief asks us to "tell us", "confirm", "give us" or "price separately". The proposal must answer each one.
 
+## 4. Label every fact, and every open question
+
+- **Facts:** in internal documents, label each fact *(they told us)*, *(their data)*, *(public)*, *(our reading)* or *(to confirm)*. An assumption is never written as a fact. Quote clients exactly, typos included, marked [sic].
+- **Recompute numbers** from the raw files yourself. Never copy them from an earlier draft.
+- **Open questions:** give each one a label.
+  - **Reply:** ask in the next message.
+  - **Proposal:** state our assumption in the proposal, and they correct it.
+  - **Build:** we find out ourselves once we have access.
+  - **Discovery:** only needed later.
+
+  Most questions should be Build. Ask the client only what nobody else can answer and that changes the scope now.
+
 ## Hand over
 
 Hand over the project profile (the answers to step 1), the workspace, the facts doc, and the conflicts to raise with the owner. Stop for the user's go-ahead.

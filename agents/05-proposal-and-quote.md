@@ -51,6 +51,30 @@ All of it goes in `proposals/YYYY-MM-DD/`, which is gitignored if the repo is pu
 - the source for every document
 - superseded versions
 
+## Question discipline (for the Questions document)
+
+Before each question, run the three-question test:
+1. Can we find this out ourselves later, with access?
+2. Did they already answer it, in their documents or messages?
+3. Does it change the scope or the estimate now?
+
+Keep the question only if the answers are no, no and yes. Everything else is parked in `not-sent/`, labelled Proposal, Build or Discovery, with what we do in the meantime.
+
+Also:
+- In an early message, don't ask about access dates, timing or who decides.
+- Don't ask how long a task takes when we'll automate it anyway.
+- Never ask for "a short reply". Their input helps us head in the right direction.
+- Always give our suggested answer, so a quick yes is enough.
+
+## Closing the deal
+
+- **Help first, sell second.** Value shown with their own data (a crawl, a speed test, a typo in their price list) beats value claimed.
+- **Name what we build,** in plain words they can picture, and say plainly that it's what we'd build.
+- **Be humble, never cocky.** Offer choices and let them pick, credit their work, and admit we might be missing something. Point out errors in their data gently, and only when it helps them.
+- **Never cap their choices.** Ask "which areas would you like us to go deeper into?", not "pick two or three".
+- **Keep every promise** from earlier messages and minutes, and say so ("as promised").
+- **Before the scope is agreed,** show ideas and components, not full designs, unless the user decides a full review site is part of the pitch. Timelines and prices wait for the scope, unless the client's brief asks for a fixed quote.
+
 ## Rules
 
 - **Propose only what they asked for.** Never cap what they asked for: if the brief says "migrate our articles", all of them are in the fee.

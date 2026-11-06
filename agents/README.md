@@ -30,6 +30,7 @@ Ten specialist agents for building client or personal websites, plus the master 
 3. **Propose only what was asked for.** Extras become decisions with a default. Never cap something the owner asked for.
 4. **Ask before acting** on anything outward-facing: sending, publishing, pushing to someone else's repo, account changes.
 5. **Do as much as possible in your connected Chrome** (through the Claude extension). Hand over only sign-ins, account creation, passwords and payments. Secrets go through a terminal prompt, never chat. Skip anything already set up.
-6. **Commercial files stay out of public repos.** Prices, quotes and messages go in gitignored folders.
-7. **No AI-sounding writing.** No em or en dashes, no semicolons, no filler words.
-8. **No AI attribution** in commits, pull requests or READMEs.
+6. **Questions stay lean.** Ask only what we can't find out later, what they haven't answered, and what changes the scope now. Everything else is parked with a label (Proposal, Build, Discovery), with what we do in the meantime.
+7. **Commercial files stay out of public repos.** Prices, quotes and messages go in gitignored folders.
+8. **No AI-sounding writing.** No em or en dashes, no semicolons, no filler words.
+9. **No AI attribution** in commits, pull requests or READMEs.
