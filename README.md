@@ -4,6 +4,8 @@ Research, planning and design for the rebuild of [nexuscreativehq.com](https://n
 
 **Start here: [00-START-HERE.md](00-START-HERE.md).** It covers where things stand, the timeline, every document and the rules.
 
+**Building the site: [TECHNICAL-PLAN.md](TECHNICAL-PLAN.md).** The stack, who does what, the day-1 checks and the build order. Claude sessions read [CLAUDE.md](CLAUDE.md) first.
+
 **For a new website project,** start from [MASTER-WEBSITE-PROJECT-PROMPT.md](MASTER-WEBSITE-PROJECT-PROMPT.md) and the specialist agents in [`agents/`](agents/).
 
 | Folder | What's in it |

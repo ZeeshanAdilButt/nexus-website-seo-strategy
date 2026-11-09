@@ -2,6 +2,8 @@
 
 Updated 5 November 2026.
 
+**Building the site:** [TECHNICAL-PLAN.md](TECHNICAL-PLAN.md) is the short technical plan for Hasaan and me. Claude sessions on this repo read [CLAUDE.md](CLAUDE.md) first.
+
 **For future website projects:** [MASTER-WEBSITE-PROJECT-PROMPT.md](MASTER-WEBSITE-PROJECT-PROMPT.md) is the reusable, generic prompt. It asks what exists, then runs the ten specialist agents in [`agents/`](agents/): intake and facts, research, tech stack, design, proposal and quote, client messages, build, content migration, QA and launch, and tools set-up through your connected Chrome.
 
 ## Where we are
